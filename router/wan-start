@@ -1,0 +1,16 @@
+read -t 5 -p "What can I do for you? (add/del/upd/all) "
+REPLY=${REPLY:-"all"}
+echo $REPLY
+if [ $# -eq 0 ] || [ "$REPLY" == "all" ]; then
+    ./chrt.sh del
+    ./chrt.sh upd
+    ./chrt.sh add
+    exit
+fi
+
+if [ $# -ne 1 ]; then
+    echo $0 add/del/upd/all
+    exit
+fi
+
+chrt.sh $REPLY
