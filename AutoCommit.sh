@@ -14,7 +14,7 @@ timeout 20s wget https://raw.githubusercontent.com/17mon/china_ip_list/master/ch
 timeout 20s wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 
 # 通过 sed 命令处理之
-sed -i 's/114.114.114.114/119.29.29.29/g' accelerated-domains.china.conf
+sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
 sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 # 针对北京大学校园网划分网段进行特殊处理
 sed -i '/.*115\.27\.0\.0.*/'d china_ip_list.txt
@@ -54,7 +54,7 @@ OPS=$1
 
 # 另一边要用到的命令：
 # wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
-# sed -i 's/114.114.114.114/119.29.29.29/g' accelerated-domains.china.conf
+# sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
 
 END_TEXT
 
