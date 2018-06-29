@@ -26,7 +26,7 @@ OPS=$1
 
 # 另一边要用到的命令：
 # wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
-# sed -i 's/114.114.114.114/119.29.29.29/g' accelerated-domains.china.conf
+# sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
 
 route ${OPS} -net 1.0.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.0.2.0/23 ${ROUTE_GW}
