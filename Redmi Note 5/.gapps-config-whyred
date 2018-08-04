@@ -1,0 +1,112 @@
+# ATTENTION! This script is written by IceCodeNew and specific for Redmi Note 5 (Whyred).
+# You are using this script on your own risk!
+#Read more about gapps-config file here: https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options
+
+# Step 1
+# Prevent automatic Stock removals
+
++DialerStock
++MMS
+
+# Step 2
+# Remove stock Apps
+
+# /system/app
+Browser
+(ViaBrowser.apk)
+CalculatorStock
+(ExactCalculator.apk)
+CalendarStock
+(Calendar.apk)
+# ClockStock
+# (Deskclock.apk)
+Email
+(Email.apk)
+Gallery
+(Gallery2.apk)
+(Phonograph.apk)
+(webview.apk)
+
+# /system/priv-app
+CameraStock
+(Snap.apk)
+
+# Step 3
+Exclude
+
+# Pico+
+# CalSync                # Google Calendar Sync (except if Google Calendar is being installed)
+# DialerFramework        # Dialer Framework
+# GoogleTTS              # Google Text-to-Speech (Micro+ on 5.0-, Pico+ on 6.0+)
+# PackageInstallerGoogle # Google Package Installer
+
+# Nano+
+# BatteryUsage           # Device Health Services (7.1+)
+# FaceDetect             # Face Detect library for photo apps
+# FaceUnlock             # FaceUnlock
+Search                 # Google Search (excluding excludes GoogleNow and PixelLauncher)
+# Speech                 # Offline Speech Files
+
+# Micro+
+# CalendarGoogle         # Google Calendar
+# ExchangeGoogle         # Google Exchange Services
+# Gmail                  # Gmail
+GoogleNow              # Google Now Launcher (requires Search)
+# GoogleTTS              # Google Text-to-Speech (Micro+ on 5.0-, Pico+ on 6.0+)
+
+# Mini+
+# CalculatorGoogle       # Google Calculator
+ClockGoogle            # Google Clock
+Maps                   # Google Maps
+Messenger              # Android Messages (except on tablet devices)
+# Photos                 # Google Photos
+TagGoogle              # Google NFC Tags
+YouTube                # YouTube
+
+# Full+
+Books                  # Google Play Books
+# Chrome                 # Google Chrome Browser
+# CloudPrint             # Google Cloud Print
+Docs                   # Google Docs
+Drive                  # Google Drive
+Fitness                # Google Fit
+GooglePlus             # Google+
+Keep                   # Google Keep
+Movies                 # Google Play Movies & TV
+Music                  # Google Play Music
+NewsStand              # Google Play Newsstand
+NewsWidget             # Google News & Weather
+# PlayGames              # Google Play Games
+Sheets                 # Google Sheets
+Slides                 # Google Slides
+# Talkback               # Google TalkBack
+
+# Stock+
+CameraGoogle           # Google Camera
+ContactsGoogle         # Google Contacts
+DialerGoogle           # Google Dialer (see warning about DialerGoogle below)
+Duo                    # Google Duo
+Hangouts               # Hangouts
+# KeyboardGoogle         # Google Keyboard
+PixelIcons             # Google Pixel Icons
+PixelLauncher          # Pixel Launcher (requires Search and Wallpapers)
+# PrintServiceGoogle     # Print Service Recommendation Service
+StorageManagerGoogle   # Google Storage Manager
+VRService              # Google VR Services
+Wallpapers             # Wallpapers
+# WebViewStub          # Google Webview
+
+# Super+
+CarrierServices        # Carrier Services
+DMAgent                # Google Apps Device Policy
+Earth                  # Google Earth
+GCS                    # Google Connectivity Services (excluding also excludes ProjectFi)
+GooglePay              # Google Pay
+Indic                  # Google Indic Keyboard
+Japanese               # Google Japanese Input
+Korean                 # Google Korean Input
+Pinyin                 # Google Pinyin Input
+ProjectFi              # Project Fi by Google
+Street                 # Google Street View
+Translate              # Google Translate
+Zhuyin                 # Google Zhuyin Input
