@@ -6,8 +6,8 @@ git fetch --all
 git reset --hard origin/master
 
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
-rm route.sh china_ip_list.txt accelerated-domains.china.conf
-rm */route.sh */china_ip_list.txt */accelerated-domains.china.conf
+rm route.sh *.txt *.conf
+rm */route.sh */*.txt */*.conf
 
 # 下载最新文件
 timeout 20s wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
