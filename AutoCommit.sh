@@ -25,9 +25,7 @@ sed -i '/.*222\.29\.128\.0.*/'d china_ip_list.txt
 # 1. Proxifier 规则暂不支持 CIDR 格式的 IP 地址，因此需要做格式上的转换
 # 2. Proxifier 一条规则内最大能写入 32767 个字符，远远小于格式转换后的 IP 列表字符长，
 #    因此需要将 china_ip_list 拆分为多个规则。
-mv china_ip_list.txt Proxifier -f
 python3 Proxifier/IPConvert.py
-mv Proxifier/china_ip_list.txt ./ -f
 
 # 通过 sed 命令处理之
 sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
