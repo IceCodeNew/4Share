@@ -13,9 +13,6 @@ rm */route.sh */china_ip_list.txt */accelerated-domains.china.conf
 timeout 20s wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
 timeout 20s wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 
-# 通过 sed 命令处理之
-sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
-sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 # 针对北京大学校园网划分网段进行特殊处理
 sed -i '/.*115\.27\.0\.0.*/'d china_ip_list.txt
 sed -i '/.*162\.105\.0\.0.*/'d china_ip_list.txt
@@ -23,6 +20,18 @@ sed -i '/.*202\.112\.7\.0.*/'d china_ip_list.txt
 sed -i '/.*202\.112\.8\.0.*/'d china_ip_list.txt
 sed -i '/.*222\.29\.0\.0.*/'d china_ip_list.txt
 sed -i '/.*222\.29\.128\.0.*/'d china_ip_list.txt
+
+# 创建用于写入 Proxifier 规则的 IP 白名单列表
+# 1. Proxifier 规则暂不支持 CIDR 格式的 IP 地址，因此需要做格式上的转换
+# 2. Proxifier 一条规则内最大能写入 32767 个字符，远远小于格式转换后的 IP 列表字符长，
+#    因此需要将 china_ip_list 拆分为多个规则。
+mv china_ip_list.txt Proxifier -f
+python3 Proxifier/IPConvert.py
+mv Proxifier/china_ip_list.txt ./ -f
+
+# 通过 sed 命令处理之
+sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
+sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 
 # 建立 route.sh 文件
 cat > route.sh << 'END_TEXT'
@@ -122,4 +131,3 @@ mv forwarding-rules.txt DNSCrypt -f
 git add *
 git commit -a -m "Auto Commit"
 git push
-
