@@ -6,9 +6,11 @@ def func_addr_transfer(str_ip_addr):
     return str(net_addr.network_address) + '-' + str(net_addr.broadcast_address) + '; '
 
 
-write_buffer = ['162.105.0.0/16', '202.112.7.0/24', '202.112.8.0/24', '222.29.0.0/17', '222.29.128.0/19',
-                '115.27.0.0/16']
-i = len(write_buffer) - 1
+write_buffer = []
+PKU_net = ['162.105.0.0/16', '202.112.7.0/24', '202.112.8.0/24', '222.29.0.0/17', '222.29.128.0/19', '115.27.0.0/16']
+for net_addr in PKU_net:
+    write_buffer.append(func_addr_transfer(net_addr))
+i = len(PKU_net)
 
 with open('china_ip_list.txt', 'r') as cidr_list:
     for line in cidr_list.readlines():
