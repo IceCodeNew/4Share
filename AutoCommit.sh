@@ -131,3 +131,4 @@ mv forwarding-rules.txt DNSCrypt -f
 git add *
 git commit -a -m "Auto Commit"
 git push
+
