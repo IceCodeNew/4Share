@@ -96,6 +96,8 @@ mv route.sh router -f
 
 # 在已有 accelerated-domains.china.conf 文件的基础上做二次修改，使符合 DNSCrypt 配置格式
 sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
+# 这条语句目前来说没有作用，仅留作备用。
+# sed -i '/\.cn\s\{4\}/'d accelerated-domains.china.conf
 
 # 建立 forwarding-rules.txt 文件
 cat > forwarding-rules.txt << 'END_TEXT'
@@ -118,6 +120,43 @@ cat > forwarding-rules.txt << 'END_TEXT'
 # sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
 
 pku.edu.cn    162.105.129.27
+edu.cn    162.105.129.27
+ac.cn    162.105.129.27
+com.cn    162.105.129.27
+org.cn    162.105.129.27
+net.cn    162.105.129.27
+gov.cn    162.105.129.27
+mil.cn    162.105.129.27
+cn    162.105.129.27
+ah.cn    162.105.129.27
+bj.cn    162.105.129.27
+cq.cn    162.105.129.27
+fj.cn    162.105.129.27
+gd.cn    162.105.129.27
+gs.cn    162.105.129.27
+gz.cn    162.105.129.27
+gx.cn    162.105.129.27
+ha.cn    162.105.129.27
+hb.cn    162.105.129.27
+he.cn    162.105.129.27
+hi.cn    162.105.129.27
+hl.cn    162.105.129.27
+hn.cn    162.105.129.27
+jl.cn    162.105.129.27
+js.cn    162.105.129.27
+jx.cn    162.105.129.27
+ln.cn    162.105.129.27
+nm.cn    162.105.129.27
+nx.cn    162.105.129.27
+qh.cn    162.105.129.27
+sc.cn    162.105.129.27
+sd.cn    162.105.129.27
+sh.cn    162.105.129.27
+sn.cn    162.105.129.27
+sx.cn    162.105.129.27
+tj.cn    162.105.129.27
+yn.cn    162.105.129.27
+zj.cn    162.105.129.27
 END_TEXT
 
 cat accelerated-domains.china.conf >> forwarding-rules.txt << 'END_TEXT'
