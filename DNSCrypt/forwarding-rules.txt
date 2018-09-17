@@ -16,6 +16,7 @@
 # To generate:
 # sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
 
+pku.edu.cn    162.105.129.27
 0-6.com    162.105.129.27
 0-gold.net    162.105.129.27
 00.net    162.105.129.27
