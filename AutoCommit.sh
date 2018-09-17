@@ -117,6 +117,7 @@ cat > forwarding-rules.txt << 'END_TEXT'
 # To generate:
 # sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
 
+pku.edu.cn    162.105.129.27
 END_TEXT
 
 cat accelerated-domains.china.conf >> forwarding-rules.txt << 'END_TEXT'
