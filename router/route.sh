@@ -26,7 +26,7 @@ OPS=$1
 
 # 另一边要用到的命令：
 # wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
-# sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
+# sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 
 route ${OPS} -net 1.0.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.0.2.0/23 ${ROUTE_GW}
@@ -5627,7 +5627,7 @@ route ${OPS} -net 223.255.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 223.255.236.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.255.252.0/23 ${ROUTE_GW}
 
-# https://its.pku.edu.cn/faq_2.jsp  --获得北大IP网段
+# https://its.pku.edu.cn/faq.jsp  --获得北大IP网段
 # 162.105.0.0/16
 # 202.112.7.0/24
 # 202.112.8.0/24
