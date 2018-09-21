@@ -29,7 +29,7 @@ python3 Proxifier/IPConvert.py
 mv ip_list_?.txt Proxifier -f
 
 # 通过 sed 命令处理之
-sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
+sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 
 # 建立 route.sh 文件
@@ -62,7 +62,7 @@ OPS=$1
 
 # 另一边要用到的命令：
 # wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
-# sed -i 's/114.114.114.114/162.105.129.27/g' accelerated-domains.china.conf
+# sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 
 END_TEXT
 
@@ -72,7 +72,7 @@ END_TEXT
 cat >> route.sh << 'END_TEXT'
 
 
-# https://its.pku.edu.cn/faq_2.jsp  --获得北大IP网段
+# https://its.pku.edu.cn/faq.jsp  --获得北大IP网段
 # 162.105.0.0/16
 # 202.112.7.0/24
 # 202.112.8.0/24
@@ -121,42 +121,42 @@ cat > forwarding-rules.txt << 'END_TEXT'
 
 pku.edu.cn    162.105.129.27
 edu.cn    162.105.129.27
-ac.cn    162.105.129.27
-com.cn    162.105.129.27
-org.cn    162.105.129.27
-net.cn    162.105.129.27
-gov.cn    162.105.129.27
-mil.cn    162.105.129.27
-cn    162.105.129.27
-ah.cn    162.105.129.27
-bj.cn    162.105.129.27
-cq.cn    162.105.129.27
-fj.cn    162.105.129.27
-gd.cn    162.105.129.27
-gs.cn    162.105.129.27
-gz.cn    162.105.129.27
-gx.cn    162.105.129.27
-ha.cn    162.105.129.27
-hb.cn    162.105.129.27
-he.cn    162.105.129.27
-hi.cn    162.105.129.27
-hl.cn    162.105.129.27
-hn.cn    162.105.129.27
-jl.cn    162.105.129.27
-js.cn    162.105.129.27
-jx.cn    162.105.129.27
-ln.cn    162.105.129.27
-nm.cn    162.105.129.27
-nx.cn    162.105.129.27
-qh.cn    162.105.129.27
-sc.cn    162.105.129.27
-sd.cn    162.105.129.27
-sh.cn    162.105.129.27
-sn.cn    162.105.129.27
-sx.cn    162.105.129.27
-tj.cn    162.105.129.27
-yn.cn    162.105.129.27
-zj.cn    162.105.129.27
+ac.cn    223.5.5.5
+com.cn    223.5.5.5
+org.cn    223.5.5.5
+net.cn    223.5.5.5
+gov.cn    223.5.5.5
+mil.cn    223.5.5.5
+cn    223.5.5.5
+ah.cn    223.5.5.5
+bj.cn    223.5.5.5
+cq.cn    223.5.5.5
+fj.cn    223.5.5.5
+gd.cn    223.5.5.5
+gs.cn    223.5.5.5
+gz.cn    223.5.5.5
+gx.cn    223.5.5.5
+ha.cn    223.5.5.5
+hb.cn    223.5.5.5
+he.cn    223.5.5.5
+hi.cn    223.5.5.5
+hl.cn    223.5.5.5
+hn.cn    223.5.5.5
+jl.cn    223.5.5.5
+js.cn    223.5.5.5
+jx.cn    223.5.5.5
+ln.cn    223.5.5.5
+nm.cn    223.5.5.5
+nx.cn    223.5.5.5
+qh.cn    223.5.5.5
+sc.cn    223.5.5.5
+sd.cn    223.5.5.5
+sh.cn    223.5.5.5
+sn.cn    223.5.5.5
+sx.cn    223.5.5.5
+tj.cn    223.5.5.5
+yn.cn    223.5.5.5
+zj.cn    223.5.5.5
 END_TEXT
 
 cat accelerated-domains.china.conf >> forwarding-rules.txt << 'END_TEXT'
