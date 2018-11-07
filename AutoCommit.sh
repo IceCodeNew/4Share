@@ -6,12 +6,12 @@ git fetch --all
 git reset --hard origin/master
 
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
-rm route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
-rm */route.sh */china_ip_list.txt */ip_list_?.txt */accelerated-domains.china.conf
+rm -f route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
+rm -f */route.sh */china_ip_list.txt */ip_list_?.txt */accelerated-domains.china.conf
 
 # 下载最新文件
-timeout 20s wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
-timeout 20s wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+timeout 20s wget -qo- https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
+timeout 20s wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
 sed -i '/.*115\.27\.0\.0.*/'d china_ip_list.txt
@@ -26,7 +26,7 @@ sed -i '/.*222\.29\.128\.0.*/'d china_ip_list.txt
 # 2. Proxifier 一条规则内最大能写入 32767 个字符，远远小于格式转换后的 IP 列表字符长，
 #    因此需要将 china_ip_list 拆分为多个规则。
 python3 Proxifier/IPConvert.py
-mv ip_list_?.txt Proxifier -f
+mv -f ip_list_?.txt Proxifier
 
 # 通过 sed 命令处理之
 sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
@@ -57,11 +57,11 @@ OPS=$1
 
 # route $OPS -net ${IP_SEGMENT} ${ROUTE_GW}
 # Generate:
-# wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
+# wget -qo- https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
 # sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 
 # 另一边要用到的命令：
-# wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+# wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 # sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 
 END_TEXT
@@ -90,9 +90,9 @@ route ${OPS} -A inet6 2001:da8:201::/48 ${ROUTE_GW}
 END_TEXT
 
 # 更新 4Share 库 router 目录
-cp accelerated-domains.china.conf router -f
-rm china_ip_list.txt
-mv route.sh router -f
+cp -f accelerated-domains.china.conf router
+rm -f china_ip_list.txt
+mv -f route.sh router
 
 # 在已有 accelerated-domains.china.conf 文件的基础上做二次修改，使符合 DNSCrypt 配置格式
 sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
@@ -106,7 +106,7 @@ cat > forwarding-rules.txt << 'END_TEXT'
 ##################################
 
 ## This is used to route specific domain names to specific servers.
-## The general format is:
+## The general form -fat is:
 ## <domain> <server address>[:port] [, <server address>[:port]...]
 ## IPv6 addresses can be specified by enclosing the address in square brackets.
 
@@ -119,8 +119,8 @@ cat > forwarding-rules.txt << 'END_TEXT'
 # To generate:
 # sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
 
-pku.edu.cn    162.105.129.27
-edu.cn    162.105.129.27
+pku.edu.cn    115.27.254.4
+edu.cn    115.27.254.4
 ac.cn    223.5.5.5
 com.cn    223.5.5.5
 org.cn    223.5.5.5
@@ -163,8 +163,8 @@ cat accelerated-domains.china.conf >> forwarding-rules.txt << 'END_TEXT'
 END_TEXT
 
 # 更新 4Share 库 DNSCrypt 目录
-rm accelerated-domains.china.conf
-mv forwarding-rules.txt DNSCrypt -f
+rm -f accelerated-domains.china.conf
+mv -f forwarding-rules.txt DNSCrypt
 
 # 推送更新到 GitHub
 git add *
