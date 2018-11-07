@@ -106,7 +106,7 @@ cat > forwarding-rules.txt << 'END_TEXT'
 ##################################
 
 ## This is used to route specific domain names to specific servers.
-## The general form -fat is:
+## The general format is:
 ## <domain> <server address>[:port] [, <server address>[:port]...]
 ## IPv6 addresses can be specified by enclosing the address in square brackets.
 
