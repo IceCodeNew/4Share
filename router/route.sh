@@ -21,11 +21,11 @@ OPS=$1
 
 # route $OPS -net ${IP_SEGMENT} ${ROUTE_GW}
 # Generate:
-# wget https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
+# wget -qo- https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
 # sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 
 # 另一边要用到的命令：
-# wget https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+# wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 # sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 
 route ${OPS} -net 1.0.1.0/24 ${ROUTE_GW}
