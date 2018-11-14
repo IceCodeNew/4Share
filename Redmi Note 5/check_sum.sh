@@ -8,7 +8,7 @@ echo "The specified dir is: $REPLY"
 unset root_letter
 cd $REPLY
 
-read -rp "Please specify the checksum files' name suffix:  " par
+read -rp "Please specify the regular expression to ONLY select checksum files:  " par
 par=`ls -1 | grep \$par$ | tr '\n' ' '`
 read -rp "Please select M/m for MD5 sums or S/s for SHA2 sums:  "
 REPLY=`echo ${REPLY:0:1} | tr '[:lower:]' '[:upper:]'`
