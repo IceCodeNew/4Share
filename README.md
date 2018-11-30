@@ -2,7 +2,8 @@
   
 对大家最有用的东西可能就是`AutoCommit.sh`这个脚本了，这个脚本自动化了以下操作：
 1. 下载最新的`china_ip_list`文件，以之为基础批量建立 route 命令，用于在路由器系统上添加路由表（实现智能分流）
-2. 下载最新的`accelerated-domains.china.conf`文件，并修改原版文件中配置的 114DNS 为腾讯 Public+ DNS （个人不喜欢 114DNS，等 AliDNS 也支持 EDNS 了我就换成 223.5.5.5 ）
+<!-- 2. 下载最新的`accelerated-domains.china.conf`文件，并修改原版文件中配置的 114DNS 为腾讯 Public+ DNS （个人不喜欢 114DNS，等 AliDNS 也支持 EDNS 了我就换成 223.5.5.5 ） -->
+2. 下载最新的`accelerated-domains.china.conf`文件，并修改原版文件中配置的 114DNS 为 AliDNS （再也不迷信 EDNS 了 ww）
 3. 以修改后的`accelerated-domains.china.conf`文件为基础建立`forwarding-rules.txt`文件，实现 DNSCrypt 分地区解析。
   
 ## 本项目基于以下项目，感谢他们的工作使互联网变得更美好！  
