@@ -8,6 +8,7 @@ echo "The specified dir is: $REPLY"
 unset root_letter
 cd $REPLY
 
+rm domain-based-blacklist.txt mybase.txt
 wget https://download.dnscrypt.info/blacklists/domains/mybase.txt
 
 sed -i '/.*analy.*/!d' mybase.txt
