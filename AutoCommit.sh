@@ -30,6 +30,7 @@ mv -f ip_list_?.txt Proxifier
 
 # 通过 sed 命令处理之
 sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
+sed -i '/^#/d' accelerated-domains.china.conf
 sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 
 # 建立 route.sh 文件
