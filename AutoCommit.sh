@@ -317,6 +317,7 @@ youtube.com    115.27.254.4
 youtu.be    115.27.254.4
 facebook.com    115.27.254.4
 
+byr.cn    115.27.254.4
 pku.edu.cn    115.27.254.4
 edu.cn    115.27.254.4
 ac.cn    223.5.5.5
