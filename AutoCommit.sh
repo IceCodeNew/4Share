@@ -354,6 +354,9 @@ tuna.moe    115.27.254.4
 webofknowledge.com    115.27.254.4
 webofscience.com    115.27.254.4
 wiley.com    115.27.254.4
+springernature.com    115.27.254.4
+springer.com    115.27.254.4
+wkap.nl    115.27.254.4
 
 byr.cn    115.27.254.4
 pku.edu.cn    115.27.254.4
