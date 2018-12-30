@@ -120,6 +120,27 @@ cat > forwarding-rules.txt << 'END_TEXT'
 # To generate:
 # sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
 
+# lan    192.168.50.1
+# 10.in-addr.arpa    192.168.50.1
+# 192.in-addr.arpa    192.168.50.1
+# 254.169.in-addr.arpa    192.168.50.1
+# 16.172.in-addr.arpa    192.168.50.1
+# 17.172.in-addr.arpa    192.168.50.1
+# 18.172.in-addr.arpa    192.168.50.1
+# 19.172.in-addr.arpa    192.168.50.1
+# 20.172.in-addr.arpa    192.168.50.1
+# 21.172.in-addr.arpa    192.168.50.1
+# 22.172.in-addr.arpa    192.168.50.1
+# 23.172.in-addr.arpa    192.168.50.1
+# 24.172.in-addr.arpa    192.168.50.1
+# 25.172.in-addr.arpa    192.168.50.1
+# 26.172.in-addr.arpa    192.168.50.1
+# 27.172.in-addr.arpa    192.168.50.1
+# 28.172.in-addr.arpa    192.168.50.1
+# 29.172.in-addr.arpa    192.168.50.1
+# 30.172.in-addr.arpa    192.168.50.1
+# 31.172.in-addr.arpa    192.168.50.1
+
 google.com    115.27.254.4
 google.ad    115.27.254.4
 google.ae    115.27.254.4
@@ -317,6 +338,23 @@ youtube.com    115.27.254.4
 youtu.be    115.27.254.4
 facebook.com    115.27.254.4
 
+clarivate.com    115.27.254.4
+els-cdn.com    115.27.254.4
+elsevier.com    115.27.254.4
+literatumonline.com    115.27.254.4
+pku.summon.serialssolutions.com    115.27.254.4
+pkuhelper.com    115.27.254.4
+proquest.com    115.27.254.4
+researchgate.net    115.27.254.4
+rgstatic.net    115.27.254.4
+sciencedirect.com    115.27.254.4
+sciencedirectassets.com    115.27.254.4
+thomsonreuters.com    115.27.254.4
+tuna.moe    115.27.254.4
+webofknowledge.com    115.27.254.4
+webofscience.com    115.27.254.4
+wiley.com    115.27.254.4
+
 byr.cn    115.27.254.4
 pku.edu.cn    115.27.254.4
 edu.cn    115.27.254.4
@@ -369,4 +407,3 @@ mv -f forwarding-rules.txt DNSCrypt
 git add *
 git commit -a -m "Auto Commit"
 git push
-
