@@ -1,9 +1,16 @@
 #!/bin/bash
 
-# 放弃所有本地修改，强制与 GitHub 源进行同步
-cd /github/4Share
-git fetch --all
-git reset --hard origin/master
+# 放弃所有本地修改，强制与 GitHub 源进行同步（现在不在 crontab 中直接指定运行这个文件了，因此不再需要）
+# cd /github/4Share
+# git fetch --all
+# git reset --hard origin/master
+
+# 确认脚本在根目录运行，否则退出
+SHELL_FOLDER=$(cd "$(dirname "$0")"; pwd)
+if [ "$SHELL_FOLDER"x != "/github/4Share"x ]; then
+    exit 1
+fi
+unset SHELL_FOLDER
 
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
 rm -f route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
