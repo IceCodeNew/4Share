@@ -30,6 +30,11 @@
       <Applications>v2rayN.exe; v2ray.exe; wv2ray.exe; v2ctl.exe</Applications>
       <Action type="Direct" />
     </Rule>
+    <Rule enabled="false">
+      <Name>DNSProxy</Name>
+      <Applications>dnscrypt-proxy.exe; Pcap_DNSProxy.exe; Pcap_DNSProxy_x86.exe; Pcap_DNSProxy_XP.exe</Applications>
+      <Action type="Direct" />
+    </Rule>
     <Rule enabled="true">
       <Name>Localhost</Name>
       <Targets>localhost; %ComputerName%; 127.*.*.*; 10.*.*.*; 169.254.*.*; 172.16.0.0-172.31.255.255; 192.168.*.*; 224.0.0.0-255.255.255.255; ::1; local.adguard.com</Targets>
@@ -64,6 +69,26 @@
       <Name>ProxyList</Name>
       <Targets>*.amazonaws.com; *.googleusercontent.com; *.githubusercontent.com; dl.google.com; *.googleapis.com; repo.anaconda.com; *.tdesktop.com; *.airvpn.org</Targets>
       <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="false">
+      <Name>CNKI E-Study</Name>
+      <Applications>cefclient.exe; "CNKI E-Study.exe"; CNKIBackUp.exe; CNKICelDataUpdate.exe; CNKIDownloadSrv.exe; CNKIElDataSrv.exe; CNKIFormatConversion.exe; CNKIPushInfo.exe; CNKIWebServiceAccess.exe; CNKIWinServer.exe; EditStyleCmd.exe; FrontendUpdate.exe; GenerateReport.exe; GenerateReportx64.exe; NotesEditor.exe; PaperSubmitCmd.exe; PaperSubmitSrv.exe; unins000.exe; wow_helper.exe</Applications>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="false">
+      <Name>UniOPMClient</Name>
+      <Applications>UniOPMClient.exe</Applications>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="true">
+      <Name>TeamViewer</Name>
+      <Applications>TeamViewer.exe; TeamViewer_Service.exe</Applications>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="true">
+      <Name>WeChat.exe</Name>
+      <Applications>Wechat.exe</Applications>
+      <Action type="Direct" />
     </Rule>
     <Rule enabled="true">
       <Name>WhiteList</Name>
