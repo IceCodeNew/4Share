@@ -5,8 +5,15 @@
 # Step 1
 # Prevent automatic Stock removals
 
-+DialerStock
-+MMS
+# +Browser       # Don't remove Stock Browser, even if Google Chrome is being installed
+# +CameraStock   # Don't remove Stock Camera, even if Google Camera is being installed
++DialerStock   # Don't remove Stock Dialer, even if Google Dialer is being installed
+# +Email         # Don't remove Stock Email, even if Gmail is being installed
+# +Gallery       # Don't remove Stock Gallery, even if Google Photos is being installed
+# +Launcher      # Don't remove Stock Launchers, even if Google Now Launcher is being installed
++MMS           # Don't remove Stock SMS app, even if Android Messages is being installed
+# +PicoTTS       # Don't remove PicoTTS, even if GoogleTTS is being installed
+# +WebViewStock  # Don't remove Stock WebView
 
 # Step 2
 # Remove stock Apps
@@ -35,78 +42,82 @@ CameraStock
 Exclude
 
 # Pico+
-# CalSync                # Google Calendar Sync (except if Google Calendar is being installed)
-# DialerFramework        # Dialer Framework
-# GoogleTTS              # Google Text-to-Speech (Micro+ on 5.0-, Pico+ on 6.0+)
-# PackageInstallerGoogle # Google Package Installer
+# CalSync                 # Install Google Calendar Sync (if Google Calendar is being installed)
+# DialerFramework         # Install Dialer Framework (Android 6.0+)
+# GoogleTTS               # Install Google Text-to-Speech Engine (Micro+ on 5.0-, Pico+ on 6.0+)
+# PackageInstallerGoogle  # Install Package Installer (Android 6.0 only & Android 8.0+)
 
 # Nano+
-# BatteryUsage           # Device Health Services (7.1+)
-# FaceDetect             # Face Detect library for photo apps
-# FaceUnlock             # FaceUnlock
-Search                 # Google Search (excluding excludes GoogleNow and PixelLauncher)
-# Speech                 # Offline Speech Files
+# BatteryUsage            # Install Device Health Services (Android 7.1+)
+# FaceDetect              # Install Face Detect Library
+FaceUnlock              # Install Trusted Face
+# Markup                  # Install Markup (ARM64 + Android 9.0+)
+Search                  # Install Google App (excluding excludes GoogleNow/PixelLauncher)
+# Speech                  # Install Offline Speech Files
+# Wellbeing               # Install Digital Wellbeing (Android 9.0+)
 
 # Micro+
-# CalendarGoogle         # Google Calendar
-# ExchangeGoogle         # Google Exchange Services
-# Gmail                  # Gmail
-GoogleNow              # Google Now Launcher (requires Search)
-# GoogleTTS              # Google Text-to-Speech (Micro+ on 5.0-, Pico+ on 6.0+)
+# CalendarGoogle          # Install Google Calendar
+# ExchangeGoogle          # Install Exchange Services
+# Gmail                   # Install Gmail
+GoogleNow               # Install Google Now Launcher (Android 4.4 only) (requires Search)
+PixelIcons              # Install Pixel Icons (Android 7.1 only)
+PixelLauncher           # Install Pixel Launcher (Android 5.0+) (requires Search and Wallpapers)
+Wallpapers              # Install Google Wallpapers (Android 5.0+)
 
 # Mini+
-# CalculatorGoogle       # Google Calculator
-ClockGoogle            # Google Clock
-Maps                   # Google Maps
-Messenger              # Android Messages (except on tablet devices)
-# Photos                 # Google Photos
-TagGoogle              # Google NFC Tags
-YouTube                # YouTube
+CalculatorGoogle        # Install Google Calculator (Android 5.0+)
+CarrierServices         # Install Carrier Services (Android 6.0+) (required for Google Messages)
+ClockGoogle             # Install Google Clock
+Maps                    # Install Google Maps
+Messenger               # Install Google Messages (except on tablet devices) (requires Carrier Services)
+# Photos                  # Install Google Photos
+TagGoogle               # Install Google Tags (Android 5.0+)
+YouTube                 # Install YouTube
 
 # Full+
-Books                  # Google Play Books
-# Chrome                 # Google Chrome Browser
-CloudPrint             # Google Cloud Print
-Docs                   # Google Docs
-Drive                  # Google Drive
-Fitness                # Google Fit
-GooglePlus             # Google+
-Keep                   # Google Keep
-Movies                 # Google Play Movies & TV
-Music                  # Google Play Music
-NewsStand              # Google Play Newsstand
-NewsWidget             # Google News & Weather
-# PlayGames              # Google Play Games
-Sheets                 # Google Sheets
-Slides                 # Google Slides
-# Talkback               # Google TalkBack
+Books                   # Install Google Play Books
+# Chrome                  # Install Chrome
+CloudPrint              # Install Cloud Print
+Drive                   # Install Google Drive
+# Keep                    # Install Keep Notes
+Movies                  # Install Google Play Movies & TV
+Music                   # Install Google Play Music
+NewsStand               # Install Google News
+# PlayGames               # Install Google Play Games
+Talkback                # Install Android Accessibility Suite
 
 # Stock+
-CameraGoogle           # Google Camera
-ContactsGoogle         # Google Contacts
-DialerGoogle           # Google Dialer (see warning about DialerGoogle below)
-Duo                    # Google Duo
-Hangouts               # Hangouts
-# KeyboardGoogle         # Google Keyboard
-PixelIcons             # Google Pixel Icons
-PixelLauncher          # Pixel Launcher (requires Search and Wallpapers)
-PrintServiceGoogle     # Print Service Recommendation Service
-StorageManagerGoogle   # Google Storage Manager
-VRService              # Google VR Services
-Wallpapers             # Wallpapers
-# WebViewStub          # Google Webview
+AndroidAuto             # Install Android Auto (Android 5.0+)
+CameraGoogle            # Install Google Camera (Android 6.0+)
+ContactsGoogle          # Install Google Contacts (Android 5.1+)
+DialerGoogle            # Install Google Phone (Android 6.0+)
+Duo                     # Install Duo
+GooglePay               # Install Google Pay
+# KeyboardGoogle          # Install Gboard
+PrintServiceGoogle      # Install Print Service Recommendation Service (Android 7.0+)
+StorageManagerGoogle    # Install Smart Storage (Android 7.0+)
+Translate               # Install Google Translate
+VRService               # Install Google VR Services (Android 7.0+)
+# WebViewGoogle           # Install Android System Webview (Android 5.1+) (WebViewStub is installed on Android 7.0+)
+# WebViewStub             # Install Android System Webview (Stub) (Android 7.0+) (See note with WebViewGoogle)
 
 # Super+
-CarrierServices        # Carrier Services
-DMAgent                # Google Apps Device Policy
-Earth                  # Google Earth
-GCS                    # Google Connectivity Services (excluding also excludes ProjectFi)
-GooglePay              # Google Pay
-Indic                  # Google Indic Keyboard
-Japanese               # Google Japanese Input
-Korean                 # Google Korean Input
-Pinyin                 # Google Pinyin Input
-ProjectFi              # Project Fi by Google
-Street                 # Google Street View
-Translate              # Google Translate
-Zhuyin                 # Google Zhuyin Input
+# ActionsServices         # Install Actions Services (Android 9.0+)
+# BetterTogether          # Install Better Together (Android 9.0+)
+DMAgent                 # Install Google Apps Device Policy
+Docs                    # Install Google Docs
+Earth                   # Install Google Earth
+Fitness                 # Install Google Fit
+GCS                     # Install Google Connectivity Services (Android 5.1+) (excluding also excludes ProjectFi)
+GooglePlus              # Install Google+
+Hangouts                # Install Hangouts
+Indic                   # Install Google Indic Keyboard
+Japanese                # Install Google Japanese Input
+Korean                  # Install Google Korean Input
+Pinyin                  # Install Google Pinyin Input
+ProjectFi               # Install Project Fi (Android 5.1+)
+Sheets                  # Install Google Sheets
+Slides                  # Install Google Slides
+Street                  # Install Google Street View
+Zhuyin                  # Install Google Zhuyin Input
