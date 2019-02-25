@@ -1,15 +1,15 @@
 import ipaddress
 
 
-def func_addr_transfer(str_ip_addr):
-    net_addr = ipaddress.IPv4Network(str_ip_addr.strip('\n'))
+def addr_transfer(input_addr):
+    net_addr = ipaddress.IPv4Network(input_addr.strip('\n'))
     return str(net_addr.network_address) + '-' + str(net_addr.broadcast_address) + '; '
 
 
 write_buffer = []
 PKU_net = ['162.105.0.0/16', '202.112.7.0/24', '202.112.8.0/24', '222.29.0.0/17', '222.29.128.0/19', '115.27.0.0/16']
-for net_addr in PKU_net:
-    write_buffer.append(func_addr_transfer(net_addr))
+for _ in PKU_net:
+    write_buffer.append(addr_transfer(_))
 
 IPv6_addr = ipaddress.IPv6Network('2001:da8:201::/48')
 write_buffer.append(str(IPv6_addr.network_address) + '-' + str(IPv6_addr.broadcast_address) + '; ')
@@ -26,7 +26,7 @@ with open('china_ip_list.txt', 'r') as cidr_list:
                 f.writelines(write_buffer)
                 f.close()
                 write_buffer.clear()
-        write_buffer.append(func_addr_transfer(line))
+        write_buffer.append(addr_transfer(line))
         i = i + 1
 
 i = i // 1024 + 1
