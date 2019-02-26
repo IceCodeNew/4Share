@@ -31,3 +31,5 @@ sed -i '1i\skkdd\.com' domain-based-blacklist.txt
 sed -i -e '/^mobileanalytics\./d' -e '1i\mobileanalytics\.\\\*' domain-based-blacklist.txt
 sed -i -e '/^csgosteamanalyst\./d' -e '1i\csgosteamanalyst\.\\\*' domain-based-blacklist.txt
 sed -i -e '/businessrulesanalysis\.com$/d' -e '1i\businessrulesanalysis\.com' domain-based-blacklist.txt
+
+sed -i -e '/^nj\.baidupcs\.com$/d' -e '1i\nj\.baidupcs\.com' domain-based-blacklist.txt
