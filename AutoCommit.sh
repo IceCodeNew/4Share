@@ -17,8 +17,9 @@ rm -f route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
 rm -f */route.sh */china_ip_list.txt */ip_list_?.txt */accelerated-domains.china.conf
 
 # 下载最新文件
-timeout 20s wget -qo- https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
-timeout 20s wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+timeout 30s wget -qo- https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
+timeout 30s wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+fromdos china_ip_list.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
 sed -i '/.*115\.27\.0\.0.*/'d china_ip_list.txt
@@ -32,6 +33,7 @@ sed -i '/.*222\.29\.128\.0.*/'d china_ip_list.txt
 # 1. Proxifier 规则暂不支持 CIDR 格式的 IP 地址，因此需要做格式上的转换
 # 2. Proxifier 一条规则内最大能写入 32767 个字符，远远小于格式转换后的 IP 列表字符长，
 #    因此需要将 china_ip_list 拆分为多个规则。
+fromdos Proxifier/IPConvert.py
 python3 Proxifier/IPConvert.py
 mv -f ip_list_?.txt Proxifier
 
@@ -100,6 +102,7 @@ END_TEXT
 # 更新 4Share 库 router 目录
 cp -f accelerated-domains.china.conf router
 rm -f china_ip_list.txt
+fromdos route.sh
 mv -f route.sh router
 
 # 在已有 accelerated-domains.china.conf 文件的基础上做二次修改，使符合 DNSCrypt 配置格式
@@ -413,6 +416,7 @@ END_TEXT
 
 # 更新 4Share 库 DNSCrypt 目录
 rm -f accelerated-domains.china.conf
+fromdos forwarding-rules.txt
 mv -f forwarding-rules.txt DNSCrypt
 
 # 推送更新到 GitHub
