@@ -10,13 +10,13 @@ def convert(raw: str):
     pattern_1 = re.compile(r'\.\*\\\.')
     _: Tuple = pattern_0.subn(r'.*\.', raw)
     if _[1] > 1:
-        v2raylist.append(pattern_1.sub(r'regexp:', _[0], 1))
+        v2raylist.append(pattern_1.sub(r'regexp:', _[0], 1).rstrip() + ',\n')
         dnscryptlist.append(pattern_1.sub(r'\*.', _[0]))
     elif _[1] == 1:
-        v2raylist.append(pattern_1.sub(r'domain:', _[0], 1))
+        v2raylist.append(pattern_1.sub(r'domain:', _[0], 1).rstrip() + ',\n')
         dnscryptlist.append(raw.lstrip('*.'))
     else:
-        v2raylist.append('domain:' + raw)
+        v2raylist.append('domain:' + raw.rstrip() + ',\n')
         dnscryptlist.append(raw)
 
 

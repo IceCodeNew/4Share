@@ -16,7 +16,7 @@ rm '../v2rayN／v2rayNG/v2rayN_block_rules.txt'
 wget https://download.dnscrypt.info/blacklists/domains/mybase.txt
 wget https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/extra.txt
 wget https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/spy.txt
-fromdos mybase.txt spy.txt extra.txt fws.py
+fromdos fws.py
 
 sed -i '/.*analy.*/!d' mybase.txt
 sed -i -e '/^analy\./d' -e '1i\analy\.\\\*' mybase.txt
@@ -42,7 +42,7 @@ sed -i -e '/doubleclick\.net$/d' -e '1i\doubleclick\.net' domain-based-blacklist
 sed -i -e '/^nj\.baidupcs\.com$/d' -e '1i\nj\.baidupcs\.com' domain-based-blacklist.txt
 
 winpty "$(which python)" fws.py
-fromdos DNSCrypt_black_list.txt v2rayN_block_rules.txt
+todos ./*.txt
 cat domain-based-blacklist.txt DNSCrypt_black_list.txt | sort | uniq > domain-based-blacklist.txt
 rm DNSCrypt_black_list.txt spy.txt extra.txt
 
@@ -51,7 +51,6 @@ cd '../v2rayN／v2rayNG'
 if [ ! -f 'ori_BlackList.txt' ]; then
     rm -rf ori_BlackList.txt
     touch ori_BlackList.txt
-    fromdos ori_BlackList.txt
 fi
 cat ori_BlackList.txt v2rayN_block_rules.txt | sort | uniq > v2rayN_block_rules.txt
-fromdos ./*
+todos ./*.txt
