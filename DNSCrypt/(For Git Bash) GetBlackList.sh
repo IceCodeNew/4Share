@@ -11,7 +11,7 @@
 cd "$(dirname "$0")"
 
 rm domain-based-blacklist.txt mybase.txt extra.txt spy.txt DNSCrypt_black_list.txt
-rm '../v2rayN／v2rayNG/v2rayN_block_rules.txt'
+rm '../v2rayN/v2rayN_block_rules.txt'
 
 curl -O https://download.dnscrypt.info/blacklists/domains/mybase.txt
 curl -O https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/extra.txt
@@ -46,8 +46,8 @@ unix2dos ./*.txt
 cat domain-based-blacklist.txt DNSCrypt_black_list.txt | sort | uniq > domain-based-blacklist.txt
 rm DNSCrypt_black_list.txt spy.txt extra.txt
 
-mv v2rayN_block_rules.txt '../v2rayN／v2rayNG'
-cd '../v2rayN／v2rayNG'
+mv v2rayN_block_rules.txt '../v2rayN'
+cd '../v2rayN'
 if [ ! -f 'ori_BlackList.txt' ]; then
     rm -rf ori_BlackList.txt
     touch ori_BlackList.txt
