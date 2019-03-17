@@ -41,7 +41,8 @@ wget https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/d
 
 sed -i '/dl\.delivery\.mp\.microsoft\.com$/d' extra.txt spy.txt
 sed -i '/storeedgefd\.dsx\.mp\.microsoft\.com$/d' extra.txt spy.txt
-sed -i '/store-images\.(s-)?microsoft\.com$/d' extra.txt spy.txt
+sed -i '/store-images\.microsoft\.com$/d' extra.txt spy.txt
+sed -i '/store-images\.s-microsoft\.com$/d' extra.txt spy.txt
 
 fromdos fws.py
 python3 fws.py
