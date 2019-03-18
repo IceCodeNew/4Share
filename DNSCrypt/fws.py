@@ -24,10 +24,6 @@ with open('spy.txt', 'r') as raw_rules:
     for line in raw_rules.readlines():
         convert(line)
 
-with open('extra.txt', 'r') as raw_rules:
-    for line in raw_rules.readlines():
-        convert(line)
-
 with open('v2rayN_block_rules.txt', 'w') as f:
     f.writelines(v2raylist)
 with open('DNSCrypt_black_list.txt', 'w') as f:

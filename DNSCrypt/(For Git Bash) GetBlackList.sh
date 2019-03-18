@@ -9,7 +9,7 @@
 # cd $REPLY
 
 cd "$(dirname "$0")"
-rm domain-based-blacklist.txt mybase.txt extra.txt spy.txt DNSCrypt_black_list.txt
+rm domain-based-blacklist.txt mybase.txt spy.txt DNSCrypt_black_list.txt
 rm '../v2rayN/v2rayN_block_rules.txt'
 
 curl -O https://download.dnscrypt.info/blacklists/domains/mybase.txt
@@ -36,19 +36,12 @@ sed -i -e '/doubleclick\.net$/d' -e '1i\doubleclick\.net' domain-based-blacklist
 
 sed -i -e '/^nj\.baidupcs\.com$/d' -e '1i\nj\.baidupcs\.com' domain-based-blacklist.txt
 
-curl -O https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/extra.txt
 curl -O https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/spy.txt
-
-sed -i '/dl\.delivery\.mp\.microsoft\.com$/d' extra.txt spy.txt
-sed -i '/storeedgefd\.dsx\.mp\.microsoft\.com$/d' extra.txt spy.txt
-sed -i '/store-images\.microsoft\.com$/d' extra.txt spy.txt
-sed -i '/store-images\.s-microsoft\.com$/d' extra.txt spy.txt
-
 dos2unix fws.py
 winpty "$(which python)" fws.py
 unix2dos ./*.txt
 cat domain-based-blacklist.txt DNSCrypt_black_list.txt | sort | uniq > domain-based-blacklist.txt
-rm DNSCrypt_black_list.txt spy.txt extra.txt
+rm DNSCrypt_black_list.txt spy.txt
 
 mv v2rayN_block_rules.txt '../v2rayN'
 cd '../v2rayN'
