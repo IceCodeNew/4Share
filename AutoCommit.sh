@@ -348,11 +348,14 @@ cat > forwarding-rules.txt << 'END_TEXT'
 # youtu.be    162.105.129.122
 # facebook.com    162.105.129.122
 
+altmetric.com    162.105.129.122
 clarivate.com    162.105.129.122
+doi.org    162.105.129.122
 els-cdn.com    162.105.129.122
 elsevier.com    162.105.129.122
 jbe-platform.com    162.105.129.122
 literatumonline.com    162.105.129.122
+oup.com    162.105.129.122
 pkuhelper.com    162.105.129.122
 pnas.org    162.105.129.122
 proquest.com    162.105.129.122
@@ -361,6 +364,7 @@ rgstatic.net    162.105.129.122
 sciencedirect.com    162.105.129.122
 sciencedirectassets.com    162.105.129.122
 serialssolutions.com    162.105.129.122
+silverchair-cdn.com    162.105.129.122
 springer.com    162.105.129.122
 springernature.com    162.105.129.122
 tandfonline.com    162.105.129.122
@@ -411,6 +415,8 @@ sx.cn    223.5.5.5
 tj.cn    223.5.5.5
 yn.cn    223.5.5.5
 zj.cn    223.5.5.5
+xn--fiqs8s    223.5.5.5
+xn--fiqz9s    223.5.5.5
 END_TEXT
 
 cat accelerated-domains.china.conf >> forwarding-rules.txt << 'END_TEXT'
