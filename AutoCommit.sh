@@ -355,6 +355,7 @@ els-cdn.com    162.105.129.122
 elsevier.com    162.105.129.122
 jbe-platform.com    162.105.129.122
 literatumonline.com    162.105.129.122
+mywconline.com    162.105.129.122
 oup.com    162.105.129.122
 pkuhelper.com    162.105.129.122
 pnas.org    162.105.129.122
@@ -417,6 +418,7 @@ yn.cn    223.5.5.5
 zj.cn    223.5.5.5
 xn--fiqs8s    223.5.5.5
 xn--fiqz9s    223.5.5.5
+
 END_TEXT
 
 cat accelerated-domains.china.conf >> forwarding-rules.txt << 'END_TEXT'
