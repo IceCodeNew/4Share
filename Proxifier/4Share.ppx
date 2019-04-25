@@ -51,13 +51,13 @@
       <Action type="Proxy">100</Action>
     </Rule>
     <Rule enabled="false">
-      <Name>Wikipedia</Name>
-      <Targets>*.wikimedia.org; *.wikipedia.org; *.wikiwand.com</Targets>
-      <Action type="Proxy">100</Action>
-    </Rule>
-    <Rule enabled="false">
       <Name>Youtube</Name>
       <Targets>*.googlevideo.com; *.youtube.com; *.ytimg.com</Targets>
+      <Action type="Proxy">100</Action>
+    </Rule>
+    <Rule enabled="true">
+      <Name>Wikipedia</Name>
+      <Targets>*.wikimedia.org; *.wikipedia.org; *.wikiwand.com</Targets>
       <Action type="Proxy">100</Action>
     </Rule>
     <Rule enabled="false">
