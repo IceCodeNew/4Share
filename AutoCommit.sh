@@ -1,24 +1,15 @@
 #!/bin/bash
 
-# 放弃所有本地修改，强制与 GitHub 源进行同步（现在不在 crontab 中直接指定运行这个文件了，因此不再需要）
-# cd /github/4Share
-# git fetch --all
-# git reset --hard origin/master
+REPOS_ROOT='/github'
 
-# 确认脚本在根目录运行，否则退出
-SHELL_FOLDER=$(cd "$(dirname "$0")"; pwd)
-if [ "$SHELL_FOLDER"x != "/github/4Share"x ]; then
-    exit 1
-fi
-unset SHELL_FOLDER
-
+cd "$REPOS_ROOT/4Share/"
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
 rm -f route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
 rm -f */route.sh */china_ip_list.txt */ip_list_?.txt */accelerated-domains.china.conf
 
-# 下载最新文件
-timeout 30s wget -qo- https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
-timeout 30s wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
+# 拷贝最新文件
+cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
+cp -f "$REPOS_ROOT/china_ip_list/china_ip_list.txt" ./
 fromdos china_ip_list.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
@@ -40,6 +31,7 @@ mv -f ip_list_?.txt Proxifier
 # 通过 sed 命令处理之
 sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 sed -i '/^#/d' accelerated-domains.china.conf
+sed -i '/^server=\/tsdm/d' accelerated-domains.china.conf
 sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 
 # 建立 route.sh 文件
@@ -76,11 +68,9 @@ OPS=$1
 
 END_TEXT
 
-cat china_ip_list.txt >> route.sh << 'END_TEXT'
-END_TEXT
+cat china_ip_list.txt >> route.sh
 
 cat >> route.sh << 'END_TEXT'
-
 
 # https://its.pku.edu.cn/faq.jsp  --获得北大IP网段
 # 162.105.0.0/16
@@ -107,8 +97,6 @@ mv -f route.sh router
 
 # 在已有 accelerated-domains.china.conf 文件的基础上做二次修改，使符合 DNSCrypt 配置格式
 sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
-# 这条语句目前来说没有作用，仅留作备用。
-# sed -i '/\.cn\s\{4\}/'d accelerated-domains.china.conf
 
 # 建立 forwarding-rules.txt 文件
 cat > forwarding-rules.txt << 'END_TEXT'
@@ -421,8 +409,7 @@ xn--fiqz9s    223.5.5.5
 
 END_TEXT
 
-cat accelerated-domains.china.conf >> forwarding-rules.txt << 'END_TEXT'
-END_TEXT
+cat accelerated-domains.china.conf >> forwarding-rules.txt
 
 # 更新 4Share 库 DNSCrypt 目录
 rm -f accelerated-domains.china.conf
