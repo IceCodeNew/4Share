@@ -342,6 +342,7 @@ clarivate.com    162.105.129.122
 doi.org    162.105.129.122
 els-cdn.com    162.105.129.122
 elsevier.com    162.105.129.122
+japanknowledge.com    162.105.129.122
 jbe-platform.com    162.105.129.122
 literatumonline.com    162.105.129.122
 mywconline.com    162.105.129.122
