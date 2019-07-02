@@ -4,8 +4,8 @@ REPOS_ROOT='/github'
 
 cd "$REPOS_ROOT/4Share/"
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
-rm -f route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
-rm -f */route.sh */china_ip_list.txt */ip_list_?.txt */accelerated-domains.china.conf
+/bin/rm -f route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
+/bin/rm -f */route.sh */china_ip_list.txt */ip_list_?.txt */accelerated-domains.china.conf
 
 # 拷贝最新文件
 /bin/cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
@@ -91,7 +91,7 @@ END_TEXT
 
 # 更新 4Share 库 router 目录
 /bin/cp -f accelerated-domains.china.conf router
-rm -f china_ip_list.txt
+/bin/rm -f china_ip_list.txt
 fromdos route.sh
 /bin/mv -f route.sh router
 
@@ -414,7 +414,7 @@ END_TEXT
 cat accelerated-domains.china.conf >> forwarding-rules.txt
 
 # 更新 4Share 库 DNSCrypt 目录
-rm -f accelerated-domains.china.conf
+/bin/rm -f accelerated-domains.china.conf
 fromdos forwarding-rules.txt
 /bin/mv -f forwarding-rules.txt DNSCrypt
 
