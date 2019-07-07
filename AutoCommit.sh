@@ -343,6 +343,7 @@ doi.org    162.105.129.122
 els-cdn.com    162.105.129.122
 elsevier-ae.com    162.105.129.122
 elsevier.com    162.105.129.122
+evise.com    162.105.129.122
 japanknowledge.com    162.105.129.122
 jbe-platform.com    162.105.129.122
 literatumonline.com    162.105.129.122
@@ -355,6 +356,7 @@ researchgate.net    162.105.129.122
 rgstatic.net    162.105.129.122
 sciencedirect.com    162.105.129.122
 sciencedirectassets.com    162.105.129.122
+scopus.com    162.105.129.122
 serialssolutions.com    162.105.129.122
 silverchair-cdn.com    162.105.129.122
 springer.com    162.105.129.122
