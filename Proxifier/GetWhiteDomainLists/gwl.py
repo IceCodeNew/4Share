@@ -4,7 +4,7 @@ from typing import List, Pattern
 
 import download_file
 
-download_file.download_file('https://raw.githubusercontent.com/v2ray/domain-list-community/master/data/geolocation-cn')
+download_file.download_file('https://cdn.statically.io/gh/v2ray/domain-list-community/master/data/geolocation-cn')
 
 with open(r'geolocation-cn', 'r', encoding='UTF-8') as f:
     tmplist: List = f.readlines()
@@ -14,4 +14,4 @@ with open(r'geolocation-cn', 'r', encoding='UTF-8') as f:
         if _[0] == '':
             os.chdir(os.path.abspath(os.path.dirname(__file__)))
             download_file.download_file(
-                'https://raw.githubusercontent.com/v2ray/domain-list-community/master/data/' + _[1].rstrip())
+                'https://cdn.statically.io/gh/v2ray/domain-list-community/master/data/' + _[1].rstrip())
