@@ -23,7 +23,8 @@ python3 'gwl.py'
 
 cd 'downloaded_rules'
 fromdos ./*
-find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/\s*#.*//g'
+# find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/[^\S\r\n]*#[^\r\n]*//g'
+find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/[\t ]*#[^\r\n]*//g'
 find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^$/d' -e 's/^/\*\./g'
 
 cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq >> '../whitelist.txt'
