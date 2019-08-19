@@ -11,7 +11,7 @@ if not os.path.isdir('downloaded_rules'):
 download_file.download_file('https://cdn.statically.io/gh/v2ray/domain-list-community/master/data/geolocation-cn')
 
 file_name = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'downloaded_rules', 'geolocation-cn')
-with open(file_name, 'r', encoding='UTF-8') as f:
+with open(file_name, 'r', encoding='utf-8') as f:
     tmplist: List = f.readlines()
     for line in tmplist:
         pattern: Pattern = re.compile(r'^include:')
