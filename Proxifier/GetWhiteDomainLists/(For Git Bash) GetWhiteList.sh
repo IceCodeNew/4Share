@@ -8,6 +8,8 @@
 # unset root_letter
 # cd $REPLY
 
+set -x
+
 cd "$(dirname "$0")"
 rm -rf 'downloaded_rules/'
 rm -f 'whitelist.txt' 'icn_temp.txt'
@@ -27,5 +29,9 @@ dos2unix ./*
 find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/[\t ]*#[^\r\n]*//g'
 find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^$/d' -e 's/^/\*\./g'
 
-cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq >> '../whitelist.txt'
+find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
+cat '../icn_temp.txt' | sort | uniq >> '../whitelist.txt'
+# cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq >> '../whitelist.txt'
 rm '../icn_temp.txt'
+
+set +x
