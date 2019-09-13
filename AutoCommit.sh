@@ -2,10 +2,12 @@
 
 REPOS_ROOT='/github'
 
-cd "$REPOS_ROOT/4Share/"
+cd "$REPOS_ROOT/4Share/" || exit
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
-/bin/rm -f route.sh china_ip_list.txt ip_list_?.txt accelerated-domains.china.conf
-/bin/rm -f */route.sh */china_ip_list.txt */ip_list_?.txt */accelerated-domains.china.conf
+find . -type f -iname route.sh -print0 | xargs -0 rm --
+find . -type f -iname china_ip_list.txt -print0 | xargs -0 rm --
+find . -type f -iregex ".*ip_list_.?.txt" -print0 | xargs -0 rm --
+find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 
 # 拷贝最新文件
 /bin/cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
@@ -13,12 +15,12 @@ cd "$REPOS_ROOT/4Share/"
 fromdos china_ip_list.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
-sed -i '/.*115\.27\.0\.0.*/'d china_ip_list.txt
-sed -i '/.*162\.105\.0\.0.*/'d china_ip_list.txt
-sed -i '/.*202\.112\.7\.0.*/'d china_ip_list.txt
-sed -i '/.*202\.112\.8\.0.*/'d china_ip_list.txt
-sed -i '/.*222\.29\.0\.0.*/'d china_ip_list.txt
-sed -i '/.*222\.29\.128\.0.*/'d china_ip_list.txt
+sed -i '/.*115\.27\.0\.0.*/d' china_ip_list.txt
+sed -i '/.*162\.105\.0\.0.*/d' china_ip_list.txt
+sed -i '/.*202\.112\.7\.0.*/d' china_ip_list.txt
+sed -i '/.*202\.112\.8\.0.*/d' china_ip_list.txt
+sed -i '/.*222\.29\.0\.0.*/d' china_ip_list.txt
+sed -i '/.*222\.29\.128\.0.*/d' china_ip_list.txt
 
 # 创建用于写入 Proxifier 规则的 IP 白名单列表
 # 1. Proxifier 规则暂不支持 CIDR 格式的 IP 地址，因此需要做格式上的转换
@@ -32,7 +34,7 @@ python3 Proxifier/IPConvert.py
 sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 sed -i '/^#/d' accelerated-domains.china.conf
 sed -i '/^server=\/tsdm/d' accelerated-domains.china.conf
-sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
+sed -i -e "s/^/route\ \${OPS}\ -net\ &/g" -e "s/$/&\ \${ROUTE_GW}/g" china_ip_list.txt
 
 # 建立 route.sh 文件
 cat > route.sh << 'END_TEXT'
@@ -423,6 +425,6 @@ fromdos forwarding-rules.txt
 /bin/mv -f forwarding-rules.txt DNSCrypt
 
 # 推送更新到 GitHub
-git add *
+git add -- *
 git commit -a -m "Auto Commit"
 git push
