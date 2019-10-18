@@ -30,8 +30,11 @@ find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/
 find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^$/d' -e 's/^/\*\./g'
 
 find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
-cat '../icn_temp.txt' | sort | uniq >> '../whitelist.txt'
-# cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq >> '../whitelist.txt'
-rm '../icn_temp.txt'
+# cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq > '../whitelist.txt'
+
+cd ..
+sed -i -r -e 's/\s//g' -e 's/\*\./\n\*\./g' icn_temp.txt
+cat icn_temp.txt | sort | uniq > whitelist.txt
+rm icn_temp.txt
 
 set +x
