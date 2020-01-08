@@ -6,29 +6,33 @@ cd "$REPOS_ROOT/4Share/" || exit
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
 find . -type f -iname route.sh -print0 | xargs -0 rm --
 find . -type f -iname china_ip_list.txt -print0 | xargs -0 rm --
+find . -type f -iname china-ipv6.txt -print0 | xargs -0 rm --
 find . -type f -iregex ".*ip_list_.?.txt" -print0 | xargs -0 rm --
 find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 
 # 拷贝最新文件
 /bin/cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
 /bin/cp -f "$REPOS_ROOT/china_ip_list/china_ip_list.txt" ./
-fromdos china_ip_list.txt accelerated-domains.china.conf
+/bin/mv -f "$REPOS_ROOT/china-ipv6.txt" ./
+fromdos china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
-sed -i '/.*115\.27\.0\.0.*/d' china_ip_list.txt
-sed -i '/.*162\.105\.0\.0.*/d' china_ip_list.txt
-sed -i '/.*202\.112\.7\.0.*/d' china_ip_list.txt
-sed -i '/.*202\.112\.8\.0.*/d' china_ip_list.txt
-sed -i '/.*222\.29\.0\.0.*/d' china_ip_list.txt
-sed -i '/.*222\.29\.128\.0.*/d' china_ip_list.txt
+sed -i -E '/^115\.27\.0\.0.*/d' china_ip_list.txt
+sed -i -E '/^162\.105\.0\.0.*/d' china_ip_list.txt
+sed -i -E '/^202\.112\.7\.0.*/d' china_ip_list.txt
+sed -i -E '/^202\.112\.8\.0.*/d' china_ip_list.txt
+sed -i -E '/^222\.29\.0\.0.*/d' china_ip_list.txt
+sed -i -E '/^222\.29\.128\.0.*/d' china_ip_list.txt
+sed -i -E '/^2001:da8:201::.*/d' china-ipv6.txt
 
 # 创建用于写入 Proxifier 规则的 IP 白名单列表
 # 1. Proxifier 规则暂不支持 CIDR 格式的 IP 地址，因此需要做格式上的转换
 # 2. Proxifier 一条规则内最大能写入 32767 个字符，远远小于格式转换后的 IP 列表字符长，
 #    因此需要将 china_ip_list 拆分为多个规则。
-fromdos Proxifier/IPConvert.py
+fromdos Proxifier/IPConvert.py Proxifier/IPv6Convert.py
 python3 Proxifier/IPConvert.py
-/bin/mv -f ip_list_?.txt Proxifier
+python3 Proxifier/IPv6Convert.py
+/bin/mv -f ip_list_?.txt ipv6_list_?.txt Proxifier
 
 # 通过 sed 命令处理之
 sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
@@ -93,7 +97,7 @@ END_TEXT
 
 # 更新 4Share 库 router 目录
 /bin/cp -f accelerated-domains.china.conf router
-/bin/rm -f china_ip_list.txt
+/bin/rm -f china_ip_list.txt china-ipv6.txt
 fromdos route.sh
 /bin/mv -f route.sh router
 
