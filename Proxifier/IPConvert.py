@@ -11,10 +11,7 @@ PKU_net = ['162.105.0.0/16', '202.112.7.0/24', '202.112.8.0/24', '222.29.0.0/17'
 for _ in PKU_net:
     write_buffer.append(addr_transfer(_))
 
-IPv6_addr = ipaddress.IPv6Network('2001:da8:201::/48')
-write_buffer.append(str(IPv6_addr.network_address) + '-' + str(IPv6_addr.broadcast_address) + '; ')
-
-i = len(PKU_net) + 1
+i = len(PKU_net)
 
 with open('china_ip_list.txt', 'r') as cidr_list:
     for line in cidr_list.readlines():
