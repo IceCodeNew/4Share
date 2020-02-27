@@ -7,7 +7,7 @@ stat_geoipv6=0
 
 # 检查上游是否有更新
 cd "$REPOS_ROOT/dnsmasq-china-list" || exit
-git fetch --all > /dev/null 2>&1
+git fetch --all
 if git status | grep -q "Your branch is up to date with 'origin/master'."; then
     stat_dnsmasq=0
 else
@@ -16,7 +16,7 @@ else
 fi
 
 cd "$REPOS_ROOT/china_ip_list" || exit
-git fetch --all > /dev/null 2>&1
+git fetch --all
 if git status | grep -q "Your branch is up to date with 'origin/master'."; then
     stat_chinaip=0
 else
@@ -24,6 +24,8 @@ else
 fi
 
 if date +%d%H%M | grep -q -P '\d[16]0555'; then
+    rm -rf "$REPOS_ROOT/GeoLite2"
+    mkdir -p "$REPOS_ROOT/GeoLite2"
     cd "$REPOS_ROOT/GeoLite2" || exit
     wget 'https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country-CSV&license_key=JvbzLLx7qBZT&suffix=zip' -O GeoLite2-Country-CSV.zip
     unzip GeoLite2-Country-CSV.zip && rm -f GeoLite2-Country-CSV.zip
@@ -33,7 +35,6 @@ if date +%d%H%M | grep -q -P '\d[16]0555'; then
     sed -i '/'"$cn_geoname_id"'/!d' GeoLite2-Country-Blocks-IPv6.csv
     sed -i 's/,.*//g' GeoLite2-Country-Blocks-IPv6.csv
     mv GeoLite2-Country-Blocks-IPv6.csv "$REPOS_ROOT/china-ipv6.txt"
-    cd .. && find . -print0 | parallel -0 rm -rf -- "{}"
     stat_geoipv6=1
 fi
 
@@ -43,3 +44,4 @@ if [ $stat_dnsmasq -ne 0 ] || [ $stat_chinaip -ne 0 ] || [ $stat_geoipv6 -ne 0 ]
 else
     exit 0
 fi
+
