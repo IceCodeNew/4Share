@@ -9,20 +9,23 @@ def addr_v6_transfer(input_addr: str):
 write_buffer = [addr_v6_transfer('2001:da8:201::/48')]
 i = 1
 
-with open('china-ipv6.txt', 'r') as cidr_list:
-    for line in cidr_list.readlines():
+with open('china-ipv6.txt', encoding='utf-8', mode='r') as cidr_list:
+    for line in cidr_list:
         if i | 0b1111111000000000 == 0b1111111000000000:
             if i != 0:
                 write_buffer[-1] = write_buffer[-1].strip('; ')
                 file_name = 'ipv6_list_' + str(i // 512) + '.txt'
-                f = open(file_name, 'w')
+                f = open(file_name, encoding='utf-8', mode='w')
                 f.writelines(write_buffer)
                 f.close()
                 write_buffer.clear()
-        write_buffer.append(addr_v6_transfer(line))
-        i = i + 1
+        try:
+            write_buffer.append(addr_v6_transfer(line))
+            i = i + 1
+        except ValueError:
+            continue
 
 i = i // 512 + 1
 write_buffer[-1] = write_buffer[-1].strip('; ')
-with open('ipv6_list_' + str(i) + '.txt', 'w') as f:
+with open('ipv6_list_' + str(i) + '.txt', encoding='utf-8', mode='w') as f:
     f.writelines(write_buffer)
