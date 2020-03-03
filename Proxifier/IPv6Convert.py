@@ -14,7 +14,7 @@ with open('china-ipv6.txt', encoding='utf-8', mode='r') as cidr_list:
         if i | 0b1111111000000000 == 0b1111111000000000:
             if i != 0:
                 write_buffer[-1] = write_buffer[-1].strip('; ')
-                file_name = 'ipv6_list_' + str(i // 512) + '.txt'
+                file_name = 'ipv6_list_' + str(i >> 9) + '.txt'
                 f = open(file_name, encoding='utf-8', mode='w')
                 f.writelines(write_buffer)
                 f.close()
@@ -25,7 +25,7 @@ with open('china-ipv6.txt', encoding='utf-8', mode='r') as cidr_list:
         except ValueError:
             continue
 
-i = i // 512 + 1
+i = (i >> 9) + 1
 write_buffer[-1] = write_buffer[-1].strip('; ')
 with open('ipv6_list_' + str(i) + '.txt', encoding='utf-8', mode='w') as f:
     f.writelines(write_buffer)

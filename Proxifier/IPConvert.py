@@ -19,7 +19,7 @@ with open('china_ip_list.txt', encoding='utf-8', mode='r') as cidr_list:
         if i | 0b1111110000000000 == 0b1111110000000000:
             if i != 0:
                 write_buffer[-1] = write_buffer[-1].strip('; ')
-                file_name = 'ip_list_' + str(i // 1024) + '.txt'
+                file_name = 'ip_list_' + str(i >> 10) + '.txt'
                 f = open(file_name, encoding='utf-8', mode='w')
                 f.writelines(write_buffer)
                 f.close()
@@ -33,7 +33,7 @@ with open('china_ip_list.txt', encoding='utf-8', mode='r') as cidr_list:
 with open('china_ip_list.txt', encoding='utf-8', mode='w') as cidr_list:
     cidr_list.writelines(cleaned_source)
 
-i = i // 1024 + 1
+i = (i >> 10) + 1
 write_buffer[-1] = write_buffer[-1].strip('; ')
 with open('ip_list_' + str(i) + '.txt', encoding='utf-8', mode='w') as f:
     f.writelines(write_buffer)
