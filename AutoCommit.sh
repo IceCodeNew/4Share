@@ -8,7 +8,7 @@ find . -type f -iname route.sh -print0 | xargs -0 rm --
 find . -type f -iname china_ip_list.txt -print0 | xargs -0 rm --
 find . -type f -iname china-ipv4.txt -print0 | xargs -0 rm --
 find . -type f -iname china-ipv6.txt -print0 | xargs -0 rm --
-find . -type f -iregex ".*ip_list_.?.txt" -print0 | xargs -0 rm --
+find . -type f -iregex ".*ip.*_list_.?.txt" -print0 | xargs -0 rm --
 find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 
 # 拷贝最新文件
@@ -99,7 +99,7 @@ END_TEXT
 
 # 更新 4Share 库 router 目录
 /bin/cp -f accelerated-domains.china.conf router
-/bin/rm -f china_ip_list.txt china-ipv6.txt
+/bin/rm -f china_ip_list.txt china-ipv4.txt china-ipv6.txt
 fromdos route.sh
 /bin/mv -f route.sh router
 
