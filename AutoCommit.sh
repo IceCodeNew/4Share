@@ -6,6 +6,7 @@ cd "$REPOS_ROOT/4Share/" || exit
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
 find . -type f -iname route.sh -print0 | xargs -0 rm --
 find . -type f -iname china_ip_list.txt -print0 | xargs -0 rm --
+find . -type f -iname china-ipv4.txt -print0 | xargs -0 rm --
 find . -type f -iname china-ipv6.txt -print0 | xargs -0 rm --
 find . -type f -iregex ".*ip_list_.?.txt" -print0 | xargs -0 rm --
 find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
@@ -13,16 +14,17 @@ find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 # 拷贝最新文件
 /bin/cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
 /bin/cp -f "$REPOS_ROOT/china_ip_list/china_ip_list.txt" ./
-/bin/mv -f "$REPOS_ROOT/china-ipv6.txt" ./
+/bin/mv -f "$REPOS_ROOT/china-operator-ip/china.txt" ./china-ipv4.txt
+/bin/mv -f "$REPOS_ROOT/china-operator-ip/china6.txt" ./china-ipv6.txt
 fromdos china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
-sed -i -E '/^115\.27\.0\.0.*/d' china_ip_list.txt
-sed -i -E '/^162\.105\.0\.0.*/d' china_ip_list.txt
-sed -i -E '/^202\.112\.7\.0.*/d' china_ip_list.txt
-sed -i -E '/^202\.112\.8\.0.*/d' china_ip_list.txt
-sed -i -E '/^222\.29\.0\.0.*/d' china_ip_list.txt
-sed -i -E '/^222\.29\.128\.0.*/d' china_ip_list.txt
+sed -i -E '/^115\.27\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
+sed -i -E '/^162\.105\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
+sed -i -E '/^202\.112\.7\.0.*/d' china_ip_list.txt china-ipv4.txt
+sed -i -E '/^202\.112\.8\.0.*/d' china_ip_list.txt china-ipv4.txt
+sed -i -E '/^222\.29\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
+sed -i -E '/^222\.29\.128\.0.*/d' china_ip_list.txt china-ipv4.txt
 sed -i -E '/^2001:da8:201::.*/d' china-ipv6.txt
 
 # 创建用于写入 Proxifier 规则的 IP 白名单列表
