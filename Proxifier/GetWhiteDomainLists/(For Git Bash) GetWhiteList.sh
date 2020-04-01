@@ -11,10 +11,10 @@
 set -x
 
 cd "$(dirname "$0")"
-rm -rf 'downloaded_rules/'
-rm -f 'whitelist.txt' 'icn_temp.txt'
+rm -r 'downloaded_rules/'
+rm 'whitelist.txt' 'icn_temp.txt'
 if [ ! -f 'ori_white_domains.txt' ]; then
-    rm -rf ori_white_domains.txt
+    rm ori_white_domains.txt
     touch ori_white_domains.txt
 fi
 
@@ -35,6 +35,6 @@ find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
 cd ..
 sed -i -r -e 's/\s//g' -e 's/\*\./\n\*\./g' icn_temp.txt
 cat icn_temp.txt | sort | uniq > whitelist.txt
-rm icn_temp.txt
+rm -r 'downloaded_rules/' icn_temp.txt
 
 set +x
