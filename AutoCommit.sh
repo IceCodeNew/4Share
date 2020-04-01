@@ -35,6 +35,7 @@ fromdos Proxifier/IPConvert.py Proxifier/IPv6Convert.py
 python3 Proxifier/IPConvert.py
 python3 Proxifier/IPv6Convert.py
 /bin/mv -f ip_list_?.txt ipv6_list_?.txt Proxifier
+/bin/cp -f china_ip_list.txt geoip_china/china_ip_list.txt
 
 # 通过 sed 命令处理之
 sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
