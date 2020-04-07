@@ -405,7 +405,7 @@ route ${OPS} -net 43.229.176.0/20 ${ROUTE_GW}
 route ${OPS} -net 43.229.192.0/21 ${ROUTE_GW}
 route ${OPS} -net 43.229.216.0/21 ${ROUTE_GW}
 route ${OPS} -net 43.229.232.0/21 ${ROUTE_GW}
-route ${OPS} -net 43.230.8.0/23 ${ROUTE_GW}
+route ${OPS} -net 43.230.8.0/24 ${ROUTE_GW}
 route ${OPS} -net 43.230.10.0/24 ${ROUTE_GW}
 route ${OPS} -net 43.230.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.230.32.0/22 ${ROUTE_GW}
@@ -780,7 +780,6 @@ route ${OPS} -net 45.195.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.195.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.195.28.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.202.8.0/23 ${ROUTE_GW}
-route ${OPS} -net 45.204.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.204.24.0/21 ${ROUTE_GW}
 route ${OPS} -net 45.207.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.248.8.0/22 ${ROUTE_GW}
@@ -2121,7 +2120,6 @@ route ${OPS} -net 103.119.31.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.119.104.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.119.115.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.119.156.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.119.172.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.119.180.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.119.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.119.214.0/24 ${ROUTE_GW}
@@ -2293,7 +2291,7 @@ route ${OPS} -net 103.146.88.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.146.126.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.146.138.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.146.164.0/23 ${ROUTE_GW}
-route ${OPS} -net 103.146.230.0/23 ${ROUTE_GW}
+route ${OPS} -net 103.146.231.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.146.236.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.146.252.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.147.124.0/23 ${ROUTE_GW}
@@ -3871,7 +3869,6 @@ route ${OPS} -net 146.56.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 146.196.56.0/22 ${ROUTE_GW}
 route ${OPS} -net 146.196.68.0/22 ${ROUTE_GW}
 route ${OPS} -net 146.196.78.0/24 ${ROUTE_GW}
-route ${OPS} -net 146.196.80.0/23 ${ROUTE_GW}
 route ${OPS} -net 146.196.92.0/22 ${ROUTE_GW}
 route ${OPS} -net 146.196.112.0/21 ${ROUTE_GW}
 route ${OPS} -net 146.196.124.0/22 ${ROUTE_GW}
