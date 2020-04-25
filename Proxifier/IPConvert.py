@@ -9,9 +9,15 @@ def ipblock2netaddr_int(input_addr: str) -> Tuple[int, ipaddress.IPv4Network]:
 
 
 def delete_nth(d: Deque, n: int):
-    d.rotate(-n)
-    d.popleft()
-    d.rotate(n)
+    if n <= (len(d) >> 1):
+        d.rotate(-n)
+        d.popleft()
+        d.rotate(n)
+    else:
+        n = len(d) - n - 1
+        d.rotate(n)
+        d.pop()
+        d.rotate(-n)
 
 
 def addr_transfer(net_addr: ipaddress.IPv4Network):
