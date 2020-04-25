@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# read -rp "Where to download the rules file? "
-# REPLY=${REPLY//\\/\/}
-# root_letter=`echo ${REPLY:0:1} | tr '[:upper:]' '[:lower:]'`
-# REPLY='/'$root_letter'/'${REPLY:3}
-# echo "The specified dir is: $REPLY"
-# unset root_letter
-# cd $REPLY
-
-set -x
-
 cd "$(dirname "$0")" || exit
 rm -r 'downloaded_rules/' 'whitelist.txt' 'icn_temp.txt'
 if [ ! -f 'ori_white_domains.txt' ]; then
@@ -18,13 +8,13 @@ if [ ! -f 'ori_white_domains.txt' ]; then
 fi
 
 cp 'ori_white_domains.txt' 'icn_temp.txt'
-dos2unix ./*.txt
-dos2unix -- *.py
-winpty "$(which python)" 'gwl.py'
+fromdos ./*.txt
+fromdos -- *.py
+python3 gwl.py
 
 (
 cd 'downloaded_rules' || exit
-dos2unix ./*
+fromdos ./*
 # find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/[^\S\r\n]*#[^\r\n]*//g'
 find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/[\t ]*#[^\r\n]*//g'
 find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^$/d' -e 's/^/\*\./g'
@@ -36,5 +26,3 @@ find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
 sed -i -r -e 's/\s//g' -e 's/\*\./\n\*\./g' icn_temp.txt
 < 'icn_temp.txt' sort | uniq > whitelist.txt
 rm -r 'downloaded_rules/' 'icn_temp.txt'
-
-set +x
