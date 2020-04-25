@@ -21,4 +21,4 @@ with open(file_name, 'r', encoding='utf-8') as f:
 
 results = ThreadPool(8).imap_unordered(download_file.download_file, urls)
 for path in results:
-    print(path)
+    pass
