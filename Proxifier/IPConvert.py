@@ -1,6 +1,6 @@
 import collections
 import ipaddress
-from typing import Tuple, OrderedDict, Deque
+from typing import Tuple, OrderedDict, List
 
 
 def ipblock2netaddr_int(input_addr: str) -> Tuple[int, ipaddress.IPv4Network]:
@@ -8,27 +8,16 @@ def ipblock2netaddr_int(input_addr: str) -> Tuple[int, ipaddress.IPv4Network]:
     return int(obj_network.network_address), obj_network
 
 
-def delete_nth(d: Deque, n: int):
-    if n <= (len(d) >> 1):
-        d.rotate(-n)
-        d.popleft()
-        d.rotate(n)
-    else:
-        n = len(d) - n - 1
-        d.rotate(n)
-        d.pop()
-        d.rotate(-n)
-
-
 def addr_transfer(net_addr: ipaddress.IPv4Network):
     return str(net_addr.network_address) + '-' + str(net_addr.broadcast_address) + '; '
 
 
+_: Tuple
 write_buffer = []
 merged_cidr_dict: OrderedDict[int, ipaddress.IPv4Network] = collections.OrderedDict()
 PKU_net = ('115.27.0.0/16', '162.105.0.0/16', '202.112.7.0/24', '202.112.8.0/24', '222.29.0.0/17', '222.29.128.0/19',)
-for _str in PKU_net:
-    write_buffer.append(ipblock2netaddr_int(_str))
+for _tmp_str in PKU_net:
+    write_buffer.append(ipblock2netaddr_int(_tmp_str))
 
 with open('china_ip_list.txt', encoding='utf-8', mode='r') as cidr_list:
     for line in cidr_list:
@@ -37,7 +26,6 @@ with open('china_ip_list.txt', encoding='utf-8', mode='r') as cidr_list:
         except ValueError:
             continue
 merged_cidr_dict.update(write_buffer)
-write_buffer.clear()
 
 with open('china-ipv4.txt', encoding='utf-8', mode='r') as cidr_list:
     for line in cidr_list:
@@ -53,31 +41,16 @@ with open('china-ipv4.txt', encoding='utf-8', mode='r') as cidr_list:
         except ValueError:
             continue
 
-compressed_cidr_deque: Deque[ipaddress.IPv4Network] = collections.deque()
-_list = sorted(merged_cidr_dict.items())
-_: Tuple
-for _ in _list:
-    compressed_cidr_deque.append(_[1])
+_tmp_list: List[ipaddress.IPv4Network] = []
+for _ in sorted(merged_cidr_dict.items()):
+    _tmp_list.append(_[1])
+_tmp_iterator = ipaddress.collapse_addresses(_tmp_list)
+compressed_cidr_list: List[ipaddress.IPv4Network] = list(_tmp_iterator)
 
-while True:
-    prev_len = len(compressed_cidr_deque)
-    for i in range(len(compressed_cidr_deque) - 1):
-        try:
-            while True:
-                _tuple = tuple(ipaddress.collapse_addresses([compressed_cidr_deque[i], compressed_cidr_deque[i + 1]]))
-                if len(_tuple) == 1:
-                    compressed_cidr_deque[i] = _tuple[0]
-                    delete_nth(compressed_cidr_deque, i + 1)
-                else:
-                    break
-        except IndexError:
-            break
-    if len(compressed_cidr_deque) == prev_len:
-        break
-
+write_buffer.clear()
 i = 0
 value: ipaddress.IPv4Network
-for i, value in enumerate(compressed_cidr_deque):
+for i, value in enumerate(compressed_cidr_list):
     if i | 0b1111110000000000 == 0b1111110000000000:
         if i != 0:
             write_buffer[-1] = write_buffer[-1].strip('; ')
@@ -95,5 +68,5 @@ with open('ip_list_' + str(i) + '.txt', encoding='utf-8', mode='w') as f:
     f.writelines(write_buffer)
 
 with open('china_ip_list.txt', encoding='utf-8', mode='w') as f:
-    for address in compressed_cidr_deque:
+    for address in compressed_cidr_list:
         f.write(f'{str(address)}\n')
