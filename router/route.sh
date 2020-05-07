@@ -780,6 +780,7 @@ route ${OPS} -net 45.147.6.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.148.128.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.149.196.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.150.54.0/24 ${ROUTE_GW}
+route ${OPS} -net 45.153.201.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.153.221.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.155.226.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.192.176.0/24 ${ROUTE_GW}
@@ -1414,6 +1415,7 @@ route ${OPS} -net 103.38.220.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.38.224.0/21 ${ROUTE_GW}
 route ${OPS} -net 103.38.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.38.252.0/23 ${ROUTE_GW}
+route ${OPS} -net 103.38.254.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.39.64.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.39.88.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.39.100.0/22 ${ROUTE_GW}
@@ -2333,7 +2335,6 @@ route ${OPS} -net 103.150.172.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.150.181.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.150.200.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.150.210.0/23 ${ROUTE_GW}
-route ${OPS} -net 103.150.214.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.150.216.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.192.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 103.192.48.0/21 ${ROUTE_GW}
@@ -4306,6 +4307,7 @@ route ${OPS} -net 185.211.134.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.216.118.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.216.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 185.232.94.0/24 ${ROUTE_GW}
+route ${OPS} -net 185.240.25.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.243.6.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.243.43.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.254.241.0/24 ${ROUTE_GW}
@@ -4360,8 +4362,7 @@ route ${OPS} -net 194.138.245.0/24 ${ROUTE_GW}
 route ${OPS} -net 194.156.157.0/24 ${ROUTE_GW}
 route ${OPS} -net 194.246.40.0/22 ${ROUTE_GW}
 route ${OPS} -net 195.142.215.0/24 ${ROUTE_GW}
-route ${OPS} -net 196.10.66.0/23 ${ROUTE_GW}
-route ${OPS} -net 196.10.70.0/23 ${ROUTE_GW}
+route ${OPS} -net 196.10.66.0/24 ${ROUTE_GW}
 route ${OPS} -net 196.10.72.0/22 ${ROUTE_GW}
 route ${OPS} -net 196.18.196.0/24 ${ROUTE_GW}
 route ${OPS} -net 196.19.196.0/24 ${ROUTE_GW}
