@@ -4132,7 +4132,6 @@ route ${OPS} -net 163.125.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.142.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.177.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.179.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 163.181.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.2.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.15.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.16.0/24 ${ROUTE_GW}
