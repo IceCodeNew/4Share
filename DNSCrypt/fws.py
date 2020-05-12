@@ -2,7 +2,6 @@ import re
 from typing import Tuple
 
 v2raylist = []
-dnscryptlist = []
 
 
 def convert(raw: str):
@@ -11,20 +10,18 @@ def convert(raw: str):
     _: Tuple = pattern_0.subn(r'.*\.', raw)
     if _[1] > 1:
         v2raylist.append(pattern_1.sub(r'regexp:', _[0], 1).rstrip() + ',\n')
-        dnscryptlist.append(pattern_1.sub(r'\*.', _[0]))
     elif _[1] == 1:
         v2raylist.append(pattern_1.sub(r'domain:', _[0], 1).rstrip() + ',\n')
-        dnscryptlist.append(raw.lstrip('*.'))
     else:
         v2raylist.append('domain:' + raw.rstrip() + ',\n')
-        dnscryptlist.append(raw)
 
 
-with open('spy.txt', 'r') as raw_rules:
+with open('mybase.txt', 'r') as raw_rules:
+    pattern_comment = re.compile(r'^#|^$')
     for line in raw_rules.readlines():
-        convert(line)
+        if pattern_comment.match(line) is None:
+            convert(line)
 
+v2raylist.sort()
 with open('v2rayN_block_rules.txt', 'w') as f:
     f.writelines(v2raylist)
-with open('DNSCrypt_black_list.txt', 'w') as f:
-    f.writelines(dnscryptlist)

@@ -1,15 +1,8 @@
 #!/bin/bash
 
-# read -rp "Where to download the rules file? "
-# REPLY=${REPLY//\\/\/}
-# root_letter=`echo ${REPLY:0:1} | tr '[:upper:]' '[:lower:]'`
-# REPLY='/'$root_letter'/'${REPLY:3}
-# echo "The specified dir is: $REPLY"
-# unset root_letter
-# cd $REPLY
+REPOS_ROOT='/github'
 
-cd "$(dirname "$0")" || exit
-cd '../../dnscrypt-proxy/utils/generate-domains-blacklists/' || exit
+cd "$REPOS_ROOT/dnscrypt-proxy/utils/generate-domains-blacklists" || exit
 git fetch --all && git reset --hard origin/master > /dev/null 2>&1
 
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt)!# \1!' domains-blacklist.conf
@@ -28,8 +21,7 @@ sed -E -i 's!(^https:\/\/easylist-downloads\.adblockplus\.org\/easylist_noelemhi
 sed -E -i 's!(^https:\/\/adguardteam\.github\.io\/AdGuardSDNSFilter\/Filters\/filter\.txt)!# \1!' domains-blacklist.conf
 # sed -E -i 's!(^https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!# \1!' domains-blacklist.conf
 
-# Append ```os._exit(0)``` and ```import os```
-python -i generate-domains-blacklist.py > mybase.txt
+python3 generate-domains-blacklist.py > mybase.txt
 
 # sed -E -i 's!(^# )(https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt)!\2!' domains-blacklist.conf
 # sed -E -i 's!(^# )(https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/Spotify-Ad-free\/master\/filters\/Spotify-HOSTS\.txt)!\2!' domains-blacklist.conf
@@ -49,16 +41,16 @@ sed -E -i 's!(^# )(https:\/\/mirror1\.malwaredomains\.com\/files\/justdomains)!\
 ### sed -E -i 's!(^# )(https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\2!' domains-blacklist.conf
 sed -E -i 's!(^# )(https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\2!' domains-blacklist.conf
 
-python -i generate-domains-blacklist.py > domain-based-blacklist.txt
+python3 generate-domains-blacklist.py > domain-based-blacklist.txt
 
 ################################################################
 
-/bin/mv -f mybase.txt domain-based-blacklist.txt "$(dirname "$0")"
-cd "$(dirname "$0")"
+/bin/mv -f mybase.txt domain-based-blacklist.txt "$REPOS_ROOT/4Share/DNSCrypt"
+cd "$REPOS_ROOT/4Share/DNSCrypt" || exit
 /bin/rm -f '../v2rayN/v2rayN_block_rules.txt'
 
-dos2unix fws.py ./*.txt
-winpty "$(which python)" fws.py
+fromdos fws.py ./*.txt
+python3 fws.py
 
 /bin/mv -f v2rayN_block_rules.txt '../v2rayN'
 cd '../v2rayN'
@@ -68,4 +60,4 @@ if [ ! -f 'ori_BlackList.txt' ]; then
 fi
 cat ori_BlackList.txt v2rayN_block_rules.txt | sort | uniq > temp_v2rayN_block_rules.txt
 /bin/mv -f temp_v2rayN_block_rules.txt v2rayN_block_rules.txt
-dos2unix ./*.txt
+fromdos ./*.txt
