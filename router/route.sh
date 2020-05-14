@@ -4955,8 +4955,7 @@ route ${OPS} -net 203.8.8.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.8.23.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.8.24.0/23 ${ROUTE_GW}
 route ${OPS} -net 203.8.27.0/24 ${ROUTE_GW}
-route ${OPS} -net 203.8.28.0/23 ${ROUTE_GW}
-route ${OPS} -net 203.8.31.0/24 ${ROUTE_GW}
+route ${OPS} -net 203.8.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.8.70.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.8.82.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.8.86.0/23 ${ROUTE_GW}
