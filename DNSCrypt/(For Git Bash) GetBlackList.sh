@@ -65,7 +65,7 @@ cd '../v2rayN'
 curl -o Advertising.list 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list'
 curl -o Hijacking.list 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list'
 sed -E -i -e '/^#|^$/d' -e '/^DOMAIN-KEYWORD.*/d' -e '/^DOMAIN/!d' -e '/REJECT$/!d' Advertising.list Hijacking.list
-sed -E -i -e 's/,REJECT$//' -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,/domain:/' Advertising.list Hijacking.list
+sed -E -i -e 's/REJECT$//' -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,/domain:/' Advertising.list Hijacking.list
 
 if [ ! -f 'ori_BlackList.txt' ]; then
     rm -rf -- 'ori_BlackList.txt'
