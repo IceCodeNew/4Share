@@ -55,17 +55,22 @@ python -i generate-domains-blacklist.py > domain-based-blacklist.txt
 
 /bin/mv -f mybase.txt domain-based-blacklist.txt "$(dirname "$0")"
 cd "$(dirname "$0")"
-/bin/rm -f '../v2rayN/v2rayN_block_rules.txt'
+/bin/rm -f '../v2rayN/v2rayN_block_rules.txt' '../v2rayN/Advertising.list' '../v2rayN/Hijacking.list'
 
 dos2unix fws.py ./*.txt
 winpty "$(which python)" fws.py
 
 /bin/mv -f v2rayN_block_rules.txt '../v2rayN'
 cd '../v2rayN'
+curl -o Advertising.list 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list'
+curl -o Hijacking.list 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list'
+sed -E -i -e '/^#|^$/d' -e '/^DOMAIN-KEYWORD.*/d' -e '/^DOMAIN/!d' -e '/REJECT$/!d' Advertising.list Hijacking.list
+sed -E -i -e 's/,REJECT$//' -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,/domain:/' Advertising.list Hijacking.list
+
 if [ ! -f 'ori_BlackList.txt' ]; then
     rm -rf -- 'ori_BlackList.txt'
     touch 'ori_BlackList.txt'
 fi
-cat ori_BlackList.txt v2rayN_block_rules.txt | sort | uniq > temp_v2rayN_block_rules.txt
+cat ori_BlackList.txt v2rayN_block_rules.txt Advertising.list Hijacking.list | sort | uniq > temp_v2rayN_block_rules.txt
 /bin/mv -f temp_v2rayN_block_rules.txt v2rayN_block_rules.txt
 dos2unix ./*.txt
