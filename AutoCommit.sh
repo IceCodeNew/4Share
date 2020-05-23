@@ -38,8 +38,8 @@ python3 Proxifier/IPv6Convert.py
 /bin/cp -f china_ip_list.txt geoip_china/china_ip_list.txt
 
 # 通过 sed 命令处理之
+sed -i '/^#|^$/d' accelerated-domains.china.conf
 sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
-sed -i '/^#/d' accelerated-domains.china.conf
 sed -i '/^server=\/tsdm/d' accelerated-domains.china.conf
 sed -i -e "s/^/route\ \${OPS}\ -net\ &/g" -e "s/$/&\ \${ROUTE_GW}/g" china_ip_list.txt
 
@@ -106,6 +106,7 @@ fromdos route.sh
 
 # 在已有 accelerated-domains.china.conf 文件的基础上做二次修改，使符合 DNSCrypt 配置格式
 sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
+sed -i 's/223.5.5.5/45.90.28.105,45.90.30.105,162.105.129.122,162.105.129.88,223.5.5.5,223.6.6.6/g' accelerated-domains.china.conf
 
 # 建立 forwarding-rules.txt 文件
 cat > forwarding-rules.txt << 'END_TEXT'
@@ -120,6 +121,16 @@ cat > forwarding-rules.txt << 'END_TEXT'
 
 ## In order to enable this feature, the "forwarding_rules" property needs to
 ## be set to this file name inside the main configuration file.
+
+## Blocking IPv6 may prevent local devices from being discovered.
+## If this happens, set `block_ipv6` to `false` in the main config file.
+
+## Forward *.lan, *.local, *.home, *.internal and *.localdomain to 192.168.1.1
+# lan             192.168.1.1
+# local           192.168.1.1
+# home            192.168.1.1
+# internal        192.168.1.1
+# localdomain     192.168.1.1
 
 ## Forward queries for example.com and *.example.com to 9.9.9.9 and 8.8.8.8
 # example.com     9.9.9.9,8.8.8.8
