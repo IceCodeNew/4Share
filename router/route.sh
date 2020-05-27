@@ -787,6 +787,7 @@ route ${OPS} -net 45.149.196.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.153.201.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.153.202.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.153.221.0/24 ${ROUTE_GW}
+route ${OPS} -net 45.153.223.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.158.33.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.158.34.0/23 ${ROUTE_GW}
 route ${OPS} -net 45.192.176.0/24 ${ROUTE_GW}
