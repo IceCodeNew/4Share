@@ -12,7 +12,8 @@ sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/NSABlocklist\/m
 sed -E -i 's!(^https:\/\/hostfiles\.frogeye\.fr\/firstparty-trackers\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/notracking\/hosts-blocklists\/master\/dnscrypt-proxy\/dnscrypt-proxy\.blacklist\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_malvertising\.txt)!# \1!' domains-blacklist.conf
-sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_tracking\.txt)!# \1!' domains-blacklist.conf
+# sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_tracking\.txt)!# \1!' domains-blacklist.conf
+sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_ad\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/Spam404\/lists\/master\/main-blacklist\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/www\.malwaredomainlist\.com\/hostslist\/hosts\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/mirror1\.malwaredomains\.com\/files\/justdomains)!# \1!' domains-blacklist.conf
@@ -23,23 +24,22 @@ sed -E -i 's!(^https:\/\/adguardteam\.github\.io\/AdGuardSDNSFilter\/Filters\/fi
 
 python3 generate-domains-blacklist.py > mybase.txt
 
-# sed -E -i 's!(^# )(https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt)!\2!' domains-blacklist.conf
-# sed -E -i 's!(^# )(https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/Spotify-Ad-free\/master\/filters\/Spotify-HOSTS\.txt)!\2!' domains-blacklist.conf
-# sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/NSABlocklist\/master\/HOSTS\/HOSTS)!# \1!' domains-blacklist.conf
-### sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt)!# \1!' domains-blacklist.conf
-sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt)!# \1!' domains-blacklist.conf
-sed -E -i 's!(^# )(https:\/\/hostfiles\.frogeye\.fr\/firstparty-trackers\.txt)!\2!' domains-blacklist.conf
-# sed -E -i 's!(^# )(https:\/\/raw\.githubusercontent\.com\/notracking\/hosts-blocklists\/master\/dnscrypt-proxy\/dnscrypt-proxy\.blacklist\.txt)!\2!' domains-blacklist.conf
-sed -E -i 's!(^# )(https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_malvertising\.txt)!\2!' domains-blacklist.conf
-sed -E -i 's!(^# )(https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_tracking\.txt)!\2!' domains-blacklist.conf
-sed -E -i 's!(^# )(https:\/\/raw\.githubusercontent\.com\/Spam404\/lists\/master\/main-blacklist\.txt)!\2!' domains-blacklist.conf
-sed -E -i 's!(^# )(https:\/\/www\.malwaredomainlist\.com\/hostslist\/hosts\.txt)!\2!' domains-blacklist.conf
-sed -E -i 's!(^# )(https:\/\/mirror1\.malwaredomains\.com\/files\/justdomains)!\2!' domains-blacklist.conf
-# sed -E -i 's!(^# )(https:\/\/easylist-downloads\.adblockplus\.org\/easylistchina\.txt)!\2!' domains-blacklist.conf
-# sed -E -i 's!(^# )(https:\/\/easylist-downloads\.adblockplus\.org\/easylist_noelemhide\.txt)!\2!' domains-blacklist.conf
-# sed -E -i 's!(^# )(https:\/\/adguardteam\.github\.io\/AdGuardSDNSFilter\/Filters\/filter\.txt)!\2!' domains-blacklist.conf
-### sed -E -i 's!(^# )(https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\2!' domains-blacklist.conf
-sed -E -i 's!(^# )(https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\2!' domains-blacklist.conf
+# sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt)!\1!' domains-blacklist.conf
+# sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/Spotify-Ad-free\/master\/filters\/Spotify-HOSTS\.txt)!\1!' domains-blacklist.conf
+# sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/NSABlocklist\/master\/HOSTS\/HOSTS)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/hostfiles\.frogeye\.fr\/firstparty-trackers\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/notracking\/hosts-blocklists\/master\/dnscrypt-proxy\/dnscrypt-proxy\.blacklist\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_malvertising\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_tracking\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_ad\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/Spam404\/lists\/master\/main-blacklist\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/www\.malwaredomainlist\.com\/hostslist\/hosts\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/mirror1\.malwaredomains\.com\/files\/justdomains)!\1!' domains-blacklist.conf
+# sed -E -i 's!^# (https:\/\/easylist-downloads\.adblockplus\.org\/easylistchina\.txt)!\1!' domains-blacklist.conf
+# sed -E -i 's!^# (https:\/\/easylist-downloads\.adblockplus\.org\/easylist_noelemhide\.txt)!\1!' domains-blacklist.conf
+# sed -E -i 's!^# (https:\/\/adguardteam\.github\.io\/AdGuardSDNSFilter\/Filters\/filter\.txt)!\1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\1!' domains-blacklist.conf
 
 python3 generate-domains-blacklist.py > domain-based-blacklist.txt
 
