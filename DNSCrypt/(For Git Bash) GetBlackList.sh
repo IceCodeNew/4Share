@@ -18,9 +18,9 @@ sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/NSABlocklist\/m
 # sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/hostfiles\.frogeye\.fr\/firstparty-trackers\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/notracking\/hosts-blocklists\/master\/dnscrypt-proxy\/dnscrypt-proxy\.blacklist\.txt)!# \1!' domains-blacklist.conf
-sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_malvertising\.txt)!# \1!' domains-blacklist.conf
+# sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_malvertising\.txt)!# \1!' domains-blacklist.conf
 # sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_tracking\.txt)!# \1!' domains-blacklist.conf
-sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_ad\.txt)!# \1!' domains-blacklist.conf
+# sed -E -i 's!(^https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_ad\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/Spam404\/lists\/master\/main-blacklist\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/www\.malwaredomainlist\.com\/hostslist\/hosts\.txt)!# \1!' domains-blacklist.conf
 sed -E -i 's!(^https:\/\/mirror1\.malwaredomains\.com\/files\/justdomains)!# \1!' domains-blacklist.conf
