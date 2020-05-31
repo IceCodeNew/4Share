@@ -138,9 +138,14 @@ cat > forwarding-rules.txt << 'END_TEXT'
 # To generate:
 # sed -i -e 's/server=\///g' -e 's/\//    /g' accelerated-domains.china.conf
 
-# lan    192.168.50.1
+lan    192.168.50.1
+local    192.168.50.1
+home    192.168.50.1
+internal    192.168.50.1
+localdomain    192.168.50.1
+workgroup    192.168.50.1
 # 10.in-addr.arpa    192.168.50.1
-# 192.in-addr.arpa    192.168.50.1
+192.in-addr.arpa    192.168.50.1
 # 254.169.in-addr.arpa    192.168.50.1
 # 16.172.in-addr.arpa    192.168.50.1
 # 17.172.in-addr.arpa    192.168.50.1
