@@ -46,8 +46,8 @@ mv AdBlock.list.new AdBlock.list;
 mv Advertising.list.new Advertising.list;
 mv Hijacking.list.new Hijacking.list;
 mv Reject.list.new Reject.list;
-sed -E -i -e '/^#|^$/d' -e '/^DOMAIN-KEYWORD.*/d' -e '/^DOMAIN/!d' -e '/REJECT$/!d' AdBlock.list Advertising.list Hijacking.list Reject.list
-sed -E -i -e 's/REJECT$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
+sed -E -i -e '/^#|^$/d' -e '/^DOMAIN/!d' -e '/^DOMAIN-KEYWORD.*/d' AdBlock.list Advertising.list Hijacking.list Reject.list
+sed -E -i -e 's/REJECT$//g' -e 's/AdBlock$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
 
 if [ ! -f 'ori_BlackList.txt' ]; then
     rm -rf -- 'ori_BlackList.txt'
