@@ -38,14 +38,11 @@ python3 fws.py
 
 /bin/mv -f v2rayN_block_rules.txt '../v2rayN'
 cd '../v2rayN'
-wget -O AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/g' AdBlock.list.new
-wget -O Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list'
-wget -O Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list'
-wget -O Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list'
-mv AdBlock.list.new AdBlock.list;
-mv Advertising.list.new Advertising.list;
-mv Hijacking.list.new Hijacking.list;
-mv Reject.list.new Reject.list;
+# wget -O AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/g' AdBlock.list.new && mv AdBlock.list.new AdBlock.list;
+wget -O Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list' && mv Advertising.list.new Advertising.list;
+wget -O Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list' && mv Hijacking.list.new Hijacking.list;
+# wget -O Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list' && mv Reject.list.new Reject.list;
+
 sed -E -i -e '/^#|^$/d' -e '/^DOMAIN/!d' -e '/^DOMAIN-KEYWORD.*/d' AdBlock.list Advertising.list Hijacking.list Reject.list
 sed -E -i -e 's/REJECT$//g' -e 's/AdBlock$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
 

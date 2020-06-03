@@ -46,14 +46,11 @@ winpty "$(which python)" fws.py
 
 /bin/mv -f v2rayN_block_rules.txt '../v2rayN'
 cd '../v2rayN'
-curl -o AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/g' AdBlock.list.new
-curl -o Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list'
-curl -o Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list'
-curl -o Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list'
-mv AdBlock.list.new AdBlock.list;
-mv Advertising.list.new Advertising.list;
-mv Hijacking.list.new Hijacking.list;
-mv Reject.list.new Reject.list;
+# curl -o AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/g' AdBlock.list.new && mv AdBlock.list.new AdBlock.list;
+curl -o Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list' && mv Advertising.list.new Advertising.list;
+curl -o Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list' && mv Hijacking.list.new Hijacking.list;
+# curl -o Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list' && mv Reject.list.new Reject.list;
+
 sed -E -i -e '/^#|^$/d' -e '/^DOMAIN/!d' -e '/^DOMAIN-KEYWORD.*/d' AdBlock.list Advertising.list Hijacking.list Reject.list
 sed -E -i -e 's/REJECT$//g' -e 's/AdBlock$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
 
