@@ -8,21 +8,21 @@ if [ ! -f 'ori_white_domains.txt' ]; then
 fi
 
 cp 'ori_white_domains.txt' 'icn_temp.txt'
-fromdos ./*.txt
-fromdos -- *.py
+fromdos -- ./*.txt ./*.py
 python3 gwl.py
 
 (
 cd 'downloaded_rules' || exit
-fromdos ./*
-# find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/[^\S\r\n]*#[^\r\n]*//g'
-find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^include:/d' -e 's/[\t ]*#[^\r\n]*//g'
-find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -r -e '/^$/d' -e 's/^/\*\./g'
+fromdos -- ./*
+# find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^include:/d' -e 's/[^\S\r\n]*#[^\r\n]*//g'
+find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^include:/d' -e 's/[\t ]*#[^\r\n]*//g'
+find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^$/d' -e 's/^/\*\./g'
 
 find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
 # cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq > '../whitelist.txt'
 )
 
-sed -i -r -e 's/\s//g' -e 's/\*\./\n\*\./g' icn_temp.txt
+sed -i -E -e 's/\s//g' -e 's/\*\./\n\*\./g' -e '$a\''\n' icn_temp.txt
 < 'icn_temp.txt' sort | uniq > whitelist.txt
+sed -E -i '/^\s*$/d' whitelist.txt && fromdos -- ./*.txt
 rm -r 'downloaded_rules/' 'icn_temp.txt'

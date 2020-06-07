@@ -59,10 +59,10 @@ if [ ! -f 'ori_BlackList.txt' ]; then
     touch 'ori_BlackList.txt'
 fi
 cat ori_BlackList.txt AdBlock.list Advertising.list Hijacking.list Reject.list | sort | uniq > custom_blacklist.txt
+sed -E -i '$a\''\n' v2rayN_block_rules.txt custom_blacklist.txt
 cat v2rayN_block_rules.txt custom_blacklist.txt | sort | uniq > temp_v2rayN_block_rules.txt
+sed -E -i '/^\s*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
 /bin/mv -f temp_v2rayN_block_rules.txt v2rayN_block_rules.txt
-
-dos2unix ./*.txt
 
 ################################################################
 
