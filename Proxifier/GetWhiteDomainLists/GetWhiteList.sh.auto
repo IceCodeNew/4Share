@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd "$(dirname "$0")" || exit
+REPOS_ROOT='/github'
+
+cd "$REPOS_ROOT/4Share/Proxifier/GetWhiteDomainLists" || exit
 rm -r 'downloaded_rules/' 'whitelist.txt' 'icn_temp.txt'
 if [ ! -f 'ori_white_domains.txt' ]; then
     rm ori_white_domains.txt
@@ -9,7 +11,7 @@ fi
 
 cp 'ori_white_domains.txt' 'icn_temp.txt'
 fromdos -- ./*.txt ./*.py
-python3 gwl.py
+python3 'gwl.py'
 
 (
 cd 'downloaded_rules' || exit
