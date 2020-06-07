@@ -19,7 +19,7 @@ eth0.me
 ########## Blacklist from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt ##########
 
 # Ignored duplicates: 5155
-# Ignored entries due to the whitelist: 161
+# Ignored entries due to the whitelist: 264
 
 content.ad
 token.ad
@@ -953,10 +953,6 @@ appier.com
 appintop.com
 config.appjolt.com
 sdkapicdn.applanga.com
-advertising.apple.com
-iadmoo.apple.com
-iadsdk.apple.com
-banners.itunes.apple.com
 ais.applicaster.com
 ais-api.applicaster.com
 assets-production.applicaster.com
@@ -1180,104 +1176,6 @@ b4psads.com
 dkpartners.backstopsolutions.com
 prodlb.backstopsolutions.com
 api.badgeville.com
-a.baidu.com
-adm.baidu.com
-adscdn.baidu.com
-afd.baidu.com
-als.baidu.com
-anquan.baidu.com
-antivirus.baidu.com
-b.baidu.com
-baichuan.baidu.com
-dl-vip.bav.baidu.com
-dl2.bav.baidu.com
-download.bav.baidu.com
-bce.baidu.com
-bdplus.baidu.com
-click.bes.baidu.com
-dlsw.br.baidu.com
-j.br.baidu.com
-btlaunch.baidu.com
-bzclk.baidu.com
-cb.baidu.com
-cbjs.baidu.com
-cm.baidu.com
-cpro.baidu.com
-cpu.baidu.com
-crab.baidu.com
-crs.baidu.com
-datax.baidu.com
-dj1.baidu.com
-duclick.baidu.com
-dxp.baidu.com
-dzl.baidu.com
-e.baidu.com
-eclick.baidu.com
-eiv.baidu.com
-entry.baidu.com
-ers.baidu.com
-feed.baidu.com
-fexclick.baidu.com
-g.baidu.com
-w.gdown.baidu.com
-gimg.baidu.com
-gsp1.baidu.com
-hao123union.baidu.com
-hdj.baidu.com
-hm.baidu.com
-hmma.baidu.com
-hpd.baidu.com
-idm-su.baidu.com
-imageplus.baidu.com
-conf.international.baidu.com
-kstj.baidu.com
-loc.map.baidu.com
-ofloc.map.baidu.com
-mobads.baidu.com
-mobads-logs.baidu.com
-mobile-global.baidu.com
-mobojs.baidu.com
-plugin.mobopay.baidu.com
-msc.baidu.com
-mscbos.baidu.com
-msite.baidu.com
-mssp.baidu.com
-mtj.baidu.com
-nlog.baidu.com
-nsclick.baidu.com
-nsclickvideo.baidu.com
-openrcv.baidu.com
-dl.ops.baidu.com
-paimgcdn.baidu.com
-update.pan.baidu.com
-ad.player.baidu.com
-pos.baidu.com
-pups.baidu.com
-statsonline.pushct.baidu.com
-qianclick.baidu.com
-release.baidu.com
-rj.baidu.com
-rplog.baidu.com
-static.safe.baidu.com
-udc.safe.baidu.com
-sclick.baidu.com
-download.sd.baidu.com
-sestat.baidu.com
-shadu.baidu.com
-share.baidu.com
-sandbox.sjws.baidu.com
-sobar.baidu.com
-sp0.baidu.com
-sp1.baidu.com
-static.tieba.baidu.com
-toolbar.baidu.com
-union.baidu.com
-usp1.baidu.com
-utility.baidu.com
-stat.v.baidu.com
-pc.videoclick.baidu.com
-wm.baidu.com
-w.x.baidu.com
 baidustatic.com
 bannersnack.com
 adserver.barrapunto.com
@@ -3848,8 +3746,6 @@ srv.pixel.parsely.com
 static.parsely.com
 partnerearning.com
 backend.passivemonetizer.com
-b.stats.paypal.com
-slc.stats.paypal.com
 ads.pdbarea.com
 abtesting.perfectcorp.com
 appad-api-01.perfectcorp.com
@@ -4639,6 +4535,7 @@ appsdk.tanv.com
 tanx.com
 wb.110.taobao.com
 ai.taobao.com
+s.click.taobao.com
 count.taobao.com
 ip.taobao.com
 ju.taobao.com
@@ -6806,7 +6703,7 @@ n1275adserv.xyz
 ########## Blacklist from https://mirror1.malwaredomains.com/files/justdomains ##########
 
 # Ignored duplicates: 504
-# Ignored entries due to the whitelist: 2
+# Ignored entries due to the whitelist: 3
 
 absop.academy
 serasaexperian.accountant
@@ -7124,7 +7021,6 @@ halliwellcementrendering.com.au
 discover.haroldwheen.com.au
 hawaiianbodywork.com.au
 discover.hawkesburyshow.com.au
-heritagehighway.com.au
 hishenk.com.au
 chaseonline.chase.com.hobartspineandsports.com.au
 hocuscrocus.com.au
@@ -41733,8 +41629,8 @@ teads.tv
 
 ########## Blacklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 505
-# Ignored entries due to the whitelist: 8
+# Ignored duplicates: 502
+# Ignored entries due to the whitelist: 12
 
 ads.emirates.net.ae
 admotion.com.ar
@@ -42006,7 +41902,6 @@ b.aol.com
 mads.aol.com
 ads.web.aol.com
 banners.apnuk.com
-qwapi.apple.com
 a.aproductmsg.com
 apture.com
 arcadebanners.com
@@ -43962,8 +43857,8 @@ adsrv.iol.co.za
 
 ########## Blacklist from https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt ##########
 
-# Ignored duplicates: 2693
-# Ignored entries due to the whitelist: 7
+# Ignored duplicates: 2689
+# Ignored entries due to the whitelist: 11
 
 101com.com
 
@@ -44548,7 +44443,7 @@ affex.org
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
 # Ignored duplicates: 23521
-# Ignored entries due to the whitelist: 3
+# Ignored entries due to the whitelist: 6
 
 metrics.abbott
 smetrics.abbott
@@ -46109,8 +46004,6 @@ sstats.apartmentsearch.com
 smetrics.apexfitness.com
 smetrics.apmexpo.com
 srepdata.app.com
-metrics.apple.com
-securemetrics.apple.com
 analytics.applevacations.com
 ssl.appliedclinicaltrialsonline.com
 images.applyfleet.com
@@ -46306,7 +46199,6 @@ smetc.banfield.com
 lntvby.banggood.com
 svc.bangkokbank.com
 content.bankcardoffer.com
-smetrics-merch.bankofamerica.com
 sa.bankofinternet.com
 stats.bankofthewest.com
 content.bankoncit.com
