@@ -19,7 +19,7 @@ eth0.me
 ########## Blacklist from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt ##########
 
 # Ignored duplicates: 5155
-# Ignored entries due to the whitelist: 264
+# Ignored entries due to the whitelist: 157
 
 content.ad
 token.ad
@@ -269,6 +269,10 @@ apicdn.zoomanalytics.co
 cdn1.zoomanalytics.co
 ssl.zoomanalytics.co
 wcdn.zoomanalytics.co
+analytics.163.com
+crash.163.com
+crashlytics.163.com
+iad.g.163.com
 ads.1mobile.com
 api.1mobile.com
 1phads.com
@@ -1176,6 +1180,104 @@ b4psads.com
 dkpartners.backstopsolutions.com
 prodlb.backstopsolutions.com
 api.badgeville.com
+a.baidu.com
+adm.baidu.com
+adscdn.baidu.com
+afd.baidu.com
+als.baidu.com
+anquan.baidu.com
+antivirus.baidu.com
+b.baidu.com
+baichuan.baidu.com
+dl-vip.bav.baidu.com
+dl2.bav.baidu.com
+download.bav.baidu.com
+bce.baidu.com
+bdplus.baidu.com
+click.bes.baidu.com
+dlsw.br.baidu.com
+j.br.baidu.com
+btlaunch.baidu.com
+bzclk.baidu.com
+cb.baidu.com
+cbjs.baidu.com
+cm.baidu.com
+cpro.baidu.com
+cpu.baidu.com
+crab.baidu.com
+crs.baidu.com
+datax.baidu.com
+dj1.baidu.com
+duclick.baidu.com
+dxp.baidu.com
+dzl.baidu.com
+e.baidu.com
+eclick.baidu.com
+eiv.baidu.com
+entry.baidu.com
+ers.baidu.com
+feed.baidu.com
+fexclick.baidu.com
+g.baidu.com
+w.gdown.baidu.com
+gimg.baidu.com
+gsp1.baidu.com
+hao123union.baidu.com
+hdj.baidu.com
+hm.baidu.com
+hmma.baidu.com
+hpd.baidu.com
+idm-su.baidu.com
+imageplus.baidu.com
+conf.international.baidu.com
+kstj.baidu.com
+loc.map.baidu.com
+ofloc.map.baidu.com
+mobads.baidu.com
+mobads-logs.baidu.com
+mobile-global.baidu.com
+mobojs.baidu.com
+plugin.mobopay.baidu.com
+msc.baidu.com
+mscbos.baidu.com
+msite.baidu.com
+mssp.baidu.com
+mtj.baidu.com
+nlog.baidu.com
+nsclick.baidu.com
+nsclickvideo.baidu.com
+openrcv.baidu.com
+dl.ops.baidu.com
+paimgcdn.baidu.com
+update.pan.baidu.com
+ad.player.baidu.com
+pos.baidu.com
+pups.baidu.com
+statsonline.pushct.baidu.com
+qianclick.baidu.com
+release.baidu.com
+rj.baidu.com
+rplog.baidu.com
+static.safe.baidu.com
+udc.safe.baidu.com
+sclick.baidu.com
+download.sd.baidu.com
+sestat.baidu.com
+shadu.baidu.com
+share.baidu.com
+sandbox.sjws.baidu.com
+sobar.baidu.com
+sp0.baidu.com
+sp1.baidu.com
+static.tieba.baidu.com
+toolbar.baidu.com
+union.baidu.com
+usp1.baidu.com
+utility.baidu.com
+stat.v.baidu.com
+pc.videoclick.baidu.com
+wm.baidu.com
+w.x.baidu.com
 baidustatic.com
 bannersnack.com
 adserver.barrapunto.com
@@ -3167,6 +3269,9 @@ mgage.com
 ad.mi.com
 miaozhen.com
 send.microadinc.com
+mobile.pipe.aria.microsoft.com
+bingads.microsoft.com
+vortex.data.microsoft.com
 midasplayer.com
 midnightclicking.com
 client.midosoo.com
@@ -6225,6 +6330,8 @@ tags.w55c.net
 and-ads.pulse.weatherbug.net
 weborama.net
 crashlogs.whatsapp.net
+fsuseaad1.blob.core.windows.net
+rawtelemetry-west.servicebus.windows.net
 usersegment.wpdigital.net
 adserver.xpanama.net
 xq1.net
@@ -41629,8 +41736,8 @@ teads.tv
 
 ########## Blacklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 502
-# Ignored entries due to the whitelist: 12
+# Ignored duplicates: 503
+# Ignored entries due to the whitelist: 10
 
 ads.emirates.net.ae
 admotion.com.ar
@@ -42572,6 +42679,7 @@ methodcash.com
 mgid.com
 ads.mgnetwork.com
 miarroba.com
+advertising.microsoft.com
 microticker.com
 misstrends.com
 mixpanel.com
@@ -43857,8 +43965,8 @@ adsrv.iol.co.za
 
 ########## Blacklist from https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt ##########
 
-# Ignored duplicates: 2689
-# Ignored entries due to the whitelist: 11
+# Ignored duplicates: 2691
+# Ignored entries due to the whitelist: 9
 
 101com.com
 
@@ -44443,7 +44551,7 @@ affex.org
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
 # Ignored duplicates: 23521
-# Ignored entries due to the whitelist: 6
+# Ignored entries due to the whitelist: 3
 
 metrics.abbott
 smetrics.abbott
@@ -49407,6 +49515,9 @@ tr.nl.michollodehoy.com
 tr.welcome.michollodehoy.com
 adebis.micro-crf.com
 sstats.micron.com
+smetric.ads.microsoft.com
+target.microsoft.com
+vlscppe.microsoft.com
 smetrics.microtelinn.com
 smetrics.midnightlounge.com
 wdukge.midwayusa.com
@@ -57787,8 +57898,7 @@ metric.vodacom.co.za
 
 ########## Blacklist from https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/spy.txt ##########
 
-# Ignored duplicates: 12
-# Ignored entries due to the whitelist: 32
+# Ignored duplicates: 15
 
 api.cortana.ai
 bl3301-a.1drv.com
@@ -57830,6 +57940,28 @@ nexusrules.officeapps.live.com
 rad.live.com
 ssw.live.com
 watson.live.com
+browser.pipe.aria.microsoft.com
+nw-umwatson.events.data.microsoft.com
+umwatsonc.events.data.microsoft.com
+settings-sandbox.data.microsoft.com
+settings-win-ppe.data.microsoft.com
+vortex-sandbox.data.microsoft.com
+continuum.dds.microsoft.com
+cs.dds.microsoft.com
+ztd.dds.microsoft.com
+ieonlinews.microsoft.com
+teredo.ipv6.microsoft.com
+win10.ipv6.microsoft.com
+win1710.ipv6.microsoft.com
+win8.ipv6.microsoft.com
+redir.metaservices.microsoft.com
+spynet2.microsoft.com
+spynetalt.microsoft.com
+corp.sts.microsoft.com
+diagnostics.support.microsoft.com
+telemetry.microsoft.com
+telemetry.urs.microsoft.com
+watson.microsoft.com
 ac3.msn.com
 c.msn.com
 flex.msn.com
@@ -58065,11 +58197,18 @@ cds54.ory.llnw.net
 cds10.stn.llnw.net
 cds20005.stn.llnw.net
 cds30027.stn.llnw.net
+msedge.net
 compatexchange1.trafficmanager.net
 ieonlinews.trafficmanager.net
 settingsfd-geo.trafficmanager.net
 tele.trafficmanager.net
 cs1.wpc.v0cdn.net
+ceuswatcab01.blob.core.windows.net
+ceuswatcab02.blob.core.windows.net
+eaus2watcab01.blob.core.windows.net
+eaus2watcab02.blob.core.windows.net
+weus2watcab01.blob.core.windows.net
+weus2watcab02.blob.core.windows.net
 
 
 ########## Blacklist from file:custom_blacklist.txt ##########
