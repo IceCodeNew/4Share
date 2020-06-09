@@ -26,7 +26,7 @@ cd 'downloaded_rules' || exit
 dos2unix -- ./*
 # find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^include:/d' -e 's/[^\S\r\n]*#[^\r\n]*//g'
 find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^include:/d' -e 's/[\t ]*#[^\r\n]*//g'
-find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^$/d' -e 's/^/\*\./g'
+find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g'
 
 find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
 # cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq > '../whitelist.txt'
