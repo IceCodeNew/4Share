@@ -94,8 +94,8 @@ sed -E -i 's!^# (https:\/\/www\.malwaredomainlist\.com\/hostslist\/hosts\.txt)!\
 sed -E -i 's!^# (https:\/\/mirror1\.malwaredomains\.com\/files\/justdomains)!\1!' domains-blacklist.conf
 sed -E -i 's!^# (https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\1!' domains-blacklist.conf
 sed -E -i 's!^# (https:\/\/pgl\.yoyo\.org\/adservers\/serverlist\.php\?hostformat=nohtml)!\1!' domains-blacklist.conf
-sed -E -i 's!^# (https:\/\/dbl\.oisd\.nl\/)!\1!' domains-blacklist.conf
-sed -E -i 's!(^https:\/\/hosts\.oisd\.nl\/light)!# \1!' domains-blacklist.conf
+sed -E -i 's!(^https:\/\/dbl\.oisd\.nl\/)!# \1!' domains-blacklist.conf
+sed -E -i 's!^# (https:\/\/hosts\.oisd\.nl\/light)!\1!' domains-blacklist.conf
 
 sed -E -i '$a\# custom_blacklist.txt\nfile:custom_blacklist.txt' domains-blacklist.conf
 python -i generate-domains-blacklist.py > domain-based-blacklist.txt
