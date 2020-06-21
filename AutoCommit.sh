@@ -14,6 +14,10 @@ find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 # 拷贝最新文件
 /bin/cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
 /bin/cp -f "$REPOS_ROOT/china_ip_list/china_ip_list.txt" ./
+(
+cd "$REPOS_ROOT/china-operator-ip/" || exit
+git reset --hard feb708afca976dca2e94828058b680e3b0b65848
+)
 /bin/mv -f "$REPOS_ROOT/china-operator-ip/china.txt" ./china-ipv4.txt
 /bin/mv -f "$REPOS_ROOT/china-operator-ip/china6.txt" ./china-ipv6.txt
 fromdos china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
