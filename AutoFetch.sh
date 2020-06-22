@@ -54,4 +54,3 @@ if [ $stat_dnsmasq -ne 0 ] || [ $stat_chinaip -ne 0 ] || [ $stat_china_operator_
 else
     exit 0
 fi
-
