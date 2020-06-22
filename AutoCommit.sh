@@ -14,8 +14,8 @@ find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 # 拷贝最新文件
 /bin/cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
 /bin/cp -f "$REPOS_ROOT/china_ip_list/china_ip_list.txt" ./
-/bin/mv -f "$REPOS_ROOT/china-operator-ip/china.txt" ./china-ipv4.txt
-/bin/mv -f "$REPOS_ROOT/china-operator-ip/china6.txt" ./china-ipv6.txt
+/bin/cp -f "$REPOS_ROOT/china-operator-ip/china.txt" ./china-ipv4.txt
+/bin/cp -f "$REPOS_ROOT/china-operator-ip/china6.txt" ./china-ipv6.txt
 fromdos china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
