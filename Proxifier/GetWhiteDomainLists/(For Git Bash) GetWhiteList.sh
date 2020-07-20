@@ -32,7 +32,8 @@ find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
 # cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq > '../whitelist.txt'
 )
 
-sed -i -E -e 's/\s//g' -e 's/\*\./\n\*\./g' -e '$a\''\n' -e '/scholar.google/d' icn_temp.txt
+sed -i -E -e 's/\s//g' -e 's/\*\./\n\*\./g' -e '$a\''\n' -e '/scholar.google/d' 'icn_temp.txt'
+perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'icn_temp.txt'
 < 'icn_temp.txt' sort | uniq > whitelist.txt
 sed -E -i '/^\s*$/d' whitelist.txt && dos2unix -- ./*.txt
 rm -r 'downloaded_rules/' 'icn_temp.txt'
