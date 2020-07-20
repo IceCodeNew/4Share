@@ -24,7 +24,11 @@ def start_yield(category: str):
 
 
 start_yield('geolocation-cn')
-start_yield('category-scholar-!cn')
+start_yield('clarivate')
+start_yield('doi')
+start_yield('elsevier')
+start_yield('sciencedirect')
+start_yield('springer')
 
 results = ThreadPool(8).imap_unordered(download_file.download_file, urls)
 for path in results:
