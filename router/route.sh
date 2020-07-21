@@ -22,11 +22,11 @@ OPS=$1
 # route $OPS -net ${IP_SEGMENT} ${ROUTE_GW}
 # Generate:
 # wget -qo- https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt
-# sed -i -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
+# sed -i -E -e 's/^/route\ \${OPS}\ -net\ &/g' -e 's/$/&\ \${ROUTE_GW}/g' china_ip_list.txt
 
 # 另一边要用到的命令：
 # wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
-# sed -i 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
+# sed -i -E 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 
 route ${OPS} -net 1.0.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.0.2.0/23 ${ROUTE_GW}
@@ -2978,6 +2978,8 @@ route ${OPS} -net 110.156.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 110.165.32.0/22 ${ROUTE_GW}
 route ${OPS} -net 110.165.36.0/23 ${ROUTE_GW}
 route ${OPS} -net 110.165.42.0/23 ${ROUTE_GW}
+route ${OPS} -net 110.165.44.0/24 ${ROUTE_GW}
+route ${OPS} -net 110.165.46.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.165.48.0/23 ${ROUTE_GW}
 route ${OPS} -net 110.165.51.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.165.52.0/22 ${ROUTE_GW}
@@ -4071,6 +4073,7 @@ route ${OPS} -net 156.242.6.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.242.8.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.247.0.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.247.16.0/20 ${ROUTE_GW}
+route ${OPS} -net 156.249.2.0/23 ${ROUTE_GW}
 route ${OPS} -net 156.249.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 156.252.22.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.253.32.0/20 ${ROUTE_GW}
@@ -4273,9 +4276,7 @@ route ${OPS} -net 180.210.233.0/24 ${ROUTE_GW}
 route ${OPS} -net 180.210.236.0/22 ${ROUTE_GW}
 route ${OPS} -net 180.212.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 180.222.224.0/19 ${ROUTE_GW}
-route ${OPS} -net 180.223.0.0/18 ${ROUTE_GW}
-route ${OPS} -net 180.223.80.0/20 ${ROUTE_GW}
-route ${OPS} -net 180.223.96.0/19 ${ROUTE_GW}
+route ${OPS} -net 180.223.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 180.223.129.0/24 ${ROUTE_GW}
 route ${OPS} -net 180.223.130.0/23 ${ROUTE_GW}
 route ${OPS} -net 180.223.132.0/22 ${ROUTE_GW}
@@ -4345,6 +4346,7 @@ route ${OPS} -net 183.192.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 185.10.104.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.75.172.0/23 ${ROUTE_GW}
 route ${OPS} -net 185.75.174.0/24 ${ROUTE_GW}
+route ${OPS} -net 185.78.106.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.109.236.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.121.162.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.121.169.0/24 ${ROUTE_GW}
