@@ -20,7 +20,7 @@ find . -type f -print0 | xargs -0 dos2unix
 cd 'downloaded_rules' || exit
 while :
 do
-    find 'geolocation-cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py' 'geolocation-cn'
+    find 'geolocation-cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$|ads/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py' 'geolocation-cn'
     [[ ! -d 'geolocation-cn.d' ]] && break
 done
 sed -i -E -e '/^#|^$|ads/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' 'geolocation-cn'
@@ -28,7 +28,7 @@ mv 'geolocation-cn' '../tmp_whitelist.txt'
 
 while :
 do
-    find 'category-scholar-!cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py' 'category-scholar-!cn'
+    find 'category-scholar-!cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$|ads/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py' 'category-scholar-!cn'
     [[ ! -d 'geolocation-cn.d' ]] && break
 done
 sed -i -E -e '/^#|^$|ads/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' 'category-scholar-!cn'
