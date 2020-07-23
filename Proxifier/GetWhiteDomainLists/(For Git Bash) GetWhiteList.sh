@@ -18,20 +18,25 @@ find . -type f -print0 | xargs -0 dos2unix
 
 (
 cd 'downloaded_rules' || exit
+while :
+do
+    find 'geolocation-cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py' 'geolocation-cn'
+    [[ ! -d 'geolocation-cn.d' ]] && break
+done
+sed -i -E -e '/^#|^$|ads/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' 'geolocation-cn'
+mv 'geolocation-cn' '../tmp_whitelist.txt'
 
-find 'geolocation-cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py'
-sed -i -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' '../tmp_whitelist.txt' 'geolocation-cn'
-cat 'geolocation-cn' >> '../tmp_whitelist.txt'
-
-find 'category-scholar-!cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py'
-sed -i -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' '../tmp_scholar_not_cn.txt' 'category-scholar-!cn'
-cat 'category-scholar-!cn' >> '../tmp_scholar_not_cn.txt'
+while :
+do
+    find 'category-scholar-!cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py' 'category-scholar-!cn'
+    [[ ! -d 'geolocation-cn.d' ]] && break
+done
+sed -i -E -e '/^#|^$|ads/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' 'category-scholar-!cn'
+mv 'category-scholar-!cn' '../tmp_scholar_not_cn.txt'
 )
 
-if [ ! -f 'ori_white_domains.txt' ]; then
-    cat 'ori_white_domains.txt' >> 'tmp_whitelist.txt'
-fi
-sed -i -E -e 's/\s//g' -e 's/\*\./\n\*\./g' -e '$a\''\n' -e '/scholar.google/d' 'tmp_whitelist.txt'
+[[ ! -f 'ori_white_domains.txt' ]] && cat 'ori_white_domains.txt' >> 'tmp_whitelist.txt'
+sed -i -E -e 's/\s//g' -e 's/\*\./\n\*\./g' -e '$a\''\n' -e '/scholar.google/d' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'tmp_whitelist.txt'
 < 'tmp_whitelist.txt' sort | uniq > 'whitelist.txt'
 < 'tmp_scholar_not_cn.txt' sort | uniq > 'scholar_not_cn.txt'
