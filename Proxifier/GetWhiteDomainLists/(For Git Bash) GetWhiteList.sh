@@ -11,31 +11,31 @@
 set -x
 
 cd "$(dirname "$0")" || exit
-rm -r 'downloaded_rules/' 'whitelist.txt' 'icn_temp.txt'
-if [ ! -f 'ori_white_domains.txt' ]; then
-    rm ori_white_domains.txt
-    touch ori_white_domains.txt
-fi
+rm -r 'downloaded_rules/' 'whitelist.txt' 'scholar_not_cn.txt' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 
-cp 'ori_white_domains.txt' 'icn_temp.txt'
-dos2unix -- ./*.txt ./*.py
-winpty "$(which python)" 'start_yield.py' 'geolocation-cn'
+winpty "$(which python)" 'start_yield.py' 'geolocation-cn' 'category-scholar-!cn'
+find . -type f -print0 | xargs -0 dos2unix
 
 (
 cd 'downloaded_rules' || exit
-dos2unix -- ./*
-# find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^include:/d' -e 's/[^\S\r\n]*#[^\r\n]*//g'
-find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^include:/d' -e 's/[\t ]*#[^\r\n]*//g'
-find . -maxdepth 1 -type f -print0 | xargs -0 sed -i -E -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g'
 
-find . -maxdepth 1 -type f -print0 | xargs -0 cat >> '../icn_temp.txt'
-# cat <(find . -maxdepth 1 -type f -print0 | xargs -0 cat) '../icn_temp.txt' | sort | uniq > '../whitelist.txt'
+find 'geolocation-cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py'
+sed -i -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' '../tmp_whitelist.txt' 'geolocation-cn'
+cat 'geolocation-cn' >> '../tmp_whitelist.txt'
+
+find 'category-scholar-!cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py'
+sed -i -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' -e '/^$|^[a-zA-Z]+:/d' -e 's/^/\*\./g' '../tmp_scholar_not_cn.txt' 'category-scholar-!cn'
+cat 'category-scholar-!cn' >> '../tmp_scholar_not_cn.txt'
 )
 
-sed -i -E -e 's/\s//g' -e 's/\*\./\n\*\./g' -e '$a\''\n' -e '/scholar.google/d' 'icn_temp.txt'
-perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'icn_temp.txt'
-< 'icn_temp.txt' sort | uniq > whitelist.txt
-sed -E -i '/^\s*$/d' whitelist.txt && dos2unix -- ./*.txt
-rm -r 'downloaded_rules/' 'icn_temp.txt'
+if [ ! -f 'ori_white_domains.txt' ]; then
+    cat 'ori_white_domains.txt' >> 'tmp_whitelist.txt'
+fi
+sed -i -E -e 's/\s//g' -e 's/\*\./\n\*\./g' -e '$a\''\n' -e '/scholar.google/d' 'tmp_whitelist.txt'
+perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'tmp_whitelist.txt'
+< 'tmp_whitelist.txt' sort | uniq > 'whitelist.txt'
+< 'tmp_scholar_not_cn.txt' sort | uniq > 'scholar_not_cn.txt'
+sed -E -i '/^\s*$/d' 'whitelist.txt' 'scholar_not_cn.txt' && dos2unix -- ./*.txt
+rm -r 'downloaded_rules/' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 
 set +x
