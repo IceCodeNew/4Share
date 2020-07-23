@@ -11,7 +11,7 @@ fi
 
 cp 'ori_white_domains.txt' 'icn_temp.txt'
 fromdos -- ./*.txt ./*.py
-python3 'gwl.py'
+python3 'start_yield.py' 'geolocation-cn'
 
 (
 cd 'downloaded_rules' || exit

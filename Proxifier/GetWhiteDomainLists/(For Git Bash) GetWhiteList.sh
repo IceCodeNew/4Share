@@ -19,7 +19,7 @@ fi
 
 cp 'ori_white_domains.txt' 'icn_temp.txt'
 dos2unix -- ./*.txt ./*.py
-winpty "$(which python)" 'gwl.py'
+winpty "$(which python)" 'start_yield.py' 'geolocation-cn'
 
 (
 cd 'downloaded_rules' || exit
