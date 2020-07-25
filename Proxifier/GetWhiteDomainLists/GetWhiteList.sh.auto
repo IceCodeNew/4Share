@@ -15,7 +15,8 @@ do
     find 'geolocation-cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | python3 '../deep_diger.py' 'geolocation-cn'
     [[ ! -d 'geolocation-cn.d' ]] && break
 done
-sed -i -E -e 's/[\t ]*[#@][^\r\n]*//g' -e '/^#|^$/d' 'geolocation-cn'
+sed -i -E -e 's/[\t ]*[#@][^\r\n]*//g' -e '/^#|^$|^\*\.$/d' 'geolocation-cn'
+sed -i -E -e '/googleapis\.|gstatic\.|recaptcha\.|ampproject\./d' 'geolocation-cn'
 mv 'geolocation-cn' '../tmp_whitelist.txt'
 
 while :
@@ -24,7 +25,7 @@ do
     find 'category-scholar-!cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | python3 '../deep_diger.py' 'category-scholar-!cn'
     [[ ! -d 'geolocation-cn.d' ]] && break
 done
-sed -i -E -e 's/[\t ]*[#@][^\r\n]*//g' -e '/^#|^$/d' 'category-scholar-!cn'
+sed -i -E -e 's/[\t ]*[#@][^\r\n]*//g' -e '/^#|^$|^\*\.$/d' 'category-scholar-!cn'
 mv 'category-scholar-!cn' '../tmp_scholar_not_cn.txt'
 )
 
