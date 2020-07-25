@@ -1,27 +1,19 @@
 import argparse
 import os
-import re
 from multiprocessing.pool import ThreadPool
-from typing import List, Pattern
+from shutil import move
+from typing import List
 
 from download_file import download_file
-
-pattern: Pattern = re.compile(r'^include:')
-root_path = os.path.abspath(os.path.dirname(__file__))
+from get_included_urls import get_included_urls
 
 
 def start_yield(category: str):
-    urls = []
     download_file('https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/' + category)
-    file_name = os.path.join(os.getcwd(), category)
-    with open(file_name, 'r', encoding='utf-8') as f:
-        tmplist: List = f.readlines()
-        for line in tmplist:
-            _: List = pattern.split(line)
-            if _[0] == '':
-                urls.append(
-                    'https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/' + _[1].rstrip())
-
+    move(category, category + '.ori')
+    with open(category, 'w', encoding='utf-8') as f:
+        urls: List = get_included_urls(category + '.ori', f)
+    os.remove(category + '.ori')
     os.makedirs(category + '.d', exist_ok=False)
     os.chdir(category + '.d')
     results = ThreadPool(8).imap_unordered(download_file, urls)
@@ -34,6 +26,7 @@ parser.add_argument('data_name', metavar='DataName', nargs='+',
                     help='The name of category-data you would like to specific')
 args = parser.parse_args()
 _args = list(vars(args).values())[0]
+root_path = os.path.abspath(os.path.dirname(__file__))
 for _name in _args:
     dir_name = os.path.join(root_path, 'downloaded_rules')
     os.makedirs(dir_name, exist_ok=True)
