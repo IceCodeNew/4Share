@@ -24,7 +24,7 @@ do
     [[ ! -d 'geolocation-cn.d' ]] && break
 done
 sed -i -E -e 's/[\t ]*[#@][^\r\n]*//g' -e '/^#|^$|^\*\.$/d' 'geolocation-cn'
-sed -i -E -e '/googleapis\.|gstatic\.|recaptcha\.|ampproject\./d' 'geolocation-cn'
+sed -i -E -e '/\.googleapis\.|\.gstatic\.|\.recaptcha\.|\.ampproject\./d' 'geolocation-cn'
 mv 'geolocation-cn' '../tmp_whitelist.txt'
 
 while :
