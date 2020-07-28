@@ -9,7 +9,7 @@
 # cd $REPLY
 
 cd "$(dirname "$0")" || exit
-cd '../../dnscrypt-proxy/utils/generate-domains-blocklists/' || exit
+cd '../../dnscrypt-proxy/utils/generate-domains-blocklists' || exit
 git fetch --all && git reset --hard origin/master > /dev/null 2>&1
 
 sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt)!\1!' domains-blocklist.conf
@@ -50,29 +50,26 @@ winpty "$(which python)" fws.py
 
 /bin/mv -f v2rayN_block_rules.txt '../v2rayN'
 cd '../v2rayN'
-# curl -o AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/g' AdBlock.list.new && mv AdBlock.list.new AdBlock.list;
-curl -o Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list' && mv Advertising.list.new Advertising.list;
-curl -o Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list' && mv Hijacking.list.new Hijacking.list;
-# curl -o Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list' && mv Reject.list.new Reject.list;
+# curl -LR -o AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/g' AdBlock.list.new && mv AdBlock.list.new AdBlock.list;
+curl -LR -o Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list' && mv Advertising.list.new Advertising.list;
+curl -LR -o Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list' && mv Hijacking.list.new Hijacking.list;
+# curl -LR -o Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list' && mv Reject.list.new Reject.list;
 
-sed -E -i -e '/^#|^$/d' -e '/^DOMAIN/!d' -e '/^DOMAIN-KEYWORD.*/d' AdBlock.list Advertising.list Hijacking.list Reject.list
-sed -E -i -e 's/REJECT$//g' -e 's/AdBlock$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
+sed -i -E -e '/^#|^$/d' -e '/^DOMAIN/!d' -e '/^DOMAIN-KEYWORD.*/d' AdBlock.list Advertising.list Hijacking.list Reject.list
+sed -i -E -e 's/REJECT$//g' -e 's/AdBlock$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
 
-if [ ! -f 'ori_BlackList.txt' ]; then
-    rm -rf -- 'ori_BlackList.txt'
-    touch 'ori_BlackList.txt'
-fi
-cat ori_BlackList.txt AdBlock.list Advertising.list Hijacking.list Reject.list | sort | uniq > custom_blacklist.txt
+cat AdBlock.list Advertising.list Hijacking.list Reject.list > custom_blacklist.txt
+if [[ -f 'ori_BlackList.txt' ]] && cat ori_BlackList.txt >> custom_blacklist.txt
 sed -E -i '$a\''\n' v2rayN_block_rules.txt custom_blacklist.txt
 cat v2rayN_block_rules.txt custom_blacklist.txt | sort | uniq > temp_v2rayN_block_rules.txt
-sed -E -i '/^\s*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
+sed -E -i '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
 /bin/mv -f temp_v2rayN_block_rules.txt v2rayN_block_rules.txt
 
 ################################################################
 
 /bin/mv -f custom_blacklist.txt "$REPOS_ROOT/dnscrypt-proxy/utils/generate-domains-blocklists/custom_blacklist.txt"
 cd "$(dirname "$0")" || exit
-cd '../../dnscrypt-proxy/utils/generate-domains-blocklists/' || exit
+cd '../../dnscrypt-proxy/utils/generate-domains-blocklists' || exit
 
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/Spotify-Ad-free\/master\/filters\/Spotify-HOSTS\.txt)!# \1!' domains-blocklist.conf
@@ -102,4 +99,4 @@ python -i generate-domains-blocklist.py > domain-based-blacklist.txt
 
 ################################################################
 
-/bin/mv -f mybase.txt domain-based-blacklist.txt "$(dirname "$0")"
+/bin/mv -f domain-based-blacklist.txt "$(dirname "$0")" && rm mybase.txt
