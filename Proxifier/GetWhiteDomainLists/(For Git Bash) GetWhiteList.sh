@@ -37,7 +37,7 @@ sed -i -E -e 's/[\t ]*[#@][^\r\n]*//g' -e '/^#|^$|^\*\.$/d' 'category-scholar-!c
 mv 'category-scholar-!cn' '../tmp_scholar_not_cn.txt'
 )
 
-[[ ! -f 'ori_white_domains.txt' ]] && cat 'ori_white_domains.txt' >> 'tmp_whitelist.txt' \
+[[ -f 'ori_white_domains.txt' ]] && cat 'ori_white_domains.txt' >> 'tmp_whitelist.txt' \
 && sed -E 's/\*\./domain:/g' 'ori_white_domains.txt' > 'extra_dlc_cn.txt'
 perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'tmp_whitelist.txt'
 sed -E -i '/^[\t\f\v ]*$/d' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
