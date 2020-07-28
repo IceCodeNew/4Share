@@ -99,4 +99,4 @@ python -i generate-domains-blocklist.py > domain-based-blacklist.txt
 
 ################################################################
 
-/bin/mv -f domain-based-blacklist.txt "$(dirname "$0")" && rm mybase.txt
+/bin/mv -f 'domain-based-blacklist.txt' "$(dirname "$0")" && rm 'mybase.txt' 'custom_blacklist.txt'
