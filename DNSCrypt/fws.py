@@ -9,11 +9,11 @@ def convert(raw: str):
     pattern_1 = re.compile(r'\.\*\\\.')
     _: Tuple = pattern_0.subn(r'.*\.', raw)
     if _[1] > 1:
-        v2raylist.append(pattern_1.sub(r'regexp:', _[0], 1).rstrip() + ',\n')
+        v2raylist.append(pattern_1.sub(r'regexp:', _[0], 1).rstrip() + '\n')
     elif _[1] == 1:
-        v2raylist.append(pattern_1.sub(r'domain:', _[0], 1).rstrip() + ',\n')
+        v2raylist.append(pattern_1.sub(r'domain:', _[0], 1).rstrip() + '\n')
     else:
-        v2raylist.append('domain:' + raw.rstrip() + ',\n')
+        v2raylist.append('domain:' + raw.rstrip() + '\n')
 
 
 with open('mybase.txt', 'r') as raw_rules:
