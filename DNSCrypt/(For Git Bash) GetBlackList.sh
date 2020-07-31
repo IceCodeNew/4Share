@@ -50,19 +50,19 @@ winpty "$(which python)" fws.py
 
 /bin/mv -f v2rayN_block_rules.txt '../v2rayN'
 cd '../v2rayN'
-# curl -LR -o AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/g' AdBlock.list.new && mv AdBlock.list.new AdBlock.list;
-curl -LR -o Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list' && mv Advertising.list.new Advertising.list;
-curl -LR -o Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list' && mv Hijacking.list.new Hijacking.list;
-# curl -LR -o Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list' && mv Reject.list.new Reject.list;
+# curl -LR -o AdBlock.list.new 'https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/AdBlock.list' && sed -E -i 's/^HOST/DOMAIN/' AdBlock.list.new && /bin/mv -f AdBlock.list.new AdBlock.list;
+curl -LR -o Advertising.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list' && /bin/mv -f Advertising.list.new Advertising.list;
+curl -LR -o Hijacking.list.new 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list' && /bin/mv -f Hijacking.list.new Hijacking.list;
+# curl -LR -o Reject.list.new 'https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list' && /bin/mv -f Reject.list.new Reject.list;
 
 sed -i -E -e '/^#|^$/d' -e '/^DOMAIN/!d' -e '/^DOMAIN-KEYWORD.*/d' AdBlock.list Advertising.list Hijacking.list Reject.list
-sed -i -E -e 's/REJECT$//g' -e 's/AdBlock$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
+sed -i -E -e 's/REJECT$//' -e 's/AdBlock$//' -e 's/^DOMAIN,/full:/' -e 's/^DOMAIN-SUFFIX,/domain:/' AdBlock.list Advertising.list Hijacking.list Reject.list
 
 cat AdBlock.list Advertising.list Hijacking.list Reject.list > custom_blacklist.txt
 [[ -f 'ori_BlackList.txt' ]] && cat ori_BlackList.txt >> custom_blacklist.txt
-sed -E -i '$a\''\n' v2rayN_block_rules.txt custom_blacklist.txt
+sed -i -E -e '$a\''\n' -e 's/,$//' v2rayN_block_rules.txt custom_blacklist.txt
 cat v2rayN_block_rules.txt custom_blacklist.txt | sort | uniq > temp_v2rayN_block_rules.txt
-sed -E -i '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
+sed -i -E '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
 /bin/mv -f temp_v2rayN_block_rules.txt v2rayN_block_rules.txt
 
 ################################################################
