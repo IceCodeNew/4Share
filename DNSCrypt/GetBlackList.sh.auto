@@ -51,7 +51,7 @@ sed -i -E -e '/^#|^$/d' -e '/^DOMAIN/!d' -e '/^DOMAIN-KEYWORD.*/d' AdBlock.list 
 sed -i -E -e 's/REJECT$//g' -e 's/AdBlock$//g' -e 's/^DOMAIN,/full:/g' -e 's/^DOMAIN-SUFFIX,/domain:/g' AdBlock.list Advertising.list Hijacking.list Reject.list
 
 cat AdBlock.list Advertising.list Hijacking.list Reject.list > custom_blacklist.txt
-if [[ -f 'ori_BlackList.txt' ]] && cat ori_BlackList.txt >> custom_blacklist.txt
+[[ -f 'ori_BlackList.txt' ]] && cat ori_BlackList.txt >> custom_blacklist.txt
 sed -E -i '$a\''\n' v2rayN_block_rules.txt custom_blacklist.txt
 cat v2rayN_block_rules.txt custom_blacklist.txt | sort | uniq > temp_v2rayN_block_rules.txt
 sed -E -i '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && fromdos ./*.txt
