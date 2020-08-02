@@ -1,8 +1,8 @@
 #!/bin/bash
 
-REPOS_ROOT='/github'
+repos_root='/github'
 
-cd "$REPOS_ROOT/4Share/" || exit
+cd "$repos_root/4Share/" || exit
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
 find . -type f -iname route.sh -print0 | xargs -0 rm --
 find . -type f -iname china_ip_list.txt -print0 | xargs -0 rm --
@@ -12,10 +12,10 @@ find . -type f -iregex ".*ip.*_list_.?.txt" -print0 | xargs -0 rm --
 find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 
 # 拷贝最新文件
-/bin/cp -f "$REPOS_ROOT/dnsmasq-china-list/accelerated-domains.china.conf" ./
-/bin/cp -f "$REPOS_ROOT/china_ip_list/china_ip_list.txt" ./
-/bin/cp -f "$REPOS_ROOT/china-operator-ip/china.txt" ./china-ipv4.txt
-/bin/cp -f "$REPOS_ROOT/china-operator-ip/china6.txt" ./china-ipv6.txt
+/bin/cp -f "$repos_root/dnsmasq-china-list/accelerated-domains.china.conf" ./
+/bin/cp -f "$repos_root/china_ip_list/china_ip_list.txt" ./
+/bin/cp -f "$repos_root/china-operator-ip/china.txt" ./china-ipv4.txt
+/bin/cp -f "$repos_root/china-operator-ip/china6.txt" ./china-ipv6.txt
 fromdos china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理

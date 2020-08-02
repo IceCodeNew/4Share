@@ -67,7 +67,7 @@ sed -i -E '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
 
 ################################################################
 
-/bin/mv -f custom_blacklist.txt "$REPOS_ROOT/dnscrypt-proxy/utils/generate-domains-blocklists/custom_blacklist.txt"
+/bin/mv -f custom_blacklist.txt "$repos_root/dnscrypt-proxy/utils/generate-domains-blocklists/custom_blacklist.txt"
 cd "$(dirname "$0")" || exit
 cd '../../dnscrypt-proxy/utils/generate-domains-blocklists' || exit
 

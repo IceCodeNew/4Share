@@ -1,8 +1,8 @@
 #!/bin/bash
 
-REPOS_ROOT='/github'
+repos_root='/github'
 
-cd "$REPOS_ROOT/dnscrypt-proxy/utils/generate-domains-blocklists" || exit
+cd "$repos_root/dnscrypt-proxy/utils/generate-domains-blocklists" || exit
 git fetch --all && git reset --hard origin/master > /dev/null 2>&1
 
 sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt)!\1!' domains-blocklist.conf
@@ -33,8 +33,8 @@ python3 generate-domains-blocklist.py > mybase.txt
 
 ################################################################
 
-/bin/mv -f mybase.txt "$REPOS_ROOT/4Share/DNSCrypt"
-cd "$REPOS_ROOT/4Share/DNSCrypt" || exit
+/bin/mv -f mybase.txt "$repos_root/4Share/DNSCrypt"
+cd "$repos_root/4Share/DNSCrypt" || exit
 /bin/rm -f '../v2rayN/v2rayN_block_rules.txt' '../v2rayN/custom_blacklist.txt'
 
 fromdos fws.py ./*.txt
@@ -59,8 +59,8 @@ sed -i -E '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && fromdos ./*.txt
 
 ################################################################
 
-/bin/mv -f custom_blacklist.txt "$REPOS_ROOT/dnscrypt-proxy/utils/generate-domains-blocklists/custom_blacklist.txt"
-cd "$REPOS_ROOT/dnscrypt-proxy/utils/generate-domains-blocklists" || exit
+/bin/mv -f custom_blacklist.txt "$repos_root/dnscrypt-proxy/utils/generate-domains-blocklists/custom_blacklist.txt"
+cd "$repos_root/dnscrypt-proxy/utils/generate-domains-blocklists" || exit
 
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/Spotify-Ad-free\/master\/filters\/Spotify-HOSTS\.txt)!# \1!' domains-blocklist.conf
