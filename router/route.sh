@@ -4171,7 +4171,7 @@ route ${OPS} -net 163.181.0.0/23 ${ROUTE_GW}
 route ${OPS} -net 163.181.2.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.15.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.16.0/24 ${ROUTE_GW}
-route ${OPS} -net 163.181.18.0/23 ${ROUTE_GW}
+route ${OPS} -net 163.181.18.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.20.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.22.0/24 ${ROUTE_GW}
 route ${OPS} -net 163.181.25.0/24 ${ROUTE_GW}
