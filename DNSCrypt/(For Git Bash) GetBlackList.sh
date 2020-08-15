@@ -16,7 +16,7 @@ sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlo
 sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_malvertising\.txt)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_tracking\.txt)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_ad\.txt)!\1!' domains-blocklist.conf
-# sed -E -i 's!^# (https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\1!' domains-blocklist.conf
+sed -E -i 's!^# (https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\1!' domains-blocklist.conf
 
 ### sed -E -i 's!(^https:\/\/isc\.sans\.edu\/feeds\/suspiciousdomains_High\.txt)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt)!# \1!' domains-blocklist.conf
@@ -34,7 +34,6 @@ sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/AdAway\/adaway\.github\.io
 sed -E -i 's!(^https:\/\/pgl\.yoyo\.org\/adservers\/serverlist\.php\?hostformat=nohtml)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/dbl\.oisd\.nl\/)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/hosts\.oisd\.nl\/light)!# \1!' domains-blocklist.conf
-sed -E -i 's!(^https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!# \1!' domains-blocklist.conf
 
 sed -E -i '/^# custom_blacklist\.txt$/,$d' domains-blocklist.conf
 # Append ```os._exit(0)``` and ```import os```
@@ -82,7 +81,6 @@ sed -E -i 's!(^https:\/\/adguardteam\.github\.io\/AdGuardSDNSFilter\/Filters\/fi
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/AdAway\/adaway\.github\.io\/master\/hosts\.txt)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/dbl\.oisd\.nl\/)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/hosts\.oisd\.nl\/light)!# \1!' domains-blocklist.conf
-sed -E -i 's!(^https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!# \1!' domains-blocklist.conf
 
 ### sed -E -i 's!^# (https:\/\/isc\.sans\.edu\/feeds\/suspiciousdomains_High\.txt)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt)!\1!' domains-blocklist.conf
@@ -93,7 +91,7 @@ sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_ad\
 sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/Spam404\/lists\/master\/main-blacklist\.txt)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/www\.malwaredomainlist\.com\/hostslist\/hosts\.txt)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/mirror1\.malwaredomains\.com\/files\/justdomains)!\1!' domains-blocklist.conf
-# sed -E -i 's!^# (https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\1!' domains-blocklist.conf
+sed -E -i 's!^# (https:\/\/ssl\.bblck\.me\/blacklists\/domain-list\.txt)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/pgl\.yoyo\.org\/adservers\/serverlist\.php\?hostformat=nohtml)!\1!' domains-blocklist.conf
 
 sed -E -i '$a\# custom_blacklist.txt\nfile:custom_blacklist.txt' domains-blocklist.conf
