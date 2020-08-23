@@ -4060,7 +4060,6 @@ route ${OPS} -net 156.226.255.27/32 ${ROUTE_GW}
 route ${OPS} -net 156.227.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 156.227.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 156.229.1.0/24 ${ROUTE_GW}
-route ${OPS} -net 156.230.9.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.230.11.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.230.12.0/23 ${ROUTE_GW}
 route ${OPS} -net 156.230.16.0/20 ${ROUTE_GW}
