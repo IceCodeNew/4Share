@@ -7,37 +7,45 @@ cd "$repos_root/4Share/Clash" || exit
 
 (
 "mkdir" -p 'ICN/' && cd 'ICN/' || exit
-"curl" -s -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' \
-| sed -E -e '/[-@]ads$/!d' -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
-         -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" > 'ICN_ADS.yaml'
-"curl" -s -LR 'https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt' \
-| sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
-         -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" >> 'ICN_ADS.yaml'
-
-sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDomainLists/whitelist.txt' > 'ICN_whitelist.yaml'
+sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDomainLists/whitelist.txt' > 'DOMAIN_ICN_DIRECT.yaml'
 "curl" -s -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-cn.txt' \
 | sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' -e '/scholar\.google/d' \
-         -e "s/$/'/" -e "s/^/  - '/" >> 'ICN_whitelist.yaml'
+         -e "s/$/'/" -e "s/^/  - '/" >> 'DOMAIN_ICN_DIRECT.yaml'
+
+"curl" -s -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' \
+| sed -E -e '/[-@]ads$/!d' -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
+         -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" > 'DOMAIN_ICN_ADS.yaml'
+"curl" -s -LR 'https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt' \
+| sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
+         -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" >> 'DOMAIN_ICN_ADS.yaml'
 sed -i '1i\''payload:' ./*.yaml
 )
 
 (
 "mkdir" -p 'Hackl0us.SS-Rule-Snippet/' && cd 'Hackl0us.SS-Rule-Snippet/' || exit
 "curl" -s -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/CN.list' \
-| sed -E -e '/^DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'Hackl0us_CN.yaml'
+| sed -E -e '/^DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'DOMAIN_Hackl0us_DIRECT.yaml'
 
 "curl" -s -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/%E8%A7%84%E5%88%99%E7%89%87%E6%AE%B5%E9%9B%86/%E8%87%AA%E9%80%89%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99%E5%B9%BF%E5%91%8A%E8%BF%BD%E8%B8%AA%E5%B1%8F%E8%94%BD.txt' \
 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/%E8%A7%84%E5%88%99%E7%89%87%E6%AE%B5%E9%9B%86/%E8%87%AA%E9%80%89%E8%A7%84%E5%88%99%E9%9B%86/%E5%B9%BF%E5%91%8A%E5%9F%9F%E5%90%8D%E5%88%97%E8%A1%A8.txt' \
-| sed -E -e '/^DOMAIN/!d' -e "s/REJECT$/REJECT'/" -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'Hackl0us_ADS.yaml'
+| sed -E -e '/^DOMAIN/!d' -e "s/REJECT$/REJECT'/" -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'DOMAIN_Hackl0us_ADS.yaml'
 # "curl" -s -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/common-ad-keyword.list' \
-# | sed -E -e '/^DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" >> 'Hackl0us_ADS.yaml'
+# | sed -E -e '/^DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" >> 'DOMAIN_Hackl0us_ADS.yaml'
 sed -i '1i\''payload:' ./*.yaml
 )
 
 (
 "mkdir" -p 'ACL4SSR/' && cd 'ACL4SSR/' || exit
 "curl" -s -LR 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list' \
-| sed -E -e '/DOMAIN-KEYWORD/d' -e '/^DOMAIN/!d' -e "s/REJECT$/REJECT'/" -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'ACL4SSR_ADS.yaml'
+| sed -E -e '/DOMAIN-KEYWORD/d' -e '/^DOMAIN/!d' -e "s/REJECT$/REJECT'/" -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'DOMAIN_ACL4SSR_ADS.yaml'
 sed -i '1i\''payload:' ./*.yaml
 )
+
+find . -type f -regex '.*DOMAIN.+ADS.yaml$' -print0 | xargs -0 cat > 'tmp_DOMAIN_ADS_ALLINONE.yaml'
+find . -type f -regex '.*DOMAIN.+DIRECT.yaml$' -print0 | xargs -0 cat > 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
+sed -i -E -e '/DOMAIN-KEYWORD/d' -e 's/DOMAIN,//' -e 's/DOMAIN-SUFFIX,/\+\./' \
+          -e 's/,DIRECT|,REJECT//' './tmp_DOMAIN_*_ALLINONE.yaml'
+< 'tmp_DOMAIN_ADS_ALLINONE.yaml' sort | uniq > 'DOMAIN_ADS_ALLINONE.yaml'
+< 'tmp_DOMAIN_DIRECT_ALLINONE.yaml' sort | uniq > 'DOMAIN_DIRECT_ALLINONE.yaml'
+find . -type f -regex '.*tmp.+yaml$' -print0 | xargs -0 rm
