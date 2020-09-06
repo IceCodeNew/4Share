@@ -8,7 +8,7 @@ rm -r 'downloaded_rules/' 'extra_dlc_cn.txt' 'whitelist.txt' 'scholar_not_cn.txt
 # python3 'start_yield.py' 'geolocation-cn' 'category-scholar-!cn'
 curl -LR https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt -o 'tmp_whitelist.txt'
 curl -LR https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt -o 'tmp_scholar_not_cn.txt'
-find . -type f -print0 | xargs -0 fromdos
+find . -type f -print0 | xargs -0 dos2unix
 
 # (
 # cd 'downloaded_rules' || exit
@@ -39,5 +39,5 @@ perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn-
 sed -E -i '/^[\t\f\v ]*$/d' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 < 'tmp_whitelist.txt' sort | uniq > 'whitelist.txt'
 < 'tmp_scholar_not_cn.txt' sort | uniq > 'scholar_not_cn.txt'
-fromdos -- ./*.txt
+dos2unix -- ./*.txt
 rm -r 'downloaded_rules/' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'

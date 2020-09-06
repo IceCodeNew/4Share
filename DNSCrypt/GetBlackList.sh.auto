@@ -37,7 +37,7 @@ python3 generate-domains-blocklist.py > mybase.txt
 cd "$repos_root/4Share/DNSCrypt" || exit
 /bin/rm -f '../v2rayN/v2rayN_block_rules.txt' '../v2rayN/custom_blacklist.txt'
 
-fromdos fws.py ./*.txt
+dos2unix fws.py ./*.txt
 python3 fws.py
 
 /bin/mv -f v2rayN_block_rules.txt '../v2rayN'
@@ -54,7 +54,7 @@ cat AdBlock.list Advertising.list Hijacking.list Reject.list > custom_blacklist.
 [[ -f 'ori_BlackList.txt' ]] && cat ori_BlackList.txt >> custom_blacklist.txt
 sed -i -E -e '$a\''\n' -e 's/,$//' v2rayN_block_rules.txt custom_blacklist.txt
 cat v2rayN_block_rules.txt custom_blacklist.txt | sort | uniq > temp_v2rayN_block_rules.txt
-sed -i -E '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && fromdos ./*.txt
+sed -i -E '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
 /bin/mv -f temp_v2rayN_block_rules.txt v2rayN_block_rules.txt
 
 ################################################################

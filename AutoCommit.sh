@@ -16,7 +16,7 @@ find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 /bin/cp -f "$repos_root/china_ip_list/china_ip_list.txt" ./
 /bin/cp -f "$repos_root/china-operator-ip/china.txt" ./china-ipv4.txt
 /bin/cp -f "$repos_root/china-operator-ip/china6.txt" ./china-ipv6.txt
-fromdos china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
+dos2unix china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
 sed -i -E '/^115\.27\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
@@ -31,7 +31,7 @@ sed -i -E '/^2001:da8:201::.*/d' china-ipv6.txt
 # 1. Proxifier 规则暂不支持 CIDR 格式的 IP 地址，因此需要做格式上的转换
 # 2. Proxifier 一条规则内最大能写入 32767 个字符，远远小于格式转换后的 IP 列表字符长，
 #    因此需要将 china_ip_list 拆分为多个规则。
-fromdos Proxifier/IPConvert.py Proxifier/IPv6Convert.py
+dos2unix Proxifier/IPConvert.py Proxifier/IPv6Convert.py
 python3 Proxifier/IPConvert.py
 python3 Proxifier/IPv6Convert.py
 /bin/mv -f ip_list_?.txt ipv6_list_?.txt Proxifier
@@ -100,7 +100,7 @@ END_TEXT
 # 更新 4Share 库 router 目录
 /bin/cp -f accelerated-domains.china.conf router
 /bin/rm -f china_ip_list.txt china-ipv4.txt china-ipv6.txt
-fromdos route.sh
+dos2unix route.sh
 /bin/mv -f route.sh router
 
 # 在已有 accelerated-domains.china.conf 文件的基础上做二次修改，使符合 DNSCrypt 配置格式
@@ -246,7 +246,7 @@ cat accelerated-domains.china.conf >> forwarding-rules.txt
 
 # 更新 4Share 库 DNSCrypt 目录
 /bin/rm -f accelerated-domains.china.conf
-fromdos forwarding-rules.txt
+dos2unix forwarding-rules.txt
 /bin/mv -f forwarding-rules.txt DNSCrypt
 
 # 推送更新到 GitHub
