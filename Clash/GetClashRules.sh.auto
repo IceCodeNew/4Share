@@ -3,7 +3,8 @@
 repos_root='/github'
 
 cd "$repos_root/4Share/Clash" || exit
-"rm" -r 'ACL4SSR/' 'Hackl0us.SS-Rule-Snippet/' 'DOMAIN_ICN_ADS.yaml' 'ICN/DOMAIN_ICN_DIRECT.yaml' \
+"rm" -r 'ACL4SSR/' 'Hackl0us.SS-Rule-Snippet/' \
+'ICN/DOMAIN_ICN_ADS.yaml' 'ICN/DOMAIN_ICN_DIRECT.yaml' 'ICN/DOMAIN_ICN_PROXY.yaml' 'ICN/DOMAIN_ICN_SPEEDTEST.yaml' \
 'DOMAIN_ADS_ALLINONE.yaml' 'DOMAIN_DIRECT_ALLINONE.yaml' 'tmp_DOMAIN_ADS_ALLINONE.yaml' 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
 
 (
@@ -14,13 +15,34 @@ sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDo
 | sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' -e '/scholar\.google/d' \
          -e "s/$/'/" -e "s/^/  - '/" >> 'DOMAIN_ICN_DIRECT.yaml'
 
+"curl" -s -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-anticensorship.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-dev.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-entertainment.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-media.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-orgs.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-porn.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-vpnservices.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/discord.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/google.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/lihkg.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/pincong.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/signal.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/telegram.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/twitter.txt' \
+| sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
+         -e "s/$/'/" -e "s/^/  - '/" > 'DOMAIN_ICN_PROXY.yaml'
+
+"curl" -s -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/speedtest.txt' \
+| sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
+         -e "s/$/'/" -e "s/^/  - '/" > 'DOMAIN_ICN_SPEEDTEST.yaml'
+
 "curl" -s -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' \
 | sed -E -e '/[-@]ads$/!d' -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
          -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" > 'DOMAIN_ICN_ADS.yaml'
 "curl" -s -LR 'https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt' \
 | sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
          -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" >> 'DOMAIN_ICN_ADS.yaml'
-sed -i '1i\''payload:' ./*.yaml
+sed -i '1i\''payload:' './DOMAIN_ICN_ADS.yaml' './DOMAIN_ICN_DIRECT.yaml' './DOMAIN_ICN_PROXY.yaml' './DOMAIN_ICN_SPEEDTEST.yaml'
 )
 
 (
