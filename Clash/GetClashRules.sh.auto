@@ -1,0 +1,14 @@
+#!/bin/bash
+
+repos_root='/github'
+
+cd "$repos_root/4Share/Clash" || exit
+"rm" -r 'Hackl0us.SS-Rule-Snippet/'
+
+(
+"mkdir" -p 'Hackl0us.SS-Rule-Snippet/'
+cd 'Hackl0us.SS-Rule-Snippet/' || exit
+"curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/CN.list' \
+| sed -E -e '/DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'CN.yaml'
+sed -i '1i\''payload:' 'CN.yaml'
+)
