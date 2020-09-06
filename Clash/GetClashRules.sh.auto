@@ -10,5 +10,7 @@ cd "$repos_root/4Share/Clash" || exit
 cd 'Hackl0us.SS-Rule-Snippet/' || exit
 "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/CN.list' \
 | sed -E -e '/DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'CN.yaml'
-sed -i '1i\''payload:' 'CN.yaml'
+"curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/common-ad-keyword.list' \
+| sed -E -e '/DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" > 'common-ad-keyword.yaml'
+sed -i '1i\''payload:' ./*.yaml
 )
