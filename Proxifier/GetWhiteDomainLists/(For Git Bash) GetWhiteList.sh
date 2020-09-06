@@ -42,7 +42,7 @@ find . -type f -print0 | xargs -0 dos2unix
 [[ -f 'ori_white_domains.txt' ]] && cat 'ori_white_domains.txt' >> 'tmp_whitelist.txt' \
 && sed -E -e 's/\*\./domain:/' -e 's/^/full:/' -e 's/full:domain:/domain:/' 'ori_white_domains.txt' > 'extra_dlc_cn.txt'
 
-sed -E -i -e '/[-@]ads$|^regex:|scholar\.google/d' -e 's/full://' -e 's/domain:/\*\./' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
+sed -E -i -e '/[-@]ads$|^regexp:|scholar\.google/d' -e 's/full://' -e 's/domain:/\*\./' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'tmp_whitelist.txt'
 sed -E -i '/^[\t\f\v ]*$/d' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 < 'tmp_whitelist.txt' sort | uniq > 'whitelist.txt'
