@@ -69,8 +69,9 @@ with open('ip_list_' + str(i) + '.txt', encoding='utf-8', mode='w') as f:
     f.writelines(write_buffer)
 
 with open('china_ip_list.txt', encoding='utf-8', mode='w') as f:
-    path_clash = pathlib.Path(__file__).resolve().parents[1].joinpath('Clash', 'ICN')
-    with open(str(path_clash) + 'CHINA_IP_LIST.yaml', encoding='utf-8', mode='w') as fyaml:
+    path_clash_ipcidr = pathlib.Path(__file__).resolve().parents[1].joinpath('Clash', 'ICN', 'CHINA_IP_LIST.yaml')
+    with open(str(path_clash_ipcidr), encoding='utf-8', mode='w') as fyaml:
         for address in compressed_cidr_list:
             f.write(f'{str(address)}\n')
-            fyaml.write(f"  - 'IP-CIDR,{str(address)},DIRECT'\n")
+            fyaml.write(f"  - '{str(address)}'\n")
+
