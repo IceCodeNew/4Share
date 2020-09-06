@@ -3,14 +3,18 @@
 repos_root='/github'
 
 cd "$repos_root/4Share/Clash" || exit
-"rm" -r 'Hackl0us.SS-Rule-Snippet/'
+"rm" -r 'Hackl0us.SS-Rule-Snippet/' 'ICN/'
 
 (
+"mkdir" -p 'ICN/'
 cd 'ICN/' || exit
 "curl" -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' \
-| sed -E -e '/[-@]ads$/!d' -e '/^regex:/d' -e 's/full:/DOMAIN,/' -e 's/domain:/DOMAIN-SUFFIX,/' \
-         -e 's/:@ads//' -e "s/$/,REJECT'/" -e "s/^/  - '/" > 'CN_ADS.yaml'
-sed -i '1i\''payload:' ./*.yaml
+| sed -E -e '/[-@]ads$/!d' -e '/^regexp:/d' -e 's/full:/DOMAIN,/' -e 's/domain:/DOMAIN-SUFFIX,/' \
+         -e 's/:@ads//' -e "s/$/,REJECT'/" -e "s/^/  - '/" > 'ICN_ADS.yaml'
+"curl" -LR 'https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt' \
+| sed -E -e '/^regexp:/d' -e 's/full:/DOMAIN,/' -e 's/domain:/DOMAIN-SUFFIX,/' \
+         -e 's/:@ads//' -e "s/$/,REJECT'/" -e "s/^/  - '/" >> 'ICN_ADS.yaml'
+sed -i '1i\''payload:' './ICN_ADS.yaml'
 )
 
 (
