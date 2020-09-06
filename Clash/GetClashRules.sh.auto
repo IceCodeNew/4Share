@@ -15,14 +15,24 @@ cd 'ICN/' || exit
 | sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
          -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" >> 'ICN_ADS.yaml'
 sed -i '1i\''payload:' './ICN_ADS.yaml'
+
+sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDomainLists/whitelist.txt' > 'ICN_whitelist.yaml'
+"curl" -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-cn.txt' \
+| sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' -e '/scholar\.google/d' \
+         -e "s/$/'/" -e "s/^/  - '/" >> 'ICN_whitelist.yaml'
+sed -i '1i\''payload:' './ICN_whitelist.yaml'
 )
 
 (
 "mkdir" -p 'Hackl0us.SS-Rule-Snippet/'
 cd 'Hackl0us.SS-Rule-Snippet/' || exit
 "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/CN.list' \
-| sed -E -e '/DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'CN.yaml'
-"curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/common-ad-keyword.list' \
-| sed -E -e '/DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" > 'common-ad-keyword.yaml'
+| sed -E -e '/^DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'Hackl0us_CN.yaml'
+
+"curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/%E8%A7%84%E5%88%99%E7%89%87%E6%AE%B5%E9%9B%86/%E8%87%AA%E9%80%89%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99%E5%B9%BF%E5%91%8A%E8%BF%BD%E8%B8%AA%E5%B1%8F%E8%94%BD.txt' \
+| sed -E -e '/^DOMAIN/!d' -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'Hackl0us_ADS.yaml'
+# "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/common-ad-keyword.list' \
+# | sed -E -e '/^DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" >> 'Hackl0us_ADS.yaml'
 sed -i '1i\''payload:' ./*.yaml
 )
