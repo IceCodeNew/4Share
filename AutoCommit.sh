@@ -14,8 +14,11 @@ find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 # 拷贝最新文件
 /bin/cp -f "$repos_root/dnsmasq-china-list/accelerated-domains.china.conf" ./
 /bin/cp -f "$repos_root/china_ip_list/china_ip_list.txt" ./
-/bin/cp -f "$repos_root/china-operator-ip/china.txt" ./china-ipv4.txt
-/bin/cp -f "$repos_root/china-operator-ip/china6.txt" ./china-ipv6.txt
+(
+cd "$repos_root/china-operator-ip/" || exit
+cat cernet.txt chinanet.txt cmcc.txt cstnet.txt drpeng.txt googlecn.txt tietong.txt unicom.txt > "$repos_root/4Share/china-ipv4.txt"
+cat cernet6.txt chinanet6.txt cmcc6.txt cstnet6.txt drpeng6.txt googlecn6.txt tietong6.txt unicom6.txt > "$repos_root/4Share/china-ipv6.txt"
+)
 dos2unix china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
