@@ -3,30 +3,27 @@
 repos_root='/github'
 
 cd "$repos_root/4Share/Clash" || exit
-"rm" -r 'Hackl0us.SS-Rule-Snippet/' 'ICN/'
+"rm" -r 'ACL4SSR/' 'Hackl0us.SS-Rule-Snippet/' 'ICN/'
 
 (
-"mkdir" -p 'ICN/'
-cd 'ICN/' || exit
+"mkdir" -p 'ICN/' && cd 'ICN/' || exit
 "curl" -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' \
 | sed -E -e '/[-@]ads$/!d' -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
          -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" > 'ICN_ADS.yaml'
 "curl" -LR 'https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt' \
 | sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
          -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" >> 'ICN_ADS.yaml'
-sed -i '1i\''payload:' './ICN_ADS.yaml'
 
 sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDomainLists/whitelist.txt' > 'ICN_whitelist.yaml'
 "curl" -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-cn.txt' \
 | sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' -e '/scholar\.google/d' \
          -e "s/$/'/" -e "s/^/  - '/" >> 'ICN_whitelist.yaml'
-sed -i '1i\''payload:' './ICN_whitelist.yaml'
+sed -i '1i\''payload:' ./*.yaml
 )
 
 (
-"mkdir" -p 'Hackl0us.SS-Rule-Snippet/'
-cd 'Hackl0us.SS-Rule-Snippet/' || exit
+"mkdir" -p 'Hackl0us.SS-Rule-Snippet/' && cd 'Hackl0us.SS-Rule-Snippet/' || exit
 "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/CN.list' \
 | sed -E -e '/^DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'Hackl0us_CN.yaml'
 
@@ -35,5 +32,12 @@ cd 'Hackl0us.SS-Rule-Snippet/' || exit
 | sed -E -e '/^DOMAIN/!d' -e "s/REJECT$/REJECT'/" -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'Hackl0us_ADS.yaml'
 # "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/common-ad-keyword.list' \
 # | sed -E -e '/^DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" >> 'Hackl0us_ADS.yaml'
+sed -i '1i\''payload:' ./*.yaml
+)
+
+(
+"mkdir" -p 'ACL4SSR/' && cd 'ACL4SSR/' || exit
+"curl" -LR 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list' \
+| sed -E -e '/DOMAIN-KEYWORD/d' -e '/^DOMAIN/!d' -e "s/REJECT$/REJECT'/" -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'ACL4SSR_ADS.yaml'
 sed -i '1i\''payload:' ./*.yaml
 )
