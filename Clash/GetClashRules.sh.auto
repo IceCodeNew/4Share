@@ -3,7 +3,8 @@
 repos_root='/github'
 
 cd "$repos_root/4Share/Clash" || exit
-"rm" -r 'ACL4SSR/' 'Hackl0us.SS-Rule-Snippet/' 'ICN/'
+"rm" -r 'ACL4SSR/' 'Hackl0us.SS-Rule-Snippet/' 'DOMAIN_ICN_ADS.yaml' 'ICN/DOMAIN_ICN_DIRECT.yaml' \
+'DOMAIN_ADS_ALLINONE.yaml' 'DOMAIN_DIRECT_ALLINONE.yaml' 'tmp_DOMAIN_ADS_ALLINONE.yaml' 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
 
 (
 "mkdir" -p 'ICN/' && cd 'ICN/' || exit

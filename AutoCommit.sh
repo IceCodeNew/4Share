@@ -37,7 +37,7 @@ sed -i -E '/^2001:da8:201::.*/d' china-ipv6.txt
 dos2unix Proxifier/IPConvert.py Proxifier/IPv6Convert.py
 python3 Proxifier/IPConvert.py
 python3 Proxifier/IPv6Convert.py
-sed -i '1i\''payload:' Clash/ICNCHINA_IP_LIST.yaml
+sed -i '1i\''payload:' Clash/ICN/CHINA_IP_LIST.yaml
 /bin/mv -f ip_list_?.txt ipv6_list_?.txt Proxifier
 /bin/cp -f china_ip_list.txt geoip_china/china_ip_list.txt
 
