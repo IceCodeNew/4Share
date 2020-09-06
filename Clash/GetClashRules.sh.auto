@@ -31,7 +31,8 @@ cd 'Hackl0us.SS-Rule-Snippet/' || exit
 | sed -E -e '/^DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'Hackl0us_CN.yaml'
 
 "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/%E8%A7%84%E5%88%99%E7%89%87%E6%AE%B5%E9%9B%86/%E8%87%AA%E9%80%89%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%BD%91%E7%AB%99%E5%B9%BF%E5%91%8A%E8%BF%BD%E8%B8%AA%E5%B1%8F%E8%94%BD.txt' \
-| sed -E -e '/^DOMAIN/!d' -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'Hackl0us_ADS.yaml'
+'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/%E8%A7%84%E5%88%99%E7%89%87%E6%AE%B5%E9%9B%86/%E8%87%AA%E9%80%89%E8%A7%84%E5%88%99%E9%9B%86/%E5%B9%BF%E5%91%8A%E5%9F%9F%E5%90%8D%E5%88%97%E8%A1%A8.txt' \
+| sed -E -e '/^DOMAIN/!d' -e "s/REJECT$/REJECT'/" -e "s/REJECT-TINYGIF/REJECT'/" -e "s/^/  - '/" > 'Hackl0us_ADS.yaml'
 # "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/common-ad-keyword.list' \
 # | sed -E -e '/^DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" >> 'Hackl0us_ADS.yaml'
 sed -i '1i\''payload:' ./*.yaml
