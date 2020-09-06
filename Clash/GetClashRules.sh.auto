@@ -9,11 +9,11 @@ cd "$repos_root/4Share/Clash" || exit
 "mkdir" -p 'ICN/'
 cd 'ICN/' || exit
 "curl" -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' \
-| sed -E -e '/[-@]ads$/!d' -e '/^regexp:/d' -e 's/full:/DOMAIN,/' -e 's/domain:/DOMAIN-SUFFIX,/' \
-         -e 's/:@ads//' -e "s/$/,REJECT'/" -e "s/^/  - '/" > 'ICN_ADS.yaml'
+| sed -E -e '/[-@]ads$/!d' -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
+         -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" > 'ICN_ADS.yaml'
 "curl" -LR 'https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt' \
-| sed -E -e '/^regexp:/d' -e 's/full:/DOMAIN,/' -e 's/domain:/DOMAIN-SUFFIX,/' \
-         -e 's/:@ads//' -e "s/$/,REJECT'/" -e "s/^/  - '/" >> 'ICN_ADS.yaml'
+| sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
+         -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" >> 'ICN_ADS.yaml'
 sed -i '1i\''payload:' './ICN_ADS.yaml'
 )
 
