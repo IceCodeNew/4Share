@@ -6,6 +6,14 @@ cd "$repos_root/4Share/Clash" || exit
 "rm" -r 'Hackl0us.SS-Rule-Snippet/'
 
 (
+cd 'ICN/' || exit
+"curl" -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' \
+| sed -E -e '/[-@]ads$/!d' -e '/^regex:/d' -e 's/full:/DOMAIN,/' -e 's/domain:/DOMAIN-SUFFIX,/' \
+         -e 's/:@ads//' -e "s/$/,REJECT'/" -e "s/^/  - '/" > 'CN_ADS.yaml'
+sed -i '1i\''payload:' ./*.yaml
+)
+
+(
 "mkdir" -p 'Hackl0us.SS-Rule-Snippet/'
 cd 'Hackl0us.SS-Rule-Snippet/' || exit
 "curl" -LR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/CN.list' \
