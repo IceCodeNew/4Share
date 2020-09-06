@@ -68,7 +68,8 @@ sed -i '1i\''payload:' ./*.yaml
 find . -type f -regex '.*DOMAIN.+ADS.yaml$' -print0 | xargs -0 cat > 'tmp_DOMAIN_ADS_ALLINONE.yaml'
 find . -type f -regex '.*DOMAIN.+DIRECT.yaml$' -print0 | xargs -0 cat > 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
 sed -i -E -e '/DOMAIN-KEYWORD/d' -e 's/DOMAIN,//' -e 's/DOMAIN-SUFFIX,/\+\./' \
-          -e 's/,DIRECT|,REJECT//' './tmp_DOMAIN_*_ALLINONE.yaml'
+          -e 's/,DIRECT|,REJECT//' -e '/payload:/d' 'tmp_DOMAIN_ADS_ALLINONE.yaml' 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
 < 'tmp_DOMAIN_ADS_ALLINONE.yaml' sort | uniq > 'DOMAIN_ADS_ALLINONE.yaml'
 < 'tmp_DOMAIN_DIRECT_ALLINONE.yaml' sort | uniq > 'DOMAIN_DIRECT_ALLINONE.yaml'
+sed -i '1i\''payload:' './DOMAIN_ADS_ALLINONE.yaml' './DOMAIN_DIRECT_ALLINONE.yaml'
 find . -type f -regex '.*tmp.+yaml$' -print0 | xargs -0 rm
