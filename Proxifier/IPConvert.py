@@ -16,7 +16,14 @@ def addr_transfer(net_addr: ipaddress.IPv4Network):
 _: Tuple
 write_buffer = []
 merged_cidr_dict: OrderedDict[int, ipaddress.IPv4Network] = collections.OrderedDict()
-PKU_net = ('115.27.0.0/16', '162.105.0.0/16', '202.112.7.0/24', '202.112.8.0/24', '222.29.0.0/17', '222.29.128.0/19',)
+PKU_net = (
+    '115.27.0.0/16',
+    '162.105.0.0/16',
+    '202.112.7.0/24',
+    '202.112.8.0/24',
+    '222.29.0.0/17',
+    '222.29.128.0/19',
+)
 for _tmp_str in PKU_net:
     write_buffer.append(ipblock2netaddr_int(_tmp_str))
 
@@ -69,9 +76,13 @@ with open('ip_list_' + str(i) + '.txt', encoding='utf-8', mode='w') as f:
     f.writelines(write_buffer)
 
 with open('china_ip_list.txt', encoding='utf-8', mode='w') as f:
-    path_clash_ipcidr = pathlib.Path(__file__).resolve().parents[1].joinpath('Clash', 'ICN', 'CHINA_IP_LIST.yaml')
+    path_clash_ipcidr = (
+        pathlib.Path(__file__)
+        .resolve()
+        .parents[1]
+        .joinpath('Clash', 'ICN', 'CHINA_IP_LIST.yaml')
+    )
     with open(str(path_clash_ipcidr), encoding='utf-8', mode='w') as fyaml:
         for address in compressed_cidr_list:
             f.write(f'{str(address)}\n')
             fyaml.write(f"  - '{str(address)}'\n")
-

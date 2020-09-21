@@ -15,7 +15,7 @@ import xml.etree.ElementTree as ET
 def fix_illegal_chars(raw_str: str) -> str:
     """
     将Windows文件管理器不支持的非法字符替换为下划线
-    
+
     :param raw_str: 原字符串
     :return: 替换后的字符串
     """
@@ -26,7 +26,7 @@ def fix_illegal_chars(raw_str: str) -> str:
 def split_multi_targets(target_str: str) -> List[str]:
     """
     将以分号分隔开的多个目标拆分为列表
-    
+
     :param target_str: 多个目标
     :return: 列表形式的独立目标
     """
@@ -36,14 +36,13 @@ def split_multi_targets(target_str: str) -> List[str]:
         target = target.strip()
         if target != "":
             list_target.append(target)
-    
     return list_target
 
 
 def convert_domain(raw_domain: str) -> str:
     """
     将proxifier形式的domain转换为clash形式的domain
-    
+
     :param raw_domain: domain(proxifier)
     :return: domain(clash)
     """
@@ -74,19 +73,16 @@ tree = ET.parse("./4Share - 10808.ppx")
 root: ET.Element = tree.getroot()
 if root.tag != "ProxifierProfile":
     raise ValueError("不是标准的.ppx文件")
-
 # 准备工作
 if not os.path.exists("./rule-sets"):
     print("创建文件夹..")
     os.makedirs("./rule-sets")
-
 for label_3rd in root.find("RuleList"):
     # 获取基本数据
     tg_enabled = bool(label_3rd.attrib["enabled"])
     tg_name = label_3rd.find("Name").text
     if tg_name == "Default":
         continue
-    
     if label_3rd.find("Applications") is not None:
         tg_type = "process"
         tg_list = split_multi_targets(target_str=label_3rd.find("Applications").text)
@@ -104,10 +100,14 @@ for label_3rd in root.find("RuleList"):
         tg_action = "Proxy"
     else:
         raise ValueError("action错误，rule name: {}".format(tg_name))
-    
     # print(tg_enabled, tg_name, tg_type, tg_list, tg_action)
-    file_write = open(file="./rule-sets/{}-{}.yaml".format(tg_type, fix_illegal_chars(raw_str=tg_name)), mode="w+",
-                      encoding="utf-8")
+    file_write = open(
+        file="./rule-sets/{}-{}.yaml".format(
+            tg_type, fix_illegal_chars(raw_str=tg_name)
+        ),
+        mode="w+",
+        encoding="utf-8",
+    )
     # 如果是domain类型，则按照以下形式写入文件
     # payload:
     #   - "+.baidu.com"
@@ -115,10 +115,11 @@ for label_3rd in root.find("RuleList"):
     if tg_type == "domain":
         file_write.write("payload:\n")
         for target in tg_list:
-            file_write.write("  - \"{}\"\n".format(convert_domain(raw_domain=target)))
+            file_write.write('  - "{}"\n'.format(convert_domain(raw_domain=target)))
     else:
         file_write.write("payload:\n")
         for target in tg_list:
-            file_write.write("  - PROCESS-NAME,{},{}\n".format(target.strip(), tg_action))
-    
+            file_write.write(
+                "  - PROCESS-NAME,{},{}\n".format(target.strip(), tg_action)
+            )
     pass

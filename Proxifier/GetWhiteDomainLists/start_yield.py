@@ -9,7 +9,10 @@ from get_included_urls import get_included_urls
 
 
 def start_yield(category: str):
-    download_file('https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/' + category)
+    download_file(
+        'https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/'
+        + category
+    )
     move(category, category + '.ori')
     with open(category, 'w', encoding='utf-8') as f:
         urls: List = get_included_urls(category + '.ori', f)
@@ -22,8 +25,12 @@ def start_yield(category: str):
 
 
 parser = argparse.ArgumentParser(description='Get full list of specific category-data')
-parser.add_argument('data_name', metavar='DataName', nargs='+',
-                    help='The name of category-data you would like to specific')
+parser.add_argument(
+    'data_name',
+    metavar='DataName',
+    nargs='+',
+    help='The name of category-data you would like to specific',
+)
 args = parser.parse_args()
 _args = list(vars(args).values())[0]
 root_path = os.path.abspath(os.path.dirname(__file__))

@@ -3,7 +3,9 @@ import ipaddress
 
 def addr_v6_transfer(input_addr: str):
     ipv6_addr = ipaddress.IPv6Network(input_addr.strip('\n'))
-    return str(ipv6_addr.network_address) + '-' + str(ipv6_addr.broadcast_address) + '; '
+    return (
+        str(ipv6_addr.network_address) + '-' + str(ipv6_addr.broadcast_address) + '; '
+    )
 
 
 write_buffer = [addr_v6_transfer('2001:da8:201::/48')]

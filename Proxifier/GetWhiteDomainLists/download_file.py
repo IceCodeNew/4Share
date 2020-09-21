@@ -4,7 +4,10 @@ import urllib.request
 
 def get_real_url(url: str):
     req = urllib.request.Request(url)
-    req.add_header('User-Agent', 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0')
+    req.add_header(
+        "User-Agent",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+    )
     response = urllib.request.urlopen(req)
     real_url = response.geturl()
     return real_url
@@ -12,7 +15,10 @@ def get_real_url(url: str):
 
 def save_file(url: str):
     req = urllib.request.Request(url)
-    req.add_header('User-Agent', 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0')
+    req.add_header(
+        "User-Agent",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+    )
     response = urllib.request.urlopen(req)
     dlfile = response.read()
     file_name = os.path.join(os.getcwd(), url.split('/')[-1])

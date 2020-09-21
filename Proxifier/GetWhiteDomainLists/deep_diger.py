@@ -7,8 +7,15 @@ from typing import List
 from download_file import download_file
 from get_included_urls import get_included_urls
 
-parser = argparse.ArgumentParser(description='Get full list of included domains in user-specified category-data')
-parser.add_argument('data_name', metavar='DataName', nargs=1, help='The name of category-data you previously specified')
+parser = argparse.ArgumentParser(
+    description='Get full list of included domains in user-specified category-data'
+)
+parser.add_argument(
+    'data_name',
+    metavar='DataName',
+    nargs=1,
+    help='The name of category-data you previously specified',
+)
 args = parser.parse_args()
 category_name = list(vars(args).values())[0][0]
 
