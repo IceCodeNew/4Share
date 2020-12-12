@@ -5783,7 +5783,7 @@ route ${OPS} -net 220.242.18.0/23 ${ROUTE_GW}
 route ${OPS} -net 220.242.20.0/24 ${ROUTE_GW}
 route ${OPS} -net 220.242.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 220.242.48.0/23 ${ROUTE_GW}
-route ${OPS} -net 220.242.52.0/23 ${ROUTE_GW}
+route ${OPS} -net 220.242.53.0/24 ${ROUTE_GW}
 route ${OPS} -net 220.242.55.0/24 ${ROUTE_GW}
 route ${OPS} -net 220.242.56.0/22 ${ROUTE_GW}
 route ${OPS} -net 220.242.60.0/23 ${ROUTE_GW}
