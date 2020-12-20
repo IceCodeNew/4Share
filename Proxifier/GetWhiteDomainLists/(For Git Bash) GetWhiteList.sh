@@ -13,8 +13,8 @@ set -x
 cd "$(dirname "$0")" || exit
 rm -r 'downloaded_rules/' 'extra_dlc_cn.txt' 'whitelist.txt' 'scholar_not_cn.txt' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 
-# winpty "$(which python)" 'start_yield.py' 'geolocation-cn' 'category-scholar-!cn'
-curl -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' -o 'tmp_whitelist.txt'
+# winpty "$(which python)" 'start_yield.py' 'cn' 'category-scholar-!cn'
+curl -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-custom/release/cn.txt' -o 'tmp_whitelist.txt'
 curl -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt' -o 'tmp_scholar_not_cn.txt'
 find . -type f -print0 | xargs -0 dos2unix
 
@@ -42,7 +42,7 @@ find . -type f -print0 | xargs -0 dos2unix
 [[ -f 'ori_white_domains.txt' ]] && cat 'ori_white_domains.txt' >> 'tmp_whitelist.txt' \
 && sed -E -e 's/\*\./domain:/' -e 's/^/full:/' -e 's/full:domain:/domain:/' 'ori_white_domains.txt' > 'extra_dlc_cn.txt'
 
-sed -E -i -e '/[-@]ads$|^regexp:|scholar\.google/d' -e 's/full://' -e 's/domain:/\*\./' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
+sed -E -i -e '/[-@]ads$|^regexp:|scholar\.google/d' -e 's/:@cn$//' -e 's/full://' -e 's/domain:/\*\./' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'tmp_whitelist.txt'
 sed -E -i '/^[\t\f\v ]*$/d' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 < 'tmp_whitelist.txt' sort | uniq > 'whitelist.txt'
