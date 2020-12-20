@@ -9,7 +9,7 @@
 # cd $REPLY
 
 cd "$(dirname "$0")" || exit
-cd '../../dnscrypt-proxy/utils/generate-domains-blocklists' || exit
+cd '../../dnscrypt-proxy/utils/generate-domains-blocklist' || exit
 git fetch --all && git reset --hard origin/master > /dev/null 2>&1
 
 sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt$)!\1!' domains-blocklist.conf
@@ -67,9 +67,9 @@ sed -i -E '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
 
 ################################################################
 
-/bin/mv -f custom_blacklist.txt "$repos_root/dnscrypt-proxy/utils/generate-domains-blocklists/custom_blacklist.txt"
+/bin/mv -f custom_blacklist.txt "$repos_root/dnscrypt-proxy/utils/generate-domains-blocklist/custom_blacklist.txt"
 cd "$(dirname "$0")" || exit
-cd '../../dnscrypt-proxy/utils/generate-domains-blocklists' || exit
+cd '../../dnscrypt-proxy/utils/generate-domains-blocklist' || exit
 
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt$)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/Spotify-Ad-free\/master\/filters\/Spotify-HOSTS\.txt$)!# \1!' domains-blocklist.conf
