@@ -6,8 +6,8 @@ cd "$repos_root/4Share/Proxifier/GetWhiteDomainLists" || exit
 rm -r 'downloaded_rules/' 'extra_dlc_cn.txt' 'whitelist.txt' 'scholar_not_cn.txt' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 
 # python3 'start_yield.py' 'geolocation-cn' 'category-scholar-!cn'
-curl -LR https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt -o 'tmp_whitelist.txt'
-curl -LR https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt -o 'tmp_scholar_not_cn.txt'
+curl -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/geolocation-cn.txt' -o 'tmp_whitelist.txt'
+curl -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt' -o 'tmp_scholar_not_cn.txt'
 find . -type f -print0 | xargs -0 dos2unix
 
 # (
