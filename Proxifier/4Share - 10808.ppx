@@ -51,6 +51,11 @@
       <Action type="Direct" />
     </Rule>
     <Rule enabled="true">
+      <Name>Resilio_Sync</Name>
+      <Applications>"Resilio Sync.exe"</Applications>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="true">
       <Name>utorrent</Name>
       <Applications>utorrent331.exe; utorrent.exe</Applications>
       <Action type="Direct" />
