@@ -8,8 +8,8 @@
 # unset root_letter
 # cd $REPLY
 
-cd "$(dirname "$0")" || exit
-cd '../../dnscrypt-proxy/utils/generate-domains-blocklist' || exit
+cd "$(dirname "$0")" || exit 1
+cd '../../dnscrypt-proxy/utils/generate-domains-blocklist' || exit 1
 git fetch --all && git reset --hard origin/master > /dev/null 2>&1
 
 sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt$)!\1!' domains-blocklist.conf
@@ -42,7 +42,7 @@ python -i generate-domains-blocklist.py > mybase.txt
 ################################################################
 
 /bin/mv -f mybase.txt "$(dirname "$0")"
-cd "$(dirname "$0")" || exit
+cd "$(dirname "$0")" || exit 1
 /bin/rm -f '../v2rayN/v2rayN_block_rules.txt' '../v2rayN/custom_blacklist.txt'
 
 dos2unix fws.py ./*.txt
@@ -68,8 +68,8 @@ sed -i -E '/^[\t\f\v ]*$/d' temp_v2rayN_block_rules.txt && dos2unix ./*.txt
 ################################################################
 
 /bin/mv -f custom_blacklist.txt "$repos_root/dnscrypt-proxy/utils/generate-domains-blocklist/custom_blacklist.txt"
-cd "$(dirname "$0")" || exit
-cd '../../dnscrypt-proxy/utils/generate-domains-blocklist' || exit
+cd "$(dirname "$0")" || exit 1
+cd '../../dnscrypt-proxy/utils/generate-domains-blocklist' || exit 1
 
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/EnergizedProtection\/block\/master\/blu\/formats\/domains\.txt$)!# \1!' domains-blocklist.conf
 sed -E -i 's!(^https:\/\/raw\.githubusercontent\.com\/CHEF-KOCH\/Spotify-Ad-free\/master\/filters\/Spotify-HOSTS\.txt$)!# \1!' domains-blocklist.conf

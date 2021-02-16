@@ -2,13 +2,13 @@
 
 repos_root='/github'
 
-cd "$repos_root/4Share/Clash" || exit
+cd "$repos_root/4Share/Clash" || exit 1
 "rm" -r 'ACL4SSR/' 'Hackl0us.SS-Rule-Snippet/' \
 'ICN/DOMAIN_ICN_ADS.yaml' 'ICN/DOMAIN_ICN_DIRECT.yaml' 'ICN/DOMAIN_ICN_PROXY.yaml' 'ICN/DOMAIN_ICN_SPEEDTEST.yaml' \
 'DOMAIN_ADS_ALLINONE.yaml' 'DOMAIN_DIRECT_ALLINONE.yaml' 'tmp_DOMAIN_ADS_ALLINONE.yaml' 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
 
 (
-"mkdir" -p 'ICN/' && cd 'ICN/' || exit
+"mkdir" -p 'ICN/' && cd 'ICN/' || exit 1
 sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDomainLists/whitelist.txt' > 'DOMAIN_ICN_DIRECT.yaml'
 "curl" -sSLR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-!cn.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-scholar-cn.txt' \
@@ -46,7 +46,7 @@ sed -i '1i\''payload:' './DOMAIN_ICN_ADS.yaml' './DOMAIN_ICN_DIRECT.yaml' './DOM
 )
 
 (
-"mkdir" -p 'Hackl0us.SS-Rule-Snippet/' && cd 'Hackl0us.SS-Rule-Snippet/' || exit
+"mkdir" -p 'Hackl0us.SS-Rule-Snippet/' && cd 'Hackl0us.SS-Rule-Snippet/' || exit 1
 "curl" -sSLR 'https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Basic/CN.list' \
 | sed -E -e '/^DOMAIN/!d' -e "s/$/,DIRECT'/" -e "s/^/  - '/" > 'DOMAIN_Hackl0us_DIRECT.yaml'
 
@@ -57,7 +57,7 @@ sed -i '1i\''payload:' ./*.yaml
 )
 
 (
-"mkdir" -p 'ACL4SSR/' && cd 'ACL4SSR/' || exit
+"mkdir" -p 'ACL4SSR/' && cd 'ACL4SSR/' || exit 1
 "curl" -sSLR 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list' \
 | sed -E -e '/DOMAIN-KEYWORD/d' -e '/^DOMAIN/!d' -e "s/$/,REJECT'/" -e "s/^/  - '/" > 'DOMAIN_ACL4SSR_ADS.yaml'
 sed -i '1i\''payload:' ./*.yaml

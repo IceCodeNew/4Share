@@ -10,7 +10,7 @@
 
 set -x
 
-cd "$(dirname "$0")" || exit
+cd "$(dirname "$0")" || exit 1
 rm -r 'downloaded_rules/' 'extra_dlc_cn.txt' 'whitelist.txt' 'scholar_not_cn.txt' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 
 # winpty "$(which python)" 'start_yield.py' 'cn' 'category-scholar-!cn'
@@ -19,7 +19,7 @@ curl -LR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/rel
 find . -type f -print0 | xargs -0 dos2unix
 
 # (
-# cd 'downloaded_rules' || exit
+# cd 'downloaded_rules' || exit 1
 # while :
 # do
 #     find 'geolocation-cn.d' -maxdepth 1 -type f -print0 | xargs -0 sed -E -e '/^#|^$/d' -e 's/[\t ]*#[^\r\n]*//g' | winpty "$(which python)" '../deep_diger.py' 'geolocation-cn'

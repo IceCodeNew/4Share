@@ -2,7 +2,7 @@
 
 repos_root='/github'
 
-cd "$repos_root/4Share/" || exit
+cd "$repos_root/4Share/" || exit 1
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
 find . -type f -iname route.sh -print0 | xargs -0 rm --
 find . -type f -iname china_ip_list.txt -print0 | xargs -0 rm --
@@ -15,7 +15,7 @@ find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 /bin/cp -f "$repos_root/dnsmasq-china-list/accelerated-domains.china.conf" ./
 /bin/cp -f "$repos_root/china_ip_list/china_ip_list.txt" ./
 (
-cd "$repos_root/china-operator-ip/" || exit
+cd "$repos_root/china-operator-ip/" || exit 1
 cat cernet.txt chinanet.txt cmcc.txt cstnet.txt drpeng.txt googlecn.txt tietong.txt unicom.txt > "$repos_root/4Share/china-ipv4.txt"
 cat cernet6.txt chinanet6.txt cmcc6.txt cstnet6.txt drpeng6.txt googlecn6.txt tietong6.txt unicom6.txt > "$repos_root/4Share/china-ipv6.txt"
 )
