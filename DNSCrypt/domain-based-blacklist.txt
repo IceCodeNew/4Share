@@ -14,7 +14,7 @@ workgroup
 
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
-# Ignored duplicates: 143
+# Ignored duplicates: 142
 # Ignored entries due to the allowlist: 8
 
 chameleon.ad
@@ -182,6 +182,7 @@ acridtwist.com
 ads.acrosspf.com
 actionsplash.com
 ads.activestate.com
+actonsoftware.com
 actualdeals.com
 actuallysheep.com
 actuallysnake.com
@@ -369,7 +370,6 @@ adzbazar.com
 adzestocp.com
 adzones.com
 aerserv.com
-affbuzzads.com
 affiliatefuture.com
 affiliatetracking.com
 affiliatewindow.com
@@ -1162,7 +1162,6 @@ haltingbadge.com
 hammerhearing.com
 handyfield.com
 analytics-production.hapyak.com
-adserver.hardsextube.com
 hardtofindmilk.com
 harrenmedia.com
 harrenmedianetwork.com
@@ -2047,7 +2046,6 @@ sovrn.com
 spacash.com
 ads.space.com
 spaceleadster.com
-adserver.spankaway.com
 counter.sparklit.com
 sparkstudios.com
 specificpop.com
@@ -2427,6 +2425,7 @@ wirecomic.com
 wisepops.com
 distillery.wistia.com
 pipedream.wistia.com
+wizaly.com
 wlmarketing.com
 womanear.com
 wonderlandads.com
@@ -2493,7 +2492,6 @@ zanox.com
 zantracker.com
 zarget.com
 zbwp6ghm.com
-ads.zdnet.com
 zealousfield.com
 zedo.com
 zemanta.com
@@ -2821,6 +2819,7 @@ analytics.cloudron.io
 cointraffic.io
 connectad.io
 districtm.io
+dnsdelegation.io
 dsp.io
 emebo.io
 fpjs.io
@@ -2842,6 +2841,7 @@ segmetrics.io
 simpleanalytics.io
 siteimproveanalytics.io
 smart-traffik.io
+storetail.io
 throtle.io
 trafficrouter.io
 triptease.io
@@ -2951,6 +2951,7 @@ affiliatetracking.net
 aistat.net
 box.anchorfree.net
 anrdoezrs.net
+at-o.net
 auctionads.net
 avazutracking.net
 aztracking.net
@@ -3266,7 +3267,6 @@ ads.bb59.ru
 begun.ru
 bans.bride.ru
 www-banner.chat.ru
-rb1.design.ru
 hitlist.ru
 hotlog.ru
 inetlog.ru
@@ -3421,7 +3421,6 @@ skylink.vn
 pixel.watch
 hollps.win
 track.undressingpics.work
-adserver.madeby.ws
 thebugs.ws
 btez8.xyz
 downloadr.xyz
@@ -6375,6 +6374,7 @@ iupload4you.com
 iuploadfile.com
 iwatch-now.com
 j890482.com
+jackabit.com
 jackpot-bets.com
 jackpothard.com
 jackskins.com
@@ -11001,7 +11001,7 @@ kkddlt2f.site
 
 ########## Blocklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 1903
+# Ignored duplicates: 1898
 # Ignored entries due to the allowlist: 10
 
 oewabox.at
@@ -11084,6 +11084,7 @@ as2.advfn.com
 adviva.com
 adwareremovergold.com
 adwitserver.com
+affbuzzads.com
 affiliatefuel.com
 adserver.aidameter.com
 alladvantage.com
@@ -11282,6 +11283,7 @@ www1.gto-media.com
 gtsads.com
 gtsmobi.com
 guppymedia.com
+adserver.hardsextube.com
 adserver.hardwareanalysis.com
 ads.hardwaresecrets.com
 heywire.com
@@ -11505,6 +11507,7 @@ ad.slutload.com
 smartdevicemedia.com
 smowtion.com
 snapgiant.com
+adserver.spankaway.com
 sponsorpay.com
 ads.spoonfeduk.com
 ads.sptimes.com
@@ -11611,6 +11614,7 @@ ad.yourmedia.com
 adsolutions.yp.com
 yuilop.com
 yume.com
+ads.zdnet.com
 zeepmedia.com
 zintext.com
 zumobi.com
@@ -11794,6 +11798,7 @@ gtop.ro
 mediadvertising.ro
 top66.ro
 adskape.ru
+rb1.design.ru
 ad.f1cd.ru
 linkexchange.ru
 ad.playground.ru
@@ -12032,7 +12037,7 @@ vq1qi.pw
 
 ########## Blocklist from https://raw.githubusercontent.com/nextdns/cname-cloaking-blocklist/master/domains ##########
 
-# Ignored duplicates: 4
+# Ignored duplicates: 8
 # Ignored entries due to the allowlist: 1
 
 a351fec2c318c11ea9b9b0a0ae18fb0b-1529426863.eu-central-1.elb.amazonaws.com
@@ -12040,13 +12045,9 @@ a5e652663674a11e997c60ac8a4ec150-1684524385.eu-central-1.elb.amazonaws.com
 a88045584548111e997c60ac8a4ec150-1610510072.eu-central-1.elb.amazonaws.com
 afc4d9aa2a91d11e997c60ac8a4ec150-2082092489.eu-central-1.elb.amazonaws.com
 k.keyade.com
-wizaly.com
-dnsdelegation.io
 oghub.io
-storetail.io
 data.adobedc.net
 sc.adobedc.net
-at-o.net
 tracking.bp01.net
 partner.intentmedia.net
 ghochv3eng.trafficmanager.net
@@ -12056,7 +12057,7 @@ affex.org
 
 ########## Blocklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 28933
+# Ignored duplicates: 28934
 # Ignored entries due to the allowlist: 4
 
 marketing.globalpointofcare.abbott
@@ -14204,7 +14205,6 @@ info3.acton-success.com
 info4.acton-success.com
 mail.actonpearl.com
 actonservice.com
-actonsoftware.com
 mail1.actsys-mail.com
 tr.actu-companeo.com
 tr.news.actu-man.com
