@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+type parallel > /dev/null 2>&1 || exit 1
+
 repos_root='/github'
 
 cd "$repos_root/4Share/Clash" || exit 1
@@ -42,6 +44,8 @@ sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDo
 "curl" -sSLR 'https://raw.githubusercontent.com/v2fly/domain-list-community/release/category-ads-all.txt' \
 | sed -E -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' \
          -e 's/:@ads//' -e "s/$/'/" -e "s/^/  - '/" >> 'DOMAIN_ICN_ADS.yaml'
+
+find . -type f -regex '.*DOMAIN_ICN.+.yaml$' -printf '%P\0' | parallel -0 -j1 'sort -u -o "tmp_{}" "{}"; /bin/mv -f  "tmp_{}" "{}";'
 sed -i '1i\''payload:' './DOMAIN_ICN_ADS.yaml' './DOMAIN_ICN_DIRECT.yaml' './DOMAIN_ICN_PROXY.yaml' './DOMAIN_ICN_SPEEDTEST.yaml'
 )
 
