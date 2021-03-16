@@ -45,8 +45,8 @@ find . -type f -print0 | xargs -0 dos2unix
 sed -E -i -e '/[-@]ads|^regexp:|scholar\.google|\.and|\.chrome|\.dclk|\.gbiz|\.gle|\.gmail|\.goo|\.goog|\.google|\.guge|\.hangout|\.nexus|\.xn--qcka1pmc|\.youtube|crashlytics\.com|doubleclick\.net|gstatic\.com|gvt2\.com|google\.com|googleadservices\.com|google-?analytics\.com|googleapis\.com|googletagmanager\.com|googletagservices\.com|recaptcha\.net$/d' -e 's/:@cn$//' -e 's/full://' -e 's/domain:/\*\./' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 perl -ni -e 'print unless /(?<!^\*)\.(baidu|citic|cn|sohu|unicom|xn--1qqw23a|xn--6frz82g|xn--8y0a063a|xn--estv75g|xn--fiq64b|xn--fiqs8s|xn--fiqz9s|xn--vuq861b|xn--xhq521b|xn--zfr164b)$/' 'tmp_whitelist.txt'
 sed -E -i '/^[\t\f\v ]*$/d' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
-< 'tmp_whitelist.txt' sort | uniq > 'whitelist.txt'
-< 'tmp_scholar_not_cn.txt' sort | uniq > 'scholar_not_cn.txt'
+< 'tmp_whitelist.txt' sort -u -o 'whitelist.txt'
+< 'tmp_scholar_not_cn.txt' sort -u -o 'scholar_not_cn.txt'
 dos2unix -- ./*.txt
 rm -r 'downloaded_rules/' 'tmp_whitelist.txt' 'tmp_scholar_not_cn.txt'
 
