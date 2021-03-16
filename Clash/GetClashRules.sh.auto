@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 repos_root='/github'
 
@@ -29,7 +29,7 @@ sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDo
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/signal.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/telegram.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/twitter.txt' \
-| sed -E -e '/[-@]ads$/d' -e '/^regexp:/d' -e 's/full://' -e 's/domain:/\+\./' -e '/:@cn/d' \
+| sed -E -e '/[-@]ads$/d' -e '/^regexp:/d' -e '/:@cn/d' -e 's/full://' -e 's/domain:/\+\./' \
          -e "s/$/'/" -e "s/^/  - '/" > 'DOMAIN_ICN_PROXY.yaml'
 
 "curl" -sSLR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/speedtest.txt' \
@@ -63,11 +63,11 @@ sed -i '1i\''payload:' ./*.yaml
 sed -i '1i\''payload:' ./*.yaml
 )
 
-find . -type f -regex '.*DOMAIN.+ADS.yaml$' -print0 | xargs -0 cat > 'tmp_DOMAIN_ADS_ALLINONE.yaml'
-find . -type f -regex '.*DOMAIN.+DIRECT.yaml$' -print0 | xargs -0 cat > 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
+find . -type f -regex '.*DOMAIN.+ADS.yaml$' -print0 | parallel -0 cat > 'tmp_DOMAIN_ADS_ALLINONE.yaml'
+find . -type f -regex '.*DOMAIN.+DIRECT.yaml$' -print0 | parallel -0 cat > 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
 sed -i -E -e '/DOMAIN-KEYWORD/d' -e 's/DOMAIN,//' -e 's/DOMAIN-SUFFIX,/\+\./' \
           -e 's/,DIRECT|,REJECT//' -e '/payload:/d' 'tmp_DOMAIN_ADS_ALLINONE.yaml' 'tmp_DOMAIN_DIRECT_ALLINONE.yaml'
-< 'tmp_DOMAIN_ADS_ALLINONE.yaml' sort | uniq > 'DOMAIN_ADS_ALLINONE.yaml'
-< 'tmp_DOMAIN_DIRECT_ALLINONE.yaml' sort | uniq > 'DOMAIN_DIRECT_ALLINONE.yaml'
+< 'tmp_DOMAIN_ADS_ALLINONE.yaml' sort -u -o 'DOMAIN_ADS_ALLINONE.yaml'
+< 'tmp_DOMAIN_DIRECT_ALLINONE.yaml' sort -u -o 'DOMAIN_DIRECT_ALLINONE.yaml'
 sed -i '1i\''payload:' './DOMAIN_ADS_ALLINONE.yaml' './DOMAIN_DIRECT_ALLINONE.yaml'
-find . -type f -regex '.*tmp.+yaml$' -print0 | xargs -0 rm
+find . -type f -regex '.*tmp.+yaml$' -print0 | parallel -0 rm
