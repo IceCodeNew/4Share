@@ -84,7 +84,7 @@ sed -E -i 's!(^https:\/\/hosts\.oisd\.nl\/light$)!# \1!' domains-blocklist.conf
 
 ### sed -E -i 's!^# (https:\/\/isc\.sans\.edu\/feeds\/suspiciousdomains_High\.txt$)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/raw\.githubusercontent\.com\/crazy-max\/WindowsSpyBlocker\/master\/data\/dnscrypt\/spy\.txt$)!\1!' domains-blocklist.conf
-# sed -E -i 's!^# (https:\/\/hostfiles\.frogeye\.fr\/firstparty-trackers\.txt$)!\1!' domains-blocklist.conf
+sed -E -i 's!^# (https:\/\/hostfiles\.frogeye\.fr\/firstparty-trackers\.txt$)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_malvertising\.txt$)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_tracking\.txt$)!\1!' domains-blocklist.conf
 sed -E -i 's!^# (https:\/\/s3\.amazonaws\.com\/lists\.disconnect\.me\/simple_ad\.txt$)!\1!' domains-blocklist.conf
