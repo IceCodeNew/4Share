@@ -927,7 +927,10 @@ route ${OPS} -net 59.64.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 59.80.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 59.82.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 59.83.0.0/18 ${ROUTE_GW}
-route ${OPS} -net 59.83.128.0/18 ${ROUTE_GW}
+route ${OPS} -net 59.83.132.0/22 ${ROUTE_GW}
+route ${OPS} -net 59.83.136.0/21 ${ROUTE_GW}
+route ${OPS} -net 59.83.144.0/20 ${ROUTE_GW}
+route ${OPS} -net 59.83.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 59.83.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 59.83.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 59.83.240.0/21 ${ROUTE_GW}
