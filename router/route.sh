@@ -3476,7 +3476,11 @@ route ${OPS} -net 121.59.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 121.59.24.0/22 ${ROUTE_GW}
 route ${OPS} -net 121.59.28.0/24 ${ROUTE_GW}
 route ${OPS} -net 121.59.30.0/23 ${ROUTE_GW}
-route ${OPS} -net 121.59.32.0/19 ${ROUTE_GW}
+route ${OPS} -net 121.59.33.0/24 ${ROUTE_GW}
+route ${OPS} -net 121.59.34.0/23 ${ROUTE_GW}
+route ${OPS} -net 121.59.36.0/22 ${ROUTE_GW}
+route ${OPS} -net 121.59.40.0/21 ${ROUTE_GW}
+route ${OPS} -net 121.59.48.0/20 ${ROUTE_GW}
 route ${OPS} -net 121.59.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 121.59.128.0/20 ${ROUTE_GW}
 route ${OPS} -net 121.59.144.0/21 ${ROUTE_GW}
