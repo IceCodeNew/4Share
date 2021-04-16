@@ -20,14 +20,13 @@ sed -E -e 's/\*\./\+\./' -e "s/$/'/" -e "s/^/  - '/" '../../Proxifier/GetWhiteDo
 "curl" -sSLR 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-anticensorship.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-dev.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-entertainment.txt' \
+'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-forums.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-media.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-orgs.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-porn.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/category-vpnservices.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/discord.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/google.txt' \
-'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/lihkg.txt' \
-'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/pincong.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/signal.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/telegram.txt' \
 'https://raw.githubusercontent.com/IceCodeNew/domain-list-community/release/twitter.txt' \
