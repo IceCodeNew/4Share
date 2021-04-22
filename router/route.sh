@@ -3255,7 +3255,8 @@ route ${OPS} -net 118.102.32.0/21 ${ROUTE_GW}
 route ${OPS} -net 118.103.164.0/22 ${ROUTE_GW}
 route ${OPS} -net 118.103.168.0/21 ${ROUTE_GW}
 route ${OPS} -net 118.103.176.0/22 ${ROUTE_GW}
-route ${OPS} -net 118.103.244.0/22 ${ROUTE_GW}
+route ${OPS} -net 118.103.245.0/24 ${ROUTE_GW}
+route ${OPS} -net 118.103.246.0/23 ${ROUTE_GW}
 route ${OPS} -net 118.112.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 118.120.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 118.124.0.0/15 ${ROUTE_GW}
