@@ -14,7 +14,7 @@ workgroup
 
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
-# Ignored duplicates: 148
+# Ignored duplicates: 149
 # Ignored entries due to the allowlist: 9
 
 chameleon.ad
@@ -1229,6 +1229,7 @@ ibillboard.com
 y.ibsys.com
 tracking.ibxlink.com
 tracker.icerocket.com
+metrics.icloud.com
 iconadserver.com
 iconpeak2trk.com
 analytics.icons8.com
@@ -1397,6 +1398,7 @@ lijit.com
 link4ads.com
 linkbuddies.com
 ads.linkedin.com
+analytics.pointdrive.linkedin.com
 linkexchange.com
 linkprice.com
 linkrain.com
@@ -1562,6 +1564,7 @@ mypowermall.com
 mysafeads.com
 mysteriousmonth.com
 mytrackingservers.com
+metrics.mzstatic.com
 n69.com
 naradxb.com
 liquidad.narrowcastmedia.com
@@ -1687,7 +1690,6 @@ cdn.panelbear.com
 panickycurtain.com
 paradoxfactor.com
 parchedangle.com
-go.pardot.com
 pi.pardot.com
 parsely.com
 parsimoniouspolice.com
@@ -1728,7 +1730,9 @@ pilotaffiliate.com
 pimproll.com
 ads.pinterest.com
 ads-dev.pinterest.com
+analytics.pinterest.com
 log.pinterest.com
+trk.pinterest.com
 pippio.com
 piquantpigs.com
 placed.com
@@ -2609,6 +2613,7 @@ bannerads.de
 adserver.betandwin.de
 blogcounter.de
 boost-my-pr.de
+tm.br.de
 cash4popup.de
 clicktag.de
 commindo-media-ressourcen.de
@@ -3152,6 +3157,7 @@ whoisonline.net
 worldwide-cash.net
 wt-eu02.net
 xq1.net
+analytics.mobile.yandex.net
 yieldlab.net
 yieldmanager.net
 z5x.net
@@ -3316,6 +3322,7 @@ tns-counter.ru
 a.ucoz.ru
 warlog.ru
 yadro.ru
+adsdk.yandex.ru
 bs.yandex.ru
 blogtoplist.se
 stat.cliche.se
@@ -40132,7 +40139,7 @@ metric.vodacom.co.za
 
 ########## Blocklist from https://hosts.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 36625
+# Ignored duplicates: 36627
 # Ignored entries due to the allowlist: 159
 
 ad.animehub.ac
@@ -44806,7 +44813,8 @@ adnuntius.com
 adnxs1.com
 s.adnxtr.com
 t.adnxtr.com
-campaign.adobe.com
+pandoramedia-mkt-prod1-t.campaign.adobe.com
+wdpro-mkt-prod2-lb.campaign.adobe.com
 geo.adobe.com
 adtag.primetime.adobe.com
 adobee.com
@@ -55702,7 +55710,6 @@ myzk1.com
 srv.mzcdn.com
 mzirmall.com
 mzol7lbm.com
-metrics.mzstatic.com
 mzvwhksbwnj.com
 mzyfkfj.com
 n149adserv.com
@@ -57160,7 +57167,6 @@ topapps-func.pinsightmedia.com
 trackdat.pinsightmedia.com
 v8engine.pinsightmedia.com
 v8push.pinsightmedia.com
-analytics.pinterest.com
 trk2.pinterest.com
 widgets.pinterest.com
 pinttalewag.com
@@ -69879,7 +69885,6 @@ appmetrica.yandex.net
 awaps.yandex.net
 browser-updater.yandex.net
 external-promo-metrics.yandex.net
-analytics.mobile.yandex.net
 banners.mobile.yandex.net
 banners-slb.mobile.yandex.net
 startup.mobile.yandex.net
@@ -71968,7 +71973,6 @@ samsung.yaload.ru
 yaload.yaload.ru
 gov.yanao.ru
 adfox.yandex.ru
-adsdk.yandex.ru
 awsync.yandex.ru
 metrika.yandex.ru
 share.yandex.ru
