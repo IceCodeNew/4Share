@@ -40239,7 +40239,7 @@ metric.vodacom.co.za
 
 ########## Blocklist from https://hosts.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 36946
+# Ignored duplicates: 36943
 # Ignored entries due to the allowlist: 148
 
 ad.animehub.ac
@@ -54652,7 +54652,9 @@ info.leanplum.com
 jenkins-staging.leanplum.com
 jenkins-staging-2.leanplum.com
 link.leanplum.com
-prod.leanplum.com
+assets.prod.leanplum.com
+grafana.prod.leanplum.com
+insights-jobs-ingress.prod.leanplum.com
 reports.leanplum.com
 reports-k8s.leanplum.com
 sales.leanplum.com
