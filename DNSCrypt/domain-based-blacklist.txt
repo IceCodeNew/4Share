@@ -14,7 +14,7 @@ workgroup
 
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
-# Ignored duplicates: 134
+# Ignored duplicates: 133
 # Ignored entries due to the allowlist: 9
 
 chameleon.ad
@@ -55,7 +55,6 @@ clickwith.bid
 adnet.biz
 adpenguin.biz
 cloudcoins.biz
-code-server.biz
 ads.dtpnetwork.biz
 ads.expat-blog.biz
 adserver.msmb.biz
@@ -146,7 +145,6 @@ install.365-stream.com
 ads.4tube.com
 50websads.com
 518ad.com
-51yes.com
 6ldu6qa.com
 ads.73dpi.com
 777partner.com
@@ -1405,6 +1403,7 @@ leadzupc.com
 leaplunchroom.com
 adserver.lecool.com
 lemmatechnologies.com
+tracking.lenddom.com
 ads.leovegas.com
 ads.lesbianpersonals.com
 lettucelimit.com
@@ -2222,7 +2221,6 @@ theadhost.com
 theclickads.com
 hits.theguardian.com
 themoneytizer.com
-ads.themovienation.com
 therapistla.com
 ads.thestar.com
 thinkablerice.com
@@ -2855,7 +2853,6 @@ clicktrace.info
 croissed.info
 lucklayed.info
 prchecker.info
-qcontentdelivery.info
 shermore.info
 silvalliant.info
 ads.sjon.info
@@ -3025,6 +3022,7 @@ avazutracking.net
 aztracking.net
 bannerconnect.net
 bannertrack.net
+benfly.net
 bestsearch.net
 bidclix.net
 bidswitch.net
@@ -3184,7 +3182,6 @@ trackedlink.net
 trackedweb.net
 trafficjunky.net
 trafficspaces.net
-traffictrader.net
 trk42.net
 truehits.net
 tsyndicate.net
@@ -3362,8 +3359,6 @@ count.rin.ru
 rle.ru
 cnt.spbland.ru
 supertop.ru
-ad.100.tbn.ru
-ad.tbn.ru
 tns-counter.ru
 a.ucoz.ru
 warlog.ru
@@ -11135,7 +11130,7 @@ kkddlt2f.site
 
 ########## Blocklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 1863
+# Ignored duplicates: 1857
 # Ignored entries due to the allowlist: 10
 
 oewabox.at
@@ -11143,6 +11138,7 @@ ads.betfair.com.au
 admerize.be
 adworx.be
 exchange.bg
+code-server.biz
 loopme.biz
 mobile-ent.biz
 reefaquarium.biz
@@ -11162,6 +11158,7 @@ coretalk.co
 3cinteractive.com
 adserver.43plc.com
 4mads.com
+51yes.com
 5thfinger.com
 600z.com
 777seo.com
@@ -11684,6 +11681,7 @@ test.com
 thecounter.com
 ads.theglobeandmail.com
 ads1.theglobeandmail.com
+ads.themovienation.com
 therichkids.com
 ads.thewebfreaks.com
 ad.thewheelof.com
@@ -11921,6 +11919,7 @@ tacoda.net
 tizers.net
 creatives.as4x.tmcs.net
 topsafelist.net
+traffictrader.net
 trafficz.net
 trix.net
 reklame.unwired-i.net
@@ -11975,6 +11974,8 @@ t.pusk.ru
 ad.rambler.ru
 count.rbc.ru
 count6.rbc.ru
+ad.100.tbn.ru
+ad.tbn.ru
 webangel.ru
 wmirk.ru
 adrotator.se
