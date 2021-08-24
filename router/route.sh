@@ -3447,7 +3447,13 @@ route ${OPS} -net 120.76.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 120.80.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 120.88.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 120.90.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 120.92.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 120.92.0.0/17 ${ROUTE_GW}
+route ${OPS} -net 120.92.128.0/18 ${ROUTE_GW}
+route ${OPS} -net 120.92.192.0/22 ${ROUTE_GW}
+route ${OPS} -net 120.92.198.0/23 ${ROUTE_GW}
+route ${OPS} -net 120.92.200.0/21 ${ROUTE_GW}
+route ${OPS} -net 120.92.208.0/20 ${ROUTE_GW}
+route ${OPS} -net 120.92.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 120.94.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 120.128.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 120.136.16.0/21 ${ROUTE_GW}
