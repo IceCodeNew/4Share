@@ -16,18 +16,18 @@ def addr_transfer(net_addr: ipaddress.IPv4Network):
 _: Tuple
 write_buffer = []
 merged_cidr_dict: OrderedDict[int, ipaddress.IPv4Network] = collections.OrderedDict()
-PKU_net = (
-    '115.27.0.0/16',
-    '162.105.0.0/16',
-    '202.112.7.0/24',
-    '202.112.8.0/24',
-    '222.29.0.0/17',
-    '222.29.128.0/19',
-)
-for _tmp_str in PKU_net:
-    write_buffer.append(ipblock2netaddr_int(_tmp_str))
+# PKU_net = (
+#     '115.27.0.0/16',
+#     '162.105.0.0/16',
+#     '202.112.7.0/24',
+#     '202.112.8.0/24',
+#     '222.29.0.0/17',
+#     '222.29.128.0/19',
+# )
+# for _tmp_str in PKU_net:
+#     write_buffer.append(ipblock2netaddr_int(_tmp_str))
 
-with open('china_ip_list.txt', encoding='utf-8', mode='r') as cidr_list:
+with open('chnroutes.txt', encoding='utf-8', mode='r') as cidr_list:
     for line in cidr_list:
         try:
             write_buffer.append(ipblock2netaddr_int(line))
@@ -35,7 +35,7 @@ with open('china_ip_list.txt', encoding='utf-8', mode='r') as cidr_list:
             continue
 merged_cidr_dict.update(write_buffer)
 
-with open('china-ipv4.txt', encoding='utf-8', mode='r') as cidr_list:
+with open('chnroutes-alike.txt', encoding='utf-8', mode='r') as cidr_list:
     for line in cidr_list:
         try:
             _ = ipblock2netaddr_int(line)

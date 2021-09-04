@@ -2,6 +2,12 @@
 
 repos_root='/github'
 
+curl() {
+  # It is OK for the system which has cURL's version greater than `7.76.0` to use `--fail-with-body` instead of `-f`.
+  ## Refer to: https://superuser.com/a/1626376
+  $(type -P curl) -LRq --retry 5 --retry-delay 10 --retry-max-time 60 -f "$@"
+}
+
 cd "$repos_root/4Share/" || exit 1
 # 清理当前目录下所有将由脚本更新的文件，确保不会保留任何旧文件
 find . -type f -iname route.sh -print0 | xargs -0 rm --
@@ -13,22 +19,24 @@ find . -type f -iname accelerated-domains.china.conf -print0 | xargs -0 rm --
 
 # 拷贝最新文件
 /bin/cp -f "$repos_root/dnsmasq-china-list/accelerated-domains.china.conf" ./
-/bin/cp -f "$repos_root/china_ip_list/china_ip_list.txt" ./
+# /bin/cp -f "$repos_root/china_ip_list/china_ip_list.txt" ./
+curl -s 'https://raw.githubusercontent.com/felixonmars/chnroutes-alike/master/chnroutes-alike.txt' | sed -E '/^[^0-9]|^\s*$/d' | sort -V > 'chnroutes-alike.txt'
+curl -s 'https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt' | sed -E '/^[^0-9]|^\s*$/d' | sort -V > 'chnroutes.txt'
 (
 cd "$repos_root/china-operator-ip/" || exit 1
-cat cernet.txt chinanet.txt cmcc.txt cstnet.txt drpeng.txt googlecn.txt tietong.txt unicom.txt > "$repos_root/4Share/china-ipv4.txt"
+# cat cernet.txt chinanet.txt cmcc.txt cstnet.txt drpeng.txt googlecn.txt tietong.txt unicom.txt > "$repos_root/4Share/china-ipv4.txt"
 cat cernet6.txt chinanet6.txt cmcc6.txt cstnet6.txt drpeng6.txt googlecn6.txt tietong6.txt unicom6.txt > "$repos_root/4Share/china-ipv6.txt"
 )
-dos2unix china_ip_list.txt china-ipv6.txt accelerated-domains.china.conf
+dos2unix chnroutes-alike.txt chnroutes.txt china-ipv6.txt accelerated-domains.china.conf
 
 # 针对北京大学校园网划分网段进行特殊处理
-sed -i -E '/^115\.27\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
-sed -i -E '/^162\.105\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
-sed -i -E '/^202\.112\.7\.0.*/d' china_ip_list.txt china-ipv4.txt
-sed -i -E '/^202\.112\.8\.0.*/d' china_ip_list.txt china-ipv4.txt
-sed -i -E '/^222\.29\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
-sed -i -E '/^222\.29\.128\.0.*/d' china_ip_list.txt china-ipv4.txt
-sed -i -E '/^2001:da8:201::.*/d' china-ipv6.txt
+# sed -i -E '/^115\.27\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
+# sed -i -E '/^162\.105\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
+# sed -i -E '/^202\.112\.7\.0.*/d' china_ip_list.txt china-ipv4.txt
+# sed -i -E '/^202\.112\.8\.0.*/d' china_ip_list.txt china-ipv4.txt
+# sed -i -E '/^222\.29\.0\.0.*/d' china_ip_list.txt china-ipv4.txt
+# sed -i -E '/^222\.29\.128\.0.*/d' china_ip_list.txt china-ipv4.txt
+# sed -i -E '/^2001:da8:201::.*/d' china-ipv6.txt
 
 # 创建用于写入 Proxifier 规则的 IP 白名单列表
 # 1. Proxifier 规则暂不支持 CIDR 格式的 IP 地址，因此需要做格式上的转换
@@ -40,6 +48,7 @@ python3 Proxifier/IPv6Convert.py
 sed -i '1i\''payload:' Clash/ICN/CHINA_IP_LIST.yaml
 /bin/mv -f ip_list_?.txt ipv6_list_?.txt Proxifier
 /bin/cp -f china_ip_list.txt geoip_china/china_ip_list.txt
+/bin/rm -f 'chnroutes-alike.txt' 'chnroutes.txt'
 
 # 通过 sed 命令处理之
 sed -i -E -e '/^#|^$/d' -e '/Disable/d' accelerated-domains.china.conf

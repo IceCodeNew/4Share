@@ -8,7 +8,8 @@ def addr_v6_transfer(input_addr: str):
     )
 
 
-write_buffer = [addr_v6_transfer('2001:da8:201::/48')]
+# write_buffer = [addr_v6_transfer('2001:da8:201::/48')]
+write_buffer = []
 i = 1
 
 with open('china-ipv6.txt', encoding='utf-8', mode='r') as cidr_list:
