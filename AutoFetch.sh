@@ -2,7 +2,7 @@
 
 repos_root='/github'
 stat_dnsmasq=1
-stat_chinaip=1
+# stat_chinaip=1
 stat_china_operator_ip=1
 # stat_geoipv6=0
 
@@ -16,13 +16,13 @@ else
     git reset --hard origin/master
 fi
 
-cd "$repos_root/china_ip_list" || exit 1
-git fetch --all
-if git status | grep -q "Your branch is up to date with 'origin/master'."; then
-    stat_chinaip=0
-else
-    git reset --hard origin/master
-fi
+# cd "$repos_root/china_ip_list" || exit 1
+# git fetch --all
+# if git status | grep -q "Your branch is up to date with 'origin/master'."; then
+#     stat_chinaip=0
+# else
+#     git reset --hard origin/master
+# fi
 
 cd "$repos_root/china-operator-ip" || exit 1
 git fetch --all
@@ -49,7 +49,7 @@ fi
 
 cd "$repos_root/4Share" || exit 1
 # if [ $stat_dnsmasq -ne 0 ] || [ $stat_chinaip -ne 0 ] || [ $stat_geoipv6 -ne 0 ]; then
-if [ $stat_dnsmasq -ne 0 ] || [ $stat_chinaip -ne 0 ] || [ $stat_china_operator_ip -ne 0 ]; then
+if [ $stat_dnsmasq -ne 0 ] || [ $stat_china_operator_ip -ne 0 ] || date +%M | grep -qF '06'; then
     bash AutoCommit.sh
 else
     exit 0
