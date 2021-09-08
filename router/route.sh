@@ -901,7 +901,7 @@ route ${OPS} -net 103.10.0.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.10.84.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.12.184.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.12.232.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.13.12.0/23 ${ROUTE_GW}
+route ${OPS} -net 103.13.12.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.13.220.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.13.244.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.14.132.0/23 ${ROUTE_GW}
