@@ -1689,11 +1689,10 @@ route ${OPS} -net 111.224.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 111.229.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 111.230.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 111.235.156.0/22 ${ROUTE_GW}
-route ${OPS} -net 111.235.160.0/23 ${ROUTE_GW}
-route ${OPS} -net 111.235.163.0/24 ${ROUTE_GW}
+route ${OPS} -net 111.235.160.0/22 ${ROUTE_GW}
 route ${OPS} -net 111.235.164.0/23 ${ROUTE_GW}
 route ${OPS} -net 111.235.170.0/23 ${ROUTE_GW}
-route ${OPS} -net 111.235.173.0/24 ${ROUTE_GW}
+route ${OPS} -net 111.235.172.0/23 ${ROUTE_GW}
 route ${OPS} -net 111.235.174.0/24 ${ROUTE_GW}
 route ${OPS} -net 111.235.178.0/24 ${ROUTE_GW}
 route ${OPS} -net 111.235.180.0/23 ${ROUTE_GW}
