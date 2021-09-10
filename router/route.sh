@@ -1937,7 +1937,11 @@ route ${OPS} -net 117.24.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 117.32.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 117.40.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 117.44.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 117.48.0.0/17 ${ROUTE_GW}
+route ${OPS} -net 117.48.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 117.48.64.0/19 ${ROUTE_GW}
+route ${OPS} -net 117.48.100.0/22 ${ROUTE_GW}
+route ${OPS} -net 117.48.104.0/21 ${ROUTE_GW}
+route ${OPS} -net 117.48.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 117.48.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 117.48.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 117.48.192.0/19 ${ROUTE_GW}
