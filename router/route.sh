@@ -262,7 +262,8 @@ route ${OPS} -net 43.228.48.0/20 ${ROUTE_GW}
 route ${OPS} -net 43.228.64.0/21 ${ROUTE_GW}
 route ${OPS} -net 43.228.76.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.228.116.0/22 ${ROUTE_GW}
-route ${OPS} -net 43.229.48.0/22 ${ROUTE_GW}
+route ${OPS} -net 43.229.48.0/23 ${ROUTE_GW}
+route ${OPS} -net 43.229.50.0/24 ${ROUTE_GW}
 route ${OPS} -net 43.229.120.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.229.185.0/24 ${ROUTE_GW}
 route ${OPS} -net 43.229.186.0/23 ${ROUTE_GW}
@@ -1219,7 +1220,6 @@ route ${OPS} -net 103.107.188.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.107.216.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.108.160.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.108.244.0/24 ${ROUTE_GW}
-route ${OPS} -net 103.108.247.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.109.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.110.81.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.110.92.0/22 ${ROUTE_GW}
@@ -3916,7 +3916,7 @@ route ${OPS} -net 223.240.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 223.248.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 223.252.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 223.255.0.0/17 ${ROUTE_GW}
-route ${OPS} -net 223.255.236.0/22 ${ROUTE_GW}
+route ${OPS} -net 223.255.236.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.255.252.0/23 ${ROUTE_GW}
 
 # https://its.pku.edu.cn/faq.jsp  --获得北大IP网段
