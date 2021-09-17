@@ -2909,7 +2909,6 @@ route ${OPS} -net 175.48.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 175.64.0.0/11 ${ROUTE_GW}
 route ${OPS} -net 175.102.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 175.102.32.0/22 ${ROUTE_GW}
-route ${OPS} -net 175.102.54.0/23 ${ROUTE_GW}
 route ${OPS} -net 175.102.128.0/21 ${ROUTE_GW}
 route ${OPS} -net 175.102.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 175.102.192.0/22 ${ROUTE_GW}
