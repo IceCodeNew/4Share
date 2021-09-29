@@ -840,7 +840,7 @@ route ${OPS} -net 101.198.194.0/24 ${ROUTE_GW}
 route ${OPS} -net 101.198.196.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.198.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.199.48.0/20 ${ROUTE_GW}
-route ${OPS} -net 101.199.96.0/21 ${ROUTE_GW}
+route ${OPS} -net 101.199.97.0/24 ${ROUTE_GW}
 route ${OPS} -net 101.199.112.0/23 ${ROUTE_GW}
 route ${OPS} -net 101.199.114.0/24 ${ROUTE_GW}
 route ${OPS} -net 101.199.125.0/24 ${ROUTE_GW}
