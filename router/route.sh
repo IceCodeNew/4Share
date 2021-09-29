@@ -3022,9 +3022,7 @@ route ${OPS} -net 185.243.43.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.245.2.0/23 ${ROUTE_GW}
 route ${OPS} -net 185.247.228.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.255.55.0/24 ${ROUTE_GW}
-route ${OPS} -net 188.65.77.0/24 ${ROUTE_GW}
 route ${OPS} -net 188.131.128.0/17 ${ROUTE_GW}
-route ${OPS} -net 188.172.204.0/24 ${ROUTE_GW}
 route ${OPS} -net 192.55.46.0/24 ${ROUTE_GW}
 route ${OPS} -net 192.55.68.0/22 ${ROUTE_GW}
 route ${OPS} -net 192.69.88.0/21 ${ROUTE_GW}
