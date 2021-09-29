@@ -3841,6 +3841,8 @@ route ${OPS} -net 220.201.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 220.202.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 220.203.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.203.216.0/23 ${ROUTE_GW}
+route ${OPS} -net 220.203.220.0/22 ${ROUTE_GW}
+route ${OPS} -net 220.203.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.205.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 220.206.192.0/22 ${ROUTE_GW}
 route ${OPS} -net 220.207.0.0/22 ${ROUTE_GW}
