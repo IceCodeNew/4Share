@@ -2211,7 +2211,9 @@ route ${OPS} -net 121.32.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 121.36.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 121.38.0.0/24 ${ROUTE_GW}
 route ${OPS} -net 121.40.0.0/14 ${ROUTE_GW}
-route ${OPS} -net 121.46.0.0/19 ${ROUTE_GW}
+route ${OPS} -net 121.46.0.0/20 ${ROUTE_GW}
+route ${OPS} -net 121.46.16.0/21 ${ROUTE_GW}
+route ${OPS} -net 121.46.24.0/22 ${ROUTE_GW}
 route ${OPS} -net 121.46.128.0/21 ${ROUTE_GW}
 route ${OPS} -net 121.46.140.0/22 ${ROUTE_GW}
 route ${OPS} -net 121.46.144.0/20 ${ROUTE_GW}
