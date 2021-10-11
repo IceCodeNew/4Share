@@ -778,6 +778,11 @@ route ${OPS} -net 101.32.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 101.32.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 101.32.238.0/23 ${ROUTE_GW}
 route ${OPS} -net 101.32.240.0/20 ${ROUTE_GW}
+route ${OPS} -net 101.33.32.0/20 ${ROUTE_GW}
+route ${OPS} -net 101.33.48.0/22 ${ROUTE_GW}
+route ${OPS} -net 101.33.100.0/22 ${ROUTE_GW}
+route ${OPS} -net 101.33.104.0/21 ${ROUTE_GW}
+route ${OPS} -net 101.33.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 101.33.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 101.34.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 101.36.0.0/18 ${ROUTE_GW}
