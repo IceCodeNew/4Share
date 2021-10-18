@@ -3829,10 +3829,7 @@ route ${OPS} -net 222.176.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 222.192.0.0/11 ${ROUTE_GW}
 route ${OPS} -net 222.240.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 222.248.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 223.0.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 223.2.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 223.4.0.0/14 ${ROUTE_GW}
-route ${OPS} -net 223.8.0.0/13 ${ROUTE_GW}
+route ${OPS} -net 223.0.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 223.27.184.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.64.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 223.128.0.0/15 ${ROUTE_GW}
