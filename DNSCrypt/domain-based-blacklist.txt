@@ -14,7 +14,7 @@ workgroup
 
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
-# Ignored duplicates: 169
+# Ignored duplicates: 170
 # Ignored entries due to the allowlist: 10
 
 chameleon.ad
@@ -1535,6 +1535,7 @@ mixpanel.com
 mkto-ab410147.com
 mktoresp.com
 ml314.com
+mlsend.com
 ads.mmania.com
 mmismm.com
 mmstat.com
@@ -2918,7 +2919,6 @@ pxf.io
 quickkoala.io
 redshell.io
 revlift.io
-segmetrics.io
 simpleanalytics.io
 siteimproveanalytics.io
 smart-traffik.io
@@ -82120,7 +82120,7 @@ www2.r-b.org.za
 
 ########## Blocklist from https://hosts.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 47171
+# Ignored duplicates: 47170
 # Ignored entries due to the allowlist: 57
 
 ad.animehub.ac
@@ -117104,6 +117104,7 @@ beacon.searchspring.io
 awesome.section.io
 bacon.section.io
 api.segment.io
+segmetrics.io
 usage.seibert-media.io
 seoab.io
 seon.io
