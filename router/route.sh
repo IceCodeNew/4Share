@@ -625,7 +625,7 @@ route ${OPS} -net 59.81.46.0/24 ${ROUTE_GW}
 route ${OPS} -net 59.81.64.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.68.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.72.0/23 ${ROUTE_GW}
-route ${OPS} -net 59.81.76.0/22 ${ROUTE_GW}
+route ${OPS} -net 59.81.78.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.80.0/22 ${ROUTE_GW}
 route ${OPS} -net 59.81.86.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.88.0/23 ${ROUTE_GW}
