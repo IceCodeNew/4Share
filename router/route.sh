@@ -1904,13 +1904,6 @@ route ${OPS} -net 117.48.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 117.48.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 117.48.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 117.48.224.0/20 ${ROUTE_GW}
-route ${OPS} -net 117.49.128.0/18 ${ROUTE_GW}
-route ${OPS} -net 117.49.192.0/19 ${ROUTE_GW}
-route ${OPS} -net 117.49.224.0/20 ${ROUTE_GW}
-route ${OPS} -net 117.49.240.0/21 ${ROUTE_GW}
-route ${OPS} -net 117.49.248.0/22 ${ROUTE_GW}
-route ${OPS} -net 117.49.252.0/23 ${ROUTE_GW}
-route ${OPS} -net 117.49.254.0/24 ${ROUTE_GW}
 route ${OPS} -net 117.50.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 117.51.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 117.57.0.0/16 ${ROUTE_GW}
