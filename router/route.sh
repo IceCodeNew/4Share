@@ -62,6 +62,7 @@ route ${OPS} -net 8.132.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 8.136.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 8.140.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 8.144.0.0/14 ${ROUTE_GW}
+route ${OPS} -net 8.214.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 13.107.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 14.16.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 14.104.0.0/13 ${ROUTE_GW}
