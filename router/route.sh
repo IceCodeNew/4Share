@@ -618,7 +618,6 @@ route ${OPS} -net 59.64.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 59.80.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 59.81.8.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.12.0/23 ${ROUTE_GW}
-route ${OPS} -net 59.81.16.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.20.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.24.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.81.36.0/23 ${ROUTE_GW}
