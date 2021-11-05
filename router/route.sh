@@ -3508,8 +3508,9 @@ route ${OPS} -net 211.98.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 211.99.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.99.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.99.96.0/20 ${ROUTE_GW}
-route ${OPS} -net 211.99.112.0/23 ${ROUTE_GW}
-route ${OPS} -net 211.99.114.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.99.112.0/22 ${ROUTE_GW}
+route ${OPS} -net 211.99.116.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.99.122.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.99.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 211.100.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.100.64.0/19 ${ROUTE_GW}
