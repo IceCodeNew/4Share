@@ -1877,7 +1877,6 @@ route ${OPS} -net 116.199.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 116.204.169.0/24 ${ROUTE_GW}
 route ${OPS} -net 116.204.170.0/23 ${ROUTE_GW}
 route ${OPS} -net 116.205.0.0/18 ${ROUTE_GW}
-route ${OPS} -net 116.205.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 116.206.92.0/24 ${ROUTE_GW}
 route ${OPS} -net 116.206.102.0/24 ${ROUTE_GW}
 route ${OPS} -net 116.207.0.0/16 ${ROUTE_GW}
