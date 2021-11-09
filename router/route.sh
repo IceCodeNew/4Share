@@ -230,6 +230,7 @@ route ${OPS} -net 43.15.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 43.15.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 43.15.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.15.252.0/23 ${ROUTE_GW}
+route ${OPS} -net 43.15.254.0/24 ${ROUTE_GW}
 route ${OPS} -net 43.224.12.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.24.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.52.0/23 ${ROUTE_GW}
