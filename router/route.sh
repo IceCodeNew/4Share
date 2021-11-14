@@ -2913,7 +2913,8 @@ route ${OPS} -net 180.235.64.0/21 ${ROUTE_GW}
 route ${OPS} -net 180.235.72.0/23 ${ROUTE_GW}
 route ${OPS} -net 180.235.137.0/24 ${ROUTE_GW}
 route ${OPS} -net 182.18.5.0/24 ${ROUTE_GW}
-route ${OPS} -net 182.18.32.0/19 ${ROUTE_GW}
+route ${OPS} -net 182.18.32.0/20 ${ROUTE_GW}
+route ${OPS} -net 182.18.56.0/21 ${ROUTE_GW}
 route ${OPS} -net 182.18.72.0/21 ${ROUTE_GW}
 route ${OPS} -net 182.18.80.0/20 ${ROUTE_GW}
 route ${OPS} -net 182.18.96.0/19 ${ROUTE_GW}
