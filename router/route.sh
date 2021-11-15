@@ -305,7 +305,7 @@ route ${OPS} -net 43.242.32.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.242.64.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.242.72.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.242.84.0/22 ${ROUTE_GW}
-route ${OPS} -net 43.242.96.0/23 ${ROUTE_GW}
+route ${OPS} -net 43.242.96.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.242.128.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.242.152.0/21 ${ROUTE_GW}
 route ${OPS} -net 43.242.164.0/22 ${ROUTE_GW}
