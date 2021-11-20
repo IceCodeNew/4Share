@@ -2153,11 +2153,11 @@ route ${OPS} -net 119.164.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 119.176.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 119.233.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 119.235.128.0/22 ${ROUTE_GW}
-route ${OPS} -net 119.235.136.0/24 ${ROUTE_GW}
+route ${OPS} -net 119.235.136.0/23 ${ROUTE_GW}
 route ${OPS} -net 119.235.138.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.235.143.0/24 ${ROUTE_GW}
-route ${OPS} -net 119.235.144.0/24 ${ROUTE_GW}
-route ${OPS} -net 119.235.146.0/24 ${ROUTE_GW}
+route ${OPS} -net 119.235.144.0/22 ${ROUTE_GW}
+route ${OPS} -net 119.235.148.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.235.151.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.235.160.0/22 ${ROUTE_GW}
 route ${OPS} -net 119.235.164.0/24 ${ROUTE_GW}
