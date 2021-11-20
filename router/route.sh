@@ -714,7 +714,7 @@ route ${OPS} -net 67.198.174.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.177.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.179.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.184.0/23 ${ROUTE_GW}
-route ${OPS} -net 67.198.188.0/23 ${ROUTE_GW}
+route ${OPS} -net 67.198.189.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.192.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.195.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.199.0/24 ${ROUTE_GW}
