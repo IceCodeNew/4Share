@@ -121,6 +121,7 @@ route ${OPS} -net 27.184.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 27.192.0.0/11 ${ROUTE_GW}
 route ${OPS} -net 27.224.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 31.22.107.0/24 ${ROUTE_GW}
+route ${OPS} -net 31.25.88.0/23 ${ROUTE_GW}
 route ${OPS} -net 36.1.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 36.4.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 36.16.0.0/12 ${ROUTE_GW}
