@@ -1762,6 +1762,7 @@ route ${OPS} -net 114.112.136.0/21 ${ROUTE_GW}
 route ${OPS} -net 114.112.144.0/20 ${ROUTE_GW}
 route ${OPS} -net 114.112.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 114.112.192.0/21 ${ROUTE_GW}
+route ${OPS} -net 114.112.208.0/20 ${ROUTE_GW}
 route ${OPS} -net 114.113.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 114.113.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 114.113.64.0/18 ${ROUTE_GW}
