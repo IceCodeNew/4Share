@@ -3756,7 +3756,7 @@ route ${OPS} -net 220.200.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.200.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 220.201.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 220.202.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 220.203.32.0/19 ${ROUTE_GW}
+route ${OPS} -net 220.203.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 220.203.216.0/23 ${ROUTE_GW}
 route ${OPS} -net 220.203.220.0/22 ${ROUTE_GW}
 route ${OPS} -net 220.203.224.0/19 ${ROUTE_GW}
