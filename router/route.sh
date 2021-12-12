@@ -3601,11 +3601,8 @@ route ${OPS} -net 211.162.192.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.162.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.162.236.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.162.240.0/20 ${ROUTE_GW}
-route ${OPS} -net 211.166.4.0/22 ${ROUTE_GW}
-route ${OPS} -net 211.166.17.0/24 ${ROUTE_GW}
-route ${OPS} -net 211.166.247.0/24 ${ROUTE_GW}
-route ${OPS} -net 211.166.249.0/24 ${ROUTE_GW}
-route ${OPS} -net 211.166.250.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.165.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 211.166.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 211.167.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.167.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.167.176.0/20 ${ROUTE_GW}
