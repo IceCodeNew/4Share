@@ -400,6 +400,7 @@ route ${OPS} -net 45.9.10.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.11.46.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.13.199.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.40.192.0/18 ${ROUTE_GW}
+route ${OPS} -net 45.45.176.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.65.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.65.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.80.189.0/24 ${ROUTE_GW}
