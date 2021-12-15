@@ -332,6 +332,7 @@ route ${OPS} -net 43.243.156.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.243.228.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.243.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.243.244.0/22 ${ROUTE_GW}
+route ${OPS} -net 43.245.220.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.246.228.0/23 ${ROUTE_GW}
 route ${OPS} -net 43.247.4.0/24 ${ROUTE_GW}
 route ${OPS} -net 43.247.8.0/22 ${ROUTE_GW}
