@@ -87,7 +87,6 @@ route ${OPS} -net 17.250.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 17.252.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 17.252.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 17.252.224.0/20 ${ROUTE_GW}
-route ${OPS} -net 23.190.176.0/24 ${ROUTE_GW}
 route ${OPS} -net 23.207.201.0/24 ${ROUTE_GW}
 route ${OPS} -net 23.224.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 23.235.160.0/19 ${ROUTE_GW}
