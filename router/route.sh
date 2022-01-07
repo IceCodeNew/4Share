@@ -1607,6 +1607,7 @@ route ${OPS} -net 110.156.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 110.166.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 110.172.211.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.172.213.0/24 ${ROUTE_GW}
+route ${OPS} -net 110.172.214.0/23 ${ROUTE_GW}
 route ${OPS} -net 110.172.217.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.172.221.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.173.32.0/20 ${ROUTE_GW}
