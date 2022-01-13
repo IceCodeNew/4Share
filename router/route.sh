@@ -28,7 +28,6 @@ OPS=$1
 # wget -qo- https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 # sed -i -E 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 
-route ${OPS} -net 1.1.8.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.2.4.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.8.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.8.8.0/24 ${ROUTE_GW}
