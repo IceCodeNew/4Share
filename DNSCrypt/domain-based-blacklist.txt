@@ -23781,7 +23781,7 @@ email.pampers.co.za
 
 ########## Blocklist from https://hosts.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 18372
+# Ignored duplicates: 18364
 # Ignored entries due to the allowlist: 54
 
 ad.animehub.ac
@@ -47677,14 +47677,19 @@ adsview.qq.com
 adsview2.qq.com
 aegis.qq.com
 analy.qq.com
-beacon.qq.com
+otheve.beacon.qq.com
 btrace.qq.com
 astat.bugly.qq.com
 ios.bugly.qq.com
-e.qq.com
+cm.e.qq.com
+sdk.e.qq.com
 fodder.qq.com
 fw.qq.com
-gdt.qq.com
+c2.gdt.qq.com
+mi.gdt.qq.com
+nc.gdt.qq.com
+v.gdt.qq.com
+v2.gdt.qq.com
 mqqad.html5.qq.com
 httpring.qq.com
 cfg.imtt.qq.com
@@ -47708,7 +47713,6 @@ pingtcss.qq.com
 qqlogo.qq.com
 qring-tms.qq.com
 qss-client.qq.com
-report.qq.com
 rh.qq.com
 rs1.qq.com
 rs2.qq.com
@@ -47717,8 +47721,6 @@ show-msgch.qq.com
 sngmta.qq.com
 log.tbs.qq.com
 fodder.tc.qq.com
-trace.qq.com
-btrace.video.qq.com
 stat.y.qq.com
 qq288jak.com
 qq2img.com
