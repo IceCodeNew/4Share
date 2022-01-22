@@ -12284,18 +12284,24 @@ vq1qi.pw
 
 ########## Blocklist from https://raw.githubusercontent.com/nextdns/cname-cloaking-blocklist/master/domains ##########
 
-# Ignored duplicates: 9
+# Ignored duplicates: 16
 # Ignored entries due to the allowlist: 1
 
+0i0i0i0.com
+actonservice.com
 a351fec2c318c11ea9b9b0a0ae18fb0b-1529426863.eu-central-1.elb.amazonaws.com
 a5e652663674a11e997c60ac8a4ec150-1684524385.eu-central-1.elb.amazonaws.com
 a88045584548111e997c60ac8a4ec150-1610510072.eu-central-1.elb.amazonaws.com
 afc4d9aa2a91d11e997c60ac8a4ec150-2082092489.eu-central-1.elb.amazonaws.com
+hs.eloqua.com
+k.madmetrics.com
+go.pardot.com
 oghub.io
+mm.actionlink.jp
+ad-cloud.jp
 data.adobedc.net
 sc.adobedc.net
 tracking.bp01.net
-partner.intentmedia.net
 ghochv3eng.trafficmanager.net
 webtrekk.net
 affex.org
@@ -12303,7 +12309,7 @@ affex.org
 
 ########## Blocklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 2575
+# Ignored duplicates: 2670
 
 yjo8.destinia.ad
 dlc9.destinia.ae
@@ -12433,7 +12439,6 @@ info2.acton-success.com
 info3.acton-success.com
 info4.acton-success.com
 mail.actonpearl.com
-actonservice.com
 mail1.actsys-mail.com
 go.acvauctions.com
 go.adara.com
@@ -17918,99 +17923,6 @@ go.elementfleet.com
 go.elkay.com
 forms.elkayplastics.com
 go.ellisontechnologies.com
-s101295317.hs.eloqua.com
-s1013191099.hs.eloqua.com
-s1019741931.hs.eloqua.com
-s1068922595.hs.eloqua.com
-s1097967772.hs.eloqua.com
-s1107300821.hs.eloqua.com
-s1133.hs.eloqua.com
-s113755760.hs.eloqua.com
-s1155.hs.eloqua.com
-s1168626303.hs.eloqua.com
-s1184.hs.eloqua.com
-s1209148949.hs.eloqua.com
-s1229.hs.eloqua.com
-s1258972516.hs.eloqua.com
-s1265708786.hs.eloqua.com
-s1311950425.hs.eloqua.com
-s1325.hs.eloqua.com
-s1343588892.hs.eloqua.com
-s1363.hs.eloqua.com
-s1365483532.hs.eloqua.com
-s1424104964.hs.eloqua.com
-s1426.hs.eloqua.com
-s1439730185.hs.eloqua.com
-s1480.hs.eloqua.com
-s1507516398.hs.eloqua.com
-s1513444615.hs.eloqua.com
-s1528.hs.eloqua.com
-s1550576449.hs.eloqua.com
-s1575097598.hs.eloqua.com
-s161752090.hs.eloqua.com
-s1632284857.hs.eloqua.com
-s1662042262.hs.eloqua.com
-s1701211846.hs.eloqua.com
-s1753710694.hs.eloqua.com
-s1763.hs.eloqua.com
-s177775138.hs.eloqua.com
-s1833705806.hs.eloqua.com
-s1836376575.hs.eloqua.com
-s1849907385.hs.eloqua.com
-s1857297006.hs.eloqua.com
-s1865390481.hs.eloqua.com
-s1879417329.hs.eloqua.com
-s1879648565.hs.eloqua.com
-s188599536.hs.eloqua.com
-s1887277791.hs.eloqua.com
-s1904481191.hs.eloqua.com
-s1913652004.hs.eloqua.com
-s1929339847.hs.eloqua.com
-s1973398186.hs.eloqua.com
-s1981585949.hs.eloqua.com
-s2001.hs.eloqua.com
-s2008141379.hs.eloqua.com
-s2033604275.hs.eloqua.com
-s2048.hs.eloqua.com
-s2048847999.hs.eloqua.com
-s2108654627.hs.eloqua.com
-s2136619493.hs.eloqua.com
-s2376.hs.eloqua.com
-s275197016.hs.eloqua.com
-s290512336.hs.eloqua.com
-s333945334.hs.eloqua.com
-s334284386.hs.eloqua.com
-s337390453.hs.eloqua.com
-s373.hs.eloqua.com
-s431645872.hs.eloqua.com
-s443791045.hs.eloqua.com
-s460529241.hs.eloqua.com
-s462232510.hs.eloqua.com
-s477278796.hs.eloqua.com
-s489322457.hs.eloqua.com
-s522558593.hs.eloqua.com
-s566810826.hs.eloqua.com
-s600830862.hs.eloqua.com
-s602383747.hs.eloqua.com
-s609785623.hs.eloqua.com
-s665010475.hs.eloqua.com
-s672.hs.eloqua.com
-s704917861.hs.eloqua.com
-s73756918.hs.eloqua.com
-s773611208.hs.eloqua.com
-s786780033.hs.eloqua.com
-s795651218.hs.eloqua.com
-s840.hs.eloqua.com
-s843062548.hs.eloqua.com
-s84780736.hs.eloqua.com
-s868742820.hs.eloqua.com
-s882408426.hs.eloqua.com
-s90815893.hs.eloqua.com
-s912704989.hs.eloqua.com
-s937.hs.eloqua.com
-s944086489.hs.eloqua.com
-s983435340.hs.eloqua.com
-s988593727.hs.eloqua.com
 em-americanexpress.com
 e.email-bkfs.com
 email-gamestop.com
@@ -18936,7 +18848,6 @@ arg.mail.pantene.com
 go.paragonaviationgroup.com
 assets.pardot.com
 embedded.pardot.com
-go.pardot.com
 pi.pardot.com
 pi-ue1.pardot.com
 pi.t.pardot.com
@@ -23773,7 +23684,7 @@ email.pampers.co.za
 
 ########## Blocklist from https://hosts.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 18443
+# Ignored duplicates: 18446
 # Ignored entries due to the allowlist: 49
 
 ad.animehub.ac
@@ -23975,7 +23886,6 @@ www2.tpgi.com.au
 tracker-one.com.au
 waoptions.com.au
 counter.theconversation.edu.au
-boot-camp-fitness-perth.net.au
 members.iinet.net.au
 jebs.net.au
 loopa.net.au
@@ -23989,9 +23899,7 @@ mobilink.az
 uber-ourtaxi.az
 ca4363f2035eb8674cc42e2787ffb3bb.bar
 linkline.bar
-linkstat.bar
 linkstats.bar
-liquidazioni.bar
 omnibox.bar
 srch.bar
 cushyscl.com.bd
@@ -28146,7 +28054,6 @@ stattrack.0catch.com
 0f461325bf56c3e1b9.com
 0fmm.com
 0h6djpk8fn.com
-0i0i0i0.com
 0i56tboc6j5i.com
 0klxjejyxak3.com
 0n55f9zgy7.com
@@ -45989,7 +45896,6 @@ paraveronline.com
 parchmentwhale.com
 pardedatl.com
 pardnergam.com
-cdn.pardot.com
 metrics.parents.com
 parflushfeet.com
 start.parimatch.com
@@ -48627,7 +48533,6 @@ rousedmilk.com
 roustarlyan.com
 routemob.com
 routemomentarilydiscovering.com
-rovabanopa.com
 rovews.com
 adnetwork.rovicorp.com
 laurel.rovicorp.com
@@ -58904,7 +58809,6 @@ inaffiliago.it
 infogiovanialtopavese.it
 adserver.interfree.it
 newadserver.interfree.it
-inthestore.it
 adserver.inwind.it
 cnt.iol.it
 evnt.iol.it
@@ -59004,9 +58908,7 @@ aaaf.jp
 abc-tax.jp
 mbi3.kuicr.kyoto-u.ac.jp
 smp.tus.ac.jp
-mm.actionlink.jp
 ad-analyze.jp
-ad-cloud.jp
 ad-count.jp
 ad-generation.jp
 static.ad-lancers.jp
@@ -69643,7 +69545,6 @@ i.shannon-fisher.xyz
 shapelcounset.xyz
 shareman.xyz
 shbmymhkwsaskje.xyz
-shenhavmethanbar.xyz
 shilternimpossip.xyz
 shitao.xyz
 sitecham.xyz
