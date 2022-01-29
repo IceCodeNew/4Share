@@ -739,6 +739,8 @@ route ${OPS} -net 69.234.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 69.235.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 71.131.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 71.132.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 71.137.0.0/22 ${ROUTE_GW}
+route ${OPS} -net 71.137.4.0/24 ${ROUTE_GW}
 route ${OPS} -net 72.163.240.0/23 ${ROUTE_GW}
 route ${OPS} -net 72.163.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 74.222.145.0/24 ${ROUTE_GW}
