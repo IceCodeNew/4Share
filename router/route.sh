@@ -2730,7 +2730,6 @@ route ${OPS} -net 156.245.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 156.247.0.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.247.11.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.247.12.0/22 ${ROUTE_GW}
-route ${OPS} -net 156.248.76.0/22 ${ROUTE_GW}
 route ${OPS} -net 156.251.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 156.251.48.0/20 ${ROUTE_GW}
 route ${OPS} -net 156.251.128.0/17 ${ROUTE_GW}
