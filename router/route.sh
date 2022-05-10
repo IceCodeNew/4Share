@@ -307,8 +307,7 @@ route ${OPS} -net 43.240.200.0/23 ${ROUTE_GW}
 route ${OPS} -net 43.240.204.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.240.244.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.240.248.0/21 ${ROUTE_GW}
-route ${OPS} -net 43.241.0.0/21 ${ROUTE_GW}
-route ${OPS} -net 43.241.8.0/22 ${ROUTE_GW}
+route ${OPS} -net 43.241.0.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.241.16.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.241.48.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.241.76.0/22 ${ROUTE_GW}
@@ -341,7 +340,6 @@ route ${OPS} -net 43.243.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.243.244.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.246.228.0/23 ${ROUTE_GW}
 route ${OPS} -net 43.247.4.0/24 ${ROUTE_GW}
-route ${OPS} -net 43.247.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.247.68.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.247.76.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.247.88.0/22 ${ROUTE_GW}
@@ -990,8 +988,6 @@ route ${OPS} -net 103.36.168.0/21 ${ROUTE_GW}
 route ${OPS} -net 103.36.192.0/20 ${ROUTE_GW}
 route ${OPS} -net 103.36.208.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.36.221.0/24 ${ROUTE_GW}
-route ${OPS} -net 103.36.224.0/20 ${ROUTE_GW}
-route ${OPS} -net 103.36.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 103.37.12.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.37.16.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.37.44.0/22 ${ROUTE_GW}
@@ -2433,7 +2429,6 @@ route ${OPS} -net 124.71.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 124.71.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 124.71.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 124.71.224.0/20 ${ROUTE_GW}
-route ${OPS} -net 124.71.250.0/24 ${ROUTE_GW}
 route ${OPS} -net 124.72.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 124.88.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 124.112.0.0/13 ${ROUTE_GW}
@@ -2537,7 +2532,6 @@ route ${OPS} -net 139.5.60.0/22 ${ROUTE_GW}
 route ${OPS} -net 139.9.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 139.9.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 139.9.96.0/23 ${ROUTE_GW}
-route ${OPS} -net 139.9.98.0/24 ${ROUTE_GW}
 route ${OPS} -net 139.9.100.0/22 ${ROUTE_GW}
 route ${OPS} -net 139.9.104.0/21 ${ROUTE_GW}
 route ${OPS} -net 139.9.112.0/20 ${ROUTE_GW}
