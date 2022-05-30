@@ -3719,7 +3719,7 @@ route ${OPS} -net 219.152.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 219.156.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 219.158.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 219.158.32.0/20 ${ROUTE_GW}
-route ${OPS} -net 219.158.59.0/24 ${ROUTE_GW}
+route ${OPS} -net 219.158.58.0/23 ${ROUTE_GW}
 route ${OPS} -net 219.158.60.0/22 ${ROUTE_GW}
 route ${OPS} -net 219.158.96.0/19 ${ROUTE_GW}
 route ${OPS} -net 219.158.128.0/17 ${ROUTE_GW}
