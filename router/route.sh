@@ -2606,7 +2606,6 @@ route ${OPS} -net 140.246.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 140.249.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 140.250.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 140.255.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 141.11.98.0/24 ${ROUTE_GW}
 route ${OPS} -net 143.64.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 144.0.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 144.7.0.0/17 ${ROUTE_GW}
