@@ -139,7 +139,12 @@ route ${OPS} -net 36.112.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 36.113.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 36.113.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 36.113.160.0/23 ${ROUTE_GW}
+route ${OPS} -net 36.113.178.0/23 ${ROUTE_GW}
+route ${OPS} -net 36.113.180.0/22 ${ROUTE_GW}
 route ${OPS} -net 36.113.192.0/23 ${ROUTE_GW}
+route ${OPS} -net 36.113.210.0/23 ${ROUTE_GW}
+route ${OPS} -net 36.113.212.0/22 ${ROUTE_GW}
+route ${OPS} -net 36.113.216.0/22 ${ROUTE_GW}
 route ${OPS} -net 36.113.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 36.113.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 36.113.248.0/23 ${ROUTE_GW}
