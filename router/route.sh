@@ -3588,6 +3588,9 @@ route ${OPS} -net 211.148.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 211.148.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.148.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.148.176.0/21 ${ROUTE_GW}
+route ${OPS} -net 211.148.184.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.148.187.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.148.188.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.148.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.149.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 211.150.0.0/18 ${ROUTE_GW}
