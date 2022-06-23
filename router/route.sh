@@ -680,6 +680,7 @@ route ${OPS} -net 59.81.104.0/22 ${ROUTE_GW}
 route ${OPS} -net 59.82.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 59.82.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 59.82.96.0/22 ${ROUTE_GW}
+route ${OPS} -net 59.82.104.0/21 ${ROUTE_GW}
 route ${OPS} -net 59.82.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 59.83.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 59.83.224.0/21 ${ROUTE_GW}
