@@ -3892,10 +3892,10 @@ route ${OPS} -net 223.64.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 223.128.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 223.144.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 223.160.0.0/23 ${ROUTE_GW}
-route ${OPS} -net 223.160.6.0/23 ${ROUTE_GW}
+route ${OPS} -net 223.160.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.160.8.0/23 ${ROUTE_GW}
-route ${OPS} -net 223.160.12.0/23 ${ROUTE_GW}
-route ${OPS} -net 223.160.16.0/22 ${ROUTE_GW}
+route ${OPS} -net 223.160.12.0/22 ${ROUTE_GW}
+route ${OPS} -net 223.160.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 223.160.128.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.160.136.0/22 ${ROUTE_GW}
@@ -3911,6 +3911,7 @@ route ${OPS} -net 223.160.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.160.206.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.160.208.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.220.0/22 ${ROUTE_GW}
+route ${OPS} -net 223.160.224.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.160.236.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.166.0.0/15 ${ROUTE_GW}
