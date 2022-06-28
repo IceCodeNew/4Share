@@ -3913,7 +3913,8 @@ route ${OPS} -net 223.160.134.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.160.136.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.144.0/20 ${ROUTE_GW}
 route ${OPS} -net 223.160.160.0/19 ${ROUTE_GW}
-route ${OPS} -net 223.160.192.0/21 ${ROUTE_GW}
+route ${OPS} -net 223.160.192.0/22 ${ROUTE_GW}
+route ${OPS} -net 223.160.198.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.160.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.160.206.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.160.208.0/20 ${ROUTE_GW}
