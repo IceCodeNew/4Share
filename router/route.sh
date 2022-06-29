@@ -172,7 +172,6 @@ route ${OPS} -net 39.64.0.0/11 ${ROUTE_GW}
 route ${OPS} -net 39.96.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 39.104.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 39.108.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 39.114.230.0/24 ${ROUTE_GW}
 route ${OPS} -net 39.128.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 40.0.176.0/20 ${ROUTE_GW}
 route ${OPS} -net 40.0.248.0/21 ${ROUTE_GW}
