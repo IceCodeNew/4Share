@@ -52,7 +52,6 @@ route ${OPS} -net 1.192.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 1.202.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 1.204.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 2.57.116.0/22 ${ROUTE_GW}
-route ${OPS} -net 5.183.81.0/24 ${ROUTE_GW}
 route ${OPS} -net 5.252.164.0/22 ${ROUTE_GW}
 route ${OPS} -net 8.129.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 8.130.0.0/15 ${ROUTE_GW}
