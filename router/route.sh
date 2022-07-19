@@ -233,7 +233,8 @@ route ${OPS} -net 42.240.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 42.240.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 42.242.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 42.244.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 42.245.192.0/22 ${ROUTE_GW}
+route ${OPS} -net 42.245.193.0/24 ${ROUTE_GW}
+route ${OPS} -net 42.245.194.0/23 ${ROUTE_GW}
 route ${OPS} -net 42.245.196.0/23 ${ROUTE_GW}
 route ${OPS} -net 42.245.199.0/24 ${ROUTE_GW}
 route ${OPS} -net 42.245.200.0/21 ${ROUTE_GW}
