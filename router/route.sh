@@ -3893,7 +3893,7 @@ route ${OPS} -net 223.160.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.160.206.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.160.208.0/20 ${ROUTE_GW}
 route ${OPS} -net 223.160.224.0/21 ${ROUTE_GW}
-route ${OPS} -net 223.160.232.0/22 ${ROUTE_GW}
+route ${OPS} -net 223.160.234.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.160.236.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.166.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 223.192.0.0/15 ${ROUTE_GW}
