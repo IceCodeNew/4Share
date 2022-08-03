@@ -2570,6 +2570,8 @@ cdn4.apple-mapkit.com
 cds-cdn.v.aaplimg.com
 cds.apple.com
 cds.apple.com.akadns.net
+certs-lb.apple.com.akadns.net
+certs.apple.com
 cl1-cdn.origin-apple.com.akadns.net
 cl1.apple.com
 cl2-cn.apple.com
@@ -2592,6 +2594,9 @@ cn.windowssearch.com
 communities.apple.com
 configuration.apple.com
 configuration.apple.com.akadns.net
+crl-lb.apple.com.akadns.net
+crl.apple.com
+crl2.alphassl.com
 cstat.apple.com
 ctldl.windowsupdate.com
 dd-cdn.origin-apple.com.akadns.net
@@ -2713,6 +2718,7 @@ se-edge.itunes.apple.com
 se2.itunes.apple.com
 search.itunes.apple.com
 secure.globalsign.com
+secure2.alphassl.com
 send.firefox.com
 sf-api-token-service.itunes.apple.com
 silverlight.dlservice.microsoft.com
