@@ -3873,6 +3873,7 @@ route ${OPS} -net 203.130.40.0/21 ${ROUTE_GW}
 route ${OPS} -net 203.134.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 203.135.96.0/19 ${ROUTE_GW}
 route ${OPS} -net 203.148.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 203.148.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 203.156.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 203.158.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 203.160.52.0/22 ${ROUTE_GW}
