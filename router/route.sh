@@ -4384,8 +4384,7 @@ route ${OPS} -net 211.100.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.100.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.100.96.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.101.192.0/20 ${ROUTE_GW}
-route ${OPS} -net 211.101.232.0/21 ${ROUTE_GW}
-route ${OPS} -net 211.101.240.0/21 ${ROUTE_GW}
+route ${OPS} -net 211.101.240.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.102.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.102.192.0/23 ${ROUTE_GW}
 route ${OPS} -net 211.102.208.0/20 ${ROUTE_GW}
