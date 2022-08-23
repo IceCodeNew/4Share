@@ -661,7 +661,7 @@ route ${OPS} -net 59.64.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 59.64.16.0/24 ${ROUTE_GW}
 route ${OPS} -net 59.64.24.0/21 ${ROUTE_GW}
 route ${OPS} -net 59.64.32.0/19 ${ROUTE_GW}
-route ${OPS} -net 59.64.80.0/20 ${ROUTE_GW}
+route ${OPS} -net 59.64.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 59.64.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 59.64.120.0/21 ${ROUTE_GW}
 route ${OPS} -net 59.64.128.0/17 ${ROUTE_GW}
@@ -2455,7 +2455,7 @@ route ${OPS} -net 121.194.4.0/24 ${ROUTE_GW}
 route ${OPS} -net 121.194.8.0/24 ${ROUTE_GW}
 route ${OPS} -net 121.194.11.0/24 ${ROUTE_GW}
 route ${OPS} -net 121.194.16.0/20 ${ROUTE_GW}
-route ${OPS} -net 121.194.48.0/20 ${ROUTE_GW}
+route ${OPS} -net 121.194.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 121.194.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 121.194.144.0/20 ${ROUTE_GW}
 route ${OPS} -net 121.194.167.0/24 ${ROUTE_GW}
@@ -3642,7 +3642,6 @@ route ${OPS} -net 202.198.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.199.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.199.16.0/22 ${ROUTE_GW}
 route ${OPS} -net 202.199.24.0/21 ${ROUTE_GW}
-route ${OPS} -net 202.199.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.199.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 202.199.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.199.112.0/21 ${ROUTE_GW}
@@ -4225,6 +4224,7 @@ route ${OPS} -net 211.67.224.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.67.232.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.68.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.68.23.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.68.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.68.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.68.80.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.68.94.0/23 ${ROUTE_GW}
@@ -4282,8 +4282,7 @@ route ${OPS} -net 211.82.29.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.82.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.82.48.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.82.56.0/21 ${ROUTE_GW}
-route ${OPS} -net 211.82.64.0/19 ${ROUTE_GW}
-route ${OPS} -net 211.82.112.0/20 ${ROUTE_GW}
+route ${OPS} -net 211.82.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.82.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.82.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.82.176.0/21 ${ROUTE_GW}
