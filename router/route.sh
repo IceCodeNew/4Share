@@ -3631,7 +3631,6 @@ route ${OPS} -net 202.197.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 202.197.144.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.197.176.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.197.192.0/19 ${ROUTE_GW}
-route ${OPS} -net 202.197.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.197.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 202.198.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 202.198.64.0/20 ${ROUTE_GW}
