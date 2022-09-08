@@ -3984,10 +3984,7 @@ route ${OPS} -net 223.27.184.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.64.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 223.128.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 223.144.0.0/12 ${ROUTE_GW}
-route ${OPS} -net 223.160.2.0/23 ${ROUTE_GW}
-route ${OPS} -net 223.160.4.0/22 ${ROUTE_GW}
-route ${OPS} -net 223.160.10.0/23 ${ROUTE_GW}
-route ${OPS} -net 223.160.12.0/22 ${ROUTE_GW}
+route ${OPS} -net 223.160.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 223.160.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 223.160.128.0/22 ${ROUTE_GW}
