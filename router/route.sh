@@ -767,7 +767,6 @@ route ${OPS} -net 66.102.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 66.102.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 66.186.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 67.198.134.0/24 ${ROUTE_GW}
-route ${OPS} -net 67.198.146.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.148.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.160.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.168.0/22 ${ROUTE_GW}
