@@ -784,8 +784,8 @@ route ${OPS} -net 67.198.190.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.192.0/22 ${ROUTE_GW}
 route ${OPS} -net 67.198.199.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.201.0/24 ${ROUTE_GW}
-route ${OPS} -net 67.198.207.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.208.0/23 ${ROUTE_GW}
+route ${OPS} -net 67.198.210.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.216.0/22 ${ROUTE_GW}
 route ${OPS} -net 67.198.221.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.223.0/24 ${ROUTE_GW}
