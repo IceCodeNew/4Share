@@ -4023,7 +4023,6 @@ route ${OPS} -net 218.97.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 218.97.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 218.98.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 218.98.108.0/23 ${ROUTE_GW}
-route ${OPS} -net 218.98.111.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.98.112.0/22 ${ROUTE_GW}
 route ${OPS} -net 218.104.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 218.104.96.0/20 ${ROUTE_GW}
