@@ -843,7 +843,7 @@ route ${OPS} -net 66.102.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 66.102.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.146.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.148.0/24 ${ROUTE_GW}
-route ${OPS} -net 67.198.161.0/24 ${ROUTE_GW}
+route ${OPS} -net 67.198.160.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 67.198.173.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.174.0/24 ${ROUTE_GW}
