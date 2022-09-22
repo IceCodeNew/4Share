@@ -4474,7 +4474,7 @@ route ${OPS} -net 223.160.168.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.176.0/20 ${ROUTE_GW}
 route ${OPS} -net 223.160.192.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.200.0/22 ${ROUTE_GW}
-route ${OPS} -net 223.160.204.0/23 ${ROUTE_GW}
+route ${OPS} -net 223.160.204.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.160.208.0/20 ${ROUTE_GW}
 route ${OPS} -net 223.160.224.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.232.0/22 ${ROUTE_GW}
