@@ -153,8 +153,7 @@ route ${OPS} -net 42.56.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 42.62.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 42.63.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 42.80.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 42.83.128.0/22 ${ROUTE_GW}
-route ${OPS} -net 42.83.132.0/24 ${ROUTE_GW}
+route ${OPS} -net 42.83.128.0/23 ${ROUTE_GW}
 route ${OPS} -net 42.83.134.0/24 ${ROUTE_GW}
 route ${OPS} -net 42.84.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 42.88.0.0/13 ${ROUTE_GW}
@@ -2201,9 +2200,6 @@ route ${OPS} -net 119.162.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 119.164.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 119.176.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 119.233.128.0/17 ${ROUTE_GW}
-route ${OPS} -net 119.235.145.0/24 ${ROUTE_GW}
-route ${OPS} -net 119.235.147.0/24 ${ROUTE_GW}
-route ${OPS} -net 119.235.148.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.248.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 119.253.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 119.253.64.0/19 ${ROUTE_GW}
@@ -2587,9 +2583,7 @@ route ${OPS} -net 125.171.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 125.208.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 125.208.32.0/23 ${ROUTE_GW}
 route ${OPS} -net 125.208.37.0/24 ${ROUTE_GW}
-route ${OPS} -net 125.208.38.0/23 ${ROUTE_GW}
-route ${OPS} -net 125.208.40.0/23 ${ROUTE_GW}
-route ${OPS} -net 125.208.42.0/24 ${ROUTE_GW}
+route ${OPS} -net 125.208.40.0/24 ${ROUTE_GW}
 route ${OPS} -net 125.208.46.0/23 ${ROUTE_GW}
 route ${OPS} -net 125.210.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 125.213.32.0/20 ${ROUTE_GW}
@@ -2792,7 +2786,6 @@ route ${OPS} -net 150.223.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 150.242.96.0/22 ${ROUTE_GW}
 route ${OPS} -net 150.242.120.0/24 ${ROUTE_GW}
 route ${OPS} -net 150.242.122.0/23 ${ROUTE_GW}
-route ${OPS} -net 150.242.156.0/23 ${ROUTE_GW}
 route ${OPS} -net 150.242.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 150.242.184.0/22 ${ROUTE_GW}
 route ${OPS} -net 150.242.232.0/22 ${ROUTE_GW}
@@ -3170,7 +3163,6 @@ route ${OPS} -net 193.218.200.0/23 ${ROUTE_GW}
 route ${OPS} -net 193.221.94.0/23 ${ROUTE_GW}
 route ${OPS} -net 193.239.178.0/23 ${ROUTE_GW}
 route ${OPS} -net 193.243.150.0/23 ${ROUTE_GW}
-route ${OPS} -net 194.0.0.0/24 ${ROUTE_GW}
 route ${OPS} -net 194.36.223.0/24 ${ROUTE_GW}
 route ${OPS} -net 194.41.36.0/24 ${ROUTE_GW}
 route ${OPS} -net 194.124.213.0/24 ${ROUTE_GW}
@@ -3193,7 +3185,6 @@ route ${OPS} -net 202.4.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 202.4.252.0/22 ${ROUTE_GW}
 route ${OPS} -net 202.5.31.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.14.172.0/22 ${ROUTE_GW}
-route ${OPS} -net 202.30.124.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.38.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 202.38.104.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.38.110.0/24 ${ROUTE_GW}
@@ -3544,8 +3535,10 @@ route ${OPS} -net 203.95.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.95.96.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.95.104.0/21 ${ROUTE_GW}
 route ${OPS} -net 203.95.208.0/22 ${ROUTE_GW}
-route ${OPS} -net 203.99.20.0/22 ${ROUTE_GW}
-route ${OPS} -net 203.99.24.0/21 ${ROUTE_GW}
+route ${OPS} -net 203.99.20.0/23 ${ROUTE_GW}
+route ${OPS} -net 203.99.22.0/24 ${ROUTE_GW}
+route ${OPS} -net 203.99.27.0/24 ${ROUTE_GW}
+route ${OPS} -net 203.99.30.0/23 ${ROUTE_GW}
 route ${OPS} -net 203.100.86.0/23 ${ROUTE_GW}
 route ${OPS} -net 203.100.92.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.100.192.0/20 ${ROUTE_GW}
@@ -3568,7 +3561,6 @@ route ${OPS} -net 203.114.244.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.118.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.119.25.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.119.26.0/24 ${ROUTE_GW}
-route ${OPS} -net 203.119.33.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.119.80.0/23 ${ROUTE_GW}
 route ${OPS} -net 203.119.83.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.119.85.0/24 ${ROUTE_GW}
@@ -4021,7 +4013,6 @@ route ${OPS} -net 218.97.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 218.97.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 218.98.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 218.98.108.0/23 ${ROUTE_GW}
-route ${OPS} -net 218.98.111.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.98.112.0/22 ${ROUTE_GW}
 route ${OPS} -net 218.104.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 218.104.96.0/20 ${ROUTE_GW}
