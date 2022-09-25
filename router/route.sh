@@ -576,7 +576,7 @@ route ${OPS} -net 58.154.37.0/24 ${ROUTE_GW}
 route ${OPS} -net 58.154.48.0/20 ${ROUTE_GW}
 route ${OPS} -net 58.154.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 58.154.128.0/17 ${ROUTE_GW}
-route ${OPS} -net 58.155.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 58.155.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 58.155.71.0/24 ${ROUTE_GW}
 route ${OPS} -net 58.155.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 58.155.124.0/22 ${ROUTE_GW}
