@@ -838,6 +838,7 @@ route ${OPS} -net 66.11.117.0/24 ${ROUTE_GW}
 route ${OPS} -net 66.102.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 66.102.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 66.102.255.0/24 ${ROUTE_GW}
+route ${OPS} -net 67.198.146.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.148.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.160.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.168.0/22 ${ROUTE_GW}
@@ -856,6 +857,7 @@ route ${OPS} -net 67.198.208.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.221.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.235.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.239.0/24 ${ROUTE_GW}
+route ${OPS} -net 67.198.244.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.220.64.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.220.76.0/22 ${ROUTE_GW}
@@ -1682,7 +1684,7 @@ route ${OPS} -net 111.115.112.0/21 ${ROUTE_GW}
 route ${OPS} -net 111.115.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 111.115.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 111.115.192.0/19 ${ROUTE_GW}
-route ${OPS} -net 111.116.0.0/17 ${ROUTE_GW}
+route ${OPS} -net 111.116.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 111.117.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 111.117.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 111.117.32.0/19 ${ROUTE_GW}
@@ -2646,7 +2648,7 @@ route ${OPS} -net 125.222.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 125.222.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 125.222.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 125.222.248.0/22 ${ROUTE_GW}
-route ${OPS} -net 125.222.254.0/24 ${ROUTE_GW}
+route ${OPS} -net 125.222.254.0/23 ${ROUTE_GW}
 route ${OPS} -net 125.223.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 125.223.76.0/22 ${ROUTE_GW}
 route ${OPS} -net 125.223.84.0/22 ${ROUTE_GW}
@@ -3715,6 +3717,7 @@ route ${OPS} -net 210.46.176.0/20 ${ROUTE_GW}
 route ${OPS} -net 210.46.192.0/21 ${ROUTE_GW}
 route ${OPS} -net 210.46.216.0/21 ${ROUTE_GW}
 route ${OPS} -net 210.46.248.0/21 ${ROUTE_GW}
+route ${OPS} -net 210.47.0.0/21 ${ROUTE_GW}
 route ${OPS} -net 210.47.10.0/23 ${ROUTE_GW}
 route ${OPS} -net 210.47.12.0/22 ${ROUTE_GW}
 route ${OPS} -net 210.47.16.0/20 ${ROUTE_GW}
