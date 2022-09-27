@@ -654,6 +654,7 @@ route ${OPS} -net 59.67.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 59.68.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 59.68.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 59.68.80.0/21 ${ROUTE_GW}
+route ${OPS} -net 59.68.92.0/22 ${ROUTE_GW}
 route ${OPS} -net 59.68.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 59.68.112.0/23 ${ROUTE_GW}
 route ${OPS} -net 59.68.128.0/19 ${ROUTE_GW}
