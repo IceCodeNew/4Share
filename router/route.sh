@@ -837,6 +837,7 @@ route ${OPS} -net 66.11.117.0/24 ${ROUTE_GW}
 route ${OPS} -net 66.102.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 66.102.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 66.102.255.0/24 ${ROUTE_GW}
+route ${OPS} -net 67.198.146.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.148.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.160.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.168.0/22 ${ROUTE_GW}
@@ -855,6 +856,7 @@ route ${OPS} -net 67.198.208.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.221.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.235.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.239.0/24 ${ROUTE_GW}
+route ${OPS} -net 67.198.244.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.220.64.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.220.76.0/22 ${ROUTE_GW}
@@ -1339,7 +1341,6 @@ route ${OPS} -net 103.162.10.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.163.46.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.163.180.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.164.33.0/24 ${ROUTE_GW}
-route ${OPS} -net 103.169.202.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.174.94.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.178.56.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.186.4.0/23 ${ROUTE_GW}
@@ -2558,7 +2559,6 @@ route ${OPS} -net 124.203.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 124.204.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 124.220.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 124.224.0.0/12 ${ROUTE_GW}
-route ${OPS} -net 124.240.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 124.240.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 124.243.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 124.248.0.0/22 ${ROUTE_GW}
@@ -4142,7 +4142,8 @@ route ${OPS} -net 219.226.216.0/21 ${ROUTE_GW}
 route ${OPS} -net 219.226.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 219.228.192.0/24 ${ROUTE_GW}
 route ${OPS} -net 219.229.192.0/18 ${ROUTE_GW}
-route ${OPS} -net 219.232.0.0/17 ${ROUTE_GW}
+route ${OPS} -net 219.232.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 219.232.96.0/19 ${ROUTE_GW}
 route ${OPS} -net 219.232.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 219.233.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 219.234.0.0/21 ${ROUTE_GW}
