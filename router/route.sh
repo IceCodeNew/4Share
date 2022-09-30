@@ -4066,7 +4066,7 @@ route ${OPS} -net 210.47.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 210.51.2.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 210.51.18.0/24 ${ROUTE_GW}
-route ${OPS} -net 210.51.42.0/23 ${ROUTE_GW}
+route ${OPS} -net 210.51.42.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.44.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.58.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.60.0/24 ${ROUTE_GW}
