@@ -3213,7 +3213,7 @@ route ${OPS} -net 165.156.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 166.111.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 167.139.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 167.189.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 167.220.244.0/22 ${ROUTE_GW}
+route ${OPS} -net 167.220.246.0/23 ${ROUTE_GW}
 route ${OPS} -net 168.159.144.0/21 ${ROUTE_GW}
 route ${OPS} -net 168.159.152.0/22 ${ROUTE_GW}
 route ${OPS} -net 168.159.156.0/23 ${ROUTE_GW}
