@@ -894,12 +894,15 @@ route ${OPS} -net 67.198.174.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.177.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.179.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.184.0/23 ${ROUTE_GW}
+route ${OPS} -net 67.198.189.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.192.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.195.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.199.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.201.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.207.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.208.0/24 ${ROUTE_GW}
+route ${OPS} -net 67.198.221.0/24 ${ROUTE_GW}
+route ${OPS} -net 67.198.235.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.239.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.244.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.255.0/24 ${ROUTE_GW}
@@ -2568,7 +2571,7 @@ route ${OPS} -net 121.194.167.0/24 ${ROUTE_GW}
 route ${OPS} -net 121.194.172.0/22 ${ROUTE_GW}
 route ${OPS} -net 121.194.176.0/20 ${ROUTE_GW}
 route ${OPS} -net 121.194.192.0/18 ${ROUTE_GW}
-route ${OPS} -net 121.195.12.0/23 ${ROUTE_GW}
+route ${OPS} -net 121.195.12.0/22 ${ROUTE_GW}
 route ${OPS} -net 121.195.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 121.195.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 121.195.96.0/20 ${ROUTE_GW}
@@ -3165,8 +3168,6 @@ route ${OPS} -net 157.61.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 157.119.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 157.119.172.0/22 ${ROUTE_GW}
 route ${OPS} -net 157.122.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 157.133.192.0/24 ${ROUTE_GW}
-route ${OPS} -net 157.133.194.0/24 ${ROUTE_GW}
 route ${OPS} -net 157.148.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 157.156.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 157.255.0.0/16 ${ROUTE_GW}
@@ -4140,6 +4141,7 @@ route ${OPS} -net 211.67.208.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.67.224.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.67.232.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.68.0.0/20 ${ROUTE_GW}
+route ${OPS} -net 211.68.23.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.68.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.68.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.68.80.0/21 ${ROUTE_GW}
