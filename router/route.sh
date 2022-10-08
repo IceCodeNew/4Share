@@ -552,7 +552,6 @@ route ${OPS} -net 49.122.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 49.123.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 49.123.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 49.123.64.0/18 ${ROUTE_GW}
-route ${OPS} -net 49.140.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 49.141.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 49.141.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 49.141.64.0/18 ${ROUTE_GW}
