@@ -4764,12 +4764,11 @@ route ${OPS} -net 222.31.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 222.41.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 222.50.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 222.64.0.0/11 ${ROUTE_GW}
-route ${OPS} -net 222.126.130.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.140.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.160.0/21 ${ROUTE_GW}
 route ${OPS} -net 222.126.170.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.176.0/23 ${ROUTE_GW}
-route ${OPS} -net 222.126.180.0/22 ${ROUTE_GW}
+route ${OPS} -net 222.126.180.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.226.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.228.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.238.0/23 ${ROUTE_GW}
