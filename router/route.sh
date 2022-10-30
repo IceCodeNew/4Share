@@ -3349,10 +3349,10 @@ route ${OPS} -net 210.51.42.0/23 ${ROUTE_GW}
 route ${OPS} -net 210.51.44.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.58.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.60.0/24 ${ROUTE_GW}
-route ${OPS} -net 210.51.160.0/22 ${ROUTE_GW}
+route ${OPS} -net 210.51.160.0/23 ${ROUTE_GW}
+route ${OPS} -net 210.51.163.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.164.0/23 ${ROUTE_GW}
 route ${OPS} -net 210.51.167.0/24 ${ROUTE_GW}
-route ${OPS} -net 210.51.168.0/23 ${ROUTE_GW}
 route ${OPS} -net 210.51.175.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.176.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.179.0/24 ${ROUTE_GW}
