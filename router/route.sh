@@ -483,6 +483,7 @@ route ${OPS} -net 45.251.88.0/21 ${ROUTE_GW}
 route ${OPS} -net 45.251.100.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.251.242.0/23 ${ROUTE_GW}
 route ${OPS} -net 45.252.0.0/22 ${ROUTE_GW}
+route ${OPS} -net 45.252.48.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.252.104.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.253.24.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.253.64.0/22 ${ROUTE_GW}
