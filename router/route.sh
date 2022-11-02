@@ -880,7 +880,7 @@ route ${OPS} -net 103.5.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.5.192.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.6.108.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.6.220.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.6.228.0/22 ${ROUTE_GW}
+route ${OPS} -net 103.6.228.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.7.212.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.8.33.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.8.34.0/23 ${ROUTE_GW}
