@@ -3884,6 +3884,7 @@ route ${OPS} -net 222.176.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 222.192.0.0/11 ${ROUTE_GW}
 route ${OPS} -net 222.240.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 222.249.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 223.0.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.0.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.0.12.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.0.15.0/24 ${ROUTE_GW}
