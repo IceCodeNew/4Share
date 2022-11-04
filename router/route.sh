@@ -218,6 +218,7 @@ route ${OPS} -net 43.141.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 43.141.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 43.141.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 43.142.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 43.192.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 43.196.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 43.224.12.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.24.0/22 ${ROUTE_GW}
