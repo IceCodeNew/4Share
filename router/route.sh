@@ -2538,8 +2538,7 @@ route ${OPS} -net 139.9.98.0/24 ${ROUTE_GW}
 route ${OPS} -net 139.9.100.0/22 ${ROUTE_GW}
 route ${OPS} -net 139.9.104.0/21 ${ROUTE_GW}
 route ${OPS} -net 139.9.112.0/20 ${ROUTE_GW}
-route ${OPS} -net 139.9.128.0/20 ${ROUTE_GW}
-route ${OPS} -net 139.9.160.0/19 ${ROUTE_GW}
+route ${OPS} -net 139.9.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 139.9.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 139.129.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 139.159.0.0/19 ${ROUTE_GW}
