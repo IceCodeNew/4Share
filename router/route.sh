@@ -3780,7 +3780,6 @@ route ${OPS} -net 218.213.122.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.240.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 218.240.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 218.241.0.0/19 ${ROUTE_GW}
-route ${OPS} -net 218.241.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 218.241.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 218.241.115.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.241.116.0/22 ${ROUTE_GW}
