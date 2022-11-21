@@ -1905,7 +1905,7 @@ route ${OPS} -net 115.173.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 115.173.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 115.173.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 115.174.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 115.175.0.0/24 ${ROUTE_GW}
+route ${OPS} -net 115.175.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 115.181.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 115.182.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 115.187.0.0/20 ${ROUTE_GW}
