@@ -836,7 +836,6 @@ route ${OPS} -net 101.46.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 101.46.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 101.46.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 101.47.0.0/19 ${ROUTE_GW}
-route ${OPS} -net 101.47.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 101.47.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 101.47.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 101.47.112.0/21 ${ROUTE_GW}
