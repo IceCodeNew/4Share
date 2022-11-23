@@ -3610,9 +3610,7 @@ route ${OPS} -net 211.99.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.99.96.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.99.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.99.128.0/17 ${ROUTE_GW}
-route ${OPS} -net 211.100.0.0/18 ${ROUTE_GW}
-route ${OPS} -net 211.100.64.0/19 ${ROUTE_GW}
-route ${OPS} -net 211.100.96.0/21 ${ROUTE_GW}
+route ${OPS} -net 211.100.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 211.100.192.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.100.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.101.0.0/18 ${ROUTE_GW}
