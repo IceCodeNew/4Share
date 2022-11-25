@@ -2018,6 +2018,7 @@ route ${OPS} -net 117.48.216.0/22 ${ROUTE_GW}
 route ${OPS} -net 117.48.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 117.50.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 117.51.128.0/19 ${ROUTE_GW}
+route ${OPS} -net 117.51.160.0/23 ${ROUTE_GW}
 route ${OPS} -net 117.57.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 117.59.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 117.59.32.0/22 ${ROUTE_GW}
