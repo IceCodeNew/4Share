@@ -3630,12 +3630,11 @@ route ${OPS} -net 211.148.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.149.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 211.150.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.150.64.0/19 ${ROUTE_GW}
-route ${OPS} -net 211.150.96.0/24 ${ROUTE_GW}
-route ${OPS} -net 211.150.98.0/23 ${ROUTE_GW}
+route ${OPS} -net 211.150.98.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.150.100.0/23 ${ROUTE_GW}
 route ${OPS} -net 211.150.114.0/23 ${ROUTE_GW}
 route ${OPS} -net 211.150.122.0/24 ${ROUTE_GW}
-route ${OPS} -net 211.150.124.0/22 ${ROUTE_GW}
+route ${OPS} -net 211.150.124.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.151.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 211.152.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.152.96.0/19 ${ROUTE_GW}
