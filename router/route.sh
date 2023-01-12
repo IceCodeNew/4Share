@@ -580,6 +580,7 @@ route ${OPS} -net 45.254.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.254.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.254.48.0/23 ${ROUTE_GW}
 route ${OPS} -net 45.254.50.0/24 ${ROUTE_GW}
+route ${OPS} -net 45.254.56.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.254.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 45.254.96.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.254.132.0/22 ${ROUTE_GW}
