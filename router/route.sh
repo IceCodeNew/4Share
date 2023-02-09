@@ -1977,7 +1977,6 @@ route ${OPS} -net 114.112.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 114.112.96.0/21 ${ROUTE_GW}
 route ${OPS} -net 114.112.104.0/22 ${ROUTE_GW}
 route ${OPS} -net 114.112.124.0/23 ${ROUTE_GW}
-route ${OPS} -net 114.112.136.0/21 ${ROUTE_GW}
 route ${OPS} -net 114.112.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 114.112.200.0/21 ${ROUTE_GW}
 route ${OPS} -net 114.112.208.0/20 ${ROUTE_GW}
