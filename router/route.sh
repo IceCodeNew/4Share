@@ -3956,14 +3956,7 @@ route ${OPS} -net 218.98.108.0/23 ${ROUTE_GW}
 route ${OPS} -net 218.98.111.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.98.112.0/22 ${ROUTE_GW}
 route ${OPS} -net 218.98.160.0/24 ${ROUTE_GW}
-route ${OPS} -net 218.104.0.0/24 ${ROUTE_GW}
-route ${OPS} -net 218.104.11.0/24 ${ROUTE_GW}
-route ${OPS} -net 218.104.12.0/24 ${ROUTE_GW}
-route ${OPS} -net 218.104.16.0/20 ${ROUTE_GW}
-route ${OPS} -net 218.104.32.0/19 ${ROUTE_GW}
-route ${OPS} -net 218.104.64.0/18 ${ROUTE_GW}
-route ${OPS} -net 218.104.128.0/17 ${ROUTE_GW}
-route ${OPS} -net 218.105.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 218.104.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 218.106.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 218.107.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 218.107.128.0/17 ${ROUTE_GW}
