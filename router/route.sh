@@ -3607,7 +3607,8 @@ route ${OPS} -net 203.156.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 203.158.16.0/21 ${ROUTE_GW}
 route ${OPS} -net 203.160.52.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.160.129.0/24 ${ROUTE_GW}
-route ${OPS} -net 203.160.192.0/19 ${ROUTE_GW}
+route ${OPS} -net 203.160.192.0/20 ${ROUTE_GW}
+route ${OPS} -net 203.160.212.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.161.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 203.166.160.0/22 ${ROUTE_GW}
 route ${OPS} -net 203.166.165.0/24 ${ROUTE_GW}
