@@ -1519,7 +1519,7 @@ route ${OPS} -net 103.204.112.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.204.148.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.204.152.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.205.4.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.205.40.0/24 ${ROUTE_GW}
+route ${OPS} -net 103.205.40.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.205.136.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.205.139.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.205.188.0/22 ${ROUTE_GW}
