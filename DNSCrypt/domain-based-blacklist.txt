@@ -10792,7 +10792,7 @@ unityhacks.zone
 
 ########## Blocklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 1397
+# Ignored duplicates: 1399
 # Ignored due to overlapping local patterns: 522
 # Ignored entries due to the allowlist: 10
 
@@ -11122,8 +11122,6 @@ lean.com
 leanoisgo.com
 legolas-media.com
 lifestreetmedia.com
-traffic.liveuniversenetwork.com
-trafficcdn.liveuniversenetwork.com
 localmantra.com
 localmediabuying.com
 localytics.com
@@ -23339,8 +23337,8 @@ email.pampers.co.za
 
 ########## Blocklist from https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt ##########
 
-# Ignored duplicates: 416424
-# Ignored due to overlapping local patterns: 741
+# Ignored duplicates: 416262
+# Ignored due to overlapping local patterns: 742
 # Ignored entries due to the allowlist: 162
 
 pixel.ad
@@ -25320,7 +25318,8 @@ datemeboy.com
 metrics.daveandbusters.com
 davidloyd.com
 davidmannaudio.com
-davidmovi.com
+ww1.davidmovi.com
+www.davidmovi.com
 daviedmovie.com
 davischevy.com
 davisheritage.com
@@ -26944,6 +26943,7 @@ iqfp1.com
 irganalytics.com
 ironmanthegame.com
 irrationallayouts.com
+islamiphone.com
 isprtsfans.com
 israel-deals.com
 israelborochov.com
@@ -27027,6 +27027,7 @@ jieazz.com
 td.jimdo.com
 jimmijazz.com
 jimmyhons.com
+jimopuwa.com
 jinyoungsu.com
 jivox.com
 jizzflixx.com
@@ -27263,7 +27264,6 @@ leonsautoparts.com
 lepietredimirtilla.com
 lesibian.com
 letasbonus.com
-letmwatchthis.com
 letsbobus.com
 recommendations.letslinc.com
 levexis.com
@@ -27535,6 +27535,7 @@ mdavos.com
 mdbuy.com
 mdeinstructure.com
 mdnun.com
+mdotlabs.com
 karma.mdpcdn.com
 mdtrf.com
 mealtimemakover.com
@@ -27563,7 +27564,6 @@ mehabus.com
 meijiers.com
 meionort.com
 meiratboutique.com
-melrosejewelry.com
 memfault.com
 memphistider.com
 menarrds.com
@@ -28602,7 +28602,6 @@ ratracerevolution.com
 ravenjs.com
 rayban-outlet.com
 raybanonlineshop.com
-rdcnew.com
 rdetube.com
 rdiltd.com
 rdnld.com
@@ -29391,7 +29390,6 @@ stationeryart.com
 statslight.com
 statsmag.com
 stayisland.com
-ww5.stcroixorthopedics.com
 www.stcroixorthopedics.com
 steamedcheeseburger.com
 stereamsex.com
@@ -31680,9 +31678,6 @@ eyep.info
 eyesurgery.info
 ezmethod.info
 webdisk.faiznet.info
-ww11.faiznet.info
-ww17.faiznet.info
-ww38.faiznet.info
 www.faiznet.info
 fajos.info
 fakeer.info
@@ -31800,9 +31795,6 @@ greekgods.info
 greekviral.info
 green-beauty.info
 greenfleet.info
-mail.greentheearth.info
-ww17.greentheearth.info
-ww38.greentheearth.info
 groednertal.info
 groenehartmedia.info
 grossglockner.info
@@ -32618,6 +32610,7 @@ sutekh.info
 suzxx.info
 svabe.info
 ww17.svatektribratri.info
+www.svatektribratri.info
 sweetspotgolf.info
 swiss-military.info
 sworks.info
@@ -32786,7 +32779,6 @@ watchmovie.info
 watchmygfreview.info
 watchpinoymovieonline.info
 wazze.info
-web-pages.info
 web-ranking.info
 webflow.info
 webhealth.info
@@ -32934,6 +32926,7 @@ email.gleam.io
 info.gleam.io
 info2.gleam.io
 js.gleam.io
+l.gleam.io
 preview.gleam.io
 r.gleam.io
 www.gleam.io
@@ -33888,7 +33881,6 @@ powerbi.com.rantec1.o365---lab.ransecurityshn2.myshn.net
 mythmem.net
 myxmovies.net
 mzbcdn.net
-ww1.naugtytube.net
 www.naugtytube.net
 nb69.net
 neodatatype.net
@@ -34332,7 +34324,6 @@ dc-011831085d65.amishheaters.org
 direct.amishheaters.org
 email.amishheaters.org
 eml.amishheaters.org
-gate.amishheaters.org
 gateway.amishheaters.org
 gw.amishheaters.org
 hermes.amishheaters.org
@@ -34343,7 +34334,6 @@ mail.amishheaters.org
 mail01.amishheaters.org
 mail02.amishheaters.org
 mail1.amishheaters.org
-mail10.amishheaters.org
 mail11.amishheaters.org
 mail3.amishheaters.org
 mail4.amishheaters.org
@@ -34363,7 +34353,6 @@ mailserver.amishheaters.org
 mailsrv.amishheaters.org
 mailx.amishheaters.org
 mbox.amishheaters.org
-ms.amishheaters.org
 mta.amishheaters.org
 mx.amishheaters.org
 mx0.amishheaters.org
@@ -34387,7 +34376,6 @@ pbrand.amishheaters.org
 po.amishheaters.org
 pop.amishheaters.org
 post.amishheaters.org
-posta.amishheaters.org
 postmaster.amishheaters.org
 relay1.amishheaters.org
 seed.amishheaters.org
@@ -34397,15 +34385,11 @@ server2.amishheaters.org
 smtp01.amishheaters.org
 ww25.smtp3.amishheaters.org
 smtpseguro.amishheaters.org
-sniper.amishheaters.org
 srv.amishheaters.org
 thor.amishheaters.org
 vip.amishheaters.org
 vnet.amishheaters.org
 vps.amishheaters.org
-ww12.amishheaters.org
-ww16.amishheaters.org
-ww7.amishheaters.org
 www.amishheaters.org
 zmail.amishheaters.org
 analytics.amiunique.org
@@ -35782,7 +35766,8 @@ top10-vergleich.org
 topcam.org
 tor-project.org
 toreproject.org
-torgrussia.org
+br.torgrussia.org
+ww17.torgrussia.org
 torprojet.org
 totalsuccessworld.org
 toyotawiki.org
@@ -36233,7 +36218,6 @@ fadb.xyz
 fstats.xyz
 miqaki.xyz
 mobiclean.xyz
-mzep18.xyz
 pervl206.xyz
 qelayu.xyz
 quatrefeuillepolonaise.xyz
@@ -41651,7 +41635,7 @@ adservice.google.co.zw
 
 ########## Blocklist from https://dblw.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 6299
+# Ignored duplicates: 6301
 # Ignored due to overlapping local patterns: 971
 # Ignored entries due to the allowlist: 157
 
@@ -42308,7 +42292,9 @@ sistema.rental.aju.br
 nctrk.abmail.com.br
 acoreanaseguros.com.br
 actioncontabil.com.br
+adnetwork.com.br
 affectnet.com.br
+afilio.com.br
 agenciadesenhoemfoco.com.br
 aguiasoft.com.br
 almoconatv.com.br
@@ -45472,6 +45458,7 @@ adherenceprosperous.com
 adherencestated.com
 adhitzads.com
 adhostingsolutions.com
+adicate.com
 adiiix.com
 adincube.com
 adinfuse.com
@@ -46370,7 +46357,6 @@ allergiques.com
 alleviatediscoveryexpress.com
 alleviatepracticableaddicted.com
 alleyskin.com
-allffers.com
 allfreecounter.com
 allfreshposts.com
 community.allhiphop.com
@@ -57675,6 +57661,7 @@ karzanosman.com
 kasfas.com
 kashtam.com
 kastafor.com
+kataprius.com
 katchouh.com
 katebugs.com
 katecrochetvanity.com
@@ -58279,7 +58266,6 @@ lastwise.com
 cx6.lastxxxmovies.com
 lasvisas.com
 latentcreeper.com
-latesolas.com
 latestgrace.com
 latestsocial.com
 guan.lathamcommunications.com
@@ -58655,6 +58641,7 @@ livetalisay.com
 livetellsspatter.com
 livetvm.com
 liveunderestimate.com
+liveuniversenetwork.com
 liveupdt.com
 livewatchev.com
 livezombymil.com
@@ -61937,6 +61924,7 @@ ozwtasocx.com
 ozyilmazelektrik.com
 ozzkutkadaj.com
 p-alwatany-ps.com
+p-td.com
 p123p.com
 p2poolmining.com
 p4pak.com
@@ -62600,6 +62588,7 @@ pioneersuspectedjury.com
 pionwaney.com
 piouscheers.com
 pip-pip-pop.com
+clicks.pipaffiliates.com
 bd1.pipaw.com
 pipe-cable.com
 pipeaota.com
@@ -66970,7 +66959,6 @@ analytics.strava.com
 tracing-collector.strava.com
 streakattempt.com
 stream-all.com
-stream4fun.com
 streamall-search.com
 bison.streamclocks.com
 analytics.streamgaga.com
@@ -67123,6 +67111,7 @@ suhinsaix.com
 suinglygaggler.com
 suitcasesimbue.com
 suitcasessheriffpilgrim.com
+suitesmart.com
 suitesterrage.com
 sukobal.com
 sulfitevariola.com
@@ -68090,6 +68079,7 @@ tictocswended.com
 tidy-mark.com
 tidyinglionesscoffee.com
 tiemvangngoctham.com
+analytics.tiendaenoferta.com
 tierbignews.com
 tierradewiki.com
 tiesmaritalkidnap.com
@@ -71756,7 +71746,6 @@ famre.cyou
 ibikini.cyou
 terbaru.cyou
 bnr.alza.cz
-ad48.atlas.cz
 pixel.biano.cz
 a.blesk.cz
 bannery.ccb.cz
@@ -75624,6 +75613,7 @@ adfonic.net
 adimg.net
 aditic.net
 adjuggler.net
+adlink.net
 adlite.net
 emap.admedia.net
 edge.adobedc.net
@@ -77049,6 +77039,7 @@ events-x2.net
 eventxrp2022.net
 every-day.net
 analytics.evgcdn.net
+asq.ezakus.net
 fabmedicals.net
 facaltow.net
 platypus.facet.net
@@ -80200,6 +80191,7 @@ adbn.ru
 adcamp.ru
 adfun.ru
 adghndou0sdh.ru
+adlabs.ru
 mc.admetrica.ru
 adonweb.ru
 adsbid-ad-click.adsbid.ru
@@ -84041,7 +84033,6 @@ makemysitelive.xyz
 maldini.xyz
 manceretoldxk.xyz
 mangaad.xyz
-marbct.xyz
 finch.market.xyz
 mathmodel.xyz
 mation.xyz
