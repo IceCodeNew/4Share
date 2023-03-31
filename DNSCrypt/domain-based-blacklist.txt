@@ -25,7 +25,7 @@ eth0.me
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
 # Ignored duplicates: 132
-# Ignored due to overlapping local patterns: 453
+# Ignored due to overlapping local patterns: 452
 # Ignored entries due to the allowlist: 13
 
 chameleon.ad
@@ -280,6 +280,7 @@ adsoftware.com
 adsoldier.com
 adspredictiv.com
 adspsp.com
+adsroller.com
 adstanding.com
 adsupply.com
 adswizz.com
@@ -2213,7 +2214,6 @@ affiliates.ultrahosting.com
 ultramercial.com
 ultraoranges.com
 track.ultravpn.com
-promo.ulust.com
 unarmedindustry.com
 unbecomingbikes.com
 unbecominglamp.com
@@ -2595,7 +2595,6 @@ weborama.fr
 lnks.gd
 go.dhs.gov
 go.usa.gov
-gfcim5.gq
 adman.gr
 interactive.forthnet.gr
 bannergrabber.internet.gr
@@ -10793,7 +10792,7 @@ unityhacks.zone
 
 ########## Blocklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 1399
+# Ignored duplicates: 1398
 # Ignored due to overlapping local patterns: 522
 # Ignored entries due to the allowlist: 10
 
@@ -11345,6 +11344,7 @@ txtimpact.com
 ubermedia.com
 ukbanners.com
 ultsearch.com
+promo.ulust.com
 updated.com
 upsnap.com
 urbanityadnetwork.com
