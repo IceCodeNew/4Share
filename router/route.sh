@@ -244,7 +244,6 @@ route ${OPS} -net 43.224.24.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.52.0/23 ${ROUTE_GW}
 route ${OPS} -net 43.224.56.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.80.0/22 ${ROUTE_GW}
-route ${OPS} -net 43.224.176.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.184.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.208.0/22 ${ROUTE_GW}
 route ${OPS} -net 43.224.248.0/23 ${ROUTE_GW}
