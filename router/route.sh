@@ -1568,10 +1568,12 @@ route ${OPS} -net 103.215.80.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.215.140.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.216.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.216.152.0/22 ${ROUTE_GW}
+route ${OPS} -net 103.216.252.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.218.216.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.219.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.219.32.0/21 ${ROUTE_GW}
 route ${OPS} -net 103.219.64.0/23 ${ROUTE_GW}
+route ${OPS} -net 103.219.84.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.219.177.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.219.178.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.219.184.0/22 ${ROUTE_GW}
