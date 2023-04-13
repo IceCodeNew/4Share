@@ -58,9 +58,7 @@ route ${OPS} -net 5.252.164.0/22 ${ROUTE_GW}
 route ${OPS} -net 8.129.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 8.130.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 8.132.0.0/14 ${ROUTE_GW}
-route ${OPS} -net 8.136.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 8.138.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 8.140.0.0/14 ${ROUTE_GW}
+route ${OPS} -net 8.136.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 8.144.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 8.214.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 13.107.0.0/16 ${ROUTE_GW}
