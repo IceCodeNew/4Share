@@ -2483,6 +2483,7 @@ route ${OPS} -net 120.136.128.0/21 ${ROUTE_GW}
 route ${OPS} -net 120.136.156.0/22 ${ROUTE_GW}
 route ${OPS} -net 120.136.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 120.136.176.0/22 ${ROUTE_GW}
+route ${OPS} -net 120.136.184.0/23 ${ROUTE_GW}
 route ${OPS} -net 120.192.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 121.0.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 121.4.0.0/15 ${ROUTE_GW}
