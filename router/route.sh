@@ -1757,7 +1757,9 @@ route ${OPS} -net 103.255.88.0/21 ${ROUTE_GW}
 route ${OPS} -net 103.255.140.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.255.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 104.37.29.0/24 ${ROUTE_GW}
+route ${OPS} -net 104.132.135.0/24 ${ROUTE_GW}
 route ${OPS} -net 104.134.163.0/24 ${ROUTE_GW}
+route ${OPS} -net 104.134.169.0/24 ${ROUTE_GW}
 route ${OPS} -net 104.134.172.0/24 ${ROUTE_GW}
 route ${OPS} -net 104.143.94.0/24 ${ROUTE_GW}
 route ${OPS} -net 104.192.80.0/21 ${ROUTE_GW}
