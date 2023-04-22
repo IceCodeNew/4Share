@@ -503,6 +503,7 @@ route ${OPS} -net 45.128.220.0/23 ${ROUTE_GW}
 route ${OPS} -net 45.128.222.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.129.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.131.68.0/23 ${ROUTE_GW}
+route ${OPS} -net 45.131.71.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.133.228.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.134.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.136.184.0/22 ${ROUTE_GW}
