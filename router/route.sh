@@ -1809,7 +1809,6 @@ route ${OPS} -net 110.75.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 110.76.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 110.76.156.0/22 ${ROUTE_GW}
 route ${OPS} -net 110.76.184.0/22 ${ROUTE_GW}
-route ${OPS} -net 110.79.78.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.80.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 110.88.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 110.96.0.0/11 ${ROUTE_GW}
