@@ -2370,6 +2370,7 @@ route ${OPS} -net 119.108.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 119.112.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 119.128.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 119.144.0.0/14 ${ROUTE_GW}
+route ${OPS} -net 119.148.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 119.161.120.0/22 ${ROUTE_GW}
 route ${OPS} -net 119.161.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 119.161.180.0/23 ${ROUTE_GW}
