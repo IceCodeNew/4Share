@@ -670,6 +670,7 @@ route ${OPS} -net 54.222.80.0/21 ${ROUTE_GW}
 route ${OPS} -net 54.222.88.0/22 ${ROUTE_GW}
 route ${OPS} -net 54.222.96.0/23 ${ROUTE_GW}
 route ${OPS} -net 54.222.112.0/23 ${ROUTE_GW}
+route ${OPS} -net 54.222.116.0/23 ${ROUTE_GW}
 route ${OPS} -net 54.222.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 54.223.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 58.16.0.0/13 ${ROUTE_GW}
