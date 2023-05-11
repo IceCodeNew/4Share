@@ -2922,7 +2922,7 @@ route ${OPS} -net 156.154.68.0/23 ${ROUTE_GW}
 route ${OPS} -net 156.154.70.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.154.73.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.154.141.0/24 ${ROUTE_GW}
-route ${OPS} -net 156.154.142.0/24 ${ROUTE_GW}
+route ${OPS} -net 156.154.142.0/23 ${ROUTE_GW}
 route ${OPS} -net 156.154.145.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.154.154.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.154.156.0/23 ${ROUTE_GW}
