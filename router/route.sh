@@ -2128,8 +2128,8 @@ route ${OPS} -net 116.207.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 116.208.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 116.213.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 116.213.128.0/17 ${ROUTE_GW}
-route ${OPS} -net 116.214.129.0/24 ${ROUTE_GW}
-route ${OPS} -net 116.214.130.0/23 ${ROUTE_GW}
+route ${OPS} -net 116.214.32.0/19 ${ROUTE_GW}
+route ${OPS} -net 116.214.128.0/22 ${ROUTE_GW}
 route ${OPS} -net 116.214.132.0/23 ${ROUTE_GW}
 route ${OPS} -net 116.214.134.0/24 ${ROUTE_GW}
 route ${OPS} -net 116.224.0.0/12 ${ROUTE_GW}
