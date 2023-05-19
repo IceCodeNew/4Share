@@ -25,7 +25,7 @@ eth0.me
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
 # Ignored duplicates: 127
-# Ignored due to overlapping local patterns: 447
+# Ignored due to overlapping local patterns: 446
 # Ignored entries due to the allowlist: 13
 
 chameleon.ad
@@ -93,6 +93,7 @@ feathr.co
 ablinks.mail.hinge.co
 jads.co
 lemnisk.co
+magicadz.co
 analytics.mailmunch.co
 pushtrack.co
 rockabox.co
@@ -1529,7 +1530,6 @@ adserver.oddschecker.com
 offaces-butional.com
 offerforge.com
 offermatica.com
-affiliate.offgamers.com
 measure.office.com
 ogury.com
 stats.olark.com
@@ -2864,7 +2864,6 @@ meetrics.net
 counter.mirohost.net
 a.mktw.net
 mntzrlt.net
-mobperads.net
 monetate.net
 movad.net
 mxptint.net
@@ -10789,7 +10788,7 @@ unityhacks.zone
 
 ########## Blocklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 1386
+# Ignored duplicates: 1385
 # Ignored due to overlapping local patterns: 522
 # Ignored entries due to the allowlist: 10
 
@@ -11209,6 +11208,7 @@ c1.nowlinux.com
 counter.nowlinux.com
 numax.nu-1.com
 offerfusion.com
+affiliate.offgamers.com
 olivebrandresponse.com
 on-mobi.com
 ads2.oneplace.com
