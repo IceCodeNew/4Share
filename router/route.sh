@@ -876,6 +876,7 @@ route ${OPS} -net 101.38.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 101.40.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 101.46.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 101.46.64.0/19 ${ROUTE_GW}
+route ${OPS} -net 101.46.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 101.50.56.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.52.4.0/24 ${ROUTE_GW}
 route ${OPS} -net 101.52.6.0/24 ${ROUTE_GW}
