@@ -3827,7 +3827,10 @@ route ${OPS} -net 211.97.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.98.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 211.99.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.99.16.0/23 ${ROUTE_GW}
-route ${OPS} -net 211.99.24.0/21 ${ROUTE_GW}
+route ${OPS} -net 211.99.25.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.99.26.0/24 ${ROUTE_GW}
+route ${OPS} -net 211.99.28.0/23 ${ROUTE_GW}
+route ${OPS} -net 211.99.30.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.99.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.99.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 211.99.128.0/17 ${ROUTE_GW}
