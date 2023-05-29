@@ -4096,10 +4096,10 @@ route ${OPS} -net 220.113.136.0/22 ${ROUTE_GW}
 route ${OPS} -net 220.113.144.0/20 ${ROUTE_GW}
 route ${OPS} -net 220.113.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.113.192.0/20 ${ROUTE_GW}
-route ${OPS} -net 220.113.208.0/22 ${ROUTE_GW}
+route ${OPS} -net 220.113.208.0/21 ${ROUTE_GW}
 route ${OPS} -net 220.113.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.114.16.0/20 ${ROUTE_GW}
-route ${OPS} -net 220.114.32.0/20 ${ROUTE_GW}
+route ${OPS} -net 220.114.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.114.64.0/21 ${ROUTE_GW}
 route ${OPS} -net 220.114.80.0/20 ${ROUTE_GW}
 route ${OPS} -net 220.114.96.0/21 ${ROUTE_GW}
