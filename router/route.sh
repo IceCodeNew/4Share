@@ -800,7 +800,6 @@ route ${OPS} -net 66.102.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 66.102.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 66.102.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.148.0/24 ${ROUTE_GW}
-route ${OPS} -net 67.198.160.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.169.0/24 ${ROUTE_GW}
 route ${OPS} -net 67.198.170.0/23 ${ROUTE_GW}
 route ${OPS} -net 67.198.177.0/24 ${ROUTE_GW}
