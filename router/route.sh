@@ -2040,7 +2040,6 @@ route ${OPS} -net 115.172.176.0/21 ${ROUTE_GW}
 route ${OPS} -net 115.172.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 115.173.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 115.174.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 115.181.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 115.182.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 115.187.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 115.192.0.0/11 ${ROUTE_GW}
