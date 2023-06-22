@@ -2302,6 +2302,7 @@ route ${OPS} -net 119.2.128.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.3.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 119.4.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 119.8.32.0/19 ${ROUTE_GW}
+route ${OPS} -net 119.8.96.0/19 ${ROUTE_GW}
 route ${OPS} -net 119.8.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 119.8.254.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.9.64.0/18 ${ROUTE_GW}
