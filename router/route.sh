@@ -2419,10 +2419,7 @@ route ${OPS} -net 120.29.252.0/23 ${ROUTE_GW}
 route ${OPS} -net 120.31.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 120.32.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 120.48.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 120.52.18.0/23 ${ROUTE_GW}
-route ${OPS} -net 120.52.31.0/24 ${ROUTE_GW}
-route ${OPS} -net 120.52.128.0/17 ${ROUTE_GW}
-route ${OPS} -net 120.53.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 120.52.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 120.55.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 120.65.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 120.68.0.0/14 ${ROUTE_GW}
