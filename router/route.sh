@@ -1978,7 +1978,6 @@ route ${OPS} -net 116.172.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 116.174.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 116.176.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 116.181.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 116.182.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 116.193.16.0/23 ${ROUTE_GW}
 route ${OPS} -net 116.193.18.0/24 ${ROUTE_GW}
 route ${OPS} -net 116.193.32.0/19 ${ROUTE_GW}
