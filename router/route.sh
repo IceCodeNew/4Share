@@ -2890,6 +2890,8 @@ route ${OPS} -net 161.207.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 162.14.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 162.105.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 162.209.128.0/17 ${ROUTE_GW}
+route ${OPS} -net 162.211.220.0/22 ${ROUTE_GW}
+route ${OPS} -net 162.244.240.0/22 ${ROUTE_GW}
 route ${OPS} -net 163.0.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.47.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 163.53.36.0/22 ${ROUTE_GW}
