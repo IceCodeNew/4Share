@@ -3065,6 +3065,7 @@ route ${OPS} -net 183.192.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 185.80.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 185.148.13.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.148.15.0/24 ${ROUTE_GW}
+route ${OPS} -net 185.151.204.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.186.146.0/23 ${ROUTE_GW}
 route ${OPS} -net 185.207.152.0/22 ${ROUTE_GW}
 route ${OPS} -net 185.212.60.0/24 ${ROUTE_GW}
