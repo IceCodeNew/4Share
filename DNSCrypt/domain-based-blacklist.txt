@@ -25,10 +25,11 @@ eth0.me
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
 # Ignored duplicates: 120
-# Ignored due to overlapping local patterns: 444
+# Ignored due to overlapping local patterns: 443
 # Ignored entries due to the allowlist: 13
 
 chameleon.ad
+content.ad
 cognitiv.ai
 m2.ai
 matomo.crossiety.app
@@ -949,7 +950,6 @@ feedmob.com
 fimserve.com
 findcommerce.com
 findyourcasino.com
-analytics.dashboard.fingerprint.com
 ads-game-187f4.firebaseapp.com
 fireworkadservices.com
 fireworkanalytics.com
@@ -1215,7 +1215,6 @@ instinctiveads.com
 instrumentsponge.com
 intelliads.com
 intelligenceadx.com
-intellitxt.com
 intercom-clicks.com
 intergi.com
 internetfuel.com
@@ -1611,7 +1610,6 @@ pgpartner.com
 pheedo.com
 photographpan.com
 physicalbikes.com
-picadmedia.com
 analytics.picsart.com
 piet2eix3l.com
 pietexture.com
@@ -1744,6 +1742,7 @@ reachjunction.com
 reactx.com
 readgoldfish.com
 readingguilt.com
+readingopera.com
 readymoon.com
 realcastmedia.com
 realclever.com
@@ -1972,6 +1971,7 @@ gekko.spiceworks.com
 px.spiceworks.com
 spidersboats.com
 spiffymachine.com
+spikyslave.com
 logs.spilgames.com
 tracker-pm2.spilleren.com
 spinnaker-js.com
@@ -2364,7 +2364,6 @@ advertpro.ya.com
 adserver.yahoo.com
 analytics.yahoo.com
 marketingsolutions.yahoo.com
-visit.webhosting.yahoo.com
 x6.yakiuchi.com
 yamstamp.com
 bannersng.yell.com
@@ -2857,7 +2856,6 @@ lifeimpressions.net
 users.maxcluster.net
 maximiser.net
 media.net
-media-servers.net
 utils.mediageneral.net
 meetrics.net
 counter.mirohost.net
@@ -10792,11 +10790,10 @@ unityhacks.zone
 
 ########## Blocklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 1373
+# Ignored duplicates: 1370
 # Ignored due to overlapping local patterns: 522
 # Ignored entries due to the allowlist: 10
 
-content.ad
 admotion.com.ar
 bannerlandia.com.ar
 oewabox.at
@@ -11111,6 +11108,7 @@ popups.infostart.com
 inringtone.com
 inspectorclick.com
 anm.intelli-direct.com
+intellitxt.com
 affiliates.internationaljock.com
 adres.internet.com
 inuvi.com
@@ -11243,6 +11241,7 @@ phizzle.com
 phluant.com
 phonearena.com
 phunware.com
+picadmedia.com
 pillscash.com
 placeplay.com
 planetactive.com
@@ -11390,6 +11389,7 @@ xrea.com
 xy7elite.com
 yabuka.com
 advertising.yahoo.com
+visit.webhosting.yahoo.com
 ybrantdigital.com
 ydworld.com
 yieldmanager.com
@@ -11534,6 +11534,7 @@ hitexchange.net
 i-clicks.net
 lightningcast.net
 linkshighway.net
+media-servers.net
 metanetwork.net
 mobilewithsms.net
 nedstatpro.net
@@ -11645,7 +11646,7 @@ htmlhubing.xyz
 
 ########## Blocklist from https://paulgb.github.io/BarbBlock/blacklists/domain-list.txt ##########
 
-# Ignored duplicates: 360
+# Ignored duplicates: 361
 
 abandonedclover.com
 abashedangle.com
@@ -11755,7 +11756,6 @@ printerplasma.com
 profusesupport.com
 provideplant.com
 puzzlingfall.com
-readingopera.com
 readysnails.com
 referdriving.com
 repeatsweater.com
@@ -42097,7 +42097,7 @@ adservice.google.co.zw
 
 ########## Blocklist from https://dblw.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 1968
+# Ignored duplicates: 1967
 # Ignored due to overlapping local patterns: 464
 # Ignored entries due to the allowlist: 58
 
@@ -43217,7 +43217,6 @@ a.hbf23.cn
 hhgxbxk.cn
 resu8.hjfile.cn
 hk6kn.cn
-hkkeafj.cn
 hnhbx8.cn
 hnrjign.cn
 houbaotech.cn
@@ -43307,7 +43306,6 @@ click.oneplus.cn
 oocie.cn
 yaba.org.cn
 oyqjp.cn
-p11q.cn
 pclsueo.cn
 pcmtf.cn
 pdqwaan.cn
@@ -43395,7 +43393,6 @@ vainews.cn
 vgimer.cn
 vmsolxc.cn
 log.voicecloud.cn
-vvdzucs.cn
 vvsbwny.cn
 delivery.wasu.cn
 bd.watu.cn
@@ -43639,7 +43636,6 @@ mandrill.yellowfruit.co
 tarsier.eyal.codes
 kz2oq0xm6ie7gn5dkswlpv6mfgci8yoe3xlqp12gjotp5fdjxs5ckztb8rzn.codes
 rei9jc56oyqux0rcpcquqmm7jc5freirpsquqkope3n3axrjacg8ipolxvbm.codes
-0008d6ba2e.com
 003store.com
 007angels.com
 00aaa2d81c1d174.com
@@ -44089,7 +44085,6 @@ tracklog.58.com
 gk1.582582.com
 585227ybn.com
 587tuchuang.com
-589aa99d18.com
 58gs7b32jy.com
 58xiangka.com
 590578zugbr8.com
@@ -44256,7 +44251,6 @@ d.8181zx.com
 827fa7c868b4b.com
 828239sam.com
 830ea3f4ac.com
-83787b8c7e.com
 8388tp.com
 8413c95209.com
 8499136.com
@@ -45253,7 +45247,6 @@ afterwardspenal.com
 afterwardstationquestions.com
 aftjohnanodes.com
 aftrangale.com
-www.aftrk1.com
 afwpc.com
 agabreloomr.com
 agaenteitor.com
@@ -48079,7 +48072,6 @@ caperedlevi.com
 caphaiks.com
 track.capitaloneshopping.com
 cappens-dreperor.com
-cappleacouchy.com
 capricedes.com
 capricetheme.com
 caprizecaprizerepeatedly.com
@@ -50058,7 +50050,6 @@ dilemmatryingless.com
 crawdad.dillonerhardt.com
 dillsloppy.com
 dilutionavailstoker.com
-dimcarnie.com
 dimedoncywydd.com
 dimensionvegana.com
 dimessing-parker.com
@@ -51829,6 +51820,7 @@ finesseboisterous.com
 filter.finevisit.com
 join.finevisit.com
 xml.finevisit.com
+analytics.dashboard.fingerprint.com
 vn.finisbur.com
 finisheddaysflamboyant.com
 finishedvistaquickly.com
@@ -57269,7 +57261,6 @@ esa-reg-eup.myoppo.com
 myopybaldwin.com
 ot.myotomyarkab.com
 cdn.mypcbackup.com
-myperfect2give.com
 u652.myplainview.com
 mypopads.com
 c4n.mypornovideos.com
@@ -65211,7 +65202,6 @@ venadvonline.com
 vendgrusian.com
 vendigamus.com
 vendnibtemp.com
-vendorsfacture.com
 veneeringextremely.com
 veneeringimpenetrable.com
 venfioletadas.com
@@ -65679,7 +65669,6 @@ wbilvnmool.com
 wbupbv.com
 wchctzzkzkhx.com
 wct-2.com
-wddsva0.com
 wdt9iaspfv3o.com
 m1.we556.com
 wea5lkaf63loos8a.com
@@ -66664,7 +66653,6 @@ yqgjq.com
 yqmxfz.com
 yqragd.com
 yr9n47004g.com
-yrafubgc.com
 yrvzqabfxe.com
 daima.ysdui.com
 ytbapi.com
@@ -66700,7 +66688,6 @@ yydwkkxhjb.com
 yyhqch.com
 yyp17.com
 yyselrqpyu.com
-yyuivw6.com
 yzaosite.com
 z11011.com
 z6naousb.com
@@ -66934,7 +66921,6 @@ zwyfuxoh.com
 zxcdn.com
 cdn.zxclan.com
 zxr9gpxf7j.com
-zxrcfw.com
 zxwnlg.com
 zxxgoikbqyiu.com
 zybsky.com
@@ -70847,7 +70833,6 @@ d3d0wndor0l4xe.cloudfront.net
 d3d52lhoy0sh2w.cloudfront.net
 d3d54j7si4woql.cloudfront.net
 d3d9pt4go32tk8.cloudfront.net
-d3div1mtym39ic.cloudfront.net
 d3dpet1g0ty5ed.cloudfront.net
 d3dq1nh1l1pzqy.cloudfront.net
 d3ec0pbimicc4r.cloudfront.net
@@ -71850,7 +71835,6 @@ ookresit.net
 ooltutoo.net
 oomsoapt.net
 oortelre.net
-opencan.net
 openstat.net
 img.opentracker.net
 ophophil.net
@@ -72499,6 +72483,7 @@ analytics.saas-vn.network
 yoads.network
 tracking.bonnier.news
 chickadee.e-seller.news
+gnezdo.news
 cephalopod.hometechnology.news
 bobcat.nug.news
 omni-ads.omni.news
@@ -73350,7 +73335,6 @@ pihu.xxxpornhd.pro
 zendplace.pro
 zerg.pro
 cigar.pt
-xad.dnoticias.pt
 beam.remp.impresa.pt
 adw.sapo.pt
 humorcartoes.com.sapo.pt
@@ -73528,6 +73512,7 @@ metricus.artlebedev.ru
 thj.astrakhan.ru
 ff.astv.ru
 easy.au.ru
+push.autosaratov.ru
 sp.aviasales.ru
 avitocars.ru
 avramstroy.ru
@@ -73730,6 +73715,7 @@ counter.photopulse.ru
 a.pikabu.ru
 a.pinoymoviepedia.ru
 plyfoni.ru
+pokrutim.ru
 ponafet.ru
 b.povarenok.ru
 counter.pr-cy.ru
@@ -73822,6 +73808,7 @@ stats.travelask.ru
 turkish-ru.ru
 stat.tvigle.ru
 tvw8edxhpf.ru
+ubar-pro4.ru
 stats.ucheba.ru
 ufiler-pro2.ru
 umekana.ru
@@ -74008,7 +73995,6 @@ frap.site
 ftigholm.site
 g0dy.site
 games-tuz.site
-ghland.site
 glxtest.site
 grifictuberal.site
 hemingway-dries-i-207.site
@@ -74695,7 +74681,6 @@ bnsdk.top
 bowresi.top
 browserr.top
 bwogldv.top
-byzkrjamkqykw.top
 c9tt3jj.top
 captchaforcaptcha.top
 cdn-server.top
@@ -74787,7 +74772,7 @@ ijnuhb.top
 iqkbi.top
 jav-7mmtv.top
 jbazhaheia.top
-jeannvalmvvvr.top
+www.jeannvalmvvvr.top
 jeansalterne.top
 jigaretadv.top
 jiwekawe.top
@@ -74810,7 +74795,6 @@ ldd62n.top
 leobdvvk.top
 lguexrlw.top
 liunxgroup.top
-lnvabjwmrjbvy.top
 loglabitrufly.top
 lorgnonanvils.top
 lowrance.top
@@ -74886,7 +74870,6 @@ regulationprivilegescan.top
 regulushamal.top
 reslightho.top
 ricerets.top
-rifyeldz.top
 rigelbetelgeuse.top
 rmawm7mw.top
 rockdriller.top
@@ -76116,7 +76099,6 @@ oi.fapnow.xxx
 oj.fapnow.xxx
 ok.fapnow.xxx
 a.fapster.xxx
-plx.mrvideosdesexo.xxx
 fuckers.nieuws.xxx
 plx.pornes.xxx
 001adafg.xyz
@@ -76510,7 +76492,6 @@ emostbeautif.xyz
 emukentha.xyz
 enahmy.xyz
 eneverthewin.xyz
-enhad.xyz
 enherthertindown.xyz
 enicyvys.xyz
 entriflingw.xyz
@@ -76567,7 +76548,6 @@ fdtrjz.xyz
 febraverooper.xyz
 cdn.fedsy.xyz
 feegoust.xyz
-feiln.xyz
 feltlonelyand.xyz
 felzfr.xyz
 fensough.xyz
@@ -76616,7 +76596,6 @@ fuckthat.xyz
 fujbjb.xyz
 fultraightdec.xyz
 fvzljv.xyz
-fwepd.xyz
 fwzvlp.xyz
 fxbcpr.xyz
 g77ds2.xyz
@@ -76642,7 +76621,7 @@ ggqnre.xyz
 ghlyrecome.xyz
 gigaads.xyz
 ginnywea.xyz
-gjipd.xyz
+www.gjipd.xyz
 gkcmei.xyz
 gkiho.xyz
 gkwrae.xyz
@@ -76736,7 +76715,6 @@ hjtedf.xyz
 hldwdz.xyz
 hoakz.xyz
 hoctor-pharity.xyz
-hongteng.xyz
 hoojique.xyz
 hopuchcomp.xyz
 houdisco.xyz
