@@ -1145,6 +1145,7 @@ route ${OPS} -net 103.103.48.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.103.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.105.12.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.106.160.0/22 ${ROUTE_GW}
+route ${OPS} -net 103.106.189.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.107.188.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.107.216.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.108.244.0/24 ${ROUTE_GW}
