@@ -3820,7 +3820,10 @@ route ${OPS} -net 221.129.244.0/22 ${ROUTE_GW}
 route ${OPS} -net 221.129.248.0/23 ${ROUTE_GW}
 route ${OPS} -net 221.129.252.0/24 ${ROUTE_GW}
 route ${OPS} -net 221.130.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 221.133.224.0/19 ${ROUTE_GW}
+route ${OPS} -net 221.133.224.0/21 ${ROUTE_GW}
+route ${OPS} -net 221.133.232.0/22 ${ROUTE_GW}
+route ${OPS} -net 221.133.238.0/24 ${ROUTE_GW}
+route ${OPS} -net 221.133.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 221.137.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 221.172.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 221.176.0.0/13 ${ROUTE_GW}
