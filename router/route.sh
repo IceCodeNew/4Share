@@ -2505,6 +2505,7 @@ route ${OPS} -net 139.186.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 139.189.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 139.196.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 139.198.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 139.198.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 139.199.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 139.200.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 139.208.0.0/13 ${ROUTE_GW}
