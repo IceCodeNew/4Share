@@ -26,7 +26,7 @@ eth0.me
 
 # Ignored duplicates: 130
 # Ignored due to overlapping local patterns: 443
-# Ignored entries due to the allowlist: 13
+# Ignored entries due to the allowlist: 15
 
 chameleon.ad
 content.ad
@@ -387,6 +387,7 @@ annoyingacoustics.com
 anstrex.com
 anxiousapples.com
 apathetictheory.com
+app-measurement.com
 appboycdn.com
 is-tracking-pixel-api-prod.appspot.com
 sc-analytics.appspot.com
@@ -23448,7 +23449,7 @@ email.pampers.co.za
 
 ########## Blocklist from https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt ##########
 
-# Ignored duplicates: 416940
+# Ignored duplicates: 416941
 # Ignored due to overlapping local patterns: 723
 # Ignored entries due to the allowlist: 165
 
@@ -24180,7 +24181,6 @@ aplimarathi.com
 aplimarati.com
 apmebf.com
 pixel.app-cast.com
-app-measurement.com
 diffuser-cdn.app-us1.com
 appartmentdeville.com
 appboy-images.com
