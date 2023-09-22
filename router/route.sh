@@ -682,10 +682,7 @@ route ${OPS} -net 61.240.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 61.241.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 61.241.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 61.241.192.0/19 ${ROUTE_GW}
-route ${OPS} -net 61.242.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 61.243.0.0/17 ${ROUTE_GW}
-route ${OPS} -net 61.243.128.0/18 ${ROUTE_GW}
-route ${OPS} -net 61.243.192.0/19 ${ROUTE_GW}
+route ${OPS} -net 61.242.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 62.133.33.0/24 ${ROUTE_GW}
 route ${OPS} -net 62.234.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 63.140.0.0/24 ${ROUTE_GW}
