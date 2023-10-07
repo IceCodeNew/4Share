@@ -2903,6 +2903,7 @@ route ${OPS} -net 185.151.204.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.186.146.0/23 ${ROUTE_GW}
 route ${OPS} -net 185.212.60.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.212.62.0/23 ${ROUTE_GW}
+route ${OPS} -net 185.218.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 185.227.70.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.243.43.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.255.55.0/24 ${ROUTE_GW}
