@@ -513,7 +513,7 @@ route ${OPS} -net 47.96.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 47.112.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 47.120.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 47.122.0.0/17 ${ROUTE_GW}
-route ${OPS} -net 47.122.128.0/19 ${ROUTE_GW}
+route ${OPS} -net 47.122.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 47.123.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 47.240.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 47.244.0.0/16 ${ROUTE_GW}
