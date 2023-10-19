@@ -2314,10 +2314,7 @@ route ${OPS} -net 123.58.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 123.58.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 123.59.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 123.60.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 123.64.0.0/13 ${ROUTE_GW}
-route ${OPS} -net 123.72.0.0/14 ${ROUTE_GW}
-route ${OPS} -net 123.76.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 123.78.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 123.64.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 123.80.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 123.90.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 123.92.0.0/14 ${ROUTE_GW}
