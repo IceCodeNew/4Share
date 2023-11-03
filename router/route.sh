@@ -861,7 +861,7 @@ route ${OPS} -net 103.8.204.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.8.220.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.9.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.9.248.0/21 ${ROUTE_GW}
-route ${OPS} -net 103.10.2.0/23 ${ROUTE_GW}
+route ${OPS} -net 103.10.0.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.10.84.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.12.68.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.12.148.0/22 ${ROUTE_GW}
