@@ -1952,7 +1952,8 @@ route ${OPS} -net 117.80.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 117.100.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 117.106.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 117.112.0.0/13 ${ROUTE_GW}
-route ${OPS} -net 117.121.0.0/17 ${ROUTE_GW}
+route ${OPS} -net 117.121.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 117.121.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 117.121.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 117.122.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 117.124.0.0/14 ${ROUTE_GW}
