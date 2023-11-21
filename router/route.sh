@@ -534,7 +534,9 @@ route ${OPS} -net 49.4.104.0/22 ${ROUTE_GW}
 route ${OPS} -net 49.4.108.0/23 ${ROUTE_GW}
 route ${OPS} -net 49.4.110.0/24 ${ROUTE_GW}
 route ${OPS} -net 49.4.112.0/20 ${ROUTE_GW}
-route ${OPS} -net 49.5.0.0/17 ${ROUTE_GW}
+route ${OPS} -net 49.5.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 49.5.64.0/19 ${ROUTE_GW}
+route ${OPS} -net 49.5.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 49.7.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 49.51.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 49.51.48.0/23 ${ROUTE_GW}
