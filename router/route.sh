@@ -3860,7 +3860,7 @@ route ${OPS} -net 221.129.248.0/23 ${ROUTE_GW}
 route ${OPS} -net 221.129.252.0/24 ${ROUTE_GW}
 route ${OPS} -net 221.130.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 221.133.225.0/24 ${ROUTE_GW}
-route ${OPS} -net 221.133.226.0/23 ${ROUTE_GW}
+route ${OPS} -net 221.133.226.0/24 ${ROUTE_GW}
 route ${OPS} -net 221.133.228.0/22 ${ROUTE_GW}
 route ${OPS} -net 221.133.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 221.133.240.0/20 ${ROUTE_GW}
