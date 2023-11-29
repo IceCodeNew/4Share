@@ -1979,8 +1979,8 @@ route ${OPS} -net 118.26.200.0/21 ${ROUTE_GW}
 route ${OPS} -net 118.26.208.0/20 ${ROUTE_GW}
 route ${OPS} -net 118.26.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 118.30.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 118.64.0.0/22 ${ROUTE_GW}
-route ${OPS} -net 118.64.252.0/22 ${ROUTE_GW}
+route ${OPS} -net 118.64.0.0/21 ${ROUTE_GW}
+route ${OPS} -net 118.64.248.0/21 ${ROUTE_GW}
 route ${OPS} -net 118.72.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 118.80.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 118.84.0.0/15 ${ROUTE_GW}
