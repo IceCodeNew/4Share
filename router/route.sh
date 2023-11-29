@@ -870,7 +870,6 @@ route ${OPS} -net 103.8.33.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.8.34.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.8.52.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.8.68.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.8.204.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.8.220.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.9.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.9.248.0/21 ${ROUTE_GW}
