@@ -981,8 +981,6 @@ route ${OPS} -net 103.44.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.44.58.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.44.80.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.44.144.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.44.169.0/24 ${ROUTE_GW}
-route ${OPS} -net 103.44.171.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.44.176.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.44.236.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.44.240.0/20 ${ROUTE_GW}
