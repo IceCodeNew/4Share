@@ -1619,9 +1619,9 @@ route ${OPS} -net 110.196.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 110.199.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 110.200.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 110.208.0.0/14 ${ROUTE_GW}
-route ${OPS} -net 110.212.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 110.212.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 110.215.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 110.218.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 110.218.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 110.228.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 110.232.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 110.236.0.0/15 ${ROUTE_GW}
