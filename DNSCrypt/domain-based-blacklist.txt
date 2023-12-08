@@ -25,7 +25,7 @@ eth0.me
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
 # Ignored duplicates: 146
-# Ignored due to overlapping local patterns: 438
+# Ignored due to overlapping local patterns: 437
 # Ignored entries due to the allowlist: 16
 
 content.ad
@@ -348,7 +348,6 @@ ak0gsh40.com
 alclick.com
 alenty.com
 alertafterthought.com
-alexametrics.com
 aliasanvil.com
 dmtracking.alibaba.com
 dmtracking2.alibaba.com
@@ -539,6 +538,7 @@ brealtime.com
 bridgetrack.com
 briefstem.com
 brightcom.com
+brightinfo.com
 brightmountainmedia.com
 l1.britannica.com
 broadboundary.com
@@ -571,6 +571,7 @@ calmcactus.com
 calypsocapsule.com
 adserver.cams.com
 caniamedia.com
+track.canva.com
 capablecows.com
 capriciouscorn.com
 captainbicycle.com
@@ -1288,7 +1289,6 @@ kubient.com
 l6b587txj1.com
 lakequincy.com
 lameletters.com
-lanistaads.com
 largebrass.com
 laughablecopper.com
 laughcloth.com
@@ -3120,7 +3120,6 @@ eversales.space
 analytics.shorte.st
 lightstep.medium.systems
 ql.tc
-volvelle.tech
 truehits1.gits.net.th
 truehits2.gits.net.th
 cpx.to
@@ -3200,12 +3199,10 @@ adpia.vn
 eclick.vn
 skylink.vn
 pixel.watch
-asia999.website
 thebugs.ws
 trk.bad-tool-tell-doubt.xyz
 rexadvert.xyz
 sbird.xyz
-trk.us-learn-teacher-poetry.xyz
 adsrv.iol.co.za
 
 
@@ -10823,7 +10820,7 @@ unityhacks.zone
 
 ########## Blocklist from https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt ##########
 
-# Ignored duplicates: 1349
+# Ignored duplicates: 1350
 # Ignored due to overlapping local patterns: 522
 # Ignored entries due to the allowlist: 10
 
@@ -10983,7 +10980,6 @@ blutrumpet.com
 boldchat.com
 branovate.com
 brickandmobile.com
-brightinfo.com
 british-banners.com
 budsinc.com
 bugsense.com
@@ -23520,7 +23516,7 @@ email.pampers.co.za
 
 ########## Blocklist from https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt ##########
 
-# Ignored duplicates: 415491
+# Ignored duplicates: 415490
 # Ignored due to overlapping local patterns: 720
 # Ignored entries due to the allowlist: 164
 
@@ -24057,6 +24053,7 @@ aldisusa.com
 aldomoletta.com
 alessandrasmile.com
 alessiowheels.com
+alexametrics.com
 analytics.algolia.com
 analytics.de.algolia.com
 analytics.us.algolia.com
@@ -35606,7 +35603,7 @@ monetate-prod.zone
 
 ########## Blocklist from https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt ##########
 
-# Ignored duplicates: 35987
+# Ignored duplicates: 35988
 # Ignored due to overlapping local patterns: 361
 # Ignored entries due to the allowlist: 75
 
@@ -36562,7 +36559,6 @@ stats.calldorado.com
 applog.camera360.com
 appres.camera360.com
 dynamic.cannedbanners.com
-track.canva.com
 sdata.captifymedia.com
 s-threads.analytics.carbonite.com
 cash-ads.com
@@ -41540,7 +41536,7 @@ adservice.google.co.zw
 ########## Blocklist from https://dblw.oisd.nl/basic/ ##########
 
 # Ignored duplicates: 3113
-# Ignored due to overlapping local patterns: 776
+# Ignored due to overlapping local patterns: 775
 # Ignored entries due to the allowlist: 56
 
 flw.camcaps.ac
@@ -41752,6 +41748,7 @@ fancyrat.keurslager-goeminne.be
 antelope.kinn.be
 cdn-partners-references.lesoir.be
 a.medialaancdn.be
+prod-mhaa.mhtr.be
 stats.persgroep.be
 revlt.be
 earthworm.robbevanpetegem.be
@@ -42176,6 +42173,7 @@ webstats.pixcell.ch
 analytics.qoqa.ch
 catfish.sofatido.ch
 krill.swiss-uke.ch
+swissadserver.ch
 analytics.tio.ch
 coyote.txet.ch
 platypus.zwei-bags.ch
@@ -42607,6 +42605,7 @@ a.yellowurl.cn
 11.yiqig.cn
 yl04z4v.cn
 ylykd.cn
+ytlcz.cn
 ywsiqlg.cn
 yylady.cn
 yzgid.cn
@@ -46895,6 +46894,7 @@ caesaw.com
 ca-api.cafe24data.com
 click2.cafepress.com
 cagesscan.com
+caigobou.com
 cairalei.com
 gg.caixin.com
 cajggfj.com
@@ -48612,6 +48612,7 @@ deafeningdock.com
 dealcurrent.com
 clicks.dealer.com
 hits.dealer.com
+analytics.dealmoon.com
 deals-du-web.com
 dealtbroodconstitutional.com
 deanvividsquall.com
@@ -49722,6 +49723,7 @@ ebuyreeqnol.com
 ac.ecai-report.com
 echnic.com
 trackerapi.service.echobox.com
+eciivxqtur.com
 eclkmpsa.com
 com.econa.com
 data.econa.com
@@ -49865,6 +49867,7 @@ ekenameaclinal.com
 ekgloczbsblg.com
 ekmas.com
 cdn.eksiup.com
+dmp.eland-tech.com
 ie.elandsmeikles.com
 elasticdestruct.com
 flea.elbertsnaturalfoods.com
@@ -52718,8 +52721,7 @@ hollekeamboina.com
 collect.hollisterco.com
 hollowcharacter.com
 hollowgleamed.com
-c.holmesmind.com
-vast.holmesmind.com
+holmesmind.com
 holond.com
 holptimawa.com
 holychaptersbaker.com
@@ -53183,6 +53185,7 @@ ildopxge.com
 ilealscathes.com
 ileeckut.com
 adilk.ilikecomix.com
+iliketomakingpics.com
 illallwoe.com
 illegaleaglewhistling.com
 illegallyshoulder.com
@@ -56287,6 +56290,7 @@ mross011.com
 mross022.com
 mross033.com
 mrrvmp.com
+mrs30w.com
 mrtbbnr.com
 mrtbbnrdip.com
 mrvio.com
@@ -56347,6 +56351,7 @@ muragetunnel.com
 muralattentive.com
 muralshelvesdeposition.com
 murderassuredness.com
+murdyq.com
 muricidmartins.com
 pq.murkfrazil.com
 murkilyergots.com
@@ -63929,7 +63934,7 @@ tuesdayfetidlit.com
 tuffetenolize.com
 tuffoonincaged.com
 tugarmyindistinct.com
-tuglikevertigo.com
+www.tuglikevertigo.com
 tugust.com
 tuhwjkesxo.com
 tukeelsy.com
@@ -66174,6 +66179,7 @@ yr9n47004g.com
 yruws6.com
 yrvzqabfxe.com
 iuou.ysw365.com
+ysxt9.com
 ytcc3.com
 yterxv.com
 ytgzz.com
@@ -66456,6 +66462,7 @@ adf.uhn.cx
 analytics.ouc.ac.cy
 ibikini.cyou
 terbaru.cyou
+ydv7k.cyou
 a.1gr.cz
 m.1gr.cz
 pixel.biano.cz
@@ -66644,6 +66651,7 @@ subpixel.4players.de
 9cbj41a5.de
 9s4l9nik.de
 9tp9jd4p.de
+r.aachener-zeitung.de
 ab199.de
 ab93t2kc.de
 flamingo.abihome.de
@@ -67736,6 +67744,7 @@ jqkcett.icu
 jtpu9s.icu
 jutwzssh.icu
 jxmiyrh.icu
+jxuhurp.icu
 jygiizv.icu
 jzixypd.icu
 kaaqgf.icu
@@ -68831,6 +68840,7 @@ beacon.watch.impress.co.jp
 isboost.co.jp
 marten.joqr.co.jp
 ip2c.landscape.co.jp
+cellar-analytics.mapion.co.jp
 mediad.co.jp
 mbadv.nan.co.jp
 astat.nikkei.co.jp
@@ -74363,7 +74373,6 @@ elitedatingexperience.top
 elmiestkanuri.top
 emailon.top
 enrobeskaithy.top
-enwerzaqqbbnb.top
 epimerbeep.top
 exinepenname.top
 extremiu.top
@@ -74385,6 +74394,7 @@ getbiggainsurvey.top
 ghisiva.top
 gifttopsurvey.top
 gleetchisurvey.top
+gn01.top
 gnathicrugal.top
 goatpoxbutters.top
 goldensmith.top
@@ -74571,6 +74581,7 @@ tpyxplkcap.top
 trickerseasan.top
 tunnelbuilder.top
 twwp3.top
+uito.top
 ultracdn.top
 uraimeandc.top
 uredy.top
@@ -76031,6 +76042,7 @@ clkdus.xyz
 cmbmtpjm.xyz
 cmdcdacq.xyz
 cms100.xyz
+cnqaaa.xyz
 cnrdlpk.xyz
 cnredg.xyz
 cnucpaq.xyz
@@ -76181,6 +76193,7 @@ enahmy.xyz
 enherthertindown.xyz
 enzav.xyz
 eoseurlingeringonl.xyz
+eoxaxdglxecvguh.xyz
 epebuk.xyz
 epxprfk.xyz
 eqknlsw.xyz
@@ -76357,6 +76370,7 @@ havttn.xyz
 haxqxd.xyz
 hcritiesec.xyz
 hdat.xyz
+hdbppx.xyz
 hdxjtl.xyz
 hecherthepa.xyz
 hefrpv.xyz
@@ -76529,6 +76543,7 @@ jxvyrv.xyz
 jyarkinhechershedt.xyz
 jyvith.xyz
 jyxfvp.xyz
+www.jzlso.xyz
 jzxpxj.xyz
 k0lksy.xyz
 k7f67a6s7.xyz
@@ -76573,6 +76588,7 @@ ktobedirectu.xyz
 ktvtxir.xyz
 kuboohee.xyz
 kuleqasforsal.xyz
+kvhtsvy.xyz
 kvsvug.xyz
 kwtgntyu.xyz
 kygftx.xyz
@@ -77493,6 +77509,7 @@ wthroughhi.xyz
 wtrep.xyz
 wutsldsk.xyz
 wwfx.xyz
+wwhsxwow.xyz
 wwow.xyz
 wwoww.xyz
 wwowww.xyz
@@ -77502,6 +77519,7 @@ rtb-eu.wxadserve.xyz
 rtb-useast.wxadserve.xyz
 wyjbvoz.xyz
 wzkxke.xyz
+wzzlnld.xyz
 xbvmrx.xyz
 xcholvbc.xyz
 xcvhhgdbyqk.xyz
@@ -77645,6 +77663,7 @@ zortaudi.xyz
 zppfjh.xyz
 zpsovpgyk.xyz
 zpvfsrb.xyz
+zpzlbv.xyz
 zszhln.xyz
 zumolery.xyz
 zunnnh.xyz
