@@ -2154,8 +2154,6 @@ route ${OPS} -net 119.80.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 119.80.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 119.80.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 119.80.192.0/21 ${ROUTE_GW}
-route ${OPS} -net 119.80.200.0/23 ${ROUTE_GW}
-route ${OPS} -net 119.80.202.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.80.240.0/22 ${ROUTE_GW}
 route ${OPS} -net 119.80.248.0/21 ${ROUTE_GW}
 route ${OPS} -net 119.84.0.0/14 ${ROUTE_GW}
