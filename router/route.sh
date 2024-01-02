@@ -2110,7 +2110,6 @@ route ${OPS} -net 119.38.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 119.38.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 119.39.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 119.40.0.0/19 ${ROUTE_GW}
-route ${OPS} -net 119.40.32.0/21 ${ROUTE_GW}
 route ${OPS} -net 119.40.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 119.41.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 119.42.0.0/19 ${ROUTE_GW}
