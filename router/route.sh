@@ -738,9 +738,12 @@ route ${OPS} -net 82.115.30.0/23 ${ROUTE_GW}
 route ${OPS} -net 82.129.29.0/24 ${ROUTE_GW}
 route ${OPS} -net 82.129.30.0/24 ${ROUTE_GW}
 route ${OPS} -net 82.156.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 87.254.207.0/24 ${ROUTE_GW}
 route ${OPS} -net 89.208.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 91.216.169.0/24 ${ROUTE_GW}
 route ${OPS} -net 93.179.124.0/22 ${ROUTE_GW}
+route ${OPS} -net 93.183.14.0/24 ${ROUTE_GW}
+route ${OPS} -net 93.183.18.0/24 ${ROUTE_GW}
 route ${OPS} -net 94.74.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 94.74.120.0/21 ${ROUTE_GW}
 route ${OPS} -net 94.191.0.0/17 ${ROUTE_GW}
