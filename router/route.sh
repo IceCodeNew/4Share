@@ -1900,7 +1900,12 @@ route ${OPS} -net 117.51.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 117.51.160.0/23 ${ROUTE_GW}
 route ${OPS} -net 117.51.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 117.57.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 117.59.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 117.59.0.0/19 ${ROUTE_GW}
+route ${OPS} -net 117.59.32.0/22 ${ROUTE_GW}
+route ${OPS} -net 117.59.40.0/21 ${ROUTE_GW}
+route ${OPS} -net 117.59.48.0/20 ${ROUTE_GW}
+route ${OPS} -net 117.59.64.0/18 ${ROUTE_GW}
+route ${OPS} -net 117.59.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 117.60.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 117.64.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 117.72.0.0/23 ${ROUTE_GW}
