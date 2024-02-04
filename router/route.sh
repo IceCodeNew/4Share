@@ -130,6 +130,7 @@ route ${OPS} -net 36.32.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 36.36.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 36.40.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 36.48.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 36.50.226.0/24 ${ROUTE_GW}
 route ${OPS} -net 36.51.253.0/24 ${ROUTE_GW}
 route ${OPS} -net 36.56.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 36.96.0.0/12 ${ROUTE_GW}
