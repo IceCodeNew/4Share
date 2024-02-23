@@ -2299,7 +2299,7 @@ route ${OPS} -net 122.248.48.0/21 ${ROUTE_GW}
 route ${OPS} -net 122.248.56.0/22 ${ROUTE_GW}
 route ${OPS} -net 123.4.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 123.8.0.0/13 ${ROUTE_GW}
-route ${OPS} -net 123.49.241.0/24 ${ROUTE_GW}
+route ${OPS} -net 123.49.240.0/22 ${ROUTE_GW}
 route ${OPS} -net 123.52.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 123.56.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 123.58.0.0/19 ${ROUTE_GW}
