@@ -1635,7 +1635,6 @@ route ${OPS} -net 111.235.172.0/23 ${ROUTE_GW}
 route ${OPS} -net 111.235.174.0/24 ${ROUTE_GW}
 route ${OPS} -net 111.235.178.0/24 ${ROUTE_GW}
 route ${OPS} -net 111.235.180.0/23 ${ROUTE_GW}
-route ${OPS} -net 111.235.182.0/24 ${ROUTE_GW}
 route ${OPS} -net 112.0.0.0/10 ${ROUTE_GW}
 route ${OPS} -net 112.64.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 112.73.64.0/18 ${ROUTE_GW}
