@@ -2437,9 +2437,6 @@ route ${OPS} -net 125.58.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 125.61.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 125.62.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 125.64.0.0/11 ${ROUTE_GW}
-route ${OPS} -net 125.96.48.0/20 ${ROUTE_GW}
-route ${OPS} -net 125.96.176.0/20 ${ROUTE_GW}
-route ${OPS} -net 125.96.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 125.98.122.0/23 ${ROUTE_GW}
 route ${OPS} -net 125.98.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 125.104.0.0/13 ${ROUTE_GW}
