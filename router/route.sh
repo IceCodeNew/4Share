@@ -3867,7 +3867,7 @@ route ${OPS} -net 221.133.228.0/22 ${ROUTE_GW}
 route ${OPS} -net 221.133.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 221.133.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 221.137.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 221.174.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 221.174.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 221.176.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 221.192.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 221.196.0.0/15 ${ROUTE_GW}
