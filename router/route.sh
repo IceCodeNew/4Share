@@ -2779,8 +2779,11 @@ route ${OPS} -net 175.46.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 175.102.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 175.102.32.0/22 ${ROUTE_GW}
 route ${OPS} -net 175.102.128.0/21 ${ROUTE_GW}
-route ${OPS} -net 175.102.160.0/19 ${ROUTE_GW}
-route ${OPS} -net 175.102.192.0/22 ${ROUTE_GW}
+route ${OPS} -net 175.102.178.0/23 ${ROUTE_GW}
+route ${OPS} -net 175.102.180.0/22 ${ROUTE_GW}
+route ${OPS} -net 175.102.184.0/22 ${ROUTE_GW}
+route ${OPS} -net 175.102.188.0/23 ${ROUTE_GW}
+route ${OPS} -net 175.102.190.0/24 ${ROUTE_GW}
 route ${OPS} -net 175.102.196.0/24 ${ROUTE_GW}
 route ${OPS} -net 175.106.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 175.146.0.0/15 ${ROUTE_GW}
