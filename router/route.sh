@@ -578,7 +578,7 @@ route ${OPS} -net 52.82.132.0/24 ${ROUTE_GW}
 route ${OPS} -net 52.82.134.0/23 ${ROUTE_GW}
 route ${OPS} -net 52.82.136.0/24 ${ROUTE_GW}
 route ${OPS} -net 52.82.144.0/23 ${ROUTE_GW}
-route ${OPS} -net 52.82.148.0/22 ${ROUTE_GW}
+route ${OPS} -net 52.82.148.0/23 ${ROUTE_GW}
 route ${OPS} -net 52.82.160.0/21 ${ROUTE_GW}
 route ${OPS} -net 52.82.170.0/23 ${ROUTE_GW}
 route ${OPS} -net 52.82.172.0/22 ${ROUTE_GW}
