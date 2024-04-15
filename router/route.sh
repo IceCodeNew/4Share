@@ -1183,7 +1183,7 @@ route ${OPS} -net 103.111.64.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.112.28.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.112.68.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.112.184.0/23 ${ROUTE_GW}
-route ${OPS} -net 103.113.4.0/23 ${ROUTE_GW}
+route ${OPS} -net 103.113.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.114.72.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.114.100.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.114.212.0/23 ${ROUTE_GW}
