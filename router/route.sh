@@ -2930,7 +2930,7 @@ route ${OPS} -net 190.92.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 192.55.46.0/24 ${ROUTE_GW}
 route ${OPS} -net 192.55.68.0/22 ${ROUTE_GW}
 route ${OPS} -net 192.69.88.0/21 ${ROUTE_GW}
-route ${OPS} -net 192.102.204.0/23 ${ROUTE_GW}
+route ${OPS} -net 192.102.204.0/22 ${ROUTE_GW}
 route ${OPS} -net 192.140.208.0/21 ${ROUTE_GW}
 route ${OPS} -net 192.144.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 192.151.192.0/18 ${ROUTE_GW}
