@@ -224,7 +224,8 @@ route ${OPS} -net 42.192.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 42.194.12.0/24 ${ROUTE_GW}
 route ${OPS} -net 42.194.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 42.201.64.0/21 ${ROUTE_GW}
-route ${OPS} -net 42.201.72.0/24 ${ROUTE_GW}
+route ${OPS} -net 42.201.72.0/22 ${ROUTE_GW}
+route ${OPS} -net 42.201.76.0/24 ${ROUTE_GW}
 route ${OPS} -net 42.202.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 42.224.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 42.240.0.0/21 ${ROUTE_GW}
