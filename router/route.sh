@@ -2841,8 +2841,7 @@ route ${OPS} -net 180.152.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 180.160.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 180.178.252.0/22 ${ROUTE_GW}
 route ${OPS} -net 180.184.0.0/21 ${ROUTE_GW}
-route ${OPS} -net 180.184.8.0/22 ${ROUTE_GW}
-route ${OPS} -net 180.184.12.0/23 ${ROUTE_GW}
+route ${OPS} -net 180.184.8.0/23 ${ROUTE_GW}
 route ${OPS} -net 180.184.14.0/24 ${ROUTE_GW}
 route ${OPS} -net 180.184.16.0/24 ${ROUTE_GW}
 route ${OPS} -net 180.184.24.0/21 ${ROUTE_GW}
