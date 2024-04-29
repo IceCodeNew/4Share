@@ -2106,6 +2106,7 @@ route ${OPS} -net 119.42.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 119.42.136.0/21 ${ROUTE_GW}
 route ${OPS} -net 119.42.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 119.44.8.0/24 ${ROUTE_GW}
+route ${OPS} -net 119.44.50.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.44.253.0/24 ${ROUTE_GW}
 route ${OPS} -net 119.45.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 119.48.0.0/13 ${ROUTE_GW}
