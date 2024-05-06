@@ -3024,7 +3024,6 @@ route ${OPS} -net 202.91.38.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.91.176.0/21 ${ROUTE_GW}
 route ${OPS} -net 202.91.184.0/23 ${ROUTE_GW}
 route ${OPS} -net 202.91.186.0/24 ${ROUTE_GW}
-route ${OPS} -net 202.91.188.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.91.190.0/23 ${ROUTE_GW}
 route ${OPS} -net 202.91.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.91.240.0/21 ${ROUTE_GW}
