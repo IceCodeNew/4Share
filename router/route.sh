@@ -3900,9 +3900,7 @@ route ${OPS} -net 221.208.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 221.224.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 222.16.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 222.35.0.0/16 ${ROUTE_GW}
-route ${OPS} -net 222.41.9.0/24 ${ROUTE_GW}
 route ${OPS} -net 222.41.10.0/24 ${ROUTE_GW}
-route ${OPS} -net 222.41.64.0/24 ${ROUTE_GW}
 route ${OPS} -net 222.42.115.0/24 ${ROUTE_GW}
 route ${OPS} -net 222.44.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 222.49.128.0/17 ${ROUTE_GW}
