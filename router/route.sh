@@ -872,7 +872,7 @@ route ${OPS} -net 102.134.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 102.141.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 102.220.88.0/22 ${ROUTE_GW}
 route ${OPS} -net 102.223.72.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.1.10.0/23 ${ROUTE_GW}
+route ${OPS} -net 103.1.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.1.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.2.108.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.2.208.0/22 ${ROUTE_GW}
