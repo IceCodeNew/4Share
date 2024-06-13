@@ -3668,12 +3668,10 @@ route ${OPS} -net 211.161.203.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.161.209.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.161.221.0/24 ${ROUTE_GW}
 route ${OPS} -net 211.162.0.0/21 ${ROUTE_GW}
-route ${OPS} -net 211.162.32.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.162.64.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.162.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.162.192.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.162.200.0/22 ${ROUTE_GW}
-route ${OPS} -net 211.162.236.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.162.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.165.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 211.166.0.0/16 ${ROUTE_GW}
