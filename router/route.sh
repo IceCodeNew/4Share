@@ -687,7 +687,7 @@ route ${OPS} -net 60.194.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 60.204.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 60.208.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 60.232.0.0/24 ${ROUTE_GW}
-route ${OPS} -net 60.232.224.0/24 ${ROUTE_GW}
+route ${OPS} -net 60.232.246.0/23 ${ROUTE_GW}
 route ${OPS} -net 60.235.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 60.245.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 60.247.0.0/16 ${ROUTE_GW}
