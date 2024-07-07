@@ -614,6 +614,7 @@ route ${OPS} -net 54.222.72.0/21 ${ROUTE_GW}
 route ${OPS} -net 54.222.80.0/21 ${ROUTE_GW}
 route ${OPS} -net 54.222.88.0/22 ${ROUTE_GW}
 route ${OPS} -net 54.222.96.0/23 ${ROUTE_GW}
+route ${OPS} -net 54.222.100.0/22 ${ROUTE_GW}
 route ${OPS} -net 54.222.112.0/22 ${ROUTE_GW}
 route ${OPS} -net 54.222.116.0/23 ${ROUTE_GW}
 route ${OPS} -net 54.222.128.0/17 ${ROUTE_GW}
