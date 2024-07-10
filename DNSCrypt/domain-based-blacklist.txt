@@ -24,7 +24,7 @@ eth0.me
 
 ########## Blocklist from https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml ##########
 
-# Ignored duplicates: 146
+# Ignored duplicates: 151
 # Ignored due to overlapping local patterns: 421
 # Ignored entries due to the allowlist: 16
 
@@ -1168,6 +1168,7 @@ kissmetrics.com
 klclick.com
 klclick1.com
 klsdee.com
+knitstamp.com
 knorex.com
 knottyswing.com
 komoona.com
@@ -1546,6 +1547,7 @@ previousplayground.com
 previouspotato.com
 partners.priceline.com
 priceypies.com
+pricklydebt.com
 priefy.com
 track.privacyatclearbit.com
 privatecash.com
@@ -2888,8 +2890,8 @@ tns-counter.ru
 a.ucoz.ru
 warlog.ru
 yadro.ru
+report.ap.yandex-net.ru
 adsdk.yandex.ru
-appmetrica.yandex.ru
 bs.yandex.ru
 blogtoplist.se
 stat.cliche.se
@@ -41885,7 +41887,7 @@ adservice.google.co.zw
 
 ########## Blocklist from https://dblw.oisd.nl/basic/ ##########
 
-# Ignored duplicates: 2911
+# Ignored duplicates: 2910
 # Ignored due to overlapping local patterns: 784
 # Ignored entries due to the allowlist: 57
 
@@ -79588,6 +79590,7 @@ startup-mobile.ap.yandex-net.ru
 adfox.yandex.ru
 adfstat.yandex.ru
 amc.yandex.ru
+appmetrica.yandex.ru
 awsync.yandex.ru
 metrika.yandex.ru
 log.strm.yandex.ru
