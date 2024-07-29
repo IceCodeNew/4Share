@@ -3877,8 +3877,7 @@ route ${OPS} -net 220.113.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 220.113.180.0/22 ${ROUTE_GW}
 route ${OPS} -net 220.113.184.0/22 ${ROUTE_GW}
 route ${OPS} -net 220.113.224.0/19 ${ROUTE_GW}
-route ${OPS} -net 220.114.64.0/21 ${ROUTE_GW}
-route ${OPS} -net 220.114.248.0/22 ${ROUTE_GW}
+route ${OPS} -net 220.114.250.0/23 ${ROUTE_GW}
 route ${OPS} -net 220.115.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 220.115.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 220.115.228.0/22 ${ROUTE_GW}
