@@ -1660,7 +1660,7 @@ route ${OPS} -net 110.125.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 110.152.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 110.156.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 110.166.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 110.172.212.0/23 ${ROUTE_GW}
+route ${OPS} -net 110.172.213.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.173.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 110.173.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 110.173.32.0/20 ${ROUTE_GW}
