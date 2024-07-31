@@ -823,6 +823,7 @@ route ${OPS} -net 101.52.128.0/20 ${ROUTE_GW}
 route ${OPS} -net 101.52.204.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.52.212.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.52.216.0/21 ${ROUTE_GW}
+route ${OPS} -net 101.52.232.0/23 ${ROUTE_GW}
 route ${OPS} -net 101.52.236.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.52.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 101.53.100.0/22 ${ROUTE_GW}
