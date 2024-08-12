@@ -3208,6 +3208,7 @@ route ${OPS} -net 202.149.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 202.152.190.0/23 ${ROUTE_GW}
 route ${OPS} -net 202.153.48.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.158.160.0/19 ${ROUTE_GW}
+route ${OPS} -net 202.160.142.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.164.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.165.208.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.168.160.0/19 ${ROUTE_GW}
