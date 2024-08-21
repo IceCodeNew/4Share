@@ -3803,6 +3803,7 @@ route ${OPS} -net 218.213.85.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.240.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 218.240.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 218.240.160.0/21 ${ROUTE_GW}
+route ${OPS} -net 218.240.168.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.240.176.0/21 ${ROUTE_GW}
 route ${OPS} -net 218.240.184.0/24 ${ROUTE_GW}
 route ${OPS} -net 218.240.255.0/24 ${ROUTE_GW}
