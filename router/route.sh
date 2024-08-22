@@ -1705,8 +1705,8 @@ route ${OPS} -net 110.218.136.0/21 ${ROUTE_GW}
 route ${OPS} -net 110.218.176.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.218.192.0/20 ${ROUTE_GW}
 route ${OPS} -net 110.218.224.0/20 ${ROUTE_GW}
-route ${OPS} -net 110.219.64.0/23 ${ROUTE_GW}
-route ${OPS} -net 110.219.66.0/24 ${ROUTE_GW}
+route ${OPS} -net 110.219.64.0/22 ${ROUTE_GW}
+route ${OPS} -net 110.219.68.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.219.129.0/24 ${ROUTE_GW}
 route ${OPS} -net 110.219.130.0/23 ${ROUTE_GW}
 route ${OPS} -net 110.219.240.0/24 ${ROUTE_GW}
