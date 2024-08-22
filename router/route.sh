@@ -4021,7 +4021,6 @@ route ${OPS} -net 223.0.15.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.0.16.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.0.20.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.0.30.0/24 ${ROUTE_GW}
-route ${OPS} -net 223.0.40.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.0.126.0/24 ${ROUTE_GW}
 route ${OPS} -net 223.2.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 223.4.0.0/14 ${ROUTE_GW}
