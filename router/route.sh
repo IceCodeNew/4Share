@@ -2442,9 +2442,7 @@ route ${OPS} -net 122.11.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 122.13.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 122.14.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 122.14.192.0/18 ${ROUTE_GW}
-route ${OPS} -net 122.48.32.0/19 ${ROUTE_GW}
-route ${OPS} -net 122.48.100.0/24 ${ROUTE_GW}
-route ${OPS} -net 122.48.110.0/24 ${ROUTE_GW}
+route ${OPS} -net 122.48.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 122.49.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 122.49.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 122.49.32.0/20 ${ROUTE_GW}
