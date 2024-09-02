@@ -29,6 +29,7 @@ OPS=$1
 # sed -i -E 's/114.114.114.114/223.5.5.5/g' accelerated-domains.china.conf
 
 route ${OPS} -net 1.1.8.0/24 ${ROUTE_GW}
+route ${OPS} -net 1.2.4.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.8.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.8.8.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.12.0.0/14 ${ROUTE_GW}
@@ -1229,7 +1230,6 @@ route ${OPS} -net 103.96.215.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.96.224.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.97.60.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.97.112.0/24 ${ROUTE_GW}
-route ${OPS} -net 103.98.0.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.98.44.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.98.125.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.98.127.0/24 ${ROUTE_GW}
@@ -2662,6 +2662,7 @@ route ${OPS} -net 125.208.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 125.208.24.0/21 ${ROUTE_GW}
 route ${OPS} -net 125.208.37.0/24 ${ROUTE_GW}
 route ${OPS} -net 125.208.40.0/24 ${ROUTE_GW}
+route ${OPS} -net 125.208.46.0/24 ${ROUTE_GW}
 route ${OPS} -net 125.210.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 125.213.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 125.215.0.0/18 ${ROUTE_GW}
@@ -3239,7 +3240,6 @@ route ${OPS} -net 202.91.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 202.91.240.0/21 ${ROUTE_GW}
 route ${OPS} -net 202.91.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 202.93.252.0/22 ${ROUTE_GW}
-route ${OPS} -net 202.94.1.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.95.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 202.96.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 202.112.0.0/13 ${ROUTE_GW}
