@@ -3597,8 +3597,7 @@ route ${OPS} -net 210.51.26.0/23 ${ROUTE_GW}
 route ${OPS} -net 210.51.32.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.34.0/23 ${ROUTE_GW}
 route ${OPS} -net 210.51.36.0/22 ${ROUTE_GW}
-route ${OPS} -net 210.51.40.0/23 ${ROUTE_GW}
-route ${OPS} -net 210.51.42.0/24 ${ROUTE_GW}
+route ${OPS} -net 210.51.40.0/22 ${ROUTE_GW}
 route ${OPS} -net 210.51.44.0/24 ${ROUTE_GW}
 route ${OPS} -net 210.51.46.0/23 ${ROUTE_GW}
 route ${OPS} -net 210.51.48.0/21 ${ROUTE_GW}
