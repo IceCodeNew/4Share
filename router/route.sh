@@ -1963,9 +1963,8 @@ route ${OPS} -net 115.84.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 115.85.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 115.102.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 115.120.0.0/17 ${ROUTE_GW}
-route ${OPS} -net 115.120.130.0/23 ${ROUTE_GW}
+route ${OPS} -net 115.120.130.0/24 ${ROUTE_GW}
 route ${OPS} -net 115.120.136.0/21 ${ROUTE_GW}
-route ${OPS} -net 115.120.156.0/23 ${ROUTE_GW}
 route ${OPS} -net 115.120.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 115.124.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 115.148.0.0/14 ${ROUTE_GW}
