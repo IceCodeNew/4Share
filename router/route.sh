@@ -2040,7 +2040,8 @@ route ${OPS} -net 116.196.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 116.196.130.0/23 ${ROUTE_GW}
 route ${OPS} -net 116.196.132.0/22 ${ROUTE_GW}
 route ${OPS} -net 116.196.136.0/23 ${ROUTE_GW}
-route ${OPS} -net 116.196.144.0/20 ${ROUTE_GW}
+route ${OPS} -net 116.196.144.0/21 ${ROUTE_GW}
+route ${OPS} -net 116.196.152.0/22 ${ROUTE_GW}
 route ${OPS} -net 116.196.192.0/21 ${ROUTE_GW}
 route ${OPS} -net 116.196.218.0/23 ${ROUTE_GW}
 route ${OPS} -net 116.196.220.0/22 ${ROUTE_GW}
