@@ -752,9 +752,11 @@ route ${OPS} -net 60.232.180.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.184.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.188.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.192.0/24 ${ROUTE_GW}
+route ${OPS} -net 60.232.200.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.224.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.244.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.246.0/23 ${ROUTE_GW}
+route ${OPS} -net 60.232.251.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.252.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.232.254.0/24 ${ROUTE_GW}
 route ${OPS} -net 60.235.0.0/16 ${ROUTE_GW}
