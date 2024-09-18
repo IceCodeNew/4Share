@@ -2794,6 +2794,7 @@ route ${OPS} -net 148.70.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 149.104.40.0/21 ${ROUTE_GW}
 route ${OPS} -net 149.104.56.0/21 ${ROUTE_GW}
 route ${OPS} -net 149.129.64.0/18 ${ROUTE_GW}
+route ${OPS} -net 149.134.158.0/24 ${ROUTE_GW}
 route ${OPS} -net 150.109.0.0/24 ${ROUTE_GW}
 route ${OPS} -net 150.109.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 150.109.24.0/22 ${ROUTE_GW}
