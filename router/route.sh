@@ -2430,6 +2430,7 @@ route ${OPS} -net 121.46.244.0/22 ${ROUTE_GW}
 route ${OPS} -net 121.46.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 121.46.252.0/23 ${ROUTE_GW}
 route ${OPS} -net 121.46.254.0/24 ${ROUTE_GW}
+route ${OPS} -net 121.47.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 121.48.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 121.51.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 121.52.160.0/19 ${ROUTE_GW}
