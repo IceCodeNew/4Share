@@ -814,6 +814,7 @@ route ${OPS} -net 71.136.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 71.137.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 72.163.240.0/23 ${ROUTE_GW}
 route ${OPS} -net 72.163.248.0/22 ${ROUTE_GW}
+route ${OPS} -net 74.114.51.0/24 ${ROUTE_GW}
 route ${OPS} -net 80.251.208.0/20 ${ROUTE_GW}
 route ${OPS} -net 81.68.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 81.173.18.0/23 ${ROUTE_GW}
