@@ -4170,8 +4170,9 @@ route ${OPS} -net 223.160.224.0/21 ${ROUTE_GW}
 route ${OPS} -net 223.160.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.160.236.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.161.194.0/23 ${ROUTE_GW}
-route ${OPS} -net 223.161.198.0/23 ${ROUTE_GW}
+route ${OPS} -net 223.161.196.0/22 ${ROUTE_GW}
 route ${OPS} -net 223.161.232.0/23 ${ROUTE_GW}
+route ${OPS} -net 223.161.236.0/23 ${ROUTE_GW}
 route ${OPS} -net 223.166.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 223.192.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 223.198.0.0/15 ${ROUTE_GW}
