@@ -3047,8 +3047,11 @@ route ${OPS} -net 180.76.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 180.77.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 180.78.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 180.84.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 180.88.96.0/19 ${ROUTE_GW}
+route ${OPS} -net 180.88.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 180.89.56.0/22 ${ROUTE_GW}
 route ${OPS} -net 180.89.60.0/23 ${ROUTE_GW}
+route ${OPS} -net 180.89.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 180.91.192.0/20 ${ROUTE_GW}
 route ${OPS} -net 180.92.176.0/23 ${ROUTE_GW}
 route ${OPS} -net 180.95.128.0/17 ${ROUTE_GW}
