@@ -1733,12 +1733,11 @@ route ${OPS} -net 103.247.176.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.248.102.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.248.152.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.248.224.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.249.12.0/22 ${ROUTE_GW}
+route ${OPS} -net 103.249.14.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.249.52.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.249.109.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.249.110.0/23 ${ROUTE_GW}
 route ${OPS} -net 103.249.136.0/24 ${ROUTE_GW}
-route ${OPS} -net 103.249.192.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.249.244.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.249.252.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.250.32.0/22 ${ROUTE_GW}
