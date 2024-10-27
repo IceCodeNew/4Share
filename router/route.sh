@@ -3168,7 +3168,6 @@ route ${OPS} -net 154.214.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 154.218.6.0/23 ${ROUTE_GW}
 route ${OPS} -net 154.218.8.0/21 ${ROUTE_GW}
 route ${OPS} -net 154.220.3.0/24 ${ROUTE_GW}
-route ${OPS} -net 154.223.96.0/19 ${ROUTE_GW}
 route ${OPS} -net 154.223.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 154.223.188.0/23 ${ROUTE_GW}
 route ${OPS} -net 155.126.176.0/23 ${ROUTE_GW}
@@ -3494,7 +3493,6 @@ route ${OPS} -net 192.151.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 192.161.80.0/20 ${ROUTE_GW}
 route ${OPS} -net 192.163.11.0/24 ${ROUTE_GW}
 route ${OPS} -net 192.232.97.0/24 ${ROUTE_GW}
-route ${OPS} -net 192.252.187.0/24 ${ROUTE_GW}
 route ${OPS} -net 192.253.238.0/23 ${ROUTE_GW}
 route ${OPS} -net 193.9.44.0/24 ${ROUTE_GW}
 route ${OPS} -net 193.9.46.0/24 ${ROUTE_GW}
@@ -3599,7 +3597,6 @@ route ${OPS} -net 202.75.248.0/22 ${ROUTE_GW}
 route ${OPS} -net 202.76.247.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.79.162.0/23 ${ROUTE_GW}
 route ${OPS} -net 202.79.164.0/22 ${ROUTE_GW}
-route ${OPS} -net 202.79.168.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.79.170.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.79.172.0/24 ${ROUTE_GW}
 route ${OPS} -net 202.80.192.0/22 ${ROUTE_GW}
@@ -4240,7 +4237,6 @@ route ${OPS} -net 216.24.176.0/20 ${ROUTE_GW}
 route ${OPS} -net 216.38.168.0/24 ${ROUTE_GW}
 route ${OPS} -net 216.83.44.0/24 ${ROUTE_GW}
 route ${OPS} -net 216.83.57.0/24 ${ROUTE_GW}
-route ${OPS} -net 216.83.58.0/24 ${ROUTE_GW}
 route ${OPS} -net 216.224.112.0/24 ${ROUTE_GW}
 route ${OPS} -net 216.224.121.0/24 ${ROUTE_GW}
 route ${OPS} -net 216.224.125.0/24 ${ROUTE_GW}
