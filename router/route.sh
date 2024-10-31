@@ -1873,7 +1873,7 @@ route ${OPS} -net 107.148.150.0/23 ${ROUTE_GW}
 route ${OPS} -net 107.148.160.0/22 ${ROUTE_GW}
 route ${OPS} -net 107.148.208.0/21 ${ROUTE_GW}
 route ${OPS} -net 107.148.216.0/22 ${ROUTE_GW}
-route ${OPS} -net 107.148.228.0/22 ${ROUTE_GW}
+route ${OPS} -net 107.148.228.0/23 ${ROUTE_GW}
 route ${OPS} -net 107.148.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 107.149.198.0/23 ${ROUTE_GW}
 route ${OPS} -net 107.151.208.0/20 ${ROUTE_GW}
