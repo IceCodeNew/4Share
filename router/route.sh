@@ -4212,9 +4212,7 @@ route ${OPS} -net 211.155.16.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.155.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 211.155.80.0/20 ${ROUTE_GW}
 route ${OPS} -net 211.155.128.0/19 ${ROUTE_GW}
-route ${OPS} -net 211.155.160.0/20 ${ROUTE_GW}
-route ${OPS} -net 211.155.176.0/22 ${ROUTE_GW}
-route ${OPS} -net 211.155.184.0/21 ${ROUTE_GW}
+route ${OPS} -net 211.155.160.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.155.224.0/21 ${ROUTE_GW}
 route ${OPS} -net 211.155.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 211.155.236.0/24 ${ROUTE_GW}
