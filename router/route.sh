@@ -3317,8 +3317,6 @@ route ${OPS} -net 163.179.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.204.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.228.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.244.246.0/24 ${ROUTE_GW}
-route ${OPS} -net 165.3.86.0/23 ${ROUTE_GW}
-route ${OPS} -net 165.3.88.0/21 ${ROUTE_GW}
 route ${OPS} -net 166.111.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 167.139.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 167.220.244.0/22 ${ROUTE_GW}
