@@ -2863,7 +2863,7 @@ route ${OPS} -net 124.14.20.0/22 ${ROUTE_GW}
 route ${OPS} -net 124.14.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 124.14.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 124.16.0.0/15 ${ROUTE_GW}
-route ${OPS} -net 124.21.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 124.21.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 124.28.192.0/18 ${ROUTE_GW}
 route ${OPS} -net 124.29.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 124.31.0.0/16 ${ROUTE_GW}
