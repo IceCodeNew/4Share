@@ -563,7 +563,6 @@ route ${OPS} -net 45.151.180.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.153.128.0/22 ${ROUTE_GW}
 route ${OPS} -net 45.154.214.0/23 ${ROUTE_GW}
 route ${OPS} -net 45.157.70.0/23 ${ROUTE_GW}
-route ${OPS} -net 45.192.64.0/19 ${ROUTE_GW}
 route ${OPS} -net 45.192.160.0/20 ${ROUTE_GW}
 route ${OPS} -net 45.192.176.0/24 ${ROUTE_GW}
 route ${OPS} -net 45.192.178.0/23 ${ROUTE_GW}
@@ -1314,7 +1313,6 @@ route ${OPS} -net 103.79.24.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.79.120.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.79.122.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.79.200.0/22 ${ROUTE_GW}
-route ${OPS} -net 103.79.228.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.80.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.81.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.81.48.0/22 ${ROUTE_GW}
@@ -3107,7 +3105,6 @@ route ${OPS} -net 149.87.240.0/23 ${ROUTE_GW}
 route ${OPS} -net 149.87.242.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.104.40.0/21 ${ROUTE_GW}
 route ${OPS} -net 149.104.56.0/21 ${ROUTE_GW}
-route ${OPS} -net 149.115.224.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.115.227.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.115.228.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.115.233.0/24 ${ROUTE_GW}
@@ -3118,6 +3115,7 @@ route ${OPS} -net 149.115.243.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.115.244.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.115.246.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.115.248.0/24 ${ROUTE_GW}
+route ${OPS} -net 149.115.251.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.115.255.0/24 ${ROUTE_GW}
 route ${OPS} -net 149.129.64.0/18 ${ROUTE_GW}
 route ${OPS} -net 150.109.0.0/24 ${ROUTE_GW}
@@ -3252,7 +3250,8 @@ route ${OPS} -net 156.236.110.0/24 ${ROUTE_GW}
 route ${OPS} -net 156.236.112.0/21 ${ROUTE_GW}
 route ${OPS} -net 156.236.124.0/23 ${ROUTE_GW}
 route ${OPS} -net 156.239.0.0/20 ${ROUTE_GW}
-route ${OPS} -net 156.239.96.0/19 ${ROUTE_GW}
+route ${OPS} -net 156.239.64.0/18 ${ROUTE_GW}
+route ${OPS} -net 156.239.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 156.243.2.0/23 ${ROUTE_GW}
 route ${OPS} -net 156.243.4.0/22 ${ROUTE_GW}
 route ${OPS} -net 156.243.8.0/21 ${ROUTE_GW}
