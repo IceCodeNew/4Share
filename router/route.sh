@@ -2249,7 +2249,7 @@ route ${OPS} -net 116.130.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 116.132.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 116.135.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 116.136.0.0/13 ${ROUTE_GW}
-route ${OPS} -net 116.147.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 116.146.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 116.148.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 116.153.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 116.154.0.0/15 ${ROUTE_GW}
