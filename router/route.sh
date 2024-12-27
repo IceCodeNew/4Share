@@ -3536,7 +3536,6 @@ route ${OPS} -net 185.49.33.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.80.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 185.151.204.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.183.84.0/24 ${ROUTE_GW}
-route ${OPS} -net 185.184.220.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.186.146.0/23 ${ROUTE_GW}
 route ${OPS} -net 185.194.148.0/24 ${ROUTE_GW}
 route ${OPS} -net 185.201.226.0/23 ${ROUTE_GW}
