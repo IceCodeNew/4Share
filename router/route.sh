@@ -4540,7 +4540,7 @@ route ${OPS} -net 222.126.200.0/22 ${ROUTE_GW}
 route ${OPS} -net 222.126.208.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.212.0/22 ${ROUTE_GW}
 route ${OPS} -net 222.126.216.0/23 ${ROUTE_GW}
-route ${OPS} -net 222.126.236.0/24 ${ROUTE_GW}
+route ${OPS} -net 222.126.236.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.240.0/20 ${ROUTE_GW}
 route ${OPS} -net 222.128.0.0/12 ${ROUTE_GW}
 route ${OPS} -net 222.160.0.0/14 ${ROUTE_GW}
