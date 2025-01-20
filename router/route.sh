@@ -760,7 +760,12 @@ route ${OPS} -net 59.83.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 59.83.224.0/21 ${ROUTE_GW}
 route ${OPS} -net 59.83.232.0/22 ${ROUTE_GW}
 route ${OPS} -net 59.107.0.0/17 ${ROUTE_GW}
-route ${OPS} -net 59.108.0.0/15 ${ROUTE_GW}
+route ${OPS} -net 59.108.0.0/16 ${ROUTE_GW}
+route ${OPS} -net 59.109.0.0/17 ${ROUTE_GW}
+route ${OPS} -net 59.109.128.0/18 ${ROUTE_GW}
+route ${OPS} -net 59.109.192.0/20 ${ROUTE_GW}
+route ${OPS} -net 59.109.208.0/21 ${ROUTE_GW}
+route ${OPS} -net 59.109.216.0/22 ${ROUTE_GW}
 route ${OPS} -net 59.110.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 59.111.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 59.111.17.0/24 ${ROUTE_GW}
