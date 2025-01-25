@@ -3503,6 +3503,7 @@ route ${OPS} -net 182.160.0.0/20 ${ROUTE_GW}
 route ${OPS} -net 182.174.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 182.200.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 182.236.160.0/19 ${ROUTE_GW}
+route ${OPS} -net 182.237.0.0/22 ${ROUTE_GW}
 route ${OPS} -net 182.238.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 182.240.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 182.254.0.0/16 ${ROUTE_GW}
