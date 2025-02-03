@@ -104,6 +104,7 @@ route ${OPS} -net 17.252.192.0/19 ${ROUTE_GW}
 route ${OPS} -net 17.252.224.0/20 ${ROUTE_GW}
 route ${OPS} -net 23.0.0.0/24 ${ROUTE_GW}
 route ${OPS} -net 23.3.99.0/24 ${ROUTE_GW}
+route ${OPS} -net 23.36.65.0/24 ${ROUTE_GW}
 route ${OPS} -net 23.48.160.0/24 ${ROUTE_GW}
 route ${OPS} -net 23.53.220.0/24 ${ROUTE_GW}
 route ${OPS} -net 23.54.75.0/24 ${ROUTE_GW}
