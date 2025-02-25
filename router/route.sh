@@ -4519,7 +4519,6 @@ route ${OPS} -net 222.64.0.0/11 ${ROUTE_GW}
 route ${OPS} -net 222.125.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 222.126.128.0/22 ${ROUTE_GW}
 route ${OPS} -net 222.126.132.0/23 ${ROUTE_GW}
-route ${OPS} -net 222.126.138.0/24 ${ROUTE_GW}
 route ${OPS} -net 222.126.141.0/24 ${ROUTE_GW}
 route ${OPS} -net 222.126.142.0/23 ${ROUTE_GW}
 route ${OPS} -net 222.126.144.0/22 ${ROUTE_GW}
