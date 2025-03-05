@@ -2962,7 +2962,10 @@ route ${OPS} -net 132.232.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 132.237.134.0/24 ${ROUTE_GW}
 route ${OPS} -net 133.226.32.0/20 ${ROUTE_GW}
 route ${OPS} -net 134.8.1.0/24 ${ROUTE_GW}
-route ${OPS} -net 134.122.136.0/21 ${ROUTE_GW}
+route ${OPS} -net 134.122.136.0/24 ${ROUTE_GW}
+route ${OPS} -net 134.122.138.0/23 ${ROUTE_GW}
+route ${OPS} -net 134.122.140.0/23 ${ROUTE_GW}
+route ${OPS} -net 134.122.142.0/24 ${ROUTE_GW}
 route ${OPS} -net 134.122.144.0/20 ${ROUTE_GW}
 route ${OPS} -net 134.122.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 134.122.192.0/18 ${ROUTE_GW}
