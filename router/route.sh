@@ -3395,7 +3395,7 @@ route ${OPS} -net 175.29.208.0/21 ${ROUTE_GW}
 route ${OPS} -net 175.29.217.0/24 ${ROUTE_GW}
 route ${OPS} -net 175.29.218.0/23 ${ROUTE_GW}
 route ${OPS} -net 175.29.220.0/24 ${ROUTE_GW}
-route ${OPS} -net 175.29.222.0/23 ${ROUTE_GW}
+route ${OPS} -net 175.29.223.0/24 ${ROUTE_GW}
 route ${OPS} -net 175.30.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 175.42.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 175.44.0.0/16 ${ROUTE_GW}
