@@ -35,6 +35,7 @@ route ${OPS} -net 1.8.8.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.12.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 1.18.128.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.24.0.0/13 ${ROUTE_GW}
+route ${OPS} -net 1.32.228.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.32.237.0/24 ${ROUTE_GW}
 route ${OPS} -net 1.45.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 1.48.0.0/14 ${ROUTE_GW}
