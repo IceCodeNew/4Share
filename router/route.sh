@@ -2422,7 +2422,8 @@ route ${OPS} -net 118.191.0.0/21 ${ROUTE_GW}
 route ${OPS} -net 118.191.8.0/22 ${ROUTE_GW}
 route ${OPS} -net 118.191.12.0/24 ${ROUTE_GW}
 route ${OPS} -net 118.191.192.0/23 ${ROUTE_GW}
-route ${OPS} -net 118.191.248.0/21 ${ROUTE_GW}
+route ${OPS} -net 118.191.251.0/24 ${ROUTE_GW}
+route ${OPS} -net 118.191.252.0/22 ${ROUTE_GW}
 route ${OPS} -net 118.192.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 118.193.96.0/19 ${ROUTE_GW}
 route ${OPS} -net 118.193.138.0/24 ${ROUTE_GW}
