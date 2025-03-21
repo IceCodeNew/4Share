@@ -3915,6 +3915,7 @@ route ${OPS} -net 203.119.30.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.119.80.0/23 ${ROUTE_GW}
 route ${OPS} -net 203.119.83.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.119.85.0/24 ${ROUTE_GW}
+route ${OPS} -net 203.119.115.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.119.128.0/19 ${ROUTE_GW}
 route ${OPS} -net 203.119.160.0/24 ${ROUTE_GW}
 route ${OPS} -net 203.119.168.0/21 ${ROUTE_GW}
