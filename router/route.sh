@@ -4362,7 +4362,13 @@ route ${OPS} -net 219.236.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 219.242.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 219.244.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 220.101.192.0/18 ${ROUTE_GW}
-route ${OPS} -net 220.112.0.0/18 ${ROUTE_GW}
+route ${OPS} -net 220.112.0.0/22 ${ROUTE_GW}
+route ${OPS} -net 220.112.8.0/24 ${ROUTE_GW}
+route ${OPS} -net 220.112.40.0/21 ${ROUTE_GW}
+route ${OPS} -net 220.112.50.0/23 ${ROUTE_GW}
+route ${OPS} -net 220.112.52.0/23 ${ROUTE_GW}
+route ${OPS} -net 220.112.54.0/24 ${ROUTE_GW}
+route ${OPS} -net 220.112.59.0/24 ${ROUTE_GW}
 route ${OPS} -net 220.112.192.0/20 ${ROUTE_GW}
 route ${OPS} -net 220.113.0.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.113.32.0/20 ${ROUTE_GW}
