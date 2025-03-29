@@ -2016,10 +2016,7 @@ route ${OPS} -net 113.47.112.0/20 ${ROUTE_GW}
 route ${OPS} -net 113.47.128.0/18 ${ROUTE_GW}
 route ${OPS} -net 113.47.204.0/22 ${ROUTE_GW}
 route ${OPS} -net 113.47.220.0/22 ${ROUTE_GW}
-route ${OPS} -net 113.47.234.0/23 ${ROUTE_GW}
-route ${OPS} -net 113.47.236.0/22 ${ROUTE_GW}
-route ${OPS} -net 113.47.250.0/23 ${ROUTE_GW}
-route ${OPS} -net 113.47.252.0/22 ${ROUTE_GW}
+route ${OPS} -net 113.47.224.0/19 ${ROUTE_GW}
 route ${OPS} -net 113.48.48.0/20 ${ROUTE_GW}
 route ${OPS} -net 113.48.127.0/24 ${ROUTE_GW}
 route ${OPS} -net 113.48.224.0/20 ${ROUTE_GW}
