@@ -914,6 +914,7 @@ route ${OPS} -net 94.74.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 94.74.120.0/21 ${ROUTE_GW}
 route ${OPS} -net 94.191.0.0/17 ${ROUTE_GW}
 route ${OPS} -net 98.96.246.0/23 ${ROUTE_GW}
+route ${OPS} -net 98.158.28.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.1.0.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.2.172.0/22 ${ROUTE_GW}
 route ${OPS} -net 101.4.0.0/14 ${ROUTE_GW}
