@@ -1564,6 +1564,7 @@ route ${OPS} -net 103.214.68.0/24 ${ROUTE_GW}
 route ${OPS} -net 103.214.172.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.215.36.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.215.44.0/24 ${ROUTE_GW}
+route ${OPS} -net 103.215.80.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.215.140.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.216.152.0/22 ${ROUTE_GW}
 route ${OPS} -net 103.216.252.0/23 ${ROUTE_GW}
