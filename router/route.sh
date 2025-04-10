@@ -3488,6 +3488,7 @@ route ${OPS} -net 192.69.88.0/21 ${ROUTE_GW}
 route ${OPS} -net 192.102.204.0/22 ${ROUTE_GW}
 route ${OPS} -net 192.109.228.0/24 ${ROUTE_GW}
 route ${OPS} -net 192.140.160.0/21 ${ROUTE_GW}
+route ${OPS} -net 192.140.168.0/22 ${ROUTE_GW}
 route ${OPS} -net 192.140.208.0/21 ${ROUTE_GW}
 route ${OPS} -net 192.144.128.0/17 ${ROUTE_GW}
 route ${OPS} -net 192.151.192.0/18 ${ROUTE_GW}
