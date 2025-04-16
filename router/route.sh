@@ -60,7 +60,7 @@ route ${OPS} -net 5.181.219.0/24 ${ROUTE_GW}
 route ${OPS} -net 5.253.16.0/23 ${ROUTE_GW}
 route ${OPS} -net 8.128.32.0/19 ${ROUTE_GW}
 route ${OPS} -net 8.128.64.0/19 ${ROUTE_GW}
-route ${OPS} -net 8.128.96.0/21 ${ROUTE_GW}
+route ${OPS} -net 8.128.96.0/20 ${ROUTE_GW}
 route ${OPS} -net 8.129.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 8.130.0.0/15 ${ROUTE_GW}
 route ${OPS} -net 8.132.0.0/14 ${ROUTE_GW}
