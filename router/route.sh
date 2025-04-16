@@ -3253,6 +3253,7 @@ route ${OPS} -net 163.53.44.0/23 ${ROUTE_GW}
 route ${OPS} -net 163.53.60.0/22 ${ROUTE_GW}
 route ${OPS} -net 163.53.88.0/21 ${ROUTE_GW}
 route ${OPS} -net 163.53.168.0/22 ${ROUTE_GW}
+route ${OPS} -net 163.61.202.0/23 ${ROUTE_GW}
 route ${OPS} -net 163.125.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.142.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 163.177.0.0/16 ${ROUTE_GW}
