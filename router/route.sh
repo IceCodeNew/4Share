@@ -1956,6 +1956,7 @@ route ${OPS} -net 112.124.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 112.132.0.0/16 ${ROUTE_GW}
 route ${OPS} -net 112.192.0.0/14 ${ROUTE_GW}
 route ${OPS} -net 112.213.101.0/24 ${ROUTE_GW}
+route ${OPS} -net 112.213.107.0/24 ${ROUTE_GW}
 route ${OPS} -net 112.224.0.0/11 ${ROUTE_GW}
 route ${OPS} -net 113.0.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 113.8.0.0/15 ${ROUTE_GW}
