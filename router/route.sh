@@ -4375,11 +4375,7 @@ route ${OPS} -net 220.181.128.0/20 ${ROUTE_GW}
 route ${OPS} -net 220.181.144.0/24 ${ROUTE_GW}
 route ${OPS} -net 220.181.148.0/22 ${ROUTE_GW}
 route ${OPS} -net 220.181.152.0/21 ${ROUTE_GW}
-route ${OPS} -net 220.181.160.0/20 ${ROUTE_GW}
-route ${OPS} -net 220.181.176.0/21 ${ROUTE_GW}
-route ${OPS} -net 220.181.184.0/22 ${ROUTE_GW}
-route ${OPS} -net 220.181.188.0/23 ${ROUTE_GW}
-route ${OPS} -net 220.181.190.0/24 ${ROUTE_GW}
+route ${OPS} -net 220.181.160.0/19 ${ROUTE_GW}
 route ${OPS} -net 220.182.0.0/18 ${ROUTE_GW}
 route ${OPS} -net 220.184.0.0/13 ${ROUTE_GW}
 route ${OPS} -net 220.192.0.0/16 ${ROUTE_GW}
